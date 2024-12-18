@@ -4,7 +4,7 @@ project(ground_station VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Graphs)
+find_package(Qt6 REQUIRED COMPONENTS Quick Graphs SerialPort)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -19,6 +19,13 @@ qt_add_qml_module(appground_station
         Main.qml
 
         SOURCES uiconstants.h uiconstants.cpp
+        SOURCES serialconfiguration.h serialconfiguration.cpp
+        QML_FILES TestScreen.qml
+        QML_FILES MotionInformationScreen.qml
+        QML_FILES GpsInformationScreen.qml
+        QML_FILES EyectionInformationScreen.qml
+        QML_FILES GeneralInformationScreen.qml
+        QML_FILES ComunicationInformationScreen.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -35,6 +42,7 @@ set_target_properties(appground_station PROPERTIES
 target_link_libraries(appground_station
     PRIVATE Qt6::Quick
     Qt6::Graphs
+    Qt6::SerialPort
 )
 
 include(GNUInstallDirs)
