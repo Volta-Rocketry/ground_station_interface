@@ -4,17 +4,19 @@ import QtQuick.VirtualKeyboard
 
 import Constants 1.0
 
-
 ApplicationWindow {
     id: window
     width: constants.appPredWidth()
     height: constants.appPredHeight()
     visible: true
     title: qsTr(constants.appName())
+    color: constants.mainBackgroundColor()
+
+    // ------------------- Backend  -------------------
 
     Const{
         id: constants
-    }
+    }    
 
     // ------------------- App Tittle -------------------
 
@@ -75,7 +77,7 @@ ApplicationWindow {
 
 
         Button {
-            id: button
+            id: btn_go_motion_information_screen
             height: (parent.height -(constants.buttonLateralSpacing()*6))/5
             text: qsTr("Button 1")
             anchors.left: parent.left
@@ -93,12 +95,12 @@ ApplicationWindow {
         }
 
         Button {
-            id: button1
+            id: btn_go_gps_information_screen
             height: (parent.height -(constants.buttonLateralSpacing()*6))/5
             text: qsTr("Button 2")
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.top: button.bottom
+            anchors.top: btn_go_motion_information_screen.bottom
             anchors.leftMargin: 0
             anchors.rightMargin: 0
             anchors.topMargin: constants.buttonLateralSpacing()
@@ -106,12 +108,12 @@ ApplicationWindow {
         }
 
         Button {
-            id: button2
+            id: btn_go_eyection_information_screen
             height: (parent.height -(constants.buttonLateralSpacing()*6))/5
             text: qsTr("Button 3")
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.top: button1.bottom
+            anchors.top: btn_go_gps_information_screen.bottom
             anchors.leftMargin: 0
             anchors.rightMargin: 0
             anchors.topMargin: constants.buttonLateralSpacing()
@@ -120,12 +122,12 @@ ApplicationWindow {
         }
 
         Button {
-            id: button3
+            id: btn_go_communication_information_screen
             height: (parent.height -(constants.buttonLateralSpacing()*6))/5
             text: qsTr("Button 4")
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.top: button2.bottom
+            anchors.top: btn_go_eyection_information_screen.bottom
             anchors.leftMargin: 0
             anchors.rightMargin: 0
             anchors.topMargin: constants.buttonLateralSpacing()
@@ -134,12 +136,12 @@ ApplicationWindow {
         }
 
         Button {
-            id: button4
+            id: btn_go_general_information_screen
             height: (parent.height -(constants.buttonLateralSpacing()*6))/5
             text: qsTr("Button 5")
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.top: button3.bottom
+            anchors.top: btn_go_communication_information_screen.bottom
             anchors.leftMargin: 0
             anchors.rightMargin: 0
             anchors.topMargin: constants.buttonLateralSpacing()

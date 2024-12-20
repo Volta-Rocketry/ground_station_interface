@@ -11,7 +11,13 @@ public:
 
 private:
 
-    QString _appName = "<<App name>>";
+    QString _appName = "Volta - Ground Station";
+
+    QString _mainBackgroundColor = "#e8e8e8";
+    QString _graphsGridMainColor = "black";
+    QString _graphsTextMainColor = "black";
+
+
     int _appPredWidth = 800;
     int _appPredHeight = 480;
 
@@ -19,6 +25,9 @@ private:
 
 public slots:
     QString appName();
+    QString mainBackgroundColor();
+    QString graphsGridMainColor();
+    QString graphsTextMainColor();
 
     int appPredWidth();
     int appPredHeight();

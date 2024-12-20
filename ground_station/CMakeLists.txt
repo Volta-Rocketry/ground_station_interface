@@ -26,6 +26,7 @@ qt_add_qml_module(appground_station
         QML_FILES EyectionInformationScreen.qml
         QML_FILES GeneralInformationScreen.qml
         QML_FILES ComunicationInformationScreen.qml
+        SOURCES graphdata.h graphdata.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

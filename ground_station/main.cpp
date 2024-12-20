@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 
 #include "uiconstants.h"
+#include "graphdata.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,6 +11,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     qmlRegisterType <UiConstants> ("Constants",1,0,"Const");
+    qmlRegisterType <GraphData> ("Backend",1,0,"GraphDataBackend");
+
 
     QQmlApplicationEngine engine;
     QObject::connect(

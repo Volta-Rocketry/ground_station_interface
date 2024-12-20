@@ -9,6 +9,20 @@ QString UiConstants::appName()
     return _appName;
 }
 
+QString UiConstants::mainBackgroundColor()
+{
+    return _mainBackgroundColor;
+}
+
+QString UiConstants::graphsGridMainColor()
+{
+    return _graphsGridMainColor;
+}
+
+QString UiConstants::graphsTextMainColor()
+{
+    return _graphsTextMainColor;
+}
 
 int UiConstants::appPredWidth()
 {
