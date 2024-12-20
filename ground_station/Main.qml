@@ -29,36 +29,7 @@ ApplicationWindow {
         font.pixelSize: 24
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-    }
-
-    // ------------------- Info 1 Section -------------------
-    Rectangle {
-        id: info1_section
-        width: info1_section.height*0.17
-        color: "#000000"
-        radius: 23
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        anchors.rightMargin: -info1_section.width/2
-        anchors.topMargin: 65
-        anchors.bottomMargin: 65
-    }
-
-    // ------------------- Info 2 Section -------------------
-    Rectangle {
-        id: info2_section
-        x: parent.width/2 - info2_section.width/2
-        height: info2_section.width*0.20
-        color: "#000000"
-        radius: 25
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.leftMargin: 250
-        anchors.rightMargin: 250
-        anchors.bottomMargin: -info2_section.height/2
-    }
+    }    
 
     // ------------------- Lateral menu -------------------
 
@@ -73,8 +44,6 @@ ApplicationWindow {
         anchors.leftMargin: 10
         anchors.topMargin: 40
         anchors.bottomMargin: 40
-
-
 
         Button {
             id: btn_go_motion_information_screen
@@ -146,9 +115,7 @@ ApplicationWindow {
             anchors.rightMargin: 0
             anchors.topMargin: constants.buttonLateralSpacing()
             onClicked: loader.source = "GeneralInformationScreen.qml"
-
         }
-
     }
 
     //------------------- Loader ------------------
@@ -156,18 +123,159 @@ ApplicationWindow {
     Loader {
         id: loader
         anchors.left: lateral_menu.right
-        anchors.right: info1_section.left
+        anchors.right: parent.right
         anchors.top: txt_app_tittle.bottom
-        anchors.bottom: info2_section.top
+        anchors.bottom: parent.bottom
         anchors.leftMargin: 10
-        anchors.rightMargin: 10
+        anchors.rightMargin: 40
         anchors.topMargin: 10
-        anchors.bottomMargin: 10
+        anchors.bottomMargin: 40
 
         source: "MotionInformationScreen.qml"
     }
 
-    //------------------- ***** ------------------
+    // ------------------- Info 1 Section -------------------
+    Rectangle {
+        id: info1_section
+        width: parent.height*0.1
+        color: "#000000"
+        radius: 23
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.rightMargin: -info1_section.width/2
+        anchors.topMargin: 65
+        anchors.bottomMargin: 65
+
+        property real collapsedWidth: parent.height*0.1
+        property real expandedWidth: window.height
+        property bool isExpanded: false
+
+        // Smooth width animation
+        Behavior on width {
+            NumberAnimation {
+                duration: 300
+                easing.type: Easing.InOutQuad
+            }
+        }
+
+        // Content inside the section
+        Loader {
+            id: dynamicLoader1
+            height: parent.height
+            source: "" // Initially empty
+            anchors.right: parent.right
+            anchors.rightMargin: parent.width/2
+            anchors.left: btnShowInfo1.right
+        }
+
+        // Toggle Button
+        Rectangle {
+            id: btnShowInfo1
+            x: 0
+            width: window.height*0.05
+            height: parent.height
+            color: "gray"
+            radius: 15
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+
+            Text {
+                anchors.centerIn: parent
+                text: info1_section.isExpanded ? "−" : "+" // Change symbol
+                color: "white"
+                font.pixelSize: 24
+            }
+
+            MouseArea {
+               anchors.fill: parent
+               onClicked: {
+                   info1_section.isExpanded = !info1_section.isExpanded;
+                   info1_section.width = info1_section.isExpanded ? info1_section.expandedWidth : info1_section.collapsedWidth;
+
+                   if (info1_section.isExpanded) {
+                       dynamicLoader1.source = "TestScreen.qml";
+                   } else {
+                       dynamicLoader1.source = ""; // Unload content to save memory
+                   }
+               }
+           }
+        }
+    }
+
+    // ------------------- Info 2 Section -------------------
+    Rectangle {
+        id: info2_section
+        x: parent.width/2 - info2_section.width/2
+        height: parent.height*0.1
+        color: "#000000"
+        radius: 15
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.leftMargin: parent.width*0.15
+        anchors.rightMargin: parent.width*0.15
+        anchors.bottomMargin: -info2_section.height/2
+
+        property real collapsedHeight: parent.height*0.1
+        property real expandedHeight: info2_section.width*0.3
+        property bool isExpanded: false
+
+        // Smooth height animation
+        Behavior on height {
+            NumberAnimation {
+                duration: 300
+                easing.type: Easing.InOutQuad
+            }
+        }
+
+        // Content inside the section
+        Loader {
+            id: dynamicLoader
+            width: parent.width
+            source: "" // Initially empty
+            anchors.top: btnShowInfo2.bottom
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: parent.height/2
+        }
+
+        // Toggle Button
+        Rectangle {
+            id: btnShowInfo2
+            x: 0
+            width: parent.width
+            height: window.height*0.05
+            color: "gray"
+            radius: 15
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+
+            Text {
+                anchors.centerIn: parent
+                text: info2_section.isExpanded ? "−" : "+" // Change symbol
+                color: "white"
+                font.pixelSize: 24
+            }
+
+            MouseArea {
+               anchors.fill: parent
+               onClicked: {
+                   info2_section.isExpanded = !info2_section.isExpanded;
+                   info2_section.height = info2_section.isExpanded ? info2_section.expandedHeight : info2_section.collapsedHeight;
+
+                   if (info2_section.isExpanded) {
+                       dynamicLoader.source = "TestScreen.qml";
+                   } else {
+                       dynamicLoader.source = ""; // Unload content to save memory
+                   }
+               }
+           }
+        }
+    }
 
     //------------------- Virtual Keyboard ------------------
     InputPanel {

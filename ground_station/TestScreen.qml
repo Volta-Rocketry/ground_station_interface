@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Controls 2.15
 
 Item {
     width: parent.width
@@ -7,11 +8,27 @@ Item {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: "green"
+        color: "red"
 
         Text {
             anchors.centerIn: parent
-            text: "This is Screen 1"
+            text: "This is text screen AAAAA"
         }
+    }
+
+    Rectangle{
+        height: parent.height
+        width: 20
+        color: "green"
+        anchors.bottom: parent.bottom
+        anchors.right: parent.right
+    }
+
+    Rectangle{
+        height: 20
+        width: parent.width
+        color: "blue"
+        anchors.bottom: parent.bottom
+        anchors.right: parent.right
     }
 }

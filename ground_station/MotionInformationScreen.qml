@@ -27,6 +27,10 @@ Item {
             axisYGraphAltitude.max = graphUpdater.xDat() +10
             altitudeSeries.append(graphUpdater.actualTime(),graphUpdater.xDat())
 
+            if (altitudeSeries.count> 11) {
+                altitudeSeries.remove(0)  // Remove the first point (oldest)
+            }
+
             axisXGraphAccel.max = graphUpdater.actualTimeUTC()
             axisXGraphAccel.min = graphUpdater.prevTimeUTC()
             axisYGraphAccel.min = -15//graphUpdater.xDat() -10
@@ -35,11 +39,18 @@ Item {
             accelYSeries.append(graphUpdater.actualTime(),graphUpdater.xDat())
             accelZSeries.append(graphUpdater.actualTime(),graphUpdater.xDat()-10)
 
+            if (accelXSeries.count> 10) {
+                accelXSeries.remove(0)  // Remove the first point (oldest)
+            }
 
-        /*    if (dynamicSeries.count > 5) {
-                dynamicSeries.remove(0, 1)  // Remove the first point (oldest)
-            }*/
+            if (accelYSeries.count> 10) {
+                accelYSeries.remove(0)  // Remove the first point (oldest)
+            }
 
+
+            if (accelZSeries.count> 10) {
+                accelZSeries.remove(0)  // Remove the first point (oldest)
+            }
         }
     }
 
