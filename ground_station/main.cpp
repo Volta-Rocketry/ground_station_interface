@@ -1,7 +1,9 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 #include "uiconstants.h"
+#include "serialconfiguration.h"
 #include "graphdata.h"
 
 int main(int argc, char *argv[])
@@ -10,11 +12,17 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType <UiConstants> ("Constants",1,0,"Const");
-    qmlRegisterType <GraphData> ("Backend",1,0,"GraphDataBackend");
-
+    // Crear instancias de las clases
+    UiConstants uiConstants;
+    GraphData graphData;
+    SerialConfiguration serialConfiguration;
 
     QQmlApplicationEngine engine;
+
+    engine.rootContext()->setContextProperty("constants", &uiConstants);
+    engine.rootContext()->setContextProperty("graphUpdater", &graphData);
+    engine.rootContext()->setContextProperty("serialConfig", &serialConfiguration);
+
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,
@@ -25,3 +33,6 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
+
+
+

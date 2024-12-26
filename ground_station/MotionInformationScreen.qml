@@ -2,42 +2,30 @@ import QtQuick 2.0
 import QtQuick.Controls
 import QtGraphs
 
-import Constants 1.0
-import Backend 1.0
-
 Item {
     width: parent.width
     height: parent.height
 
-    GraphDataBackend{
-        id: graphUpdater
-    }
-
-    Const{
-        id: constants
-    }
-
-
     Connections{
-        target: graphUpdater
-        function onTestSignal(){
-            axisXGraphAltitude.max = graphUpdater.actualTimeUTC()
-            axisXGraphAltitude.min = graphUpdater.prevTimeUTC()
-            axisYGraphAltitude.min = 0//graphUpdater.xDat() -10
-            axisYGraphAltitude.max = graphUpdater.xDat() +10
-            altitudeSeries.append(graphUpdater.actualTime(),graphUpdater.xDat())
+        target: serialConfig
+        function onCoreDataUpdated(){
+            axisXGraphAltitude.max = serialConfig.actualTimeUTC()
+            axisXGraphAltitude.min = serialConfig.prevTimeUTC()
+            axisYGraphAltitude.min =  serialConfig.getCoreDataItem(6) -5//graphUpdater.xDat() -10
+            axisYGraphAltitude.max = serialConfig.getCoreDataItem(6) +5
+            altitudeSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(6))
 
             if (altitudeSeries.count> 11) {
                 altitudeSeries.remove(0)  // Remove the first point (oldest)
             }
 
-            axisXGraphAccel.max = graphUpdater.actualTimeUTC()
-            axisXGraphAccel.min = graphUpdater.prevTimeUTC()
-            axisYGraphAccel.min = -15//graphUpdater.xDat() -10
-            axisYGraphAccel.max = graphUpdater.xDat() +10
-            accelXSeries.append(graphUpdater.actualTime(),graphUpdater.xDat()+5)
-            accelYSeries.append(graphUpdater.actualTime(),graphUpdater.xDat())
-            accelZSeries.append(graphUpdater.actualTime(),graphUpdater.xDat()-10)
+            axisXGraphAccel.max = serialConfig.actualTimeUTC()
+            axisXGraphAccel.min = serialConfig.prevTimeUTC()
+            axisYGraphAccel.min = serialConfig.getCoreDataItem(0) -10
+            axisYGraphAccel.max = serialConfig.getCoreDataItem(0) +10
+            accelXSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(0))
+            accelYSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(1))
+            accelZSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(2))
 
             if (accelXSeries.count> 10) {
                 accelXSeries.remove(0)  // Remove the first point (oldest)

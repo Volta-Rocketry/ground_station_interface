@@ -4,15 +4,15 @@
 #include <QObject>
 #include <QSerialPort>
 #include <QSerialPortInfo>
+#include <QTimer>
 #include <QDebug>
+#include <QDateTime>
 
 class SerialConfiguration : public QObject
 {
     Q_OBJECT
 public:
     explicit SerialConfiguration(QObject *parent = nullptr);
-    void searchPortInfo();
-    void microcontrollerConnection(QString port_description);
     void microcontrollerInit(QString port_description);
     void serialClose();
     void sendData(QString data);
@@ -31,9 +31,26 @@ public:
     QList<QString> microcontrollerPorts;
 
 public slots:
+    QList<QString> searchPortInfo();
     void serialRead();
 
+    void savePortConnection(QString portName);
+    void microcontrollerConnection();
+
+    QList<QString> getCoreDataFull();
+    float getCoreDataItem(int pos);
+    QList<QString> getGPSDataFull();
+    float getGPSDataItem(int pos);
+
+    int xDat();
+    int actualTimeUTC();
+    int prevTimeUTC();
+    int actualTime();
+
 private:
+    QTimer *timer;
+    QString portDescriptionConnection;
+
     QList<float> dataPacket;
     QString dataPacketLog;
     QByteArray serialData;
@@ -41,9 +58,18 @@ private:
     quint16 vendorId;
     quint16 productId;
 
+    QList<QString> coreDataList;
+    QList<QString> gpsDataList;
+
+    int counter;
+
+
 signals:
     void microcontrollerConnectionStatus(bool status);
     void sendDataMainWindow(QChar categoty_identifier, QString data);
+
+    void coreDataUpdated();
+    void gpsDataUpdated();
 };
 
 #endif // SERIALCONFIGURATION_H

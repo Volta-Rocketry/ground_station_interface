@@ -3,7 +3,7 @@
 GraphData::GraphData(QObject *parent)
     : QObject{parent}
 {
-    qDebug() << "Se creo";
+    qDebug() << "Se creo graph Updater";
     timer = new QTimer(this);
 
     connect(timer, &QTimer::timeout, this, &GraphData::updateGraph);
@@ -65,7 +65,6 @@ void GraphData::updateGraph()
         //emit newData(QPointF(x, y)); // Emit new data as a QPointF
     }*/
 
-    qDebug() << "Emitting TestSignal...";  // Debug message
     emit testSignal();  // Emit the signal
-    counter ++;
+    counter ++;    
 }
