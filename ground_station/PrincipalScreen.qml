@@ -16,7 +16,7 @@ Item {
             text: qsTr(constants.appName())
             anchors.top: parent.top
             anchors.topMargin: 15
-            font.pixelSize: 24
+            font.pixelSize: parent.height*0.065
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
         }
