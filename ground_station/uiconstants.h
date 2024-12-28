@@ -17,6 +17,9 @@ private:
     QString _graphsGridMainColor = "black";
     QString _graphsTextMainColor = "black";
 
+    QString _mainColor = "#eb5e24";
+    QString _alternativeColor = "#283747";
+
 
     int _appPredWidth = 800;
     int _appPredHeight = 480;
@@ -28,6 +31,10 @@ public slots:
     QString mainBackgroundColor();
     QString graphsGridMainColor();
     QString graphsTextMainColor();
+
+    QString mainColor();
+    QString alternativeColor();
+
 
     int appPredWidth();
     int appPredHeight();

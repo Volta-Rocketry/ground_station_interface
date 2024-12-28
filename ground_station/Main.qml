@@ -59,6 +59,8 @@ ApplicationWindow {
        }
     }
 
+
+
     //------------------- Virtual Keyboard ------------------
     InputPanel {
         id: inputPanel

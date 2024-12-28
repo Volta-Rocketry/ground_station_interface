@@ -24,6 +24,16 @@ QString UiConstants::graphsTextMainColor()
     return _graphsTextMainColor;
 }
 
+QString UiConstants::mainColor()
+{
+    return _mainColor;
+}
+
+QString UiConstants::alternativeColor()
+{
+    return _alternativeColor;
+}
+
 int UiConstants::appPredWidth()
 {
     return _appPredWidth;

@@ -7,7 +7,7 @@ Item {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: "cyan"
+        color:  constants.mainBackgroundColor()
 
         Text {
             id: txtManParachuttte
@@ -358,10 +358,9 @@ Item {
         Text {
             id: txtChamber1
             text: qsTr("Chamber 1")
-            anchors.verticalCenter: imgPyroA1.verticalCenter
             anchors.top: imgChamberTemp1.bottom
-            anchors.topMargin: parent.height*0.026
-            font.pixelSize: 10
+            anchors.topMargin: parent.height * 0.026
+            font.pixelSize: parent.height * 0.026
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             anchors.horizontalCenter: imgChamberTemp1.horizontalCenter
@@ -370,10 +369,9 @@ Item {
         Text {
             id: txtChamber2
             text: qsTr("Chamber 1")
-            anchors.verticalCenter: imgPyroA1.verticalCenter
             anchors.top: imgChamberTemp2.bottom
-            anchors.topMargin: parent.height*0.026
-            font.pixelSize: 10
+            anchors.topMargin: parent.height * 0.026
+            font.pixelSize: parent.height * 0.026
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             anchors.horizontalCenter: imgChamberTemp2.horizontalCenter
@@ -382,10 +380,9 @@ Item {
         Text {
             id: txtChamber3
             text: qsTr("Chamber 3")
-            anchors.verticalCenter: imgPyroA1.verticalCenter
             anchors.top: imgChamberTemp3.bottom
-            anchors.topMargin: parent.height*0.026
-            font.pixelSize: parent.height*0.026
+            anchors.topMargin: parent.height * 0.026
+            font.pixelSize: parent.height * 0.026
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             anchors.horizontalCenter: imgChamberTemp3.horizontalCenter
@@ -394,10 +391,9 @@ Item {
         Text {
             id: txtChamber4
             text: qsTr("Chamber 4")
-            anchors.verticalCenter: imgPyroA1.verticalCenter
             anchors.top: imgChamberTemp4.bottom
-            anchors.topMargin: parent.height*0.026
-            font.pixelSize: parent.height*0.026
+            anchors.topMargin: parent.height * 0.026
+            font.pixelSize: parent.height * 0.026
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             anchors.horizontalCenter: imgChamberTemp4.horizontalCenter

@@ -148,7 +148,7 @@ Item {
             id: speedometer
             width: parent.height*0.40
             height: speedometer.width
-            color: "#f4d244"
+            color: "#000000"
             radius: speedometer.width/2
             anchors.left: graph_accel.right
             anchors.bottom: parent.bottom
@@ -160,7 +160,7 @@ Item {
             id: euler_angles
             width: parent.height*0.4
             height: euler_angles.width
-            color: "#f4d244"
+            color: "#000000"
             anchors.left: speedometer.horizontalCenter
             anchors.top: parent.top
             anchors.leftMargin: -euler_angles.width/2

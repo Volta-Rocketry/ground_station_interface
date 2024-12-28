@@ -11,8 +11,8 @@ Item {
 
         // ------------------- App Tittle -------------------
         Text {
-            id: txt_app_tittle
-            x: parent.width/2 - txt_app_tittle.width/2
+            id: txtAppTittle
+            x: parent.width/2 - txtAppTittle.width/2
             text: qsTr(constants.appName())
             anchors.top: parent.top
             anchors.topMargin: 15
@@ -24,10 +24,10 @@ Item {
         // ------------------- Lateral menu -------------------
 
         Rectangle {
-            id: lateral_menu
-            width: lateral_menu.height *0.10
-            color: "#27c235"
-            radius: 20
+            id: lateralMenu
+            width: lateralMenu.height *0.10
+            color: constants.mainColor()
+            radius: parent.height*0.042
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.bottom: parent.bottom
@@ -36,75 +36,178 @@ Item {
             anchors.bottomMargin: 40
 
             Button {
-                id: btn_go_motion_information_screen
+                id: btnGoMotionInformationScreen
                 height: (parent.height -(constants.buttonLateralSpacing()*6))/5
-                text: qsTr("Button 1")
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.top: parent.top
                 anchors.leftMargin: 0
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
+                onClicked: {
+                    loader.source = "MotionInformationScreen.qml"
+                    btnBackgroundGoMotionInformationScreen.color = constants.alternativeColor()
+                    btnBackgroundGoGpsInformationScreen.color = "transparent"
+                    btnBackgroundGoEyectionInformationScreen.color = "transparent"
+                    btnBackgroundGoCommunicationInformationScreen.color = "transparent"
+                    btnBackgroundGoGeneralGnformationScreen.color = "transparent"
+                }
 
-                background: Rectangle {
-                        color: "transparent" // Transparent background
-                        border.color: "transparent" // Optional: make the border invisible
-                    }
-                onClicked: loader.source = "MotionInformationScreen.qml"
+                background: Rectangle{
+                    id: btnBackgroundGoMotionInformationScreen
+                    color: constants.alternativeColor()
+                    radius: parent.height/2
+                }
+
+                Image {
+                    id: imageMotion
+                    width: parent.width
+                    height: parent.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    source: "assets/images/motion_logo.png"
+                    fillMode: Image.PreserveAspectFit
+                }
             }
 
             Button {
-                id: btn_go_gps_information_screen
+                id: btnGoGpsInformationScreen
                 height: (parent.height -(constants.buttonLateralSpacing()*6))/5
-                text: qsTr("Button 2")
                 anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.top: btn_go_motion_information_screen.bottom
+                anchors.top: btnGoMotionInformationScreen.bottom
                 anchors.leftMargin: 0
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
-                onClicked: loader.source = "GpsInformationScreen.qml"
+                onClicked: {
+                    loader.source = "GpsInformationScreen.qml"
+                    btnBackgroundGoMotionInformationScreen.color = "transparent"
+                    btnBackgroundGoGpsInformationScreen.color = constants.alternativeColor()
+                    btnBackgroundGoEyectionInformationScreen.color = "transparent"
+                    btnBackgroundGoCommunicationInformationScreen.color = "transparent"
+                    btnBackgroundGoGeneralGnformationScreen.color = "transparent"
+                }
+
+                background: Rectangle{
+                    id: btnBackgroundGoGpsInformationScreen
+                    color: "transparent"
+                    radius: parent.height/2
+                }
+
+                Image {
+                    id: imageGps
+                    width: parent.width
+                    height: parent.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    source: "assets/images/gps_logo.png"
+                    fillMode: Image.PreserveAspectFit
+                }
             }
 
             Button {
-                id: btn_go_eyection_information_screen
+                id: btnGoEyectionInformationScreen
                 height: (parent.height -(constants.buttonLateralSpacing()*6))/5
-                text: qsTr("Button 3")
                 anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.top: btn_go_gps_information_screen.bottom
+                anchors.top: btnGoGpsInformationScreen.bottom
                 anchors.leftMargin: 0
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
-                onClicked: loader.source = "EyectionInformationScreen.qml"
+                onClicked: {
+                    loader.source = "EyectionInformationScreen.qml"
+                    btnBackgroundGoMotionInformationScreen.color = "transparent"
+                    btnBackgroundGoGpsInformationScreen.color = "transparent"
+                    btnBackgroundGoEyectionInformationScreen.color =  constants.alternativeColor()
+                    btnBackgroundGoCommunicationInformationScreen.color = "transparent"
+                    btnBackgroundGoGeneralGnformationScreen.color = "transparent"
+                }
 
+                background: Rectangle{
+                    id: btnBackgroundGoEyectionInformationScreen
+                    color: "transparent"
+                    radius: parent.height/2
+                }
+
+                Image {
+                    id: imageEyection
+                    width: parent.width
+                    height: parent.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    source: "assets/images/eyection_logo.png"
+                    fillMode: Image.PreserveAspectFit
+                }
             }
 
             Button {
-                id: btn_go_communication_information_screen
+                id: btnGoCommunicationInformationScreen
                 height: (parent.height -(constants.buttonLateralSpacing()*6))/5
-                text: qsTr("Button 4")
                 anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.top: btn_go_eyection_information_screen.bottom
+                anchors.top: btnGoEyectionInformationScreen.bottom
                 anchors.leftMargin: 0
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
-                onClicked: loader.source = "ComunicationInformationScreen.qml"
+                onClicked: {
+                    loader.source = "ComunicationInformationScreen.qml"
+                    btnBackgroundGoMotionInformationScreen.color = "transparent"
+                    btnBackgroundGoGpsInformationScreen.color = "transparent"
+                    btnBackgroundGoEyectionInformationScreen.color = "transparent"
+                    btnBackgroundGoCommunicationInformationScreen.color = constants.alternativeColor()
+                    btnBackgroundGoGeneralGnformationScreen.color = "transparent"
+                }
 
+                background: Rectangle{
+                    id: btnBackgroundGoCommunicationInformationScreen
+                    color: "transparent"
+                    radius: parent.height/2
+                }
+
+                Image {
+                    id: imageComunication
+                    width: parent.width
+                    height: parent.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    source: "assets/images/coms_logo.png"
+                    fillMode: Image.PreserveAspectFit
+                }
             }
 
             Button {
-                id: btn_go_general_information_screen
+                id: btnGoGeneralGnformationScreen
                 height: (parent.height -(constants.buttonLateralSpacing()*6))/5
-                text: qsTr("Button 5")
                 anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.top: btn_go_communication_information_screen.bottom
+                anchors.top: btnGoCommunicationInformationScreen.bottom
                 anchors.leftMargin: 0
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
-                onClicked: loader.source = "GeneralInformationScreen.qml"
+                onClicked: {
+                    loader.source = "GeneralInformationScreen.qml"
+                    btnBackgroundGoMotionInformationScreen.color = "transparent"
+                    btnBackgroundGoGpsInformationScreen.color = "transparent"
+                    btnBackgroundGoEyectionInformationScreen.color = "transparent"
+                    btnBackgroundGoCommunicationInformationScreen.color = "transparent"
+                    btnBackgroundGoGeneralGnformationScreen.color = constants.alternativeColor()
+                }
+
+                background: Rectangle{
+                    id: btnBackgroundGoGeneralGnformationScreen
+                    color: "transparent"
+                    radius: parent.height/2
+                }
+
+                Image {
+                    id: imageInformation
+                    width: parent.width
+                    height: parent.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    source: "assets/images/info_logo.png"
+                    fillMode: Image.PreserveAspectFit
+                }
             }
         }
 
@@ -112,9 +215,9 @@ Item {
 
         Loader {
             id: loader
-            anchors.left: lateral_menu.right
+            anchors.left: lateralMenu.right
             anchors.right: parent.right
-            anchors.top: txt_app_tittle.bottom
+            anchors.top: txtAppTittle.bottom
             anchors.bottom: parent.bottom
             anchors.leftMargin: 10
             anchors.rightMargin: 40
@@ -126,14 +229,14 @@ Item {
 
         // ------------------- Info 1 Section -------------------
         Rectangle {
-            id: info1_section
+            id: info1Section
             width: parent.height*0.1
             color: "#000000"
             radius: 23
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: parent.bottom
-            anchors.rightMargin: -info1_section.width/2
+            anchors.rightMargin: -info1Section.width/2
             anchors.topMargin: 65
             anchors.bottomMargin: 65
 
@@ -174,7 +277,7 @@ Item {
 
                 Text {
                     anchors.centerIn: parent
-                    text: info1_section.isExpanded ? "−" : "+" // Change symbol
+                    text: info1Section.isExpanded ? "−" : "+" // Change symbol
                     color: "white"
                     font.pixelSize: 24
                 }
@@ -182,10 +285,10 @@ Item {
                 MouseArea {
                    anchors.fill: parent
                    onClicked: {
-                       info1_section.isExpanded = !info1_section.isExpanded;
-                       info1_section.width = info1_section.isExpanded ? info1_section.expandedWidth : info1_section.collapsedWidth;
+                       info1Section.isExpanded = !info1Section.isExpanded;
+                       info1Section.width = info1Section.isExpanded ? info1Section.expandedWidth : info1Section.collapsedWidth;
 
-                       if (info1_section.isExpanded) {
+                       if (info1Section.isExpanded) {
                            dynamicLoader1.source = "TestScreen.qml";
                        } else {
                            dynamicLoader1.source = ""; // Unload content to save memory
@@ -197,8 +300,8 @@ Item {
 
         // ------------------- Info 2 Section -------------------
         Rectangle {
-            id: info2_section
-            x: parent.width/2 - info2_section.width/2
+            id: info2Section
+            x: parent.width/2 - info2Section.width/2
             height: parent.height*0.1
             color: "#000000"
             radius: 15
@@ -207,10 +310,10 @@ Item {
             anchors.bottom: parent.bottom
             anchors.leftMargin: parent.width*0.15
             anchors.rightMargin: parent.width*0.15
-            anchors.bottomMargin: -info2_section.height/2
+            anchors.bottomMargin: -info2Section.height/2
 
             property real collapsedHeight: parent.height*0.1
-            property real expandedHeight: info2_section.width*0.3
+            property real expandedHeight: info2Section.width*0.3
             property bool isExpanded: false
 
             // Smooth height animation
@@ -246,7 +349,7 @@ Item {
 
                 Text {
                     anchors.centerIn: parent
-                    text: info2_section.isExpanded ? "−" : "+" // Change symbol
+                    text: info2Section.isExpanded ? "−" : "+" // Change symbol
                     color: "white"
                     font.pixelSize: 24
                 }
@@ -254,10 +357,10 @@ Item {
                 MouseArea {
                    anchors.fill: parent
                    onClicked: {
-                       info2_section.isExpanded = !info2_section.isExpanded;
-                       info2_section.height = info2_section.isExpanded ? info2_section.expandedHeight : info2_section.collapsedHeight;
+                       info2Section.isExpanded = !info2Section.isExpanded;
+                       info2Section.height = info2Section.isExpanded ? info2Section.expandedHeight : info2Section.collapsedHeight;
 
-                       if (info2_section.isExpanded) {
+                       if (info2Section.isExpanded) {
                            dynamicLoader.source = "TestScreen.qml";
                        } else {
                            dynamicLoader.source = ""; // Unload content to save memory

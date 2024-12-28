@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
+
 
 #include "uiconstants.h"
 #include "serialconfiguration.h"
@@ -11,6 +13,9 @@ int main(int argc, char *argv[])
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
 
     QGuiApplication app(argc, argv);
+
+    QQuickStyle::setStyle("Fusion");
+
 
     // Crear instancias de las clases
     UiConstants uiConstants;
