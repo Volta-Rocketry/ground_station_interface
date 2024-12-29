@@ -6,10 +6,40 @@ Item {
     width: parent.width
     height: parent.height
 
+    Connections{
+        target: serialConfig
+        function onGpsDataReady(){
+            axisXGraphGPS2D.max = serialConfig.getLonMaxValue() +1 //Lon
+            axisXGraphGPS2D.min = serialConfig.getLonMinValue() -1
+            axisYGraphGPS2D.min =  serialConfig.getLatMinValue() - 1
+            axisYGraphGPS2D.max = serialConfig.getLatMaxValue() + 1
+
+            //axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
+            console.log("Data")
+            console.log(serialConfig.getGraphsMaxMemory())
+            console.log(serialConfig.getGraphsMaxMemory()/2)
+
+            graphGPS2DNewerValues.append(serialConfig.getNewerLonLastValue(),serialConfig.getNewerLatLastValue())
+
+            if (graphGPS2DNewerValues.count>(serialConfig.getGraphsMaxMemory()/2)) {
+                graphGPS2DOlderValues.append(serialConfig.getOlderLonLastValue(),serialConfig.getOlderLatLastValue())
+                if (graphGPS2DNewerValues.count>(serialConfig.getGraphsMaxMemory()/2)+1) {
+                    graphGPS2DNewerValues.remove(0)  // Remove the first point (oldest)
+                }
+
+                if(graphGPS2DOlderValues.count> (serialConfig.getGraphsMaxMemory()/2)){
+                    graphGPS2DOlderValues.remove(0)  // Remove the first point (oldest)
+                    console.log(graphGPS2DNewerValues.count)
+                    console.log(graphGPS2DOlderValues.count)
+                }
+            }
+        }
+    }
+
     Rectangle {
         width: parent.width
         height: parent.height
-        color: constants.mainBackgroundColor()
+        color: contains.mainBackgroundColor()
 
         GraphsView {
             id: graphGPS2D
@@ -33,7 +63,7 @@ Item {
 
             plotAreaBackgroundVisible: false
 
-            seriesColors:["black", "black","red"]
+            seriesColors:["black", "black","red", "blue"]
 
             gridVisible: false
             }
@@ -63,6 +93,14 @@ Item {
                 id: graphGPS2DHorizontalAxis
                 XYPoint { x: -10; y: 5}
                 XYPoint { x: 10; y: 5 }
+            }
+
+            LineSeries {
+                id: graphGPS2DNewerValues
+            }
+
+            LineSeries {
+                id: graphGPS2DOlderValues
             }
 
         }

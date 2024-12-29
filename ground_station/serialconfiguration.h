@@ -40,9 +40,29 @@ public slots:
     float getAbsAccelMinValue();
     float getAbsAccelMaxValue();
 
+    float getAngleXLastValue();
+    float getAngleYLastValue();
+    float getAngleZLastValue();
+
     float getLastCurrentAltValue();
     float getCurrentAltMinValue();
     float getCurrentAltMaxValue();
+
+    float getApogeeAltLastValue();
+    float getPressureAltLastValue();
+
+    float getVelLastValue();
+
+    float getNewerLatLastValue();
+    float getOlderLatLastValue();
+    float getNewerLonLastValue();
+    float getOlderLonLastValue();
+
+    float getLatMinValue();
+    float getLatMaxValue();
+    float getLonMinValue();
+    float getLonMaxValue();
+
 
     // Not defined
     int xDat();
@@ -74,8 +94,9 @@ private:
     QTimer *timer;
 
 
-    // Recieved Data management
+    // Manage Recieved Data
     QList<QString> _coreDataList;
+
     QList<float> _accelXDataListFloat;
     QList<float> _accelYDataListFloat;
     QList<float> _accelZDataListFloat;
@@ -85,19 +106,33 @@ private:
     float _accelYMaxListValue;
     float _accelZMinListValue;
     float _accelZMaxListValue;
-
     float _accelAbsMaxValue;
     float _accelAbsMinValue;
 
-
+    float _angleXLastValue;
+    float _angleYLastValue;
+    float _angleZLastValue;
 
     QList<float> _currentAltDataListFloat;
-
     float _currentAltMinListValue;
     float _currentAltMaxListValue;
 
+    float _apogeeAltLastValue;
+    float _pressureAltLastValue;
+
+    float _velLastValue;
 
     QList<QString> _gpsDataList;
+
+    QList<float> _newerLatValueList;
+    QList<float> _olderLatValueList;
+    QList<float> _newerLonValueList;
+    QList<float> _olderLonValueList;
+
+    float _latMaxValue;
+    float _latMinValue;
+    float _lonMaxValue;
+    float _lonMinValue;
 
     void coreDataUpdate();
     void gpsDataUpdate();

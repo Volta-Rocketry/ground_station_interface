@@ -268,7 +268,7 @@ Item {
                 x: 0
                 width: window.height*0.05
                 height: parent.height
-                color: "gray"
+                color: constants.alternativeColor()
                 radius: 15
                 anchors.left: parent.left
                 anchors.top: parent.top
@@ -340,7 +340,7 @@ Item {
                 x: 0
                 width: parent.width
                 height: window.height*0.05
-                color: "gray"
+                color: constants.alternativeColor()
                 radius: 15
                 anchors.right: parent.right
                 anchors.top: parent.top

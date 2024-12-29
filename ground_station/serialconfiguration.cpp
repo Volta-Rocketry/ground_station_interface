@@ -128,10 +128,9 @@ void SerialConfiguration::serialRead()
             data.removeLast();
 
             _gpsDataList = data;
-            //emit gpsDataUpdated();
+            gpsDataUpdate();
         }
     }
-    counter ++;
 }
 
 void SerialConfiguration::sendData(QString data) {     // To send data to the arduino
@@ -207,6 +206,21 @@ float SerialConfiguration::getAbsAccelMaxValue()
     return _accelAbsMaxValue;
 }
 
+float SerialConfiguration::getAngleXLastValue()
+{
+    return _angleXLastValue;
+}
+
+float SerialConfiguration::getAngleYLastValue()
+{
+    return _angleYLastValue;
+}
+
+float SerialConfiguration::getAngleZLastValue()
+{
+    return _angleZLastValue;
+}
+
 float SerialConfiguration::getLastCurrentAltValue()
 {
     return _currentAltDataListFloat.last();
@@ -214,17 +228,67 @@ float SerialConfiguration::getLastCurrentAltValue()
 
 float SerialConfiguration::getCurrentAltMinValue()
 {
-    qDebug() << "Min Data";
-    qDebug() << _currentAltMinListValue;
     return _currentAltMinListValue;
 }
 
 float SerialConfiguration::getCurrentAltMaxValue()
 {
-    qDebug() << "Max Data";
-    qDebug() << _currentAltMaxListValue;
-
     return _currentAltMaxListValue;
+}
+
+float SerialConfiguration::getApogeeAltLastValue()
+{
+    return _apogeeAltLastValue;
+}
+
+float SerialConfiguration::getPressureAltLastValue()
+{
+    return _pressureAltLastValue;
+}
+
+float SerialConfiguration::getVelLastValue()
+{
+    return _velLastValue;
+}
+
+float SerialConfiguration::getNewerLatLastValue()
+{
+    return _newerLatValueList.last();
+}
+
+float SerialConfiguration::getOlderLatLastValue()
+{
+    return _olderLatValueList.last();
+}
+
+float SerialConfiguration::getNewerLonLastValue()
+{
+    return _newerLonValueList.last();
+}
+
+float SerialConfiguration::getOlderLonLastValue()
+{
+    return _olderLonValueList.last();
+}
+
+float SerialConfiguration::getLatMinValue()
+{
+    return _latMinValue;
+}
+
+float SerialConfiguration::getLatMaxValue()
+{
+    return _latMaxValue;
+}
+
+float SerialConfiguration::getLonMinValue()
+{
+    return _lonMinValue;
+}
+
+float SerialConfiguration::getLonMaxValue()
+{
+    return _lonMaxValue;
 }
 
 int SerialConfiguration::xDat()
@@ -311,11 +375,16 @@ void SerialConfiguration::coreDataUpdate()
 
     // Angles
 
+    _angleXLastValue =_coreDataList[3].toFloat();
+    _angleYLastValue =_coreDataList[4].toFloat();
+    _angleZLastValue =_coreDataList[5].toFloat();
+
     // Altitude
     _currentAltDataListFloat.append(_coreDataList[6].toFloat());
 
     if (_currentAltDataListFloat.count() > _graphsMaxMemory){
         _currentAltDataListFloat.removeFirst();
+
     }
 
     min = std::min_element(_currentAltDataListFloat.begin(), _currentAltDataListFloat.end());
@@ -324,9 +393,76 @@ void SerialConfiguration::coreDataUpdate()
     _currentAltMinListValue = *min;
     _currentAltMaxListValue = *max;
 
+    _apogeeAltLastValue = _coreDataList[7].toFloat();
+    _pressureAltLastValue = _coreDataList[8].toFloat();
+    _velLastValue = _coreDataList[9].toFloat();
 
     // Speed
+    counter ++;
 
     emit coreDataReady();
-    qDebug() << "Se emitio";
+}
+
+void SerialConfiguration::gpsDataUpdate()
+{
+    /* _coreDataList
+     *  0   1
+     *  Lat Lon
+    */
+
+    _newerLatValueList.append(_coreDataList[0].toFloat());
+    if (_newerLatValueList.count()>_graphsMaxMemory/2){
+        _olderLatValueList.append(_newerLatValueList[0]);
+        _newerLatValueList.removeFirst();
+        if(_olderLatValueList.count()>_graphsMaxMemory/2){
+            _olderLatValueList.removeFirst();
+        }
+    }
+
+    _newerLonValueList.append(_coreDataList[1].toFloat());
+    if (_newerLonValueList.count()>_graphsMaxMemory/2){
+        _olderLonValueList.append(_newerLonValueList[0]);
+        _newerLonValueList.removeFirst();
+        if(_olderLonValueList.count()>_graphsMaxMemory/2){
+            _olderLonValueList.removeFirst();
+        }
+    }
+
+
+    auto min1 = std::min_element(_newerLatValueList.begin(), _newerLatValueList.end());
+    auto max1 = std::max_element(_newerLatValueList.begin(), _newerLatValueList.end());
+
+    if (_olderLatValueList.count()>0){
+        auto min2 = std::min_element(_olderLatValueList.begin(), _olderLatValueList.end());
+        auto max2 = std::max_element(_olderLatValueList.begin(), _olderLatValueList.end());
+
+        float min = std::min({*min1, *min2});
+        float max = std::max({*max1, *max2});
+
+        _latMinValue = min;
+        _latMaxValue = max;
+    }else{
+        _latMinValue = *min1;
+        _latMaxValue = *max1;
+    }
+
+    min1 = std::min_element(_newerLonValueList.begin(), _newerLonValueList.end());
+    max1 = std::max_element(_newerLonValueList.begin(), _newerLonValueList.end());
+
+    if (_olderLonValueList.count()>0){
+        auto min2 = std::min_element(_olderLonValueList.begin(), _olderLonValueList.end());
+        auto max2 = std::max_element(_olderLonValueList.begin(), _olderLonValueList.end());
+
+        float max = std::max({*max1, *max2});
+        float min = std::min({*min1, *min2});
+
+        _lonMinValue = min;
+        _lonMaxValue = max;
+
+    }else{
+        _lonMinValue = *min1;
+        _lonMaxValue = *max1;
+    }
+
+    emit gpsDataReady();
 }

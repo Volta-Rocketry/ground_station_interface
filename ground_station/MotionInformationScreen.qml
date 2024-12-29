@@ -14,7 +14,7 @@ Item {
             axisYGraphAltitude.min =  serialConfig.getCurrentAltMinValue() - 1
             axisYGraphAltitude.max = serialConfig.getCurrentAltMaxValue() + 1
 
-            axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
+            //axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
 
             altitudeSeries.append(serialConfig.actualTime(),serialConfig.getLastCurrentAltValue())
 
@@ -30,6 +30,9 @@ Item {
             accelYSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelYValue())
             accelZSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelZValue())
 
+            //axisYGraphAccel.tickInterval = (serialConfig.getAbsAccelMaxValue() - serialConfig.getAbsAccelMinValue()) /5
+
+
             if (accelXSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelXSeries.remove(0)  // Remove the first point (oldest)
             }
@@ -42,8 +45,6 @@ Item {
             if (accelZSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelZSeries.remove(0)  // Remove the first point (oldest)
             }
-
-            console.log("Entro aca")
         }
     }
 
@@ -81,13 +82,11 @@ Item {
             axisX: ValueAxis {
                 id: axisXGraphAltitude
                 titleText: "Time (s)"
-                tickInterval: 5
             }
 
             axisY: ValueAxis {
                 id: axisYGraphAltitude
                 titleText: "Altitude (m)"
-                tickInterval: 5
             }
 
             LineSeries {
@@ -132,7 +131,6 @@ Item {
             axisY: ValueAxis {
                 id: axisYGraphAccel
                 titleText: "Accel (m/s^2)"
-                tickInterval: 5
             }
 
             LineSeries {
