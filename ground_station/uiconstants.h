@@ -20,7 +20,6 @@ private:
     QString _mainColor = "#eb5e24";
     QString _alternativeColor = "#283747";
 
-
     int _appPredWidth = 800;
     int _appPredHeight = 480;
 
@@ -34,7 +33,6 @@ public slots:
 
     QString mainColor();
     QString alternativeColor();
-
 
     int appPredWidth();
     int appPredHeight();

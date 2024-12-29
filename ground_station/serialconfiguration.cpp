@@ -10,7 +10,19 @@ SerialConfiguration::SerialConfiguration(QObject *parent)
 
     // ------
     timer = new QTimer(this);
+    // ------
+    _pyroA1Color = _pyroDeactivatedColor;
+    _pyroA2Color = _pyroDeactivatedColor;
+    _pyroA3Color = _pyroDeactivatedColor;
+    _pyroA4Color = _pyroDeactivatedColor;
+    _pyroA5Color = _pyroDeactivatedColor;
 
+    _pyroB1Color = _pyroDeactivatedColor;
+    _pyroB2Color = _pyroDeactivatedColor;
+    _pyroB3Color = _pyroDeactivatedColor;
+    _pyroB4Color = _pyroDeactivatedColor;
+    _pyroB5Color = _pyroDeactivatedColor;
+    // ------
     counter = 0;
 }
 
@@ -112,7 +124,7 @@ void SerialConfiguration::serialRead()
         QList<QString> data = completeMessage.split(",");
 
         int cat = data[1].toInt();
-        if (cat == 2){
+        if (cat == 1){
             data.removeFirst();
             data.removeFirst();
             data.removeFirst();
@@ -122,6 +134,13 @@ void SerialConfiguration::serialRead()
             _coreDataList = data;
             coreDataUpdate();
 
+        }else if(cat == 2){
+            data.removeFirst();
+            data.removeFirst();
+            data.removeLast();
+
+            _pyroContDataList = data;
+            pyroContDataUpdate();
         }else if(cat == 6){
             data.removeFirst();
             data.removeFirst();
@@ -291,6 +310,56 @@ float SerialConfiguration::getLonMaxValue()
     return _lonMaxValue;
 }
 
+QString SerialConfiguration::getPyroA1Color()
+{
+    return _pyroA1Color;
+}
+
+QString SerialConfiguration::getPyroA2Color()
+{
+    return _pyroA2Color;
+}
+
+QString SerialConfiguration::getPyroA3Color()
+{
+    return _pyroA3Color;
+}
+
+QString SerialConfiguration::getPyroA4Color()
+{
+    return _pyroA4Color;
+}
+
+QString SerialConfiguration::getPyroA5Color()
+{
+    return _pyroA5Color;
+}
+
+QString SerialConfiguration::getPyroB1Color()
+{
+    return _pyroB1Color;
+}
+
+QString SerialConfiguration::getPyroB2Color()
+{
+    return _pyroB2Color;
+}
+
+QString SerialConfiguration::getPyroB3Color()
+{
+    return _pyroB3Color;
+}
+
+QString SerialConfiguration::getPyroB4Color()
+{
+    return _pyroB4Color;
+}
+
+QString SerialConfiguration::getPyroB5Color()
+{
+    return _pyroB5Color;
+}
+
 int SerialConfiguration::xDat()
 {
     return (rand() % 5) + 1;
@@ -401,6 +470,68 @@ void SerialConfiguration::coreDataUpdate()
     counter ++;
 
     emit coreDataReady();
+}
+
+void SerialConfiguration::pyroContDataUpdate()
+{
+    /* _pyroContDataList
+     *  0   1   2   3   4   5   6   7   5   9
+     *  A1  A2  A3  A4  A5  B1  B2  B3  B4  B5
+    */
+    if (_pyroContDataList[0].toInt() == 1){
+        _pyroA1Color = _pyroActivatedColor;
+    }else{
+        _pyroA1Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[1].toInt() == 1){
+        _pyroA2Color = _pyroActivatedColor;
+    }else{
+        _pyroA2Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[2].toInt() == 1){
+        _pyroA3Color = _pyroActivatedColor;
+    }else{
+        _pyroA3Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[3].toInt() == 1){
+        _pyroA4Color = _pyroActivatedColor;
+    }else{
+        _pyroA4Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[4].toInt() == 1){
+        _pyroA5Color = _pyroActivatedColor;
+    }else{
+        _pyroA5Color = _pyroDeactivatedColor;
+    }
+
+    if (_pyroContDataList[5].toInt() == 1){
+        _pyroB1Color = _pyroActivatedColor;
+    }else{
+        _pyroB1Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[6].toInt() == 1){
+        _pyroB2Color = _pyroActivatedColor;
+    }else{
+        _pyroB2Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[7].toInt() == 1){
+        _pyroB3Color = _pyroActivatedColor;
+    }else{
+        _pyroB3Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[8].toInt() == 1){
+        _pyroB4Color = _pyroActivatedColor;
+    }else{
+        _pyroB4Color = _pyroDeactivatedColor;
+    }
+    if (_pyroContDataList[9].toInt() == 1){
+        _pyroB5Color = _pyroActivatedColor;
+    }else{
+        _pyroB5Color = _pyroDeactivatedColor;
+    }
+
+    emit pyroContDataReady();
+
 }
 
 void SerialConfiguration::gpsDataUpdate()

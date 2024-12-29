@@ -39,7 +39,7 @@ Item {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: contains.mainBackgroundColor()
+        color: constants.mainBackgroundColor()
 
         GraphsView {
             id: graphGPS2D

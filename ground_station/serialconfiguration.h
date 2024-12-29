@@ -63,6 +63,17 @@ public slots:
     float getLonMinValue();
     float getLonMaxValue();
 
+    QString getPyroA1Color();
+    QString getPyroA2Color();
+    QString getPyroA3Color();
+    QString getPyroA4Color();
+    QString getPyroA5Color();
+    QString getPyroB1Color();
+    QString getPyroB2Color();
+    QString getPyroB3Color();
+    QString getPyroB4Color();
+    QString getPyroB5Color();
+
 
     // Not defined
     int xDat();
@@ -134,8 +145,25 @@ private:
     float _lonMaxValue;
     float _lonMinValue;
 
+    QList<QString> _pyroContDataList;
+    QString _pyroA1Color;
+    QString _pyroA2Color;
+    QString _pyroA3Color;
+    QString _pyroA4Color;
+    QString _pyroA5Color;
+    QString _pyroB1Color;
+    QString _pyroB2Color;
+    QString _pyroB3Color;
+    QString _pyroB4Color;
+    QString _pyroB5Color;
+
     void coreDataUpdate();
+    void pyroContDataUpdate();
     void gpsDataUpdate();
+
+    // Constants
+    QString _pyroActivatedColor = "green";
+    QString _pyroDeactivatedColor = "red";
 
 
     // Not defined
@@ -148,6 +176,8 @@ signals:
 
     void coreDataReady();
     void gpsDataReady();
+    void pyroContDataReady();
+
 
 
 };

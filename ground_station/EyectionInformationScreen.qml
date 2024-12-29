@@ -4,6 +4,24 @@ Item {
     width: parent.width
     height: parent.height
 
+    Connections{
+        target: serialConfig
+        function onPyroContDataReady(){
+            imgPyroA1.color = serialConfig.getPyroA1Color();
+            imgPyroA2.color = serialConfig.getPyroA2Color();
+            imgPyroA3.color = serialConfig.getPyroA3Color();
+            imgPyroA4.color = serialConfig.getPyroA4Color();
+            imgPyroA5.color = serialConfig.getPyroA5Color();
+            imgPyroB1.color = serialConfig.getPyroB1Color();
+            imgPyroB2.color = serialConfig.getPyroB2Color();
+            imgPyroB3.color = serialConfig.getPyroB3Color();
+            imgPyroB4.color = serialConfig.getPyroB4Color();
+            imgPyroB5.color = serialConfig.getPyroB5Color();
+
+
+        }
+    }
+
     Rectangle {
         width: parent.width
         height: parent.height
@@ -52,7 +70,7 @@ Item {
             id: imgPyroA1
             width: parent.height*0.065
             height: imgPyroA1.width
-            color: "#ff0000"
+            color: serialConfig.getPyroA1Color();
             radius: imgPyroA1.width/2
             anchors.top: txtCO2MainParachutte.bottom
             anchors.topMargin: parent.height*0.0522
@@ -64,7 +82,7 @@ Item {
             id: imgPyroA2
             width: imgPyroA1.width
             height: imgPyroA2.width
-            color: "#ff0000"
+            color: serialConfig.getPyroA2Color();
             radius: imgPyroA2.width/2
             anchors.top: imgPyroA1.bottom
             anchors.topMargin: parent.height*0.0522
@@ -92,6 +110,15 @@ Item {
             anchors.top: imgPyroA1.bottom
             anchors.leftMargin: parent.height*0.065
             anchors.topMargin: parent.height*-0.044
+
+            Text {
+                id: txtTempChamber1
+                text: qsTr("00.00")
+                anchors.fill: parent
+                font.pixelSize: parent.height*0.367
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
         }
 
         Rectangle {
@@ -102,6 +129,17 @@ Item {
             anchors.verticalCenter: imgChamberTemp1.verticalCenter
             anchors.left: imgChamberTemp1.right
             anchors.leftMargin: parent.height*0.078
+
+            Text {
+                id: txtTempChamber2
+                text: qsTr("00.00")
+                anchors.fill: parent
+                font.pixelSize: parent.height*0.367
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+
+
         }
 
         Text {
@@ -120,7 +158,7 @@ Item {
             id: imgPyroA3
             width: parent.height*0.065
             height: imgPyroA3.width
-            color: "#ff0000"
+            color: serialConfig.getPyroA3Color();
             radius: imgPyroA3.width/2
             anchors.top: txtCO2DrogueParachutte.bottom
             anchors.topMargin: parent.height*0.052
@@ -132,7 +170,7 @@ Item {
             id: imgPyroA4
             width: parent.height*0.065
             height: imgPyroA4.width
-            color: "#ff0000"
+            color: serialConfig.getPyroA4Color();
             radius: imgPyroA4.width/2
             anchors.top: imgPyroA3.bottom
             anchors.topMargin: parent.height*0.052
@@ -160,6 +198,15 @@ Item {
             anchors.top: imgPyroA3.bottom
             anchors.leftMargin: parent.height*0.065
             anchors.topMargin: parent.height*-0.044
+
+            Text {
+                id: txtTempChamber3
+                text: qsTr("00.00")
+                anchors.fill: parent
+                font.pixelSize: parent.height*0.367
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
         }
 
         Rectangle {
@@ -170,6 +217,15 @@ Item {
             anchors.verticalCenter: imgChamberTemp3.verticalCenter
             anchors.left: imgChamberTemp3.right
             anchors.leftMargin: parent.height*0.078
+
+            Text {
+                id: txtTempChamber4
+                text: qsTr("00.00")
+                anchors.fill: parent
+                font.pixelSize: parent.height*0.367
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
         }
 
         Text {
@@ -197,7 +253,7 @@ Item {
             id: imgPyroB1
             width: parent.height*0.065
             height: imgPyroB1.width
-            color: "#ff0000"
+            color: serialConfig.getPyroB1Color();
             radius: imgPyroB1.width/2
             anchors.verticalCenter: txtPyroB1.verticalCenter
             anchors.left: txtPyroB1.right
@@ -220,7 +276,7 @@ Item {
             id: imgPyroB2
             width: parent.height*0.065
             height: imgPyroB2.width
-            color: "#ff0000"
+            color: serialConfig.getPyroB2Color();
             radius: imgPyroB2.width/2
             anchors.verticalCenter: txtPyroB2.verticalCenter
             anchors.left: txtPyroB2.right
@@ -242,7 +298,7 @@ Item {
             id: imgPyroA5
             width: parent.height*0.065
             height: imgPyroA5.width
-            color: "#ff0000"
+            color: serialConfig.getPyroA5Color();
             radius: imgPyroA5.width/2
             anchors.verticalCenter: txtPyroA5.verticalCenter
             anchors.left: txtPyroA5.right
@@ -273,7 +329,7 @@ Item {
             id: imgPyroB3
             width: parent.height*0.065
             height: imgPyroB3.width
-            color: "#ff0000"
+            color:  serialConfig.getPyroB3Color();
             radius: imgPyroB3.width/2
             anchors.verticalCenter: txtPyroB3.verticalCenter
             anchors.left: txtPyroB3.right
@@ -296,7 +352,7 @@ Item {
             id: imgPyroB4
             width: parent.height*0.065
             height: imgPyroB4.width
-            color: "#ff0000"
+            color: serialConfig.getPyroB4Color();
             radius: imgPyroB4.width/2
             anchors.verticalCenter: txtPyroB4.verticalCenter
             anchors.left: txtPyroB4.right
@@ -318,7 +374,7 @@ Item {
             id: imgPyroB5
             width: parent.height*0.065
             height: imgPyroB5.width
-            color: "#ff0000"
+            color: serialConfig.getPyroB5Color();
             radius: imgPyroB5.width/2
             anchors.verticalCenter: txtPyroB5.verticalCenter
             anchors.left: txtPyroB5.right
