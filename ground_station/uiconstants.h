@@ -40,6 +40,8 @@ public slots:
     int appPredHeight();
 
     int buttonLateralSpacing();
+
+
 signals:
 };
 

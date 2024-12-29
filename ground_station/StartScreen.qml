@@ -96,9 +96,6 @@ Rectangle {
         }
 
         onActivated:{
-            console.log("Selected index: ",comboBox.currentIndex)
-            console.log("Selected text: ",comboBox.currentText)
-            console.log("Selected value: ",comboBox.currentValue)
             serialConfig.savePortConnection(comboBox.currentText)
 
         }

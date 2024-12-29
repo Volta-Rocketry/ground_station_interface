@@ -8,37 +8,42 @@ Item {
 
     Connections{
         target: serialConfig
-        function onCoreDataUpdated(){
+        function onCoreDataReady(){
             axisXGraphAltitude.max = serialConfig.actualTimeUTC()
             axisXGraphAltitude.min = serialConfig.prevTimeUTC()
-            axisYGraphAltitude.min =  serialConfig.getCoreDataItem(6) -5//graphUpdater.xDat() -10
-            axisYGraphAltitude.max = serialConfig.getCoreDataItem(6) +5
-            altitudeSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(6))
+            axisYGraphAltitude.min =  serialConfig.getCurrentAltMinValue() - 1
+            axisYGraphAltitude.max = serialConfig.getCurrentAltMaxValue() + 1
 
-            if (altitudeSeries.count> 11) {
+            axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
+
+            altitudeSeries.append(serialConfig.actualTime(),serialConfig.getLastCurrentAltValue())
+
+            if (altitudeSeries.count>serialConfig.getGraphsMaxMemory()+1) {
                 altitudeSeries.remove(0)  // Remove the first point (oldest)
             }
 
             axisXGraphAccel.max = serialConfig.actualTimeUTC()
             axisXGraphAccel.min = serialConfig.prevTimeUTC()
-            axisYGraphAccel.min = serialConfig.getCoreDataItem(0) -10
-            axisYGraphAccel.max = serialConfig.getCoreDataItem(0) +10
-            accelXSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(0))
-            accelYSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(1))
-            accelZSeries.append(serialConfig.actualTime(),serialConfig.getCoreDataItem(2))
+            axisYGraphAccel.min = serialConfig.getAbsAccelMinValue() - 1
+            axisYGraphAccel.max = serialConfig.getAbsAccelMaxValue() + 1
+            accelXSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelXValue())
+            accelYSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelYValue())
+            accelZSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelZValue())
 
-            if (accelXSeries.count> 10) {
+            if (accelXSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelXSeries.remove(0)  // Remove the first point (oldest)
             }
 
-            if (accelYSeries.count> 10) {
+            if (accelYSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelYSeries.remove(0)  // Remove the first point (oldest)
             }
 
 
-            if (accelZSeries.count> 10) {
+            if (accelZSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelZSeries.remove(0)  // Remove the first point (oldest)
             }
+
+            console.log("Entro aca")
         }
     }
 
@@ -59,15 +64,15 @@ Item {
             theme: GraphsTheme {
             backgroundVisible: false
 
-            grid.mainColor: constants.graphsGridMainColor()
+            grid.mainColor: "transparent"
+            gridVisible: false
             axisY.mainColor: constants.graphsGridMainColor()
             axisX.mainColor: constants.graphsGridMainColor()
-            grid.subColor: "blue"
 
             axisX.labelTextColor: constants.graphsTextMainColor()
             axisY.labelTextColor: constants.graphsTextMainColor()
 
-            plotAreaBackgroundColor : constants.mainBackgroundColor()
+            plotAreaBackgroundColor : "transparent"
             plotAreaBackgroundVisible: false
 
             seriesColors:["red", "blue","green"]
@@ -76,8 +81,7 @@ Item {
             axisX: ValueAxis {
                 id: axisXGraphAltitude
                 titleText: "Time (s)"
-                max: 10
-                tickInterval: 1
+                tickInterval: 5
             }
 
             axisY: ValueAxis {
@@ -102,27 +106,27 @@ Item {
             anchors.bottomMargin: 21
 
             theme: GraphsTheme {
-            backgroundVisible: false
+                backgroundVisible: false
 
-            grid.mainColor: constants.graphsGridMainColor()
-            axisY.mainColor: constants.graphsGridMainColor()
-            axisX.mainColor: constants.graphsGridMainColor()
-            grid.subColor: "blue"
+                grid.mainColor: "transparent"
+                gridVisible: false
+                axisY.mainColor: constants.graphsGridMainColor()
+                axisX.mainColor: constants.graphsGridMainColor()
 
-            axisX.labelTextColor: constants.graphsTextMainColor()
-            axisY.labelTextColor: constants.graphsTextMainColor()
+                axisX.labelTextColor: constants.graphsTextMainColor()
+                axisY.labelTextColor: constants.graphsTextMainColor()
 
-            plotAreaBackgroundColor : constants.mainBackgroundColor()
-            plotAreaBackgroundVisible: false
+                plotAreaBackgroundColor : "transparent"
+                plotAreaBackgroundVisible: false
 
-            seriesColors:["red", "blue","green"]
+                seriesColors:["red", "blue","green"]
             }
 
             axisX: ValueAxis {
                 id: axisXGraphAccel
                 titleText: "Time (s)"
                 max: 10
-                tickInterval: 1
+                tickInterval: 5
             }
 
             axisY: ValueAxis {
