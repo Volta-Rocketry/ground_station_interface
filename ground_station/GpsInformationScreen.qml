@@ -133,9 +133,8 @@ Item {
             id: txtLongitudeVal
             text: serialConfig.getNewerLonLastValue()
             anchors.verticalCenter: txtLatitudeVal.verticalCenter
-            anchors.left: txtLatitudeVal.right
-            anchors.leftMargin: parent.height*0.054
             font.pixelSize: parent.height*0.07
+            anchors.horizontalCenter: txtLongitude.horizontalCenter
         }
 
         Text {
@@ -151,10 +150,11 @@ Item {
         Text {
             id: txtLongitude
             text: qsTr("Longitude")
+            anchors.left: txtLatitude.right
             anchors.top: txtLongitudeVal.bottom
+            anchors.leftMargin: parent.height*0.16
             anchors.topMargin: parent.height*0.008
             font.pixelSize: parent.height*0.043
-            anchors.horizontalCenter: txtLongitudeVal.horizontalCenter
         }
     }
 }

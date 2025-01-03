@@ -9,12 +9,11 @@ SerialConfiguration::SerialConfiguration(QObject *parent)
     _serialBuffer = "";
 
     // ------
-    timer = new QTimer(this);
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &SerialConfiguration::emitUpdateInfo2Screen);
+    timer->start(100);
     // ------
     endConnection();
-
-    // ------
-    counter = 0;
 }
 
 QList<QString> SerialConfiguration::searchPortInfo()
@@ -139,6 +138,16 @@ void SerialConfiguration::endConnection()
     _chamber2TempColor = "blue";
     _chamber3TempColor = "blue";
     _chamber4TempColor = "blue";
+
+    _coreLastUpdatedTime = "00:00:00";
+    _gpsLastUpdatedTime = "00:00:00";
+    _pyroLastUpdatedTime = "00:00:00";
+    _chamberLastUpdatedTime = "00:00:00";
+
+    _coreLastUpdatedSeconds = 9999;
+    _gpsLastUpdatedSeconds = 9999;
+    _pyroLastUpdatedSeconds = 9999;
+    _chamberLastUpdatedSeconds = 9999;
 }
 
 void SerialConfiguration::serialClose()
@@ -487,6 +496,46 @@ QString SerialConfiguration::getChamber4TempColor()
     return _chamber4TempColor;
 }
 
+QString SerialConfiguration::getCoreLastUpdatedTime()
+{
+    return _coreLastUpdatedTime;
+}
+
+QString SerialConfiguration::getGpsLastUpdatedTime()
+{
+    return _gpsLastUpdatedTime;
+}
+
+QString SerialConfiguration::getPyroLastUpdatedTime()
+{
+    return _pyroLastUpdatedTime;
+}
+
+QString SerialConfiguration::getChamberLastUpdatedTime()
+{
+    return _chamberLastUpdatedTime;
+}
+
+QString SerialConfiguration::getCoreLastUpdatedSeconds()
+{
+    return QString::number(getCurrentTimeSFloat()-_coreLastUpdatedSeconds, 'f', 2);
+}
+
+QString SerialConfiguration::getGpsLastUpdatedSeconds()
+{
+    return QString::number(getCurrentTimeSFloat()-_gpsLastUpdatedSeconds, 'f', 2);
+}
+
+QString SerialConfiguration::getPyroLastUpdatedSeconds()
+{
+    return QString::number(getCurrentTimeSFloat()-_pyroLastUpdatedSeconds, 'f', 2);
+}
+
+QString SerialConfiguration::getChamberLastUpdatedSeconds()
+{
+    return QString::number(getCurrentTimeSFloat()-_chamberLastUpdatedSeconds, 'f', 2);
+}
+
 float SerialConfiguration::getCurrentTimeSFloat()
 {
     QDateTime dateTime = QDateTime::currentDateTimeUtc();
@@ -500,41 +549,33 @@ float SerialConfiguration::getCurrentTimeSFloat()
     return minutes * 60 + seconds + milliseconds / 1000.0;;
 }
 
-QString SerialConfiguration::getCurrentTimeMSmString()
+QString SerialConfiguration::getCurrentTimeMSmString(int format = 0)
 {
+    /* Format
+     * 0 = Minutes, seconds, miliseconds
+     * 1 = Hours, Minutes, Seconds, miliseconds
+     * 2 = Hours, Minutes, Seconds
+
+    */
     QDateTime dateTime = QDateTime::currentDateTimeUtc();
     qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
 
+    int hours = dateTime.time().hour();
     int minutes = dateTime.time().minute();
     int seconds = dateTime.time().second();
     int milliseconds = timestamp % 1000;
 
-    return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
-}
+    if (format == 0){
+        return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
+    }
 
-float SerialConfiguration::getPrevTimeSFloat()
-{
-    QDateTime dateTime = QDateTime::currentDateTimeUtc();
-    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+    if (format == 1){
+    return QString::asprintf("%02d:%02d:%02d:%03d", hours, minutes, seconds, milliseconds);
+    }
 
-    int minutes = dateTime.time().minute();
-    int seconds = dateTime.time().second()-20;
-    int milliseconds = timestamp % 1000;
-
-    // Convertir a segundos como número real
-    return minutes * 60 + seconds + milliseconds / 1000.0;;
-}
-
-QString SerialConfiguration::getPrevTimeMSmString()
-{
-    QDateTime dateTime = QDateTime::currentDateTimeUtc();
-    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
-
-    int minutes = dateTime.time().minute()-1;
-    int seconds = dateTime.time().second();
-    int milliseconds = timestamp % 1000;
-
-    return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
+    if (format == 2){
+        return QString::asprintf("%02d:%02d:%02d", hours, minutes, seconds);
+    }
 }
 
 
@@ -546,6 +587,11 @@ int SerialConfiguration::getGraphsMaxMemory()
 void SerialConfiguration::setGraphsMaxMemory(int memory)
 {
     _graphsMaxMemory = memory;
+}
+
+void SerialConfiguration::emitUpdateInfo2Screen()
+{
+    emit updateInfo2Screen();
 }
 
 void SerialConfiguration::coreDataUpdate()
@@ -617,8 +663,8 @@ void SerialConfiguration::coreDataUpdate()
     _pressureAltLastValue = _coreDataList[8].toFloat();
     _velLastValue = _coreDataList[9].toFloat();
 
-    // Speed
-    counter ++;
+    _coreLastUpdatedTime = getCurrentTimeMSmString(2);
+    _coreLastUpdatedSeconds = getCurrentTimeSFloat();
 
     emit coreDataReady();
 }
@@ -681,6 +727,9 @@ void SerialConfiguration::pyroContDataUpdate()
         _pyroB5Color = _pyroDeactivatedColor;
     }
 
+    _pyroLastUpdatedTime = getCurrentTimeMSmString(2);
+    _pyroLastUpdatedSeconds = getCurrentTimeSFloat();
+
     emit pyroContDataReady();
 
 }
@@ -729,6 +778,9 @@ void SerialConfiguration::chamberTempDataUpdate()
     b = static_cast<int>(255 * (1 - normalizeTemp));
     QColor color4(r,g,b);
     _chamber4TempColor = color4.name();
+
+    _chamberLastUpdatedTime = getCurrentTimeMSmString(2);
+    _chamberLastUpdatedSeconds = getCurrentTimeSFloat();
 
     emit chamberTempDataReady();
 
@@ -794,6 +846,9 @@ void SerialConfiguration::gpsDataUpdate()
         _lonMinValue = *min1;
         _lonMaxValue = *max1;
     }
+
+    _gpsLastUpdatedTime = getCurrentTimeMSmString(2);
+    _gpsLastUpdatedSeconds = getCurrentTimeSFloat();
 
     emit gpsDataReady();
 }

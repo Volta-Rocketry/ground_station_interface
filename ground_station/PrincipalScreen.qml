@@ -308,12 +308,12 @@ Item {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            anchors.leftMargin: parent.width*0.15
-            anchors.rightMargin: parent.width*0.15
+            anchors.leftMargin: parent.width*0.23
+            anchors.rightMargin: parent.width*0.23
             anchors.bottomMargin: -info2Section.height/2
 
             property real collapsedHeight: parent.height*0.1
-            property real expandedHeight: info2Section.width*0.3
+            property real expandedHeight: parent.height*0.5
             property bool isExpanded: false
 
             // Smooth height animation
@@ -327,7 +327,7 @@ Item {
             // Content inside the section
             Loader {
                 id: dynamicLoader
-                width: parent.width
+                width: parent.width                
                 source: "" // Initially empty
                 anchors.top: btnShowInfo2.bottom
                 anchors.bottom: parent.bottom
@@ -361,7 +361,7 @@ Item {
                        info2Section.height = info2Section.isExpanded ? info2Section.expandedHeight : info2Section.collapsedHeight;
 
                        if (info2Section.isExpanded) {
-                           dynamicLoader.source = "TestScreen.qml";
+                           dynamicLoader.source = "Info2Screen.qml";
                        } else {
                            dynamicLoader.source = ""; // Unload content to save memory
                        }

@@ -85,15 +85,25 @@ public slots:
     QString getChamber3TempColor();
     QString getChamber4TempColor();
 
+    QString getCoreLastUpdatedTime();
+    QString getGpsLastUpdatedTime();
+    QString getPyroLastUpdatedTime();
+    QString getChamberLastUpdatedTime();
+
+    QString getCoreLastUpdatedSeconds();
+    QString getGpsLastUpdatedSeconds();
+    QString getPyroLastUpdatedSeconds();
+    QString getChamberLastUpdatedSeconds();
+
     float getCurrentTimeSFloat();
-    QString getCurrentTimeMSmString();
-    float getPrevTimeSFloat();
-    QString getPrevTimeMSmString();
+    QString getCurrentTimeMSmString(int format);
 
     // Not defined
     int getGraphsMaxMemory();
     void setGraphsMaxMemory(int memory);
 
+private slots:
+    void emitUpdateInfo2Screen();
 
 private:
     // MCU Search and connection
@@ -180,6 +190,16 @@ private:
     QString _chamber3TempColor;
     QString _chamber4TempColor;
 
+    QString _coreLastUpdatedTime = "00:00:00";
+    QString _gpsLastUpdatedTime = "00:00:00";
+    QString _pyroLastUpdatedTime = "00:00:00";
+    QString _chamberLastUpdatedTime = "00:00:00";
+
+    float _coreLastUpdatedSeconds = 9999;
+    float _gpsLastUpdatedSeconds = 9999;
+    float _pyroLastUpdatedSeconds = 9999;
+    float _chamberLastUpdatedSeconds = 9999;
+
     void coreDataUpdate();
     void pyroContDataUpdate();
     void chamberTempDataUpdate();
@@ -197,7 +217,6 @@ private:
 
 
     // Not defined
-    int counter;
     int _graphsMaxMemory = 10;
 
 signals:
@@ -208,6 +227,8 @@ signals:
     void gpsDataReady();
     void pyroContDataReady();
     void chamberTempDataReady();
+
+    void updateInfo2Screen();
 
 
 
