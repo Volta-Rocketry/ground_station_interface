@@ -185,7 +185,7 @@ Item {
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
                 onClicked: {
-                    loader.source = "GeneralInformationScreen.qml"
+                    loader.source = "Info1Screen.qml"
                     btnBackgroundGoMotionInformationScreen.color = "transparent"
                     btnBackgroundGoGpsInformationScreen.color = "transparent"
                     btnBackgroundGoEyectionInformationScreen.color = "transparent"
@@ -231,7 +231,7 @@ Item {
         Rectangle {
             id: info1Section
             width: parent.height*0.1
-            color: "#000000"
+            color: constants.mainBackgroundColor()
             radius: 23
             anchors.right: parent.right
             anchors.top: parent.top
@@ -289,7 +289,7 @@ Item {
                        info1Section.width = info1Section.isExpanded ? info1Section.expandedWidth : info1Section.collapsedWidth;
 
                        if (info1Section.isExpanded) {
-                           dynamicLoader1.source = "TestScreen.qml";
+                           dynamicLoader1.source = "Info1Screen.qml";
                        } else {
                            dynamicLoader1.source = ""; // Unload content to save memory
                        }
@@ -303,7 +303,7 @@ Item {
             id: info2Section
             x: parent.width/2 - info2Section.width/2
             height: parent.height*0.1
-            color: "#000000"
+            color: constants.mainBackgroundColor()
             radius: 15
             anchors.left: parent.left
             anchors.right: parent.right

@@ -7,6 +7,8 @@ Item {
     Connections{
         target: serialConfig
         function onPyroContDataReady(){
+
+            txtAltitude.text = serialConfig.getLastCurrentAltValue()
             imgPyroA1.color = serialConfig.getPyroA1Color();
             imgPyroA2.color = serialConfig.getPyroA2Color();
             imgPyroA3.color = serialConfig.getPyroA3Color();
@@ -17,8 +19,16 @@ Item {
             imgPyroB3.color = serialConfig.getPyroB3Color();
             imgPyroB4.color = serialConfig.getPyroB4Color();
             imgPyroB5.color = serialConfig.getPyroB5Color();
-
-
+        }
+        function onChamberTempDataReady(){
+            imgChamberTemp1.color = serialConfig.getChamber1TempColor()
+            txtTempChamber1.text = serialConfig.getChamber1TempValue()
+            imgChamberTemp2.color = serialConfig.getChamber2TempColor()
+            txtTempChamber2.text = serialConfig.getChamber2TempValue()
+            imgChamberTemp3.color = serialConfig.getChamber3TempColor()
+            txtTempChamber3.text = serialConfig.getChamber3TempValue()
+            imgChamberTemp4.color = serialConfig.getChamber4TempColor()
+            txtTempChamber4.text = serialConfig.getChamber4TempValue()
         }
     }
 
@@ -105,7 +115,7 @@ Item {
             id: imgChamberTemp1
             width: parent.height*0.131
             height: imgChamberTemp1.width
-            color: "#000bff"
+            color: serialConfig.getChamber1TempColor();
             anchors.left: imgPyroA1.right
             anchors.top: imgPyroA1.bottom
             anchors.leftMargin: parent.height*0.065
@@ -113,7 +123,7 @@ Item {
 
             Text {
                 id: txtTempChamber1
-                text: qsTr("00.00")
+                text: serialConfig.getChamber1TempValue();
                 anchors.fill: parent
                 font.pixelSize: parent.height*0.367
                 horizontalAlignment: Text.AlignHCenter
@@ -125,14 +135,14 @@ Item {
             id: imgChamberTemp2
             width: imgChamberTemp1.width
             height: imgChamberTemp2.width
-            color: "#000bff"
+            color:  serialConfig.getChamber2TempColor();
             anchors.verticalCenter: imgChamberTemp1.verticalCenter
             anchors.left: imgChamberTemp1.right
             anchors.leftMargin: parent.height*0.078
 
             Text {
                 id: txtTempChamber2
-                text: qsTr("00.00")
+                text:  serialConfig.getChamber2TempValue();
                 anchors.fill: parent
                 font.pixelSize: parent.height*0.367
                 horizontalAlignment: Text.AlignHCenter
@@ -193,7 +203,7 @@ Item {
             id: imgChamberTemp3
             width: parent.height*0.131
             height: imgChamberTemp3.width
-            color: "#000bff"
+            color: serialConfig.getChamber3TempColor()
             anchors.left: imgPyroA3.right
             anchors.top: imgPyroA3.bottom
             anchors.leftMargin: parent.height*0.065
@@ -201,7 +211,7 @@ Item {
 
             Text {
                 id: txtTempChamber3
-                text: qsTr("00.00")
+                text: serialConfig.getChamber3TempValue()
                 anchors.fill: parent
                 font.pixelSize: parent.height*0.367
                 horizontalAlignment: Text.AlignHCenter
@@ -213,14 +223,14 @@ Item {
             id: imgChamberTemp4
             width: parent.height*0.131
             height: imgChamberTemp4.width
-            color: "#000bff"
+            color: serialConfig.getChamber4TempColor()
             anchors.verticalCenter: imgChamberTemp3.verticalCenter
             anchors.left: imgChamberTemp3.right
             anchors.leftMargin: parent.height*0.078
 
             Text {
                 id: txtTempChamber4
-                text: qsTr("00.00")
+                text: serialConfig.getChamber4TempValue()
                 anchors.fill: parent
                 font.pixelSize: parent.height*0.367
                 horizontalAlignment: Text.AlignHCenter
@@ -404,7 +414,7 @@ Item {
 
         Text {
             id: txtAltitude
-            text: qsTr("3500")
+            text: serialConfig.getLastCurrentAltValue()
             anchors.verticalCenter: txtCurrentAltitude.verticalCenter
             anchors.left: txtCurrentAltitude.right
             anchors.leftMargin: parent.height*0.039

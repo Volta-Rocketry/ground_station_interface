@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QDebug>
 #include <QDateTime>
+#include <QColor>
 
 #include "uiconstants.h"
 
@@ -21,7 +22,7 @@ public slots:
     QList<QString> searchPortInfo();
     void savePortConnection(QString portName);
     void microcontrollerConnection();
-    void serialClose();
+    void endConnection();
 
     // MCU Data recieve and send
     void serialRead();
@@ -74,6 +75,18 @@ public slots:
     QString getPyroB4Color();
     QString getPyroB5Color();
 
+    float getChamber1TempValue();
+    float getChamber2TempValue();
+    float getChamber3TempValue();
+    float getChamber4TempValue();
+
+    QString getChamber1TempColor();
+    QString getChamber2TempColor();
+    QString getChamber3TempColor();
+    QString getChamber4TempColor();
+
+
+
 
     // Not defined
     int xDat();
@@ -98,6 +111,8 @@ private:
 
     bool _microcontrollerFoundOnConnection;
     bool _microcontrollerConnected;
+
+    void serialClose();
 
     // MCU Data recieve and send
     QByteArray _serialData;
@@ -157,13 +172,33 @@ private:
     QString _pyroB4Color;
     QString _pyroB5Color;
 
+    QList<QString> _chamberTempDataList;
+    float _chamber1TempValue;
+    float _chamber2TempValue;
+    float _chamber3TempValue;
+    float _chamber4TempValue;
+
+    QString _chamber1TempColor;
+    QString _chamber2TempColor;
+    QString _chamber3TempColor;
+    QString _chamber4TempColor;
+
     void coreDataUpdate();
     void pyroContDataUpdate();
+    void chamberTempDataUpdate();
+
     void gpsDataUpdate();
+
+
 
     // Constants
     QString _pyroActivatedColor = "green";
     QString _pyroDeactivatedColor = "red";
+
+    float _chamberMinPredictedTemp = 0;
+    float _chamberMaxPredictedTemp = 50;
+
+
 
 
     // Not defined
@@ -177,6 +212,8 @@ signals:
     void coreDataReady();
     void gpsDataReady();
     void pyroContDataReady();
+    void chamberTempDataReady();
+
 
 
 

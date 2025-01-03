@@ -9,6 +9,11 @@ Item {
     Connections{
         target: serialConfig
         function onGpsDataReady(){
+
+            txtLatitudeVal.text = serialConfig.getNewerLatLastValue()
+            txtLongitudeVal.text = serialConfig.getNewerLonLastValue()
+
+
             axisXGraphGPS2D.max = serialConfig.getLonMaxValue() +1 //Lon
             axisXGraphGPS2D.min = serialConfig.getLonMinValue() -1
             axisYGraphGPS2D.min =  serialConfig.getLatMinValue() - 1
@@ -109,7 +114,7 @@ Item {
             id: graph2
             width: parent.height*0.67
             height: graph2.width
-            color: "#000000"
+            color: serialConfig.getNewerLatLastValue()
             anchors.verticalCenter: graphGPS2D.verticalCenter
             anchors.left: graphGPS2D.right
             anchors.leftMargin: parent.height*0.134
@@ -126,7 +131,7 @@ Item {
 
         Text {
             id: txtLongitudeVal
-            text: qsTr("00000000")
+            text: serialConfig.getNewerLonLastValue()
             anchors.verticalCenter: txtLatitudeVal.verticalCenter
             anchors.left: txtLatitudeVal.right
             anchors.leftMargin: parent.height*0.054

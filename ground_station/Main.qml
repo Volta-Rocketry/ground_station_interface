@@ -55,6 +55,7 @@ ApplicationWindow {
                screenLoader.source = "StartScreen.qml"
                btnConnect.visible = true
                btnSettings.visible = false
+               serialConfig.endConnection()
            }
        }
     }

@@ -11,17 +11,8 @@ SerialConfiguration::SerialConfiguration(QObject *parent)
     // ------
     timer = new QTimer(this);
     // ------
-    _pyroA1Color = _pyroDeactivatedColor;
-    _pyroA2Color = _pyroDeactivatedColor;
-    _pyroA3Color = _pyroDeactivatedColor;
-    _pyroA4Color = _pyroDeactivatedColor;
-    _pyroA5Color = _pyroDeactivatedColor;
+    endConnection();
 
-    _pyroB1Color = _pyroDeactivatedColor;
-    _pyroB2Color = _pyroDeactivatedColor;
-    _pyroB3Color = _pyroDeactivatedColor;
-    _pyroB4Color = _pyroDeactivatedColor;
-    _pyroB5Color = _pyroDeactivatedColor;
     // ------
     counter = 0;
 }
@@ -95,6 +86,32 @@ void SerialConfiguration::microcontrollerConnection()
     }        
 }
 
+void SerialConfiguration::endConnection()
+{
+    serialClose();
+    _pyroA1Color = _pyroDeactivatedColor;
+    _pyroA2Color = _pyroDeactivatedColor;
+    _pyroA3Color = _pyroDeactivatedColor;
+    _pyroA4Color = _pyroDeactivatedColor;
+    _pyroA5Color = _pyroDeactivatedColor;
+
+    _pyroB1Color = _pyroDeactivatedColor;
+    _pyroB2Color = _pyroDeactivatedColor;
+    _pyroB3Color = _pyroDeactivatedColor;
+    _pyroB4Color = _pyroDeactivatedColor;
+    _pyroB5Color = _pyroDeactivatedColor;
+
+    _chamber1TempValue = _chamberMinPredictedTemp;
+    _chamber2TempValue = _chamberMinPredictedTemp;
+    _chamber3TempValue = _chamberMinPredictedTemp;
+    _chamber4TempValue = _chamberMinPredictedTemp;
+
+    _chamber1TempColor = "blue";
+    _chamber2TempColor = "blue";
+    _chamber3TempColor = "blue";
+    _chamber4TempColor = "blue";
+}
+
 void SerialConfiguration::serialClose()
 {
     _MCU->close();
@@ -141,6 +158,15 @@ void SerialConfiguration::serialRead()
 
             _pyroContDataList = data;
             pyroContDataUpdate();
+        }else if(cat == 3){
+
+            qDebug() << "Chamber temp";
+            data.removeFirst();
+            data.removeFirst();
+            data.removeLast();
+
+            _chamberTempDataList = data;
+            chamberTempDataUpdate();
         }else if(cat == 6){
             data.removeFirst();
             data.removeFirst();
@@ -360,6 +386,46 @@ QString SerialConfiguration::getPyroB5Color()
     return _pyroB5Color;
 }
 
+float SerialConfiguration::getChamber1TempValue()
+{
+    return _chamber1TempValue;
+}
+
+float SerialConfiguration::getChamber2TempValue()
+{
+    return _chamber2TempValue;
+}
+
+float SerialConfiguration::getChamber3TempValue()
+{
+    return _chamber3TempValue;
+}
+
+float SerialConfiguration::getChamber4TempValue()
+{
+    return _chamber4TempValue;
+}
+
+QString SerialConfiguration::getChamber1TempColor()
+{
+    return _chamber1TempColor;
+}
+
+QString SerialConfiguration::getChamber2TempColor()
+{
+    return _chamber2TempColor;
+}
+
+QString SerialConfiguration::getChamber3TempColor()
+{
+    return _chamber3TempColor;
+}
+
+QString SerialConfiguration::getChamber4TempColor()
+{
+    return _chamber4TempColor;
+}
+
 int SerialConfiguration::xDat()
 {
     return (rand() % 5) + 1;
@@ -531,6 +597,60 @@ void SerialConfiguration::pyroContDataUpdate()
     }
 
     emit pyroContDataReady();
+
+}
+
+void SerialConfiguration::chamberTempDataUpdate()
+{
+    /* _chamberTempDataList
+     *  0   1   2   3
+     *  Ch1 Ch2 Ch3 Ch4
+    */
+
+    _chamber1TempValue = _chamberTempDataList[0].toFloat();
+    _chamber2TempValue = _chamberTempDataList[1].toFloat();
+    _chamber3TempValue = _chamberTempDataList[2].toFloat();
+    _chamber4TempValue = _chamberTempDataList[3].toFloat();
+
+    float normalizeTemp = (_chamber1TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+
+    int r,g,b;
+
+    r = static_cast<int>(255 * normalizeTemp);
+    g = 0;
+    b = static_cast<int>(255 * (1 - normalizeTemp));
+
+    QColor color(r,g,b);
+
+    _chamber1TempColor = color.name();
+
+    normalizeTemp = (_chamber2TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+    r = static_cast<int>(255 * normalizeTemp);
+    g = 0;
+    b = static_cast<int>(255 * (1 - normalizeTemp));
+   QColor color2(r,g,b);
+    _chamber2TempColor = color2.name();
+
+    normalizeTemp = (_chamber3TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+    r = static_cast<int>(255 * normalizeTemp);
+    g = 0;
+    b = static_cast<int>(255 * (1 - normalizeTemp));
+    QColor color3(r,g,b);
+    _chamber3TempColor = color3.name();
+
+    normalizeTemp = (_chamber4TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+    r = static_cast<int>(255 * normalizeTemp);
+    g = 0;
+    b = static_cast<int>(255 * (1 - normalizeTemp));
+    QColor color4(r,g,b);
+    _chamber4TempColor = color4.name();
+
+    qDebug() << _chamber1TempValue <<_chamber1TempColor;
+    qDebug() << _chamber2TempValue <<_chamber2TempColor;
+    qDebug() << _chamber3TempValue <<_chamber3TempColor;
+    qDebug() << _chamber4TempValue <<_chamber4TempColor;
+
+    emit chamberTempDataReady();
 
 }
 
