@@ -9,42 +9,37 @@ Item {
     Connections{
         target: serialConfig
         function onCoreDataReady(){
-            axisXGraphAltitude.max = serialConfig.actualTimeUTC()
-            axisXGraphAltitude.min = serialConfig.prevTimeUTC()
+            axisXGraphAltitude.max = serialConfig.getCurrentTimeSFloat()
             axisYGraphAltitude.min =  serialConfig.getCurrentAltMinValue() - 1
             axisYGraphAltitude.max = serialConfig.getCurrentAltMaxValue() + 1
 
-            //axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
+            axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
 
-            altitudeSeries.append(serialConfig.actualTime(),serialConfig.getLastCurrentAltValue())
+            altitudeSeries.append(serialConfig.getCurrentTimeSFloat(),serialConfig.getLastCurrentAltValue())
 
             if (altitudeSeries.count>serialConfig.getGraphsMaxMemory()+1) {
                 altitudeSeries.remove(0)  // Remove the first point (oldest)
             }
+            axisXGraphAltitude.min = altitudeSeries.at(0).x
 
-            axisXGraphAccel.max = serialConfig.actualTimeUTC()
-            axisXGraphAccel.min = serialConfig.prevTimeUTC()
+            axisXGraphAccel.max = serialConfig.getCurrentTimeSFloat()
             axisYGraphAccel.min = serialConfig.getAbsAccelMinValue() - 1
             axisYGraphAccel.max = serialConfig.getAbsAccelMaxValue() + 1
-            accelXSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelXValue())
-            accelYSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelYValue())
-            accelZSeries.append(serialConfig.actualTime(),serialConfig.getLastAccelZValue())
+            accelXSeries.append(serialConfig.getCurrentTimeSFloat(),serialConfig.getLastAccelXValue())
+            accelYSeries.append(serialConfig.getCurrentTimeSFloat(),serialConfig.getLastAccelYValue())
+            accelZSeries.append(serialConfig.getCurrentTimeSFloat(),serialConfig.getLastAccelZValue())
 
-            //axisYGraphAccel.tickInterval = (serialConfig.getAbsAccelMaxValue() - serialConfig.getAbsAccelMinValue()) /5
-
-
+            axisYGraphAccel.tickInterval = (serialConfig.getAbsAccelMaxValue() - serialConfig.getAbsAccelMinValue()) /5
             if (accelXSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelXSeries.remove(0)  // Remove the first point (oldest)
             }
-
             if (accelYSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelYSeries.remove(0)  // Remove the first point (oldest)
             }
-
-
             if (accelZSeries.count> serialConfig.getGraphsMaxMemory()+1) {
                 accelZSeries.remove(0)  // Remove the first point (oldest)
             }
+            axisXGraphAccel.min = accelXSeries.at(0).x
         }
     }
 
@@ -87,6 +82,7 @@ Item {
             axisY: ValueAxis {
                 id: axisYGraphAltitude
                 titleText: "Altitude (m)"
+                labelFormat: "%02d:%02d:%03d"
             }
 
             LineSeries {
@@ -124,8 +120,6 @@ Item {
             axisX: ValueAxis {
                 id: axisXGraphAccel
                 titleText: "Time (s)"
-                max: 10
-                tickInterval: 5
             }
 
             axisY: ValueAxis {

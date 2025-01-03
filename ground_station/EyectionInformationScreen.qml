@@ -7,8 +7,6 @@ Item {
     Connections{
         target: serialConfig
         function onPyroContDataReady(){
-
-            txtAltitude.text = serialConfig.getLastCurrentAltValue()
             imgPyroA1.color = serialConfig.getPyroA1Color();
             imgPyroA2.color = serialConfig.getPyroA2Color();
             imgPyroA3.color = serialConfig.getPyroA3Color();
@@ -29,6 +27,9 @@ Item {
             txtTempChamber3.text = serialConfig.getChamber3TempValue()
             imgChamberTemp4.color = serialConfig.getChamber4TempColor()
             txtTempChamber4.text = serialConfig.getChamber4TempValue()
+        }
+        function onCoreDataReady(){
+            txtAltitude.text = serialConfig.getLastCurrentAltValue()
         }
     }
 

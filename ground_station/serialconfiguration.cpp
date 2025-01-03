@@ -89,6 +89,33 @@ void SerialConfiguration::microcontrollerConnection()
 void SerialConfiguration::endConnection()
 {
     serialClose();
+    _portDescriptionIntendedConnection = "None";
+
+    _coreDataList.clear();
+
+    _accelXDataListFloat.clear();
+    _accelYDataListFloat.clear();
+    _accelZDataListFloat.clear();
+
+    _angleXLastValue = 0;
+    _angleYLastValue = 0;
+    _angleZLastValue = 0;
+
+    _currentAltDataListFloat.clear();
+
+    _apogeeAltLastValue = 0.0;
+    _pressureAltLastValue = 0.0;
+    _velLastValue = 0.0;
+
+    _gpsDataList.clear();
+
+    _newerLatValueList.clear();
+    _olderLatValueList.clear();
+    _newerLonValueList.clear();
+    _olderLonValueList.clear();
+
+    _pyroContDataList.clear();
+
     _pyroA1Color = _pyroDeactivatedColor;
     _pyroA2Color = _pyroDeactivatedColor;
     _pyroA3Color = _pyroDeactivatedColor;
@@ -100,6 +127,8 @@ void SerialConfiguration::endConnection()
     _pyroB3Color = _pyroDeactivatedColor;
     _pyroB4Color = _pyroDeactivatedColor;
     _pyroB5Color = _pyroDeactivatedColor;
+
+    _chamberTempDataList.clear();
 
     _chamber1TempValue = _chamberMinPredictedTemp;
     _chamber2TempValue = _chamberMinPredictedTemp;
@@ -160,7 +189,6 @@ void SerialConfiguration::serialRead()
             pyroContDataUpdate();
         }else if(cat == 3){
 
-            qDebug() << "Chamber temp";
             data.removeFirst();
             data.removeFirst();
             data.removeLast();
@@ -228,17 +256,29 @@ float SerialConfiguration::getGPSDataItem(int pos)
 
 float SerialConfiguration::getLastAccelXValue()
 {
-    return _accelXDataListFloat.last();
+    if (_accelXDataListFloat.count()>0){
+        return _accelXDataListFloat.last();
+    }else{
+        return 0.0;
+    }
 }
 
 float SerialConfiguration::getLastAccelYValue()
 {
-    return _accelYDataListFloat.last();
+    if (_accelYDataListFloat.count()>0){
+        return _accelYDataListFloat.last();
+    }else{
+        return 0.0;
+    }
 }
 
 float SerialConfiguration::getLastAccelZValue()
 {
+    if(_accelZDataListFloat.count()>0){
     return _accelZDataListFloat.last();
+    }else{
+        return 0.0;
+    }
 }
 
 float SerialConfiguration::getAbsAccelMinValue()
@@ -268,7 +308,12 @@ float SerialConfiguration::getAngleZLastValue()
 
 float SerialConfiguration::getLastCurrentAltValue()
 {
-    return _currentAltDataListFloat.last();
+    if(_currentAltDataListFloat.count()>0){
+        return _currentAltDataListFloat.last();
+    }else{
+        return 0;
+    }
+
 }
 
 float SerialConfiguration::getCurrentAltMinValue()
@@ -298,22 +343,38 @@ float SerialConfiguration::getVelLastValue()
 
 float SerialConfiguration::getNewerLatLastValue()
 {
-    return _newerLatValueList.last();
+    if(_newerLatValueList.count()>0){
+        return _newerLatValueList.last();
+    }else{
+        return 0.0;
+    }
 }
 
 float SerialConfiguration::getOlderLatLastValue()
 {
-    return _olderLatValueList.last();
+    if(_olderLatValueList.count()>0){
+        return _olderLatValueList.last();
+    }else{
+        return 0.0;
+    }
 }
 
 float SerialConfiguration::getNewerLonLastValue()
 {
-    return _newerLonValueList.last();
+    if(_newerLonValueList.count()>0){
+        return _newerLonValueList.last();
+    }else{
+        return 0;
+    }
 }
 
 float SerialConfiguration::getOlderLonLastValue()
 {
-    return _olderLonValueList.last();
+    if(_olderLonValueList.count()>0){
+        return _olderLonValueList.last();
+    }else{
+        return 0;
+    }
 }
 
 float SerialConfiguration::getLatMinValue()
@@ -426,32 +487,56 @@ QString SerialConfiguration::getChamber4TempColor()
     return _chamber4TempColor;
 }
 
-int SerialConfiguration::xDat()
+float SerialConfiguration::getCurrentTimeSFloat()
 {
-    return (rand() % 5) + 1;
+    QDateTime dateTime = QDateTime::currentDateTimeUtc();
+    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+
+    int minutes = dateTime.time().minute();
+    int seconds = dateTime.time().second();
+    int milliseconds = timestamp % 1000;
+
+    // Convertir a segundos como número real
+    return minutes * 60 + seconds + milliseconds / 1000.0;;
 }
 
-int SerialConfiguration::actualTimeUTC()
+QString SerialConfiguration::getCurrentTimeMSmString()
 {
-    //qint64 timestamp = QDateTime::currentMSecsSinceEpoch(); // Current timestamp in milliseconds
-    //double doubleTimestamp = static_cast<double>(timestamp);  // Cast to double
-    //return doubleTimestamp;
-    return counter;
+    QDateTime dateTime = QDateTime::currentDateTimeUtc();
+    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+
+    int minutes = dateTime.time().minute();
+    int seconds = dateTime.time().second();
+    int milliseconds = timestamp % 1000;
+
+    return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
 }
 
-int SerialConfiguration::prevTimeUTC()
+float SerialConfiguration::getPrevTimeSFloat()
 {
-    //qint64 timestamp = QDateTime::currentMSecsSinceEpoch(); // Current timestamp in milliseconds
-    //double doubleTimestamp = static_cast<double>(timestamp -60000.0);  // Cast to double
-    //return doubleTimestamp;  // Subtract 1 minute (60000 ms) as double
-    return counter - _graphsMaxMemory;
+    QDateTime dateTime = QDateTime::currentDateTimeUtc();
+    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+
+    int minutes = dateTime.time().minute();
+    int seconds = dateTime.time().second()-20;
+    int milliseconds = timestamp % 1000;
+
+    // Convertir a segundos como número real
+    return minutes * 60 + seconds + milliseconds / 1000.0;;
 }
-int SerialConfiguration::actualTime()
+
+QString SerialConfiguration::getPrevTimeMSmString()
 {
-    //timestamp = QDateTime::currentMSecsSinceEpoch();
-    //return timestamp;
-    return counter;
+    QDateTime dateTime = QDateTime::currentDateTimeUtc();
+    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+
+    int minutes = dateTime.time().minute()-1;
+    int seconds = dateTime.time().second();
+    int milliseconds = timestamp % 1000;
+
+    return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
 }
+
 
 int SerialConfiguration::getGraphsMaxMemory()
 {
@@ -644,11 +729,6 @@ void SerialConfiguration::chamberTempDataUpdate()
     b = static_cast<int>(255 * (1 - normalizeTemp));
     QColor color4(r,g,b);
     _chamber4TempColor = color4.name();
-
-    qDebug() << _chamber1TempValue <<_chamber1TempColor;
-    qDebug() << _chamber2TempValue <<_chamber2TempColor;
-    qDebug() << _chamber3TempValue <<_chamber3TempColor;
-    qDebug() << _chamber4TempValue <<_chamber4TempColor;
 
     emit chamberTempDataReady();
 

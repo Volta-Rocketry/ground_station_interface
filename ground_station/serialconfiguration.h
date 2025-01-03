@@ -85,15 +85,12 @@ public slots:
     QString getChamber3TempColor();
     QString getChamber4TempColor();
 
-
-
+    float getCurrentTimeSFloat();
+    QString getCurrentTimeMSmString();
+    float getPrevTimeSFloat();
+    QString getPrevTimeMSmString();
 
     // Not defined
-    int xDat();
-    int actualTimeUTC();
-    int prevTimeUTC();
-    int actualTime();
-
     int getGraphsMaxMemory();
     void setGraphsMaxMemory(int memory);
 
@@ -135,18 +132,18 @@ private:
     float _accelAbsMaxValue;
     float _accelAbsMinValue;
 
-    float _angleXLastValue;
-    float _angleYLastValue;
-    float _angleZLastValue;
+    float _angleXLastValue = 0.0;
+    float _angleYLastValue = 0.0;
+    float _angleZLastValue = 0.0;
 
     QList<float> _currentAltDataListFloat;
     float _currentAltMinListValue;
     float _currentAltMaxListValue;
 
-    float _apogeeAltLastValue;
-    float _pressureAltLastValue;
+    float _apogeeAltLastValue = 0.0;
+    float _pressureAltLastValue = 0.0;
 
-    float _velLastValue;
+    float _velLastValue = 0.0;
 
     QList<QString> _gpsDataList;
 
@@ -189,8 +186,6 @@ private:
 
     void gpsDataUpdate();
 
-
-
     // Constants
     QString _pyroActivatedColor = "green";
     QString _pyroDeactivatedColor = "red";
@@ -203,7 +198,7 @@ private:
 
     // Not defined
     int counter;
-    int _graphsMaxMemory = 100;
+    int _graphsMaxMemory = 10;
 
 signals:
     void microcontrollerConnectionStatus(bool status);

@@ -114,7 +114,7 @@ Item {
             id: graph2
             width: parent.height*0.67
             height: graph2.width
-            color: serialConfig.getNewerLatLastValue()
+            color: "black"
             anchors.verticalCenter: graphGPS2D.verticalCenter
             anchors.left: graphGPS2D.right
             anchors.leftMargin: parent.height*0.134
@@ -140,7 +140,7 @@ Item {
 
         Text {
             id: txtLatitudeVal
-            text: qsTr("00000000")
+            text: serialConfig.getNewerLatLastValue()
             anchors.top: graphGPS2D.bottom
             anchors.topMargin: parent.height*0.04
             font.pixelSize: parent.height*0.07
