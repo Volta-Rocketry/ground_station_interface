@@ -7,11 +7,16 @@ Item {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: "yellow"
+        color: constants.mainBackgroundColor()
+
 
         Text {
-            anchors.centerIn: parent
-            text: "This is Comunication Information Screen"
+            text: qsTr("Soon")
+            anchors.fill: parent
+            font.pixelSize: 72
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            font.italic: true
         }
     }
 }

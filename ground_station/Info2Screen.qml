@@ -7,7 +7,6 @@ Item {
     Connections{
         target: serialConfig
         function onUpdateInfo2Screen(){
-            console.log("Entro")
             txtValueTimeCore.text = serialConfig.getCoreLastUpdatedTime()
             txtValueTimeGps.text = serialConfig.getGpsLastUpdatedTime()
             txtValueTimePyro.text = serialConfig.getPyroLastUpdatedTime()

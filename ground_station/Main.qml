@@ -21,31 +21,34 @@ ApplicationWindow {
 
     // ------------------- Buttons to change screens -------------------
 
+
     Button {
         id: btnConnect
         text: qsTr("Connect")
-        anchors.left: parent.horizontalCenter
+        width: parent.height*0.417
+        height: parent.height*0.167
         anchors.bottom: parent.bottom
-        anchors.leftMargin: -btnConnect.width/2
-        anchors.topMargin: 250
+        anchors.bottomMargin: parent.height*0.021
+        anchors.horizontalCenter: parent.horizontalCenter
         onClicked: {
             screenLoader.source = "PrincipalScreen.qml"
             btnConnect.visible = false
-            btnSettings.visible = true
+            btnGoBack.visible = true
             serialConfig.microcontrollerConnection()
         }
     }
 
-    Rectangle {
-        id: btnSettings
-        width: 50
-        height: btnSettings.width
-        color: "green"
-        radius: btnSettings.width/2
+
+    Image {
+        id: btnGoBack
+        width: parent.height*0.073
+        height: btnGoBack.width
         anchors.right: parent.right
         anchors.top: parent.top
-        anchors.rightMargin: 10
-        anchors.topMargin: 10
+        anchors.rightMargin: parent.height*0.031
+        anchors.topMargin: parent.height*0.031
+        source: "assets/images/go_back"
+        fillMode: Image.PreserveAspectFit
 
         visible: false
 
@@ -54,7 +57,7 @@ ApplicationWindow {
            onClicked: {
                screenLoader.source = "StartScreen.qml"
                btnConnect.visible = true
-               btnSettings.visible = false
+               btnGoBack.visible = false
                serialConfig.endConnection()
            }
        }

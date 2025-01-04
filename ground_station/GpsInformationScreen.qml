@@ -20,9 +20,6 @@ Item {
             axisYGraphGPS2D.max = serialConfig.getLatMaxValue() + 1
 
             //axisYGraphAltitude.tickInterval = (serialConfig.getCurrentAltMaxValue() - serialConfig.getCurrentAltMinValue()) /5
-            console.log("Data")
-            console.log(serialConfig.getGraphsMaxMemory())
-            console.log(serialConfig.getGraphsMaxMemory()/2)
 
             graphGPS2DNewerValues.append(serialConfig.getNewerLonLastValue(),serialConfig.getNewerLatLastValue())
 
@@ -34,8 +31,6 @@ Item {
 
                 if(graphGPS2DOlderValues.count> (serialConfig.getGraphsMaxMemory()/2)){
                     graphGPS2DOlderValues.remove(0)  // Remove the first point (oldest)
-                    console.log(graphGPS2DNewerValues.count)
-                    console.log(graphGPS2DOlderValues.count)
                 }
             }
         }

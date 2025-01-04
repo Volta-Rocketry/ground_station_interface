@@ -98,9 +98,14 @@ public slots:
     float getCurrentTimeSFloat();
     QString getCurrentTimeMSmString(int format);
 
-    // Not defined
+    void setBaudRateMode(int mode);
+
+
+    // Configuration
     int getGraphsMaxMemory();
     void setGraphsMaxMemory(int memory);
+    void setChamberMinPredictedTemp(int temperature);
+    void setChamberMaxPredictedTemp(int temperature);
 
 private slots:
     void emitUpdateInfo2Screen();
@@ -213,11 +218,10 @@ private:
     float _chamberMinPredictedTemp = 0;
     float _chamberMaxPredictedTemp = 50;
 
-
-
+    int _baudRateMode = 0;
 
     // Not defined
-    int _graphsMaxMemory = 10;
+    int _graphsMaxMemory = 100;
 
 signals:
     void microcontrollerConnectionStatus(bool status);

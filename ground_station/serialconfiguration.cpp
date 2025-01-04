@@ -60,7 +60,47 @@ void SerialConfiguration::microcontrollerConnection()
 
             // Start connection
             _MCU->setPortName(_portName);
-            _MCU->setBaudRate(QSerialPort::Baud115200); // It has to be the same as in arduino
+
+            /* Modes
+             * 0 -> 115200
+             * 1 -> 9600
+             * 2 -> 1200
+             * 3 -> 2400
+             * 4 -> 4800
+             * 5 -> 19200
+             * 6 -> 38400
+             * 7 -> 57600
+            */
+
+            switch (_baudRateMode){
+            case 0:
+                _MCU->setBaudRate(QSerialPort::Baud115200);
+                break;
+            case 1:
+                _MCU->setBaudRate(QSerialPort::Baud9600);
+                break;
+            case 2:
+                _MCU->setBaudRate(QSerialPort::Baud1200);
+                break;
+            case 3:
+                _MCU->setBaudRate(QSerialPort::Baud2400);
+                break;
+            case 4:
+                _MCU->setBaudRate(QSerialPort::Baud4800);
+                break;
+            case 5:
+                _MCU->setBaudRate(QSerialPort::Baud19200);
+                break;
+            case 6:
+                _MCU->setBaudRate(QSerialPort::Baud38400);
+                break;
+            case 7:
+                _MCU->setBaudRate(QSerialPort::Baud38400);
+                break;
+            }
+
+            qDebug() << _baudRateMode;
+
             _MCU->setDataBits(QSerialPort::Data8);
             _MCU->setParity(QSerialPort::NoParity);
             _MCU->setStopBits(QSerialPort::OneStop);
@@ -88,7 +128,12 @@ void SerialConfiguration::microcontrollerConnection()
 void SerialConfiguration::endConnection()
 {
     serialClose();
+
     _portDescriptionIntendedConnection = "None";
+
+    _graphsMaxMemory = 100;
+    _chamberMinPredictedTemp = 0;
+    _chamberMaxPredictedTemp = 50;
 
     _coreDataList.clear();
 
@@ -518,22 +563,38 @@ QString SerialConfiguration::getChamberLastUpdatedTime()
 
 QString SerialConfiguration::getCoreLastUpdatedSeconds()
 {
-    return QString::number(getCurrentTimeSFloat()-_coreLastUpdatedSeconds, 'f', 2);
+    if(_coreLastUpdatedSeconds != 9999){
+        return QString::number(getCurrentTimeSFloat()-_coreLastUpdatedSeconds, 'f', 2);
+    }else{
+        return QString::number(_coreLastUpdatedSeconds);
+    }
 }
 
 QString SerialConfiguration::getGpsLastUpdatedSeconds()
 {
-    return QString::number(getCurrentTimeSFloat()-_gpsLastUpdatedSeconds, 'f', 2);
+    if(_gpsLastUpdatedSeconds != 9999){
+        return QString::number(getCurrentTimeSFloat()-_gpsLastUpdatedSeconds, 'f', 2);
+    }else{
+        return QString::number(_gpsLastUpdatedSeconds);
+    }
 }
 
 QString SerialConfiguration::getPyroLastUpdatedSeconds()
 {
-    return QString::number(getCurrentTimeSFloat()-_pyroLastUpdatedSeconds, 'f', 2);
+    if(_pyroLastUpdatedSeconds != 9999){
+        return QString::number(getCurrentTimeSFloat()-_pyroLastUpdatedSeconds, 'f', 2);
+    }else{
+        return QString::number(_pyroLastUpdatedSeconds);
+    }
 }
 
 QString SerialConfiguration::getChamberLastUpdatedSeconds()
 {
-    return QString::number(getCurrentTimeSFloat()-_chamberLastUpdatedSeconds, 'f', 2);
+    if(_chamberLastUpdatedSeconds != 9999){
+        return QString::number(getCurrentTimeSFloat()-_chamberLastUpdatedSeconds, 'f', 2);
+    }else{
+        return QString::number(_chamberLastUpdatedSeconds);
+    }
 }
 
 float SerialConfiguration::getCurrentTimeSFloat()
@@ -578,6 +639,22 @@ QString SerialConfiguration::getCurrentTimeMSmString(int format = 0)
     }
 }
 
+void SerialConfiguration::setBaudRateMode(int mode = 0)
+{
+    /* Modes
+     * 0 -> 115200
+     * 1 -> 9600
+     * 2 -> 1200
+     * 3 -> 2400
+     * 4 -> 4800
+     * 5 -> 19200
+     * 6 -> 38400
+     * 7 -> 57600
+    */
+
+    _baudRateMode = mode;
+}
+
 
 int SerialConfiguration::getGraphsMaxMemory()
 {
@@ -587,6 +664,16 @@ int SerialConfiguration::getGraphsMaxMemory()
 void SerialConfiguration::setGraphsMaxMemory(int memory)
 {
     _graphsMaxMemory = memory;
+}
+
+void SerialConfiguration::setChamberMinPredictedTemp(int temperature)
+{
+    _chamberMinPredictedTemp = temperature;
+}
+
+void SerialConfiguration::setChamberMaxPredictedTemp(int temperature)
+{
+    _chamberMaxPredictedTemp = temperature;
 }
 
 void SerialConfiguration::emitUpdateInfo2Screen()

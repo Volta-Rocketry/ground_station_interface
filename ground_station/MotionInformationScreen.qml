@@ -21,6 +21,7 @@ Item {
                 altitudeSeries.remove(0)  // Remove the first point (oldest)
             }
             axisXGraphAltitude.min = altitudeSeries.at(0).x
+            //axisXGraphAltitude.tickInterval = (axisXGraphAltitude.max-axisXGraphAltitude.min)/5
 
             axisXGraphAccel.max = serialConfig.getCurrentTimeSFloat()
             axisYGraphAccel.min = serialConfig.getAbsAccelMinValue() - 1
@@ -40,6 +41,7 @@ Item {
                 accelZSeries.remove(0)  // Remove the first point (oldest)
             }
             axisXGraphAccel.min = accelXSeries.at(0).x
+            //axisXGraphAccel.tickInterval = (axisXGraphAccel.max-axisXGraphAccel.min)/5
         }
     }
 

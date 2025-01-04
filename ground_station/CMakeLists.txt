@@ -36,6 +36,7 @@ qt_add_qml_module(appground_station
         assets/images/info_logo.png
         assets/images/motion_logo.png
         assets/images/gps_logo.png
+        assets/images/go_back.png
         QML_FILES Info1Screen.qml
         QML_FILES Info2Screen.qml
 
