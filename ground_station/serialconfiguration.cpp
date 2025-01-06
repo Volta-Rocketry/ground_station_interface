@@ -49,27 +49,28 @@ void SerialConfiguration::microcontrollerConnection()
         timerTestMode->start();
     }else{
 
-    foreach (const QSerialPortInfo &serial_info, QSerialPortInfo::availablePorts()) { // Find each microcontroller available for connection
-        // Port verify
-        if (serial_info.description() == _portDescriptionIntendedConnection) {    // If it detects the microcontroller selected by the user, it gets the data
+        qDebug() << "Entro CCC";
 
-            // Update important port parameters
-            _portDescription = _portDescriptionIntendedConnection;
-            _portName = serial_info.portName();
-            _vendorId = serial_info.vendorIdentifier();
-            _productId = serial_info.productIdentifier();
+        if (QSerialPortInfo::availablePorts().size() > 0){
+            foreach (const QSerialPortInfo &serial_info, QSerialPortInfo::availablePorts()) { // Find each microcontroller available for connection
+                if (serial_info.description() == _portDescriptionIntendedConnection) {    // If it detects the microcontroller selected by the user, it gets the data
+                    // Update important port parameters
+                    _portDescription = _portDescriptionIntendedConnection;
+                    _portName = serial_info.portName();
+                    _vendorId = serial_info.vendorIdentifier();
+                    _productId = serial_info.productIdentifier();
 
-            _microcontrollerFoundOnConnection = true;
+                    _microcontrollerFoundOnConnection = true;
 
-            qDebug() << "Nombre: " << _portDescription;
-            qDebug() << "Puerto: " << _portName;
-            qDebug() << "Vendor ID: " << _vendorId;
-            qDebug() << "Product ID: " << _productId ;
+                    qDebug() << "Nombre: " << _portDescription;
+                    qDebug() << "Puerto: " << _portName;
+                    qDebug() << "Vendor ID: " << _vendorId;
+                    qDebug() << "Product ID: " << _productId ;
 
-            // Start connection
-            _MCU->setPortName(_portName);
+                    // Start connection
+                    _MCU->setPortName(_portName);
 
-            /* Modes
+                    /* Modes
              * 0 -> 115200
              * 1 -> 9600
              * 2 -> 1200
@@ -80,57 +81,67 @@ void SerialConfiguration::microcontrollerConnection()
              * 7 -> 57600
             */
 
-            switch (_baudRateMode){
-            case 0:
-                _MCU->setBaudRate(QSerialPort::Baud115200);
-                break;
-            case 1:
-                _MCU->setBaudRate(QSerialPort::Baud9600);
-                break;
-            case 2:
-                _MCU->setBaudRate(QSerialPort::Baud1200);
-                break;
-            case 3:
-                _MCU->setBaudRate(QSerialPort::Baud2400);
-                break;
-            case 4:
-                _MCU->setBaudRate(QSerialPort::Baud4800);
-                break;
-            case 5:
-                _MCU->setBaudRate(QSerialPort::Baud19200);
-                break;
-            case 6:
-                _MCU->setBaudRate(QSerialPort::Baud38400);
-                break;
-            case 7:
-                _MCU->setBaudRate(QSerialPort::Baud38400);
-                break;
+                    switch (_baudRateMode){
+                    case 0:
+                        _MCU->setBaudRate(QSerialPort::Baud115200);
+                        break;
+                    case 1:
+                        _MCU->setBaudRate(QSerialPort::Baud9600);
+                        break;
+                    case 2:
+                        _MCU->setBaudRate(QSerialPort::Baud1200);
+                        break;
+                    case 3:
+                        _MCU->setBaudRate(QSerialPort::Baud2400);
+                        break;
+                    case 4:
+                        _MCU->setBaudRate(QSerialPort::Baud4800);
+                        break;
+                    case 5:
+                        _MCU->setBaudRate(QSerialPort::Baud19200);
+                        break;
+                    case 6:
+                        _MCU->setBaudRate(QSerialPort::Baud38400);
+                        break;
+                    case 7:
+                        _MCU->setBaudRate(QSerialPort::Baud38400);
+                        break;
+                    }
+
+                    qDebug() << _baudRateMode;
+
+                    _MCU->setDataBits(QSerialPort::Data8);
+                    _MCU->setParity(QSerialPort::NoParity);
+                    _MCU->setStopBits(QSerialPort::OneStop);
+                    _MCU->setFlowControl(QSerialPort::NoFlowControl);
+                    _MCU->setReadBufferSize(16384);
+                    //Confirm connection
+                    _MCU->open(QIODevice::ReadWrite);
+
+                    if (_MCU->isOpen()) {
+                        if(_MCU->isReadable()){
+                            if(_MCU->isWritable()){
+                                _microcontrollerConnected = true;
+                                connect(_MCU, SIGNAL(readyRead()), this, SLOT(serialRead()));
+                            }else{
+                                _microcontrollerConnected = false;
+                                emit portIsNotWritable();
+                            }
+                        }else{
+                            _microcontrollerConnected = false;
+                            emit portIsNotReadable();
+                        }
+                    }else{
+                        _microcontrollerConnected = false;
+                        emit portIsNotOpen();
+                    }
+                    break;
+                }
             }
-
-            qDebug() << _baudRateMode;
-
-            _MCU->setDataBits(QSerialPort::Data8);
-            _MCU->setParity(QSerialPort::NoParity);
-            _MCU->setStopBits(QSerialPort::OneStop);
-            _MCU->setFlowControl(QSerialPort::NoFlowControl);
-            _MCU->setReadBufferSize(16384);
-            _MCU->open(QIODevice::ReadWrite);
-
-            //Confirm connection
-            if (_MCU->isOpen()) {
-                qDebug() << "Conexión con" << _portName << " exitosa";
-                _microcontrollerConnected = true;
-                // Connect the signal that data arrives through the serial with the slot to read the data
-                connect(_MCU, SIGNAL(readyRead()), this, SLOT(serialRead()));
-            } else {
-                qDebug() << "No se pudo conectar con " << _portName;
-                _microcontrollerConnected = false;
-            }
-            break;            
-        } else {
+        }else{
             _microcontrollerFoundOnConnection = false;  // If it does not find the microcontroller selected by the user
+            emit portNotFound();
         }
-    }
     }
 }
 
@@ -358,7 +369,7 @@ float SerialConfiguration::getLastAccelYValue()
 float SerialConfiguration::getLastAccelZValue()
 {
     if(_accelZDataListFloat.count()>0){
-    return _accelZDataListFloat.last();
+        return _accelZDataListFloat.last();
     }else{
         return 0.0;
     }
@@ -684,7 +695,7 @@ QString SerialConfiguration::getCurrentTimeMSmString(int format = 0)
     }
 
     if (format == 1){
-    return QString::asprintf("%02d:%02d:%02d:%03d", hours, minutes, seconds, milliseconds);
+        return QString::asprintf("%02d:%02d:%02d:%03d", hours, minutes, seconds, milliseconds);
     }
 
     if (format == 2){
@@ -1179,7 +1190,7 @@ void SerialConfiguration::chamberTempDataUpdate()
     r = static_cast<int>(255 * normalizeTemp);
     g = 0;
     b = static_cast<int>(255 * (1 - normalizeTemp));
-   QColor color2(r,g,b);
+    QColor color2(r,g,b);
     _chamber2TempColor = color2.name();
 
     normalizeTemp = (_chamber3TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);

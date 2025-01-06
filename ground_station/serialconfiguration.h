@@ -300,6 +300,11 @@ signals:
 
     void updateInfo2Screen();
 
+    void portIsNotWritable();
+    void portIsNotReadable();
+    void portIsNotOpen();
+    void portNotFound();
+
 };
 
 #endif // SERIALCONFIGURATION_H
