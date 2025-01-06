@@ -42,6 +42,10 @@ Item {
             txtValueLat.text = serialConfig.getNewerLatLastValue()
             txtValueLon.text = serialConfig.getNewerLonLastValue()
         }
+        function onOtherDataReady(){
+            txtValueHumidity.text = serialConfig.getHumidityValue()
+            txtValuePressureRef.text = serialConfig.getRefPreassureValue()
+        }
     }
 
     Rectangle {
@@ -755,7 +759,7 @@ Item {
 
         Text {
             id: txtValueHumidity
-            text: qsTr("000.000")
+            text: serialConfig.getHumidityValue()
             anchors.verticalCenter: txtTittleHumidity.verticalCenter
             anchors.left: txtTittleHumidity.right
             anchors.leftMargin: parent.height*0.006
@@ -782,7 +786,7 @@ Item {
 
         Text {
             id: txtValuePressureRef
-            text: qsTr("000.000")
+            text: serialConfig.getRefPreassureValue()
             anchors.verticalCenter: txtTittlePressureRef.verticalCenter
             anchors.left: txtTittlePressureRef.right
             anchors.leftMargin: parent.height*0.006

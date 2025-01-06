@@ -89,11 +89,17 @@ public slots:
     QString getGpsLastUpdatedTime();
     QString getPyroLastUpdatedTime();
     QString getChamberLastUpdatedTime();
+    QString getOtherLastUpdatedTime();
 
     QString getCoreLastUpdatedSeconds();
     QString getGpsLastUpdatedSeconds();
     QString getPyroLastUpdatedSeconds();
     QString getChamberLastUpdatedSeconds();
+    QString getOtherLastUpdatedSeconds();
+
+    float getHumidityValue();
+    float getRefPreassureValue();
+
 
     float getCurrentTimeSFloat();
     QString getCurrentTimeMSmString(int format);
@@ -199,16 +205,25 @@ private:
     QString _gpsLastUpdatedTime = "00:00:00";
     QString _pyroLastUpdatedTime = "00:00:00";
     QString _chamberLastUpdatedTime = "00:00:00";
+    QString _otherLastUpdatedTime = "00:00:00";
 
     float _coreLastUpdatedSeconds = 9999;
     float _gpsLastUpdatedSeconds = 9999;
     float _pyroLastUpdatedSeconds = 9999;
     float _chamberLastUpdatedSeconds = 9999;
+    float _otherLastUpdatedSeconds = 9999;
+
+    QList<QString> _otherDataList;
+    float _humidityValue = 0.0;
+    float _refPreassureValue = 0.0;
+
+
+
 
     void coreDataUpdate();
     void pyroContDataUpdate();
     void chamberTempDataUpdate();
-
+    void otherDataUpdate();
     void gpsDataUpdate();
 
     // Constants
@@ -228,9 +243,10 @@ signals:
     void sendDataMainWindow(QChar categoty_identifier, QString data);
 
     void coreDataReady();
-    void gpsDataReady();
     void pyroContDataReady();
     void chamberTempDataReady();
+    void otherDataReady();
+    void gpsDataReady();
 
     void updateInfo2Screen();
 

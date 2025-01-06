@@ -146,23 +146,33 @@ Item {
             id: speedometer
             width: parent.height*0.40
             height: speedometer.width
-            color: "#000000"
+            color: "#8d918e"
             radius: speedometer.width/2
             anchors.left: graph_accel.right
             anchors.bottom: parent.bottom
             anchors.leftMargin: 0 + parent.width*0.1
             anchors.bottomMargin: 30
+            Text{
+                anchors.centerIn: parent
+                text: "Soon"
+                font.pixelSize: parent.width*0.2
+            }
         }
 
         Rectangle {
             id: euler_angles
             width: parent.height*0.4
             height: euler_angles.width
-            color: "#000000"
+            color: "#8d918e"
             anchors.left: speedometer.horizontalCenter
             anchors.top: parent.top
             anchors.leftMargin: -euler_angles.width/2
             anchors.topMargin: 8
+            Text{
+                anchors.centerIn: parent
+                text: "Soon"
+                font.pixelSize: parent.width*0.2
+            }
         }
     }
 }

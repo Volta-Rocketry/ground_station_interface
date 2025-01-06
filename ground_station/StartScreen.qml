@@ -130,8 +130,8 @@ Rectangle {
             orientation: Qt.Vertical
             to: 100
             onValueChanged: {
-                txtValueMaxTemp.text=(sliderMaxChamberTem.value.toFixed(2))
-                serialConfig.setChamberMaxPredictedTemp((sliderMinChamberTem.value.toFixed(2)))
+                txtValueMaxTemp.text=(sliderMaxChamberTem.value.toFixed(0))
+                serialConfig.setChamberMaxPredictedTemp((sliderMinChamberTem.value.toFixed(0)))
             }
         }
 
@@ -155,9 +155,9 @@ Rectangle {
             orientation: Qt.Vertical
             to: 100
             onValueChanged: {
-                txtValueMinTemp.text = (sliderMinChamberTem.value.toFixed(2))
+                txtValueMinTemp.text = (sliderMinChamberTem.value.toFixed(0))
                 sliderMaxChamberTem.from =(sliderMinChamberTem.value.toFixed(0))
-                serialConfig.setChamberMinPredictedTemp((sliderMinChamberTem.value.toFixed(2)))
+                serialConfig.setChamberMinPredictedTemp((sliderMinChamberTem.value.toFixed(0)))
             }
         }
 

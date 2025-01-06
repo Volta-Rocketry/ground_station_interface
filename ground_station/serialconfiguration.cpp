@@ -184,15 +184,21 @@ void SerialConfiguration::endConnection()
     _chamber3TempColor = "blue";
     _chamber4TempColor = "blue";
 
+    _humidityValue = 0.0;
+    _refPreassureValue = 0.0;
+
     _coreLastUpdatedTime = "00:00:00";
     _gpsLastUpdatedTime = "00:00:00";
     _pyroLastUpdatedTime = "00:00:00";
     _chamberLastUpdatedTime = "00:00:00";
+    _otherLastUpdatedTime = "00:00:00";
+
 
     _coreLastUpdatedSeconds = 9999;
     _gpsLastUpdatedSeconds = 9999;
     _pyroLastUpdatedSeconds = 9999;
     _chamberLastUpdatedSeconds = 9999;
+    _otherLastUpdatedSeconds = 9999;
 }
 
 void SerialConfiguration::serialClose()
@@ -249,6 +255,15 @@ void SerialConfiguration::serialRead()
 
             _chamberTempDataList = data;
             chamberTempDataUpdate();
+
+        }else if(cat == 4){
+            data.removeFirst();
+            data.removeFirst();
+            data.removeLast();
+
+            _otherDataList = data;
+
+
         }else if(cat == 6){
             data.removeFirst();
             data.removeFirst();
@@ -263,6 +278,7 @@ void SerialConfiguration::serialRead()
 void SerialConfiguration::sendData(QString data) {     // To send data to the arduino
     if(_MCU -> isWritable()){  // Make sure that is possible to write through the serial port
         _MCU -> write(data.toUtf8());  // Send the data
+        qDebug() << "Se envio " << data;
     } else {
         qDebug()<<"No se pueden enviar los datos";
     }
@@ -561,6 +577,11 @@ QString SerialConfiguration::getChamberLastUpdatedTime()
     return _chamberLastUpdatedTime;
 }
 
+QString SerialConfiguration::getOtherLastUpdatedTime()
+{
+    return _otherLastUpdatedTime;
+}
+
 QString SerialConfiguration::getCoreLastUpdatedSeconds()
 {
     if(_coreLastUpdatedSeconds != 9999){
@@ -595,6 +616,25 @@ QString SerialConfiguration::getChamberLastUpdatedSeconds()
     }else{
         return QString::number(_chamberLastUpdatedSeconds);
     }
+}
+
+QString SerialConfiguration::getOtherLastUpdatedSeconds()
+{
+    if(_otherLastUpdatedSeconds != 9999){
+        return QString::number(getCurrentTimeSFloat()-_otherLastUpdatedSeconds , 'f', 2);
+    }else{
+        return QString::number(_otherLastUpdatedSeconds );
+    }
+}
+
+float SerialConfiguration::getHumidityValue()
+{
+    return _humidityValue;
+}
+
+float SerialConfiguration::getRefPreassureValue()
+{
+    return _refPreassureValue;
 }
 
 float SerialConfiguration::getCurrentTimeSFloat()
@@ -871,6 +911,22 @@ void SerialConfiguration::chamberTempDataUpdate()
 
     emit chamberTempDataReady();
 
+}
+
+void SerialConfiguration::otherDataUpdate()
+{
+    /* _otherDataList
+     *  0   1
+     *  Hum Ref Preassure
+    */
+
+    _humidityValue = _otherDataList[0].toFloat();
+    _refPreassureValue = _otherDataList[1].toFloat();
+
+    _otherLastUpdatedTime = getCurrentTimeMSmString(2);
+    _otherLastUpdatedSeconds = getCurrentTimeSFloat();
+
+    emit otherDataReady();
 }
 
 void SerialConfiguration::gpsDataUpdate()

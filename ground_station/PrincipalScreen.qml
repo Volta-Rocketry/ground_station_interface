@@ -185,7 +185,7 @@ Item {
                 anchors.rightMargin: 0
                 anchors.topMargin: constants.buttonLateralSpacing()
                 onClicked: {
-                    loader.source = "Info1Screen.qml"
+                    loader.source = "GeneralInformationScreen.qml"
                     btnBackgroundGoMotionInformationScreen.color = "transparent"
                     btnBackgroundGoGpsInformationScreen.color = "transparent"
                     btnBackgroundGoEyectionInformationScreen.color = "transparent"

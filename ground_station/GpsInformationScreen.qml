@@ -109,10 +109,16 @@ Item {
             id: graph2
             width: parent.height*0.67
             height: graph2.width
-            color: "black"
+            color: "#8d918e"
             anchors.verticalCenter: graphGPS2D.verticalCenter
             anchors.left: graphGPS2D.right
             anchors.leftMargin: parent.height*0.134
+
+            Text{
+                anchors.centerIn: parent
+                text: "Soon"
+                font.pixelSize: parent.width*0.2
+            }
         }
 
         Text {
