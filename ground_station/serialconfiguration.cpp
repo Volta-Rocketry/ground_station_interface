@@ -9,11 +9,15 @@ SerialConfiguration::SerialConfiguration(QObject *parent)
     _serialBuffer = "";
 
     // ------
-    QTimer *timer = new QTimer(this);
+    timer = new QTimer(this);
+
     connect(timer, &QTimer::timeout, this, &SerialConfiguration::emitUpdateInfo2Screen);
     timer->start(100);
     // ------
-    endConnection();
+    timerTestMode = new QTimer(this);
+    timerTestMode->setInterval(100);
+    connect(timerTestMode, &QTimer::timeout, this, &SerialConfiguration::testMode);
+
 }
 
 QList<QString> SerialConfiguration::searchPortInfo()
@@ -41,6 +45,10 @@ void SerialConfiguration::savePortConnection(QString portDescription)
 
 void SerialConfiguration::microcontrollerConnection()
 {
+    if (_portDescriptionIntendedConnection == "Test Mode"){
+        timerTestMode->start();
+    }else{
+
     foreach (const QSerialPortInfo &serial_info, QSerialPortInfo::availablePorts()) { // Find each microcontroller available for connection
         // Port verify
         if (serial_info.description() == _portDescriptionIntendedConnection) {    // If it detects the microcontroller selected by the user, it gets the data
@@ -122,14 +130,19 @@ void SerialConfiguration::microcontrollerConnection()
         } else {
             _microcontrollerFoundOnConnection = false;  // If it does not find the microcontroller selected by the user
         }
-    }        
+    }
+    }
 }
 
 void SerialConfiguration::endConnection()
 {
+    if (timerTestMode->isActive()) {
+        timerTestMode->stop();  // Stop the timer if it's valid
+    }
+
     serialClose();
 
-    _portDescriptionIntendedConnection = "None";
+    _portDescriptionIntendedConnection = "Test Mode";
 
     _graphsMaxMemory = 100;
     _chamberMinPredictedTemp = 0;
@@ -721,6 +734,283 @@ void SerialConfiguration::emitUpdateInfo2Screen()
     emit updateInfo2Screen();
 }
 
+void SerialConfiguration::testMode()
+{
+    randPackedIndicator =  QRandomGenerator::global()->bounded(101);
+
+    if (randPackedIndicator < 60) {  // Core - 60%
+        accelx = generateData(accelx, accelVolatility);
+        accely = generateData(accely, accelVolatility);
+        accelz = generateData(accelz, accelVolatility);
+        angx = generateData(angx, angVolatility, angNegLimit, angPosLimit);
+        angy = generateData(angy, angVolatility, angNegLimit, angPosLimit);
+        angz = generateData(angz, angVolatility, angNegLimit, angPosLimit);
+        altC = generateData(altC, altVolatility, altNegLimit, altPosLimit);
+        altAp = generateData(altAp, altVolatility, altNegLimit, altPosLimit);
+        altPre = generateData(altPre, altVolatility, altNegLimit, altPosLimit);
+        vel = generateData(vel, velVolatility);
+
+        _accelXDataListFloat.append(accelx);
+        _accelYDataListFloat.append(accely);
+        _accelZDataListFloat.append(accelz);
+
+        if (_accelXDataListFloat.count() > _graphsMaxMemory){
+            _accelXDataListFloat.removeFirst();
+        }
+        if (_accelYDataListFloat.count() > _graphsMaxMemory){
+            _accelYDataListFloat.removeFirst();
+        }
+        if (_accelZDataListFloat.count() > _graphsMaxMemory){
+            _accelZDataListFloat.removeFirst();
+        }
+
+        auto min = std::min_element(_accelXDataListFloat.begin(), _accelXDataListFloat.end());
+        auto max = std::max_element(_accelXDataListFloat.begin(), _accelXDataListFloat.end());
+
+        _accelXMinListValue = *min;
+        _accelXMaxListValue = *max;
+
+        min = std::min_element(_accelYDataListFloat.begin(), _accelYDataListFloat.end());
+        max = std::max_element(_accelYDataListFloat.begin(), _accelYDataListFloat.end());
+
+        _accelYMinListValue = *min;
+        _accelYMaxListValue = *max;
+
+        min = std::min_element(_accelZDataListFloat.begin(), _accelZDataListFloat.end());
+        max = std::max_element(_accelZDataListFloat.begin(), _accelZDataListFloat.end());
+
+        _accelZMinListValue = *min;
+        _accelZMaxListValue = *max;
+
+        _accelAbsMinValue = std::min({_accelXMinListValue, _accelYMinListValue, _accelZMinListValue});
+        _accelAbsMaxValue = std::max({_accelXMaxListValue, _accelYMaxListValue, _accelZMaxListValue});
+
+        // Angles
+
+        _angleXLastValue = angx;
+        _angleYLastValue = angy;
+        _angleZLastValue = angz;
+
+        // Altitude
+        _currentAltDataListFloat.append(altC);
+
+        if (_currentAltDataListFloat.count() > _graphsMaxMemory){
+            _currentAltDataListFloat.removeFirst();
+        }
+
+        min = std::min_element(_currentAltDataListFloat.begin(), _currentAltDataListFloat.end());
+        max = std::max_element(_currentAltDataListFloat.begin(), _currentAltDataListFloat.end());
+
+        _currentAltMinListValue = *min;
+        _currentAltMaxListValue = *max;
+
+        _apogeeAltLastValue = altAp;
+        _pressureAltLastValue = altPre;
+        _velLastValue = vel;
+
+        _coreLastUpdatedTime = getCurrentTimeMSmString(2);
+        _coreLastUpdatedSeconds = getCurrentTimeSFloat();
+
+        emit coreDataReady();
+
+    } else if (randPackedIndicator >= 60 && randPackedIndicator < 85) {  // GPS - 25%
+        lat = generateData(lat, gpsVolatility);
+        lon = generateData(lon, gpsVolatility);
+
+        _newerLatValueList.append(lat);
+        if (_newerLatValueList.count()>_graphsMaxMemory/2){
+            _olderLatValueList.append(_newerLatValueList[0]);
+            _newerLatValueList.removeFirst();
+            if(_olderLatValueList.count()>_graphsMaxMemory/2){
+                _olderLatValueList.removeFirst();
+            }
+        }
+
+        _newerLonValueList.append(lon);
+        if (_newerLonValueList.count()>_graphsMaxMemory/2){
+            _olderLonValueList.append(_newerLonValueList[0]);
+            _newerLonValueList.removeFirst();
+            if(_olderLonValueList.count()>_graphsMaxMemory/2){
+                _olderLonValueList.removeFirst();
+            }
+        }
+
+
+        auto min1 = std::min_element(_newerLatValueList.begin(), _newerLatValueList.end());
+        auto max1 = std::max_element(_newerLatValueList.begin(), _newerLatValueList.end());
+
+        if (_olderLatValueList.count()>0){
+            auto min2 = std::min_element(_olderLatValueList.begin(), _olderLatValueList.end());
+            auto max2 = std::max_element(_olderLatValueList.begin(), _olderLatValueList.end());
+
+            float min = std::min({*min1, *min2});
+            float max = std::max({*max1, *max2});
+
+            _latMinValue = min;
+            _latMaxValue = max;
+        }else{
+            _latMinValue = *min1;
+            _latMaxValue = *max1;
+        }
+
+        min1 = std::min_element(_newerLonValueList.begin(), _newerLonValueList.end());
+        max1 = std::max_element(_newerLonValueList.begin(), _newerLonValueList.end());
+
+        if (_olderLonValueList.count()>0){
+            auto min2 = std::min_element(_olderLonValueList.begin(), _olderLonValueList.end());
+            auto max2 = std::max_element(_olderLonValueList.begin(), _olderLonValueList.end());
+
+            float max = std::max({*max1, *max2});
+            float min = std::min({*min1, *min2});
+
+            _lonMinValue = min;
+            _lonMaxValue = max;
+
+        }else{
+            _lonMinValue = *min1;
+            _lonMaxValue = *max1;
+        }
+
+        _gpsLastUpdatedTime = getCurrentTimeMSmString(2);
+        _gpsLastUpdatedSeconds = getCurrentTimeSFloat();
+
+        emit gpsDataReady();
+
+    } else if (randPackedIndicator >= 85 && randPackedIndicator < 90) {  // PyroCont - 5%
+        a1 = QRandomGenerator::global()->bounded(2);
+        a2 = QRandomGenerator::global()->bounded(2);
+        a3 = QRandomGenerator::global()->bounded(2);
+        a4 = QRandomGenerator::global()->bounded(2);
+        a5 = QRandomGenerator::global()->bounded(2);
+        b1 = QRandomGenerator::global()->bounded(2);
+        b2 = QRandomGenerator::global()->bounded(2);
+        b3 = QRandomGenerator::global()->bounded(2);
+        b4 = QRandomGenerator::global()->bounded(2);
+        b5 = QRandomGenerator::global()->bounded(2);
+
+        if (a1 == 1){
+            _pyroA1Color = _pyroActivatedColor;
+        }else{
+            _pyroA1Color = _pyroDeactivatedColor;
+        }
+        if (a2 == 1){
+            _pyroA2Color = _pyroActivatedColor;
+        }else{
+            _pyroA2Color = _pyroDeactivatedColor;
+        }
+        if (a3 == 1){
+            _pyroA3Color = _pyroActivatedColor;
+        }else{
+            _pyroA3Color = _pyroDeactivatedColor;
+        }
+        if (a4 == 1){
+            _pyroA4Color = _pyroActivatedColor;
+        }else{
+            _pyroA4Color = _pyroDeactivatedColor;
+        }
+        if (a5 == 1){
+            _pyroA5Color = _pyroActivatedColor;
+        }else{
+            _pyroA5Color = _pyroDeactivatedColor;
+        }
+
+        if (b1 == 1){
+            _pyroB1Color = _pyroActivatedColor;
+        }else{
+            _pyroB1Color = _pyroDeactivatedColor;
+        }
+        if (b2 == 1){
+            _pyroB2Color = _pyroActivatedColor;
+        }else{
+            _pyroB2Color = _pyroDeactivatedColor;
+        }
+        if (b3 == 1){
+            _pyroB3Color = _pyroActivatedColor;
+        }else{
+            _pyroB3Color = _pyroDeactivatedColor;
+        }
+        if (b4 == 1){
+            _pyroB4Color = _pyroActivatedColor;
+        }else{
+            _pyroB4Color = _pyroDeactivatedColor;
+        }
+        if (b5 == 1){
+            _pyroB5Color = _pyroActivatedColor;
+        }else{
+            _pyroB5Color = _pyroDeactivatedColor;
+        }
+
+        _pyroLastUpdatedTime = getCurrentTimeMSmString(2);
+        _pyroLastUpdatedSeconds = getCurrentTimeSFloat();
+
+        emit pyroContDataReady();
+
+    } else if (randPackedIndicator >= 90 && randPackedIndicator < 95) {  // ChamberTemp - 5%
+        chamberTemp1 = generateData(chamberTemp1, chamberVolatility, chamberTempNegLimit, chamberTempPosLimit);
+        chamberTemp2 = generateData(chamberTemp2, chamberVolatility, chamberTempNegLimit, chamberTempPosLimit);
+        chamberTemp3 = generateData(chamberTemp3, chamberVolatility, chamberTempNegLimit, chamberTempPosLimit);
+        chamberTemp4 = generateData(chamberTemp4, chamberVolatility, chamberTempNegLimit, chamberTempPosLimit);
+
+        _chamber1TempValue = chamberTemp1;
+        _chamber2TempValue = chamberTemp2;
+        _chamber3TempValue = chamberTemp3;
+        _chamber4TempValue = chamberTemp4;
+
+        float normalizeTemp = (_chamber1TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+
+        int r,g,b;
+
+        r = static_cast<int>(255 * normalizeTemp);
+        g = 0;
+        b = static_cast<int>(255 * (1 - normalizeTemp));
+
+        QColor color(r,g,b);
+
+        _chamber1TempColor = color.name();
+
+        normalizeTemp = (_chamber2TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+        r = static_cast<int>(255 * normalizeTemp);
+        g = 0;
+        b = static_cast<int>(255 * (1 - normalizeTemp));
+        QColor color2(r,g,b);
+        _chamber2TempColor = color2.name();
+
+        normalizeTemp = (_chamber3TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+        r = static_cast<int>(255 * normalizeTemp);
+        g = 0;
+        b = static_cast<int>(255 * (1 - normalizeTemp));
+        QColor color3(r,g,b);
+        _chamber3TempColor = color3.name();
+
+        normalizeTemp = (_chamber4TempValue - _chamberMinPredictedTemp) / (_chamberMaxPredictedTemp - _chamberMinPredictedTemp);
+        r = static_cast<int>(255 * normalizeTemp);
+        g = 0;
+        b = static_cast<int>(255 * (1 - normalizeTemp));
+        QColor color4(r,g,b);
+        _chamber4TempColor = color4.name();
+
+        _chamberLastUpdatedTime = getCurrentTimeMSmString(2);
+        _chamberLastUpdatedSeconds = getCurrentTimeSFloat();
+
+        emit chamberTempDataReady();
+
+
+    } else if (randPackedIndicator >= 95 && randPackedIndicator < 100) {  // OtherData - 5%
+
+        humd = generateData(humd, 2);
+        refPreas = generateData(humd, 2);
+
+        _humidityValue = humd;
+        _refPreassureValue = refPreas;
+
+        _otherLastUpdatedTime = getCurrentTimeMSmString(2);
+        _otherLastUpdatedSeconds = getCurrentTimeSFloat();
+
+        emit otherDataReady();
+    }
+}
+
+
 void SerialConfiguration::coreDataUpdate()
 {
 
@@ -994,4 +1284,16 @@ void SerialConfiguration::gpsDataUpdate()
     _gpsLastUpdatedSeconds = getCurrentTimeSFloat();
 
     emit gpsDataReady();
+}
+
+float SerialConfiguration::generateData(float data, int volatility, float minLimit, float maxLimit)
+{
+    float dataGenerated = data + QRandomGenerator::global()->bounded(-volatility, volatility + 1);
+
+    if (dataGenerated < minLimit) {
+        dataGenerated = minLimit;
+    } else if (dataGenerated > maxLimit) {
+        dataGenerated = maxLimit;
+    }
+    return dataGenerated;
 }
