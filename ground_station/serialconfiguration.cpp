@@ -18,6 +18,18 @@ SerialConfiguration::SerialConfiguration(QObject *parent)
     timerTestMode->setInterval(100);
     connect(timerTestMode, &QTimer::timeout, this, &SerialConfiguration::testMode);
 
+    // ------
+
+    QDateTime dateTime = QDateTime::currentDateTimeUtc();
+    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+
+    int minutes = dateTime.time().minute();
+    int seconds = dateTime.time().second();
+    int milliseconds = timestamp % 1000;
+
+    // Convertir a segundos como número real
+    firstTimeSeconds = minutes * 60 + seconds + milliseconds / 1000.0;
+
 }
 
 QList<QString> SerialConfiguration::searchPortInfo()
@@ -304,29 +316,9 @@ void SerialConfiguration::sendData(QString data) {     // To send data to the ar
         _MCU -> write(data.toUtf8());  // Send the data
         qDebug() << "Se envio " << data;
     } else {
-        qDebug()<<"No se pueden enviar los datos";
+        emit dataNotSent();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 QList<QString> SerialConfiguration::getCoreDataFull()
 {
@@ -671,7 +663,7 @@ float SerialConfiguration::getCurrentTimeSFloat()
     int milliseconds = timestamp % 1000;
 
     // Convertir a segundos como número real
-    return minutes * 60 + seconds + milliseconds / 1000.0;;
+    return (minutes * 60 + seconds + milliseconds / 1000.0) - firstTimeSeconds;
 }
 
 QString SerialConfiguration::getCurrentTimeMSmString(int format = 0)
@@ -825,8 +817,8 @@ void SerialConfiguration::testMode()
         emit coreDataReady();
 
     } else if (randPackedIndicator >= 60 && randPackedIndicator < 85) {  // GPS - 25%
-        lat = generateData(lat, gpsVolatility);
-        lon = generateData(lon, gpsVolatility);
+        lat = generateData(lat, gpsVolatility,-10,10);
+        lon = generateData(lon, gpsVolatility,-10,10);
 
         _newerLatValueList.append(lat);
         if (_newerLatValueList.count()>_graphsMaxMemory/2){

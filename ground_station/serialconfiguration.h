@@ -238,6 +238,8 @@ private:
     QTimer *timer;
     QTimer *timerTestMode;
 
+    float firstTimeSeconds = 0;
+
     // FOR TEST MODE
     int accelVolatility = 2;
     int altVolatility = 10;
@@ -246,7 +248,7 @@ private:
 
     int chamberVolatility = 10;
 
-    int gpsVolatility = 100;
+    int gpsVolatility = 3;
 
     int id1 = 1;
     int id2Core = 1;
@@ -268,8 +270,8 @@ private:
     float altPre = 0;
     float vel = 0;
 
-    float lat = 354.5;
-    float lon = 256.5;
+    float lat = 0;
+    float lon = 0;
 
     int a1, a2, a3, a4, a5, b1, b2, b3, b4, b5 = 0;
     int chamberTemp1, chamberTemp2, chamberTemp3, chamberTemp4 = 0.65;
@@ -304,6 +306,7 @@ signals:
     void portIsNotReadable();
     void portIsNotOpen();
     void portNotFound();
+    void dataNotSent();
 
 };
 

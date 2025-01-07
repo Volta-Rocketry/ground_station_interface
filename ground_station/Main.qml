@@ -36,6 +36,11 @@ ApplicationWindow {
             txtMainText.text = "Port selected can not be found, please check it is connected"
             informationMessage.visible = true
         }
+        function onDataNotSent(){
+            txtTittle.text = "Error #5: Could Not Be Sent"
+            txtMainText.text = "The data could not be sent through the serial port, check permissions or connection"
+            informationMessage.visible = true
+        }
     }
 
     // ------------------- Switch screens logic -------------------
@@ -165,7 +170,6 @@ ApplicationWindow {
         }
 
     }
-
 
 
     //------------------- Virtual Keyboard ------------------

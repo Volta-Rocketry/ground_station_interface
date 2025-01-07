@@ -83,8 +83,8 @@ Item {
 
             axisY: ValueAxis {
                 id: axisYGraphAltitude
-                titleText: "Altitude (m)"
-                labelFormat: "%02d:%02d:%03d"
+                titleText: "Altitude (m)"                
+
             }
 
             LineSeries {

@@ -85,14 +85,14 @@ Item {
 
             LineSeries {
                 id: graphGPS2DVerticalAxis
-                XYPoint { x: 5; y: -10 }
-                XYPoint { x: 5; y: 10 }
+                XYPoint { x: 0; y: -10 }
+                XYPoint { x: 0; y: 10 }
             }
 
             LineSeries {
                 id: graphGPS2DHorizontalAxis
-                XYPoint { x: -10; y: 5}
-                XYPoint { x: 10; y: 5 }
+                XYPoint { x: -10; y: 0}
+                XYPoint { x: 10; y: 0}
             }
 
             LineSeries {
