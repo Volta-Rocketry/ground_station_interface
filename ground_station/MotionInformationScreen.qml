@@ -1,6 +1,7 @@
-import QtQuick 2.0
+import QtQuick
 import QtQuick.Controls
 import QtGraphs
+import QtQuick3D
 
 Item {
     width: parent.width
@@ -42,6 +43,11 @@ Item {
             }
             axisXGraphAccel.min = accelXSeries.at(0).x
             //axisXGraphAccel.tickInterval = (axisXGraphAccel.max-axisXGraphAccel.min)/5
+
+
+            //-----------------
+            object.eulerRotation = Qt.vector3d(serialConfig.getAngleXLastValue(), serialConfig.getAngleYLastValue(), serialConfig.getAngleZLastValue())
+
         }
     }
 
@@ -159,19 +165,39 @@ Item {
             }
         }
 
-        Rectangle {
+        View3D  {
             id: euler_angles
             width: parent.height*0.4
             height: euler_angles.width
-            color: "#8d918e"
             anchors.left: speedometer.horizontalCenter
             anchors.top: parent.top
             anchors.leftMargin: -euler_angles.width/2
             anchors.topMargin: 8
-            Text{
-                anchors.centerIn: parent
-                text: "Soon"
-                font.pixelSize: parent.width*0.2
+
+            environment: SceneEnvironment {
+                clearColor: constants.mainBackgroundColor()
+                backgroundMode: SceneEnvironment.Color
+            }
+
+            Model {
+                id: object
+                position: Qt.vector3d(0, 0, 0)
+                source: "#Cube" //""assets/images/test.glb"
+                scale: Qt.vector3d(2, 1, 1)
+                materials: [ DefaultMaterial {
+                        diffuseColor: "red"
+                    }
+                ]
+            }
+
+            PerspectiveCamera {
+                position: Qt.vector3d(0, 200, 300)
+                eulerRotation.x: -30
+            }
+
+            DirectionalLight {
+                eulerRotation.x: -30
+                eulerRotation.y: -70
             }
         }
     }

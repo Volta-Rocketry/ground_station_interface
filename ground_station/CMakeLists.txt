@@ -5,7 +5,7 @@ project(ground_station VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Graphs SerialPort QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS Quick Graphs SerialPort QuickControls2 Quick3D)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -30,13 +30,14 @@ qt_add_qml_module(appground_station
         SOURCES graphdata.h graphdata.cpp
         QML_FILES StartScreen.qml
         QML_FILES PrincipalScreen.qml
-        RESOURCES
-        assets/images/coms_logo.png
-        assets/images/eyection_logo.png
-        assets/images/info_logo.png
-        assets/images/motion_logo.png
-        assets/images/gps_logo.png
-        assets/images/go_back.png
+        RESOURCES assets/images/coms_logo.png
+        RESOURCES assets/images/eyection_logo.png
+        RESOURCES assets/images/info_logo.png
+        RESOURCES assets/images/motion_logo.png
+        RESOURCES assets/images/gps_logo.png
+        RESOURCES assets/images/go_back.png
+        RESOURCES assets/images/rocket.glb
+        RESOURCES assets/images/test.glb
         QML_FILES Info1Screen.qml
         QML_FILES Info2Screen.qml
 
@@ -58,6 +59,7 @@ target_link_libraries(appground_station
     Qt6::Graphs
     Qt6::SerialPort
     Qt6::QuickControls2
+    Qt6::Quick3D
 )
 
 include(GNUInstallDirs)

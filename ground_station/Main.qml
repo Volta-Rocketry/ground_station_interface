@@ -1,9 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.VirtualKeyboard
-
 ApplicationWindow {
-
 
     // ------------------- Window config -------------------
     id: window
