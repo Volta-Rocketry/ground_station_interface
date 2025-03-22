@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/QtQuick/Studio/Utils">D:/ground_station_interface/Ground_station-Debug/qml/QtQuick/Studio/Utils</file>
+
+  </qresource>
+</RCC>

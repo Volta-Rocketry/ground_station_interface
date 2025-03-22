@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="/qt/qml/Generated/QtQuick3D/Missile5/">
+    <file alias="Missile5.qml">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/Missile5.qml</file>
+    <file alias="_importdata.json">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/_importdata.json</file>
+    <file alias="meshes/wing_A_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_A_mesh.mesh</file>
+    <file alias="meshes/wing_B_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_B_mesh.mesh</file>
+    <file alias="meshes/support01_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/support01_mesh.mesh</file>
+    <file alias="meshes/wing_02_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_02_mesh.mesh</file>
+    <file alias="meshes/wing_04_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_04_mesh.mesh</file>
+    <file alias="meshes/gear01_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/gear01_mesh.mesh</file>
+    <file alias="meshes/wing_1_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_1_mesh.mesh</file>
+    <file alias="meshes/gear03_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/gear03_mesh.mesh</file>
+    <file alias="meshes/wing_D_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_D_mesh.mesh</file>
+    <file alias="meshes/body_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/body_mesh.mesh</file>
+    <file alias="meshes/gear02_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/gear02_mesh.mesh</file>
+    <file alias="meshes/support02_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/support02_mesh.mesh</file>
+    <file alias="meshes/wing_03_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_03_mesh.mesh</file>
+    <file alias="meshes/wing_C_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/wing_C_mesh.mesh</file>
+    <file alias="meshes/sphere01_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/sphere01_mesh.mesh</file>
+    <file alias="meshes/gear_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/gear_mesh.mesh</file>
+    <file alias="meshes/support_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Missile5/meshes/support_mesh.mesh</file>
+  </qresource>
+</RCC>
+

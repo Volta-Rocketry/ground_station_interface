@@ -1,0 +1,484 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 451,
+                        "errorMessage": "",
+                        "functionName": "topLeftRadius",
+                        "line": 176
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 185,
+                        "errorMessage": "",
+                        "functionName": "bottomLeftRadius",
+                        "line": 181
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "",
+                        "functionName": "topRightRadius",
+                        "line": 186
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "bottomRightRadius",
+                        "line": 191
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 171,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 202
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 289,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 208
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 210,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 214
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 174,
+                        "errorMessage": "",
+                        "functionName": "topLeftBevel",
+                        "line": 251
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "",
+                        "functionName": "topRightBevel",
+                        "line": 258
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "",
+                        "functionName": "bottomRightBevel",
+                        "line": 265
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
+                        "functionName": "bottomLeftBevel",
+                        "line": 272
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 332,
+                        "errorMessage": "",
+                        "functionName": "__preferredRendererTypeAvailable",
+                        "line": 274
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 628,
+                        "errorMessage": "",
+                        "functionName": "__curveRendererActive",
+                        "line": 275
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 1064,
+                        "errorMessage": "",
+                        "functionName": "borderOffset",
+                        "line": 287
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 419,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onRadiusChanged",
+                        "line": 313
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 29,
+                        "durationMicroseconds": 338,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onTopLeftRadiusChanged",
+                        "line": 314
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 30,
+                        "durationMicroseconds": 322,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onTopRightRadiusChanged",
+                        "line": 315
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 348,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onBottomLeftRadiusChanged",
+                        "line": 316
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 33,
+                        "durationMicroseconds": 321,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onBottomRightRadiusChanged",
+                        "line": 317
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 310,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onWidthChanged",
+                        "line": 318
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 334,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onHeightChanged",
+                        "line": 319
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 5,
+                        "durationMicroseconds": 32494,
+                        "errorMessage": "",
+                        "functionName": "calculateIndependentRadii",
+                        "line": 329
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 552,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 278
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 320,
+                        "errorMessage": "",
+                        "functionName": "smooth",
+                        "line": 279
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 442,
+                        "errorMessage": "",
+                        "functionName": "samples",
+                        "line": 280
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 157,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 302
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 938,
+                        "errorMessage": "",
+                        "functionName": "margins",
+                        "line": 303
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 1112,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 321
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 58,
+                        "durationMicroseconds": 1304,
+                        "errorMessage": "",
+                        "functionName": "__borderRadiusAdjustment",
+                        "line": 410
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 420
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 181,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 421
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 422
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "",
+                        "functionName": "fillGradient",
+                        "line": 426
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 477,
+                        "errorMessage": "",
+                        "functionName": "startX",
+                        "line": 428
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "startY",
+                        "line": 429
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 826,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 433
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 195,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 434
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 357,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 439
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 550,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 440
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 854,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 442
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 706,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 443
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 372,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 448
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 902,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 449
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 709,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 454
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 394,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 455
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 581,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 457
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 583,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 458
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 567,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 463
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 356,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 464
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 165,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 469
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 748,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 470
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 596,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 472
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 557,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 473
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 159,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 478
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 655,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 479
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 685,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 484
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 154,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 485
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 589,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 487
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 577,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 488
+                    }
+                ],
+                "filepath": "RectangleItem.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Components(QuickStudioComponents)"
+    }
+]

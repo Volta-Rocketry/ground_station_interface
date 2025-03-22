@@ -1,0 +1,11 @@
+-rootPath
+D:/ground_station_interface/Ground_station
+-cmake-output
+-output-file
+D:/ground_station_interface/Ground_station-MinSizeRel/.qt/qml_imports/Ground_stationApp_conf.cmake
+-importPath
+D:/ground_station_interface/Ground_station-MinSizeRel/qml
+-importPath
+C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/qml
+-qrcFiles
+D:/ground_station_interface/Ground_station-MinSizeRel/.qt/rcc/configuration.qrc

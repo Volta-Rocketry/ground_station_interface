@@ -1,0 +1,844 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 12,
+                        "durationMicroseconds": 12846,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 13,
+                        "durationMicroseconds": 228,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 12,
+                        "durationMicroseconds": 304,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "txtColor",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 283,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 206,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 31,
+                        "durationMicroseconds": 1501,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "seriesColors",
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 99
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 288,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot resolve property type  for binding on fill.",
+                        "functionName": "fill",
+                        "line": 115
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 37,
+                        "durationMicroseconds": 6,
+                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
+                        "functionName": "verticalCenter",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 4,
+                        "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
+                        "functionName": "horizontalCenter",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 37,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
+                        "functionName": "verticalCenter",
+                        "line": 150
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 4,
+                        "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
+                        "functionName": "horizontalCenter",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 167
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 177
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 132,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 187
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 410,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 192
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 317,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 194
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 198
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 314,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 205
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 293,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 209
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 287,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 216
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 294,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 220
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 227
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 307,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 231
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 275,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 241
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 7,
+                        "errorMessage": "Cannot resolve property type  for binding on fill.",
+                        "functionName": "fill",
+                        "line": 247
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 157,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 267
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 277
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 149,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 287
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 360,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 298
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 498,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 297
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 363,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 307
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 366,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 306
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 474,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 317
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 355,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 292,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 335
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 346,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 344
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 300,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 353
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 314,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 380
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 288,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 389
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 301,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 398
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 552,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 408
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot resolve property type  for binding on inputMode.",
+                        "functionName": "inputMode",
+                        "line": 420
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 6,
+                        "errorMessage": "Cannot resolve property type  for binding on fill.",
+                        "functionName": "fill",
+                        "line": 415
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 436
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 446
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 456
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 326,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 467
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 278,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 476
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 407,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 486
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 336,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 495
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 303,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 505
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 345,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 565
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 300,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 574
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 286,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 583
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 323,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 592
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 326,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 601
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 340,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 610
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 619
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 337,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 628
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 285,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 637
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 329,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 647
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 280,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 667
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 254,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 677
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 696
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 375,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 715
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 514,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 734
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 278,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 753
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 270,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 762
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 268,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 771
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 309,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 780
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 261,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 798
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 164,
+                        "errorMessage": "",
+                        "functionName": "camera",
+                        "line": 835
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 154,
+                        "errorMessage": "",
+                        "functionName": "videoOutput",
+                        "line": 836
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "",
+                        "functionName": "cameraDevice",
+                        "line": 841
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 860
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 183,
+                        "errorMessage": "",
+                        "functionName": "camera",
+                        "line": 872
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 836,
+                        "errorMessage": "Cannot access value for name speedometer",
+                        "functionName": "left",
+                        "line": 866
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 178,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 867
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 360,
+                        "errorMessage": "",
+                        "functionName": "clearColor",
+                        "line": 875
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 224,
+                        "errorMessage": "",
+                        "functionName": "backgroundMode",
+                        "line": 876
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 356,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 952
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 31,
+                        "durationMicroseconds": 1365,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "seriesColors",
+                        "line": 978
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 489,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1041
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 231,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 1050
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 193,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 1051
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 308,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1052
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 301,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1061
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "",
+                        "functionName": "radius",
+                        "line": 1071
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 238,
+                        "errorMessage": "",
+                        "functionName": "radius",
+                        "line": 1081
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 309,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1118
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 306,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1137
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 298,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1147
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 300,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1166
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 288,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1185
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1204
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 330,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1223
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 434,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1232
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 307,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1241
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 331,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1250
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 289,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1268
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 166,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 1305
+                    }
+                ],
+                "filepath": "MainScreenForm.ui.qml"
+            }
+        ],
+        "moduleId": "Ground_stationContent(Ground_stationContent)"
+    }
+]

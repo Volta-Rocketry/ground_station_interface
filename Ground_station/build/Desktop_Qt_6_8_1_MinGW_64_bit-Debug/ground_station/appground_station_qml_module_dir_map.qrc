@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/ground_station">D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ground_station</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/qt/qml/Ground_stationContent/">
+    <file alias="SplashScreen.qml">D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreen.qml</file>
+    <file alias="SplashScreenForm.ui.qml">D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreenForm.ui.qml</file>
+    <file alias="MainScreenForm.ui.qml">D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreenForm.ui.qml</file>
+    <file alias="App.qml">D:/ground_station_interface/Ground_station/Ground_stationContent/App.qml</file>
+    <file alias="MainScreen.qml">D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreen.qml</file>
+    <file alias="images/Astra.png">D:/ground_station_interface/Ground_station/Ground_stationContent/images/Astra.png</file>
+    <file alias="images/Volta.png">D:/ground_station_interface/Ground_station/Ground_stationContent/images/Volta.png</file>
+    <file alias="images/deltav_fullblanco_reduccion.png">D:/ground_station_interface/Ground_station/Ground_stationContent/images/deltav_fullblanco_reduccion.png</file>
+    <file alias="images/Voyager.png">D:/ground_station_interface/Ground_station/Ground_stationContent/images/Voyager.png</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,14 @@
+-rootPath
+D:/ground_station_interface/old_ground_station
+-cmake-output
+-output-file
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/qml_imports/appground_station_conf.cmake
+-importPath
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/ground_station
+-importPath
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.8.1/mingw_64/qml
+-qrcFiles
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qmake_ground_station.qrc
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/appground_station_raw_qml_0.qrc

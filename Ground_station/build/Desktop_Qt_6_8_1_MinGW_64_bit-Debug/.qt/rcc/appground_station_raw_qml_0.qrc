@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="/qt/qml/ground_station/">
+    <file alias="Main.qml">D:/ground_station_interface/old_ground_station/Main.qml</file>
+    <file alias="TestScreen.qml">D:/ground_station_interface/old_ground_station/TestScreen.qml</file>
+    <file alias="MotionInformationScreen.qml">D:/ground_station_interface/old_ground_station/MotionInformationScreen.qml</file>
+    <file alias="GpsInformationScreen.qml">D:/ground_station_interface/old_ground_station/GpsInformationScreen.qml</file>
+    <file alias="EyectionInformationScreen.qml">D:/ground_station_interface/old_ground_station/EyectionInformationScreen.qml</file>
+    <file alias="GeneralInformationScreen.qml">D:/ground_station_interface/old_ground_station/GeneralInformationScreen.qml</file>
+    <file alias="ComunicationInformationScreen.qml">D:/ground_station_interface/old_ground_station/ComunicationInformationScreen.qml</file>
+    <file alias="StartScreen.qml">D:/ground_station_interface/old_ground_station/StartScreen.qml</file>
+    <file alias="PrincipalScreen.qml">D:/ground_station_interface/old_ground_station/PrincipalScreen.qml</file>
+    <file alias="Info1Screen.qml">D:/ground_station_interface/old_ground_station/Info1Screen.qml</file>
+    <file alias="Info2Screen.qml">D:/ground_station_interface/old_ground_station/Info2Screen.qml</file>
+    <file alias="assets/images/coms_logo.png">D:/ground_station_interface/old_ground_station/assets/images/coms_logo.png</file>
+    <file alias="assets/images/eyection_logo.png">D:/ground_station_interface/old_ground_station/assets/images/eyection_logo.png</file>
+    <file alias="assets/images/info_logo.png">D:/ground_station_interface/old_ground_station/assets/images/info_logo.png</file>
+    <file alias="assets/images/motion_logo.png">D:/ground_station_interface/old_ground_station/assets/images/motion_logo.png</file>
+    <file alias="assets/images/gps_logo.png">D:/ground_station_interface/old_ground_station/assets/images/gps_logo.png</file>
+    <file alias="assets/images/go_back.png">D:/ground_station_interface/old_ground_station/assets/images/go_back.png</file>
+  </qresource>
+</RCC>
+

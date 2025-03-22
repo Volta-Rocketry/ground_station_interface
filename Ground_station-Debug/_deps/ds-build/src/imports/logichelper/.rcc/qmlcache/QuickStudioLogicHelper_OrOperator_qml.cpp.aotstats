@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 856,
+                        "errorMessage": "",
+                        "functionName": "output",
+                        "line": 97
+                    }
+                ],
+                "filepath": "OrOperator.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.LogicHelper(QuickStudioLogicHelper)"
+    }
+]

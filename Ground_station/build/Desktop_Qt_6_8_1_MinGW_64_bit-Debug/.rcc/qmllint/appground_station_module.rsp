@@ -1,0 +1,10 @@
+-I
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug
+-I
+C:/Qt/6.8.1/mingw_64/qml
+--resource
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/qmake_ground_station.qrc
+--resource
+D:/ground_station_interface/Ground_station/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qt/rcc/appground_station_raw_qml_0.qrc
+--module
+ground_station

@@ -1,0 +1,12 @@
+module Ground_stationContent
+linktarget Ground_stationContentplugin
+optional plugin Ground_stationContentplugin
+classname Ground_stationContentPlugin
+typeinfo Ground_stationContent.qmltypes
+prefer :/qt/qml/Ground_stationContent/
+SplashScreen 1.0 SplashScreen.qml
+SplashScreenForm 1.0 SplashScreenForm.ui.qml
+MainScreenForm 1.0 MainScreenForm.ui.qml
+App 1.0 App.qml
+MainScreen 1.0 MainScreen.qml
+

@@ -1,0 +1,148 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 3570,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 47
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 483,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 377,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 266,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 261,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 304,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 111
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 266,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 119
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 127
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 315,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 271,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 144
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 338,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 314,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 168
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 294,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 176
+                    }
+                ],
+                "filepath": "Missile5.qml"
+            }
+        ],
+        "moduleId": "Generated.QtQuick3D.Missile5(Generated_QtQuick3D_Missile5)"
+    }
+]

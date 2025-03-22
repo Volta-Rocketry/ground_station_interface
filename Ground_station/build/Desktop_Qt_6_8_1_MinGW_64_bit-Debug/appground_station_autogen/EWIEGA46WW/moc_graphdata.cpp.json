@@ -1,0 +1,92 @@
+{
+    "classes": [
+        {
+            "className": "GraphData",
+            "lineNumber": 11,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "seriesData",
+                    "notify": "seriesDataChanged",
+                    "read": "seriesData",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GraphData",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "testSignal",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "seriesDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "point",
+                            "type": "QPointF"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "newData",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "updateGraph",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "xDat",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "actualTimeUTC",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "prevTimeUTC",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "actualTime",
+                    "returnType": "int"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "graphdata.h",
+    "outputRevision": 68
+}

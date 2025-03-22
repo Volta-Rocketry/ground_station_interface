@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 586,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 23
+                    }
+                ],
+                "filepath": "Test.qml"
+            }
+        ],
+        "moduleId": "Generated.QtQuick3D.Test(Generated_QtQuick3D_Test)"
+    }
+]
