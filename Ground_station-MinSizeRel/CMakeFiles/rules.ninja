@@ -43,6 +43,74 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__Ground_stationContent_unscanned_MinSizeRel
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__Ground_stationContent_MinSizeRel
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__Ground_stationContent_resources_1_unscanned_MinSizeRel
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__Ground_stationContentplugin_unscanned_MinSizeRel
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__Ground_stationContentplugin_MinSizeRel
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__Ground_stationContent_resources_2_unscanned_MinSizeRel
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__Ground_stationContentplugin_init_unscanned_MinSizeRel
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__Generated_QtQuick3D_Missile5_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
@@ -170,74 +238,6 @@ rule CXX_COMPILER__Generated_QtQuick3D_Test_resources_2_unscanned_MinSizeRel
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__Generated_QtQuick3D_Testplugin_init_unscanned_MinSizeRel
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__Ground_stationContent_unscanned_MinSizeRel
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX static library.
-
-rule CXX_STATIC_LIBRARY_LINKER__Ground_stationContent_MinSizeRel
-  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ranlib.exe $TARGET_FILE && $POST_BUILD"
-  description = Linking CXX static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__Ground_stationContent_resources_1_unscanned_MinSizeRel
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__Ground_stationContentplugin_unscanned_MinSizeRel
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX static library.
-
-rule CXX_STATIC_LIBRARY_LINKER__Ground_stationContentplugin_MinSizeRel
-  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-ranlib.exe $TARGET_FILE && $POST_BUILD"
-  description = Linking CXX static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__Ground_stationContent_resources_2_unscanned_MinSizeRel
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__Ground_stationContentplugin_init_unscanned_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\Qt\6.8.1\Boot2Qt\raspberrypi-armv8\toolchain\sysroots\x86_64-w64-mingw32\usr\bin\aarch64-poky-linux\aarch64-poky-linux-g++.exe --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in

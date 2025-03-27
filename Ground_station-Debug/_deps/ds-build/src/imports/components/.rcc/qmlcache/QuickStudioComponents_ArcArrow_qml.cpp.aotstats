@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 743,
+                        "durationMicroseconds": 656,
                         "errorMessage": "",
                         "functionName": "xScale",
                         "line": 48
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 279,
+                        "durationMicroseconds": 285,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 49
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 233,
+                        "durationMicroseconds": 241,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 50
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 621,
+                        "durationMicroseconds": 2203,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 59
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 173,
                         "errorMessage": "",
                         "functionName": "strokeWidth",
                         "line": 61
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 216,
+                        "durationMicroseconds": 225,
                         "errorMessage": "",
                         "functionName": "strokeColor",
                         "line": 62
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 149,
+                        "durationMicroseconds": 172,
                         "errorMessage": "",
                         "functionName": "rotation",
                         "line": 67
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 66
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 256,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 70
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 264,
+                        "durationMicroseconds": 622,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 72
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 195,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 73
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 148,
+                        "durationMicroseconds": 146,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 74
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 131,
                         "errorMessage": "",
                         "functionName": "radius",
                         "line": 77
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 192,
+                        "durationMicroseconds": 200,
                         "errorMessage": "",
                         "functionName": "fillColor",
                         "line": 79

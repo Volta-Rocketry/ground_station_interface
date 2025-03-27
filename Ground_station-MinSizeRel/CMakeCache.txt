@@ -530,6 +530,9 @@ Qt6QuickTools_DIR:PATH=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Quick
 
+//The directory containing a CMake configuration file for Qt6SerialPort.
+Qt6SerialPort_DIR:PATH=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6SerialPort
+
 //The directory containing a CMake configuration file for Qt6ShaderToolsTools.
 Qt6ShaderToolsTools_DIR:PATH=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/lib/cmake/Qt6ShaderToolsTools
 
@@ -1176,6 +1179,8 @@ QT_FEATURE_networklistmanager:INTERNAL=OFF
 QT_FEATURE_networkproxy:INTERNAL=ON
 //Qt feature: no_direct_extern_access (from target Qt6::Core)
 QT_FEATURE_no_direct_extern_access:INTERNAL=OFF
+//Qt feature: ntddmodm (from target Qt6::SerialPort)
+QT_FEATURE_ntddmodm:INTERNAL=OFF
 //Qt feature: ocsp (from target Qt6::Network)
 QT_FEATURE_ocsp:INTERNAL=ON
 //Qt feature: opengl (from target Qt6::Gui)

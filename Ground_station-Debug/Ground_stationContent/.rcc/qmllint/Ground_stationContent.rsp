@@ -10,7 +10,11 @@ D:/ground_station_interface/Ground_station-Debug/Ground_stationContent/.qt/rcc/q
 --resource
 D:/ground_station_interface/Ground_station-Debug/Ground_stationContent/.qt/rcc/Ground_stationContent_raw_qml_0.qrc
 D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreen.qml
-D:/ground_station_interface/Ground_station/Ground_stationContent/App.qml
-D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreenForm.ui.qml
-D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreen.qml
 D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreenForm.ui.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/CameraAndTelemetryForm.ui.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreenForm.ui.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/App.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreen.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/ConfigurationScreenForm.ui.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/CameraAndTelemetry.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/ConfigurationScreen.qml

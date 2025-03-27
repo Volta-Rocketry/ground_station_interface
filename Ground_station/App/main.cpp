@@ -3,16 +3,24 @@
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 #include "autogen/environment.h"
+#include "serialmanagement.h"
 
 int main(int argc, char *argv[])
 {
     set_qt_environment();
     QGuiApplication app(argc, argv);
 
+    SerialManagement serialManagement;
+
     QQmlApplicationEngine engine;
+
     const QUrl url(mainQmlFile);
+
+    engine.rootContext()->setContextProperty("serialManager", &serialManagement);
+
     QObject::connect(
                 &engine, &QQmlApplicationEngine::objectCreated, &app,
                 [url](QObject *obj, const QUrl &objUrl) {

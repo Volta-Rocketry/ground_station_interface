@@ -15,7 +15,7 @@ Window {
     Loader {
         id: loader
         anchors.fill: parent
-        source: "SplashScreen.qml"
+        source: "CameraAndTelemetry.qml"
     }
 
 
@@ -35,12 +35,12 @@ Window {
         anchors.right: parent.right
     }
 
-    Timer {
+    /*Timer {
         id: timer
         interval: 2000
         repeat: false
         running: true
         onTriggered: loader.source="MainScreen.qml"
-    }
+    }*/
 }
 

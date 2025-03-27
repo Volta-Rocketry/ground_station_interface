@@ -9,8 +9,10 @@ C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/us
 D:/ground_station_interface/Ground_station-MinSizeRel/Ground_stationContent/.qt/rcc/qmake_Ground_stationContent.qrc
 --resource
 D:/ground_station_interface/Ground_station-MinSizeRel/Ground_stationContent/.qt/rcc/Ground_stationContent_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station/Ground_stationContent/CameraAndTelemetryForm.ui.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreen.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreenForm.ui.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/CameraAndTelemetry.qml
+D:/ground_station_interface/Ground_station/Ground_stationContent/App.qml
 D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreen.qml
 D:/ground_station_interface/Ground_station/Ground_stationContent/SplashScreenForm.ui.qml
-D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreenForm.ui.qml
-D:/ground_station_interface/Ground_station/Ground_stationContent/App.qml
-D:/ground_station_interface/Ground_station/Ground_stationContent/MainScreen.qml

@@ -1,0 +1,62 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Ground_stationContent/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Ground_stationContentplugin_init_autogen_timestamp_deps::@8f5394b5b7aee3621f41",
+	"isGeneratorProvided" : true,
+	"name" : "Ground_stationContentplugin_init_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Ground_stationContent",
+		"source" : "Ground_stationContent"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/Ground_stationContent/CMakeFiles/Ground_stationContentplugin_init_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/Ground_stationContent/CMakeFiles/Ground_stationContentplugin_init_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

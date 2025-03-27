@@ -2,8 +2,10 @@
 D:/ground_station_interface/Ground_station-MinSizeRel/Ground_stationContent/.qt/rcc/qmake_Ground_stationContent.qrc
 --resource
 D:/ground_station_interface/Ground_station-MinSizeRel/Ground_stationContent/.qt/rcc/Ground_stationContent_raw_qml_0.qrc
+/qt/qml/Ground_stationContent/CameraAndTelemetryForm.ui.qml
+/qt/qml/Ground_stationContent/MainScreen.qml
+/qt/qml/Ground_stationContent/MainScreenForm.ui.qml
+/qt/qml/Ground_stationContent/CameraAndTelemetry.qml
+/qt/qml/Ground_stationContent/App.qml
 /qt/qml/Ground_stationContent/SplashScreen.qml
 /qt/qml/Ground_stationContent/SplashScreenForm.ui.qml
-/qt/qml/Ground_stationContent/MainScreenForm.ui.qml
-/qt/qml/Ground_stationContent/App.qml
-/qt/qml/Ground_stationContent/MainScreen.qml

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 12846,
+                        "durationMicroseconds": 39528,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 20
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 228,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 21
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 304,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 22
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 284,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "txtColor",
                         "line": 24
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 283,
+                        "durationMicroseconds": 170,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 41
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 206,
+                        "durationMicroseconds": 114,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 46
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 1501,
+                        "durationMicroseconds": 732,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "seriesColors",
                         "line": 62
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 279,
+                        "durationMicroseconds": 219,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 99
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 244,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 108
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 6,
                         "errorMessage": "Cannot resolve property type  for binding on fill.",
                         "functionName": "fill",
                         "line": 115
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 4,
                         "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
                         "functionName": "verticalCenter",
                         "line": 135
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
                         "line": 136
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 5,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
                         "functionName": "verticalCenter",
                         "line": 150
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
                         "line": 152
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 198,
+                        "durationMicroseconds": 189,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 167
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 94,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 177
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 73,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 187
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 410,
+                        "durationMicroseconds": 259,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 192
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 317,
+                        "durationMicroseconds": 210,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 194
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 281,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 198
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 314,
+                        "durationMicroseconds": 205,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 205
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 293,
+                        "durationMicroseconds": 174,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 209
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 287,
+                        "durationMicroseconds": 226,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 216
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 294,
+                        "durationMicroseconds": 216,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 220
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 295,
+                        "durationMicroseconds": 238,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 227
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 307,
+                        "durationMicroseconds": 182,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 231
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 275,
+                        "durationMicroseconds": 238,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 241
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 7,
+                        "durationMicroseconds": 4,
                         "errorMessage": "Cannot resolve property type  for binding on fill.",
                         "functionName": "fill",
                         "line": 247
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 157,
+                        "durationMicroseconds": 179,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 267
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 77,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 277
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 149,
+                        "durationMicroseconds": 102,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 287
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 360,
+                        "durationMicroseconds": 1646,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 298
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 498,
+                        "durationMicroseconds": 264,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 297
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 363,
+                        "durationMicroseconds": 193,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 307
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 366,
+                        "durationMicroseconds": 523,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 306
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 474,
+                        "durationMicroseconds": 175,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 317
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 355,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 326
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 292,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 335
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 346,
+                        "durationMicroseconds": 828,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 344
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 300,
+                        "durationMicroseconds": 232,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 353
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 314,
+                        "durationMicroseconds": 255,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 380
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 199,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 389
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 301,
+                        "durationMicroseconds": 458,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 398
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 552,
+                        "durationMicroseconds": 751,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 408
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 6,
                         "errorMessage": "Cannot resolve property type  for binding on inputMode.",
                         "functionName": "inputMode",
                         "line": 420
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on fill.",
                         "functionName": "fill",
                         "line": 415
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 151,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 436
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 126,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 446
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 111,
                         "errorMessage": "Cannot load property color from (component in MainScreenForm.ui.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 456
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 326,
+                        "durationMicroseconds": 1334,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 467
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 278,
+                        "durationMicroseconds": 495,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 476
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 407,
+                        "durationMicroseconds": 226,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 486
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 336,
+                        "durationMicroseconds": 436,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 495
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 303,
+                        "durationMicroseconds": 304,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 505
@@ -438,7 +438,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 345,
+                        "durationMicroseconds": 173,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 565
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 300,
+                        "durationMicroseconds": 176,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 574
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 286,
+                        "durationMicroseconds": 319,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 583
@@ -462,7 +462,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 323,
+                        "durationMicroseconds": 236,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 592
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 326,
+                        "durationMicroseconds": 171,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 601
@@ -478,7 +478,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 340,
+                        "durationMicroseconds": 471,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 610
@@ -486,7 +486,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 295,
+                        "durationMicroseconds": 211,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 619
@@ -494,7 +494,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 337,
+                        "durationMicroseconds": 167,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 628
@@ -502,7 +502,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 637
@@ -510,7 +510,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 329,
+                        "durationMicroseconds": 364,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 647
@@ -518,7 +518,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 206,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 667
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 254,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 677
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 281,
+                        "durationMicroseconds": 280,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 696
@@ -542,7 +542,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 375,
+                        "durationMicroseconds": 223,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 715
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 514,
+                        "durationMicroseconds": 227,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 734
@@ -558,7 +558,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 278,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 753
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 270,
+                        "durationMicroseconds": 210,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 762
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 268,
+                        "durationMicroseconds": 192,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 771
@@ -582,7 +582,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 309,
+                        "durationMicroseconds": 222,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 780
@@ -590,7 +590,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 261,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 798
@@ -598,7 +598,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "camera",
                         "line": 835
@@ -606,7 +606,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 108,
                         "errorMessage": "",
                         "functionName": "videoOutput",
                         "line": 836
@@ -614,7 +614,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 277,
+                        "durationMicroseconds": 198,
                         "errorMessage": "",
                         "functionName": "cameraDevice",
                         "line": 841
@@ -622,7 +622,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 279,
+                        "durationMicroseconds": 190,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 860
@@ -630,7 +630,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "camera",
                         "line": 872
@@ -638,7 +638,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 836,
+                        "durationMicroseconds": 400,
                         "errorMessage": "Cannot access value for name speedometer",
                         "functionName": "left",
                         "line": 866
@@ -646,7 +646,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 867
@@ -654,7 +654,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 360,
+                        "durationMicroseconds": 504,
                         "errorMessage": "",
                         "functionName": "clearColor",
                         "line": 875
@@ -662,7 +662,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 224,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "backgroundMode",
                         "line": 876
@@ -670,7 +670,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 356,
+                        "durationMicroseconds": 653,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 952
@@ -678,7 +678,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 1365,
+                        "durationMicroseconds": 1297,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "seriesColors",
                         "line": 978
@@ -686,7 +686,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 489,
+                        "durationMicroseconds": 1457,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1041
@@ -694,7 +694,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 231,
+                        "durationMicroseconds": 627,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 1050
@@ -702,7 +702,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 193,
+                        "durationMicroseconds": 167,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 1051
@@ -710,7 +710,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 308,
+                        "durationMicroseconds": 1290,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1052
@@ -718,7 +718,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 301,
+                        "durationMicroseconds": 189,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1061
@@ -726,7 +726,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 295,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "radius",
                         "line": 1071
@@ -734,7 +734,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 238,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "radius",
                         "line": 1081
@@ -742,7 +742,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 309,
+                        "durationMicroseconds": 2397,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1118
@@ -750,7 +750,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 306,
+                        "durationMicroseconds": 216,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1137
@@ -758,7 +758,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 298,
+                        "durationMicroseconds": 175,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1147
@@ -766,7 +766,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 300,
+                        "durationMicroseconds": 193,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1166
@@ -774,7 +774,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 2992,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1185
@@ -782,7 +782,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 284,
+                        "durationMicroseconds": 318,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1204
@@ -790,7 +790,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 330,
+                        "durationMicroseconds": 170,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1223
@@ -798,7 +798,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 434,
+                        "durationMicroseconds": 432,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1232
@@ -806,7 +806,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 307,
+                        "durationMicroseconds": 216,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1241
@@ -814,7 +814,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 331,
+                        "durationMicroseconds": 384,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1250
@@ -822,7 +822,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 289,
+                        "durationMicroseconds": 281,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 1268
@@ -830,7 +830,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 209,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 1305
