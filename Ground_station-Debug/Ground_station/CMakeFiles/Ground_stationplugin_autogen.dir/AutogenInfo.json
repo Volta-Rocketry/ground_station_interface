@@ -1,46 +1,38 @@
 {
-	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen",
-	"CMAKE_BINARY_DIR" : "D:/ground_station_interface/Ground_station-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "D:/ground_station_interface/Ground_station-Debug/Ground_station",
-	"CMAKE_CURRENT_SOURCE_DIR" : "D:/ground_station_interface/Ground_station/Ground_station",
-	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
+	"BUILD_DIR" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen",
+	"CMAKE_BINARY_DIR" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/andres/Documents/repos/ground_station_interface/Ground_station/Ground_station",
+	"CMAKE_EXECUTABLE" : "/home/andres/Qt/Tools/CMake/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"D:/ground_station_interface/Ground_station/Ground_station/CMakeLists.txt",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
-		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_Ground_stationPlugin_in.cpp"
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station/Ground_station/CMakeLists.txt",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
+		"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_Ground_stationPlugin_in.cpp"
 	],
-	"CMAKE_SOURCE_DIR" : "D:/ground_station_interface/Ground_station",
+	"CMAKE_SOURCE_DIR" : "/home/andres/Documents/repos/ground_station_interface/Ground_station",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/deps",
+	"DEP_FILE" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Ground_stationplugin_autogen/timestamp",
 	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/include",
-	"MOC_COMPILATION_FILE" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
-		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_DEPRECATED_WARNINGS",
 		"QT_NETWORK_LIB",
 		"QT_PLUGIN",
 		"QT_QMLINTEGRATION_LIB",
 		"QT_QML_LIB",
-		"QT_STATICPLUGIN",
-		"UNICODE",
-		"WIN32",
-		"WIN64",
-		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
-		"_UNICODE",
-		"_WIN64"
+		"QT_STATICPLUGIN"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -51,20 +43,21 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station",
-		"D:/ground_station_interface/Ground_station/Ground_station",
-		"C:/Qt/6.8.1/mingw_64/include/QtQml",
-		"C:/Qt/6.8.1/mingw_64/include",
-		"C:/Qt/6.8.1/mingw_64/include/QtCore",
-		"C:/Qt/6.8.1/mingw_64/mkspecs/win32-g++",
-		"C:/Qt/6.8.1/mingw_64/include/QtQmlIntegration",
-		"C:/Qt/6.8.1/mingw_64/include/QtNetwork",
-		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
-		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
-		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
-		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
-		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
-		"C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include"
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station/Ground_station",
+		"/home/andres/Qt/6.8.1/gcc_64/include/QtQml",
+		"/home/andres/Qt/6.8.1/gcc_64/include",
+		"/home/andres/Qt/6.8.1/gcc_64/include/QtCore",
+		"/home/andres/Qt/6.8.1/gcc_64/mkspecs/linux-g++",
+		"/home/andres/Qt/6.8.1/gcc_64/include/QtQmlIntegration",
+		"/home/andres/Qt/6.8.1/gcc_64/include/QtNetwork",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -79,39 +72,39 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"C:/Qt/Tools/mingw1310_64/bin/g++.exe",
+		"/bin/g++",
 		"-dM",
 		"-E",
 		"-c",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+		"/home/andres/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0_init.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station_init.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_Constants_qml.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListModel_qml.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_qmlcache_loader.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_station_autogen/mocs_compilation.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/ground_station_qmltyperegistrations.cpp"
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0_init.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station_init.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_Constants_qml.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListModel_qml.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_qmlcache_loader.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_station_autogen/mocs_compilation.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/ground_station_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/CMakeFiles/Ground_stationplugin_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "C:/Qt/6.8.1/mingw_64/bin/moc.exe",
+	"PARSE_CACHE_FILE" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/CMakeFiles/Ground_stationplugin_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/andres/Qt/6.8.1/gcc_64/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 8,
-	"SETTINGS_FILE" : "D:/ground_station_interface/Ground_station-Debug/Ground_station/CMakeFiles/Ground_stationplugin_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/CMakeFiles/Ground_stationplugin_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_Ground_stationPlugin.cpp",
+			"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_stationplugin_Ground_stationPlugin.cpp",
 			"MU",
 			null
 		]
@@ -120,16 +113,16 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0_init.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station_init.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_Constants_qml.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListModel_qml.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_qmlcache_loader.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/Ground_station_autogen/mocs_compilation.cpp",
-		"D:/ground_station_interface/Ground_station-Debug/Ground_station/ground_station_qmltyperegistrations.cpp"
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_Ground_station_raw_qml_0_init.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qrc_qmake_Ground_station_init.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_Constants_qml.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListModel_qml.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.rcc/qmlcache/Ground_station_qmlcache_loader.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/Ground_station_autogen/mocs_compilation.cpp",
+		"/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/ground_station_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,

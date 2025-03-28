@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Ground_station/">
-    <file alias="Constants.qml">D:/ground_station_interface/Ground_station/Ground_station/Constants.qml</file>
-    <file alias="EventListSimulator.qml">D:/ground_station_interface/Ground_station/Ground_station/EventListSimulator.qml</file>
-    <file alias="EventListModel.qml">D:/ground_station_interface/Ground_station/Ground_station/EventListModel.qml</file>
-  </qresource>
-</RCC>
-

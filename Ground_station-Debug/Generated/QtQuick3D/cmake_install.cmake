@@ -1,8 +1,8 @@
-# Install script for directory: D:/ground_station_interface/Ground_station/Generated/QtQuick3D
+# Install script for directory: /home/andres/Documents/repos/ground_station_interface/Ground_station/Generated/QtQuick3D
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Ground_stationApp")
+  set(CMAKE_INSTALL_PREFIX "/home/andres/Qt/6.8.1/gcc_64")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,16 +39,16 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Qt/Tools/mingw1310_64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Test/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Test/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/cmake_install.cmake")
 endif()
 

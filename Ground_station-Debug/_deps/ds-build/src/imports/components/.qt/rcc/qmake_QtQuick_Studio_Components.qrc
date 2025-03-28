@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/qt-project.org/imports/QtQuick/Studio/Components">
-    <file alias="qmldir">D:/ground_station_interface/Ground_station-Debug/qml/QtQuick/Studio/Components/qmldir</file>
+    <file alias="qmldir">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml/QtQuick/Studio/Components/qmldir</file>
   </qresource>
 </RCC>
 

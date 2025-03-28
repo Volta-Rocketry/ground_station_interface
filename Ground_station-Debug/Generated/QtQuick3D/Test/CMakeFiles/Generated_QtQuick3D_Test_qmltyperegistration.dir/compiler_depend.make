@@ -1,0 +1,2 @@
+# Empty custom commands generated dependencies file for Generated_QtQuick3D_Test_qmltyperegistration.
+# This may be replaced when dependencies are built.

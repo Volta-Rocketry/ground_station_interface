@@ -25,10 +25,10 @@ Rectangle {
     property real aspectRatio: 1.7778 //1920 / 1080 //display.width / display.height//
     property string timerVal: "T: +00:00"
     property alias timeLineValue: timeLineValue
-    property real timeLineMaxValue: timeLineBackground.width
+    property alias timeLineBackground: timeLineBackground
     property alias txtTittleAscent: txtTittleAscent
     property alias txtTittleApogee: txtTittleApogee
-    property alias txtTittleMainChutte: txtTittleMainChutte
+    property alias txtTittleMainChute: txtTittleMainChute
     property alias txtTittleTouchDown: txtTittleTouchDown
     property alias txtLowerEyectionInfo: txtLowerEyectionInfo
     property alias txtUpperEyectionInfo: txtUpperEyectionInfo
@@ -486,20 +486,20 @@ Rectangle {
             anchors.left: txtTittleAscent.right
             anchors.leftMargin: (timeLineBackground.width
                                  - (txtTittleAscent.width + txtTittleApogee.width
-                                    + txtTittleMainChutte.width + txtTittleTouchDown.width)) / 3
+                                    + txtTittleMainChute.width + txtTittleTouchDown.width)) / 3
             font.pixelSize: display.width * 0.021
             font.bold: false
         }
 
         Text {
-            id: txtTittleMainChutte
+            id: txtTittleMainChute
             color: "#82000000"
-            text: qsTr("Main Chutte")
+            text: qsTr("Main Chute")
             anchors.verticalCenter: txtTittleAscent.verticalCenter
             anchors.left: txtTittleApogee.right
             anchors.leftMargin: (timeLineBackground.width
                                  - (txtTittleAscent.width + txtTittleApogee.width
-                                    + txtTittleMainChutte.width + txtTittleTouchDown.width)) / 3
+                                    + txtTittleMainChute.width + txtTittleTouchDown.width)) / 3
             font.pixelSize: display.width * 0.021
         }
 
@@ -508,10 +508,10 @@ Rectangle {
             color: "#7b000000"
             text: qsTr("Touch Down")
             anchors.verticalCenter: txtTittleAscent.verticalCenter
-            anchors.left: txtTittleMainChutte.right
+            anchors.left: txtTittleMainChute.right
             anchors.leftMargin: (timeLineBackground.width
                                  - (txtTittleAscent.width + txtTittleApogee.width
-                                    + txtTittleMainChutte.width + txtTittleTouchDown.width)) / 3
+                                    + txtTittleMainChute.width + txtTittleTouchDown.width)) / 3
             font.pixelSize: display.width * 0.021
         }
     }
@@ -560,6 +560,7 @@ Rectangle {
             source: "images/Upper.png"
             anchors.horizontalCenter: parent.horizontalCenter
             fillMode: Image.PreserveAspectFit
+            visible: true
         }
 
         Image {
@@ -571,6 +572,7 @@ Rectangle {
             source: "images/Test2.png"
             anchors.horizontalCenter: parent.horizontalCenter
             fillMode: Image.PreserveAspectFit
+            visible: true
         }
 
         Image {

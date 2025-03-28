@@ -1,12 +1,12 @@
 <RCC>
   <qresource prefix="/qt-project.org/imports/QtQuick/Studio/LogicHelper/">
-    <file alias="BidirectionalBinding.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/BidirectionalBinding.qml</file>
-    <file alias="RangeMapper.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/RangeMapper.qml</file>
-    <file alias="MinMaxMapper.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/MinMaxMapper.qml</file>
-    <file alias="StringMapper.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/StringMapper.qml</file>
-    <file alias="OrOperator.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/OrOperator.qml</file>
-    <file alias="AndOperator.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/AndOperator.qml</file>
-    <file alias="NotOperator.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/NotOperator.qml</file>
+    <file alias="BidirectionalBinding.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/BidirectionalBinding.qml</file>
+    <file alias="RangeMapper.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/RangeMapper.qml</file>
+    <file alias="MinMaxMapper.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/MinMaxMapper.qml</file>
+    <file alias="StringMapper.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/StringMapper.qml</file>
+    <file alias="OrOperator.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/OrOperator.qml</file>
+    <file alias="AndOperator.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/AndOperator.qml</file>
+    <file alias="NotOperator.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/logichelper/NotOperator.qml</file>
   </qresource>
 </RCC>
 

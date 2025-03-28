@@ -1,5 +1,5 @@
 --resource
-D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/qmake_Generated_QtQuick3D_Missile5.qrc
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/qmake_Generated_QtQuick3D_Missile5.qrc
 --resource
-D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/Generated_QtQuick3D_Missile5_raw_qml_0.qrc
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/Generated_QtQuick3D_Missile5_raw_qml_0.qrc
 /qt/qml/Generated/QtQuick3D/Missile5/Missile5.qml

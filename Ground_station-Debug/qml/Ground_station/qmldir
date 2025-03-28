@@ -4,7 +4,7 @@ optional plugin Ground_stationplugin
 classname Ground_stationPlugin
 typeinfo Ground_station.qmltypes
 prefer :/qt/qml/Ground_station/
+singleton Constants 1.0 Constants.qml
 EventListSimulator 1.0 EventListSimulator.qml
 EventListModel 1.0 EventListModel.qml
-singleton Constants 1.0 Constants.qml
 

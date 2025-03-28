@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt-project.org/imports/QtQuick/Studio/EventSystem">
-    <file alias="qmldir">D:/ground_station_interface/Ground_station-MinSizeRel/qml/QtQuick/Studio/EventSystem/qmldir</file>
-  </qresource>
-</RCC>
-

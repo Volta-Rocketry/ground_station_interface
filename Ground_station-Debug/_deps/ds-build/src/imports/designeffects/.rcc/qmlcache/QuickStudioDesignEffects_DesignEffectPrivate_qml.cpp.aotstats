@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 734,
+                        "durationMicroseconds": 248,
                         "errorMessage": "",
                         "functionName": "onSourceChanged",
                         "line": 47
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 235,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 49
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 107,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 50
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 853,
+                        "durationMicroseconds": 490,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "clamp",
                         "line": 54
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 471,
+                        "durationMicroseconds": 273,
                         "errorMessage": "",
                         "functionName": "effectBoundingBox",
                         "line": 62
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 336,
+                        "durationMicroseconds": 154,
                         "errorMessage": "Instruction \"generate_CmpInstanceOf\" not implemented",
                         "functionName": "calculateBoundingBox",
                         "line": 64
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 114,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 52
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 18,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 90,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 91
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 482,
+                        "durationMicroseconds": 243,
                         "errorMessage": "",
                         "functionName": "radius",
                         "line": 92
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "source",
                         "line": 94
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 2269,
+                        "durationMicroseconds": 342,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 96
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 833,
+                        "durationMicroseconds": 325,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 97
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 609,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 103
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 273,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 104
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "sourceItem",
                         "line": 105
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "sourceRect",
                         "line": 106
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 140,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "hideSource",
                         "line": 107
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 118,
+                        "durationMicroseconds": 60,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 115
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 963,
+                        "durationMicroseconds": 414,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 118
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "source",
                         "line": 122
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 165,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "background",
                         "line": 124
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 566,
+                        "durationMicroseconds": 240,
                         "errorMessage": "",
                         "functionName": "radius",
                         "line": 125
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 299,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 131
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 132
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 143,
+                        "durationMicroseconds": 78,
                         "errorMessage": "",
                         "functionName": "sourceItem",
                         "line": 133
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "model",
                         "line": 141
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "source",
                         "line": 151
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 58,
+                        "durationMicroseconds": 29,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "horizontalOffset",
                         "line": 153
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 41,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 27,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "verticalOffset",
                         "line": 154
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "spread",
                         "line": 155
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 31,
+                        "durationMicroseconds": 15,
                         "errorMessage": "Cannot load property color from (component in DesignEffectPrivate.qml)::modelData with type QVariant.",
                         "functionName": "color",
                         "line": 156
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "radius",
                         "line": 157
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 11,
                         "errorMessage": "Cannot load property showBehind from (component in DesignEffectPrivate.qml)::modelData with type QVariant.",
                         "functionName": "showBehind",
                         "line": 158
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Cannot load property visible from (component in DesignEffectPrivate.qml)::modelData with type QVariant.",
                         "functionName": "visible",
                         "line": 159
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "onGeometryChanged",
                         "line": 161
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "source",
                         "line": 170
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "horizontalOffset",
                         "line": 172
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 41,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "verticalOffset",
                         "line": 173
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 58,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "spread",
                         "line": 174
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 12,
                         "errorMessage": "Cannot load property color from (component in DesignEffectPrivate.qml)::modelData with type QVariant.",
                         "functionName": "color",
                         "line": 175
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "radius",
                         "line": 176
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Cannot load property visible from (component in DesignEffectPrivate.qml)::modelData with type QVariant.",
                         "functionName": "visible",
                         "line": 177

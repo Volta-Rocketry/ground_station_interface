@@ -5,14 +5,7 @@
 #include <QtCore/qstring.h>
 
 namespace QmlCacheGeneratedCode {
-namespace _qt_qml_Ground_stationContent_SplashScreen_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _qt_qml_Ground_stationContent_MainScreenForm_ui_0x2e_qml { 
+namespace _qt_qml_Ground_stationContent_SplashScreenForm_ui_0x2e_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -26,21 +19,7 @@ namespace _qt_qml_Ground_stationContent_CameraAndTelemetryForm_ui_0x2e_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_Ground_stationContent_SplashScreenForm_ui_0x2e_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _qt_qml_Ground_stationContent_App_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _qt_qml_Ground_stationContent_MainScreen_qml { 
+namespace _qt_qml_Ground_stationContent_ConfigurationScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -54,6 +33,27 @@ namespace _qt_qml_Ground_stationContent_ConfigurationScreenForm_ui_0x2e_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_Ground_stationContent_SplashScreen_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_Ground_stationContent_App_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_Ground_stationContent_MainScreenForm_ui_0x2e_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_Ground_stationContent_CameraAndTelemetry_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -61,7 +61,7 @@ namespace _qt_qml_Ground_stationContent_CameraAndTelemetry_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_Ground_stationContent_ConfigurationScreen_qml { 
+namespace _qt_qml_Ground_stationContent_MainScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -82,15 +82,15 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 
 Registry::Registry() {
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/SplashScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_SplashScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/MainScreenForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_MainScreenForm_ui_0x2e_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/CameraAndTelemetryForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_CameraAndTelemetryForm_ui_0x2e_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/SplashScreenForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_SplashScreenForm_ui_0x2e_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/App.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_App_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/MainScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_MainScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/ConfigurationScreenForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_ConfigurationScreenForm_ui_0x2e_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/CameraAndTelemetry.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_CameraAndTelemetry_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/CameraAndTelemetryForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_CameraAndTelemetryForm_ui_0x2e_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/ConfigurationScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_ConfigurationScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/ConfigurationScreenForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_ConfigurationScreenForm_ui_0x2e_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/SplashScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_SplashScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/App.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_App_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/MainScreenForm.ui.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_MainScreenForm_ui_0x2e_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/CameraAndTelemetry.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_CameraAndTelemetry_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_stationContent/MainScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_stationContent_MainScreen_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

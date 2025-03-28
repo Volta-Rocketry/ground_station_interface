@@ -1,8 +1,8 @@
-# Install script for directory: D:/ground_station_interface/Ground_station
+# Install script for directory: /home/andres/Documents/repos/ground_station_interface/Ground_station
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Ground_stationApp")
+  set(CMAKE_INSTALL_PREFIX "/home/andres/Qt/6.8.1/gcc_64")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,40 +39,50 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Qt/Tools/mingw1310_64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Ground_stationContent/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Generated/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_stationContent/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Ground_station/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/App/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/App/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/cmake_install.cmake")
+  include("/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/ground_station_interface/Ground_station-Debug/Ground_stationApp.exe")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp.exe")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp"
+         RPATH "\$ORIGIN:\$ORIGIN/../lib")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_stationApp")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp"
+         OLD_RPATH "/home/andres/Qt/6.8.1/gcc_64/lib:"
+         NEW_RPATH "\$ORIGIN:\$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "C:/Qt/Tools/mingw1310_64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp.exe")
+      execute_process(COMMAND "/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Ground_stationApp")
     endif()
   endif()
 endif()
@@ -80,5 +95,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/ground_station_interface/Ground_station-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

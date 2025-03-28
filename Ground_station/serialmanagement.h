@@ -29,8 +29,11 @@ public slots:
     float getLastDataInList(int list, int pos);
     float getMaxMinDataInList(int list, bool maxBool);
     float getAbsMaxMinDataInLists(QList<int> lists, bool maxBool);
+    float getDataConvertedImperial(int dataWanted);
 
     // Time management print
+    void flightTimerStart();
+    void flightTimerStop();
     float getCurrentTimeSFloat();
     QString getCurrentTimeMSmString(int format);
 
@@ -88,14 +91,16 @@ private:
             // Speed
     QList<float> _currentSpeedDataListFloat;
 
-    // Times updates management
-    QString _coreLastUpdatedTime = "00:00:00";
-    float _coreLastUpdatedSeconds = 9999;
-
-
+        // Telemetry Update Status
+    int telemetryStatus;        
 
     // Data updates
     void coreDataUpdate();
+    void telemetryStatusUpdate();
+
+    // Times updates management
+    QString _coreLastUpdatedTime = "00:00:00";
+    float _coreLastUpdatedSeconds = 9999;
 
     // Constants
     int _baudRateMode = 0;
@@ -162,6 +167,19 @@ signals:
     // For UI update
     void coreDataReady();
 
+    // For Status Updates
+        // Telemetry base
+    void telemetryConnectionStablishedConfirmed();
+    void telemetryBoostDetected();
+    void telemetryApogeeDetected();
+    void telemetryMainDetected();
+    void telemetryLandingDetected();
+        // Manual base
+    void manualBoostDetected();
+    void manualApogeeDetected();
+    void manualMainDetected();
+    void manualLandingDetected();
+
     // For error and warnings management
     void portIsNotWritable();
     void portIsNotReadable();
@@ -173,3 +191,4 @@ signals:
 };
 
 #endif // SERIALMANAGEMENT_H
+

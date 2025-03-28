@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 284,
+                        "durationMicroseconds": 203,
                         "errorMessage": "Cannot load property modelName from (component in ChildListModel.qml)::modelName with type QString.",
                         "functionName": "onJsonObjectChanged",
                         "line": 50

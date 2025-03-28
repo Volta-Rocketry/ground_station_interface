@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 1427,
+                        "durationMicroseconds": 204,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 47
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 290,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 55
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 401,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 63
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 142,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 71
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 279,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 79
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 284,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 87
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 418,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 95
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 352,
+                        "durationMicroseconds": 142,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 103
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 146,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 111
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 387,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 119
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 247,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 127
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 135
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 281,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 144
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 152
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 227,
+                        "durationMicroseconds": 144,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 160
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 259,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 168
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 243,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 176

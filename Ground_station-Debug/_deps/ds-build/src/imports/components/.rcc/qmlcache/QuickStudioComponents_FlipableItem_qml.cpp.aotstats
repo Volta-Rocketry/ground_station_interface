@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 3061,
+                        "durationMicroseconds": 1430,
                         "errorMessage": "Cannot generate efficient code for incomparable types void and conversion to QVariant",
                         "functionName": "onChildrenChanged",
                         "line": 152
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 299,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 132
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name opacityFront",
                         "functionName": "value",
                         "line": 133
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 15,
-                        "durationMicroseconds": 350,
+                        "durationMicroseconds": 215,
                         "errorMessage": "Cannot generate efficient code for incomparable types void and QQuickFlipable::front with type QQuickItem (stored as QObject)",
                         "functionName": "when",
                         "line": 135
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 162,
+                        "durationMicroseconds": 98,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 139
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 18,
                         "errorMessage": "Cannot access value for name opacityBack",
                         "functionName": "value",
                         "line": 140
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 15,
-                        "durationMicroseconds": 298,
+                        "durationMicroseconds": 208,
                         "errorMessage": "Cannot generate efficient code for incomparable types void and QQuickFlipable::back with type QQuickItem (stored as QObject)",
                         "functionName": "when",
                         "line": 142
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 259,
+                        "durationMicroseconds": 153,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 164
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 228,
+                        "durationMicroseconds": 144,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 165
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 376,
+                        "durationMicroseconds": 241,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 166
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 506,
+                        "durationMicroseconds": 217,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 167

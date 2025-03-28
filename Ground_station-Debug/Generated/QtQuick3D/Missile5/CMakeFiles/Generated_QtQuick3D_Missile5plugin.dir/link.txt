@@ -1,0 +1,2 @@
+/bin/ar qc ../../../qml/Generated/QtQuick3D/Missile5/libGenerated_QtQuick3D_Missile5plugin.a CMakeFiles/Generated_QtQuick3D_Missile5plugin.dir/Generated_QtQuick3D_Missile5plugin_autogen/mocs_compilation.cpp.o CMakeFiles/Generated_QtQuick3D_Missile5plugin.dir/Generated_QtQuick3D_Missile5plugin_Generated_QtQuick3D_Missile5Plugin.cpp.o
+/bin/ranlib ../../../qml/Generated/QtQuick3D/Missile5/libGenerated_QtQuick3D_Missile5plugin.a

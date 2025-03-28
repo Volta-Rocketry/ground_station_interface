@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/qt/qml/Ground_station">D:/ground_station_interface/Ground_station-Debug/qml/Ground_station</file>
+    <file alias="/qt/qml/Ground_station">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml/Ground_station</file>
 
   </qresource>
 </RCC>

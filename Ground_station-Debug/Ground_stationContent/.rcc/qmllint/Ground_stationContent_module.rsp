@@ -1,12 +1,12 @@
 -I
-D:/ground_station_interface/Ground_station-Debug/qml
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml
 -I
-D:/ground_station_interface/Ground_station-Debug/qml
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml
 -I
-C:/Qt/6.8.1/mingw_64/qml
+/home/andres/Qt/6.8.1/gcc_64/qml
 --resource
-D:/ground_station_interface/Ground_station-Debug/Ground_stationContent/.qt/rcc/qmake_Ground_stationContent.qrc
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_stationContent/.qt/rcc/qmake_Ground_stationContent.qrc
 --resource
-D:/ground_station_interface/Ground_station-Debug/Ground_stationContent/.qt/rcc/Ground_stationContent_raw_qml_0.qrc
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_stationContent/.qt/rcc/Ground_stationContent_raw_qml_0.qrc
 --module
 Ground_stationContent

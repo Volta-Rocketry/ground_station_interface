@@ -1,2 +1,2 @@
-D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qsb/shaders/opacityMask.frag.qsb: \
-  D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/shaders/opacityMask.frag
+/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qsb/shaders/opacityMask.frag.qsb: \
+  /home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/shaders/opacityMask.frag

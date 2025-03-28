@@ -1,0 +1,2 @@
+/bin/ar qc ../../../../../qml/QtQuick/Studio/DesignEffects/libQuickStudioDesignEffectsplugin.a CMakeFiles/QuickStudioDesignEffectsplugin.dir/QuickStudioDesignEffectsplugin_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioDesignEffectsplugin.dir/QuickStudioDesignEffectsplugin_QtQuick_Studio_DesignEffectsPlugin.cpp.o
+/bin/ranlib ../../../../../qml/QtQuick/Studio/DesignEffects/libQuickStudioDesignEffectsplugin.a

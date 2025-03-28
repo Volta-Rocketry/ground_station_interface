@@ -7,6 +7,9 @@ SerialManagement::SerialManagement(QObject *parent)
     _microcontrollerFoundOnConnection = false;
     _microcontrollerConnected = false;
     _serialBuffer = "";
+
+    // -- TIMERS --
+    setupTimer(timerFLightTime, 500, "timerFLightTime");
 }
 
 QList<QString> SerialManagement::searchPortInfo()
@@ -238,6 +241,28 @@ void SerialManagement::coreDataUpdate()
 
 }
 
+void SerialManagement::telemetryStatusUpdate()
+{
+    switch (telemetryStatus){
+    case 1:
+        emit telemetryConnectionStablishedConfirmed();
+        break;
+    case 2:
+        emit telemetryBoostDetected();
+        break;
+    case 3:
+        emit telemetryApogeeDetected();
+        break;
+    case 4:
+        emit telemetryMainDetected();
+        break;
+    case 5:
+        emit telemetryLandingDetected();
+        break;
+    }
+
+}
+
 void SerialManagement::endConnection()
 {
     serialClose();
@@ -318,9 +343,8 @@ void SerialManagement::serialRead()
             coreDataUpdate();
 
         }else if(cat == 2){
-            data.removeFirst();
-            data.removeFirst();
-            data.removeLast();
+            telemetryStatus = data.first().toInt();
+            telemetryStatusUpdate();
 
             //_pyroContDataList = data;
             //pyroContDataUpdate();
@@ -493,6 +517,28 @@ float SerialManagement::getAbsMaxMinDataInLists(QList<int> lists, bool maxBool)
         values.clear();
         return *min;
     }
+}
+
+float SerialManagement::getDataConvertedImperial(int dataWanted)
+{
+/*
+    FUnction to get the data converted from SI to imperial units
+
+    1 -> Last alttiude value
+    2 -> Last speed value
+*/
+    switch(dataWanted){
+        case 1:
+        return getLastDataInList(7,-1)*3.28084;
+            break;
+        case 2:
+            return getLastDataInList(12,-1)*3.28084;
+    }
+}
+
+void SerialManagement::flightTimerStart()
+{
+    startTimer(timer1, "Timer1");
 }
 
 void SerialManagement::testMode()

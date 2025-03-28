@@ -1,0 +1,126 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_qml_type_registration",
+			"qt6_add_qml_module"
+		],
+		"files" : 
+		[
+			"/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Generated/QtQuick3D/Missile5/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 785,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3604,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Generated_QtQuick3D_Missile5_autogen_timestamp_deps::@00f48cabc46fb07068a7"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Generated_QtQuick3D_Missile5_qmltyperegistration::@00f48cabc46fb07068a7",
+	"name" : "Generated_QtQuick3D_Missile5_qmltyperegistration",
+	"paths" : 
+	{
+		"build" : "Generated/QtQuick3D/Missile5",
+		"source" : "Generated/QtQuick3D/Missile5"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/CMakeFiles/Generated_QtQuick3D_Missile5_qmltyperegistration",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/CMakeFiles/Generated_QtQuick3D_Missile5_qmltyperegistration.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/generated_qtquick3d_missile5_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/meta_types/qt6generated_qtquick3d_missile5_debug_metatypes.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/meta_types/qt6generated_qtquick3d_missile5_debug_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/meta_types/Generated_QtQuick3D_Missile5_json_file_list.txt.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/Generated_QtQuick3D_Missile5_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

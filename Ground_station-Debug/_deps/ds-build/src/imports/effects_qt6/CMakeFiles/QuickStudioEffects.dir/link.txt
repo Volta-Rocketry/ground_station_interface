@@ -1,0 +1,2 @@
+/bin/ar qc libQuickStudioEffects.a CMakeFiles/QuickStudioEffects.dir/QuickStudioEffects_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioEffects.dir/quickstudioeffects_qmltyperegistrations.cpp.o CMakeFiles/QuickStudioEffects.dir/.qt/rcc/qrc_qmake_QtQuick_Studio_Effects.cpp.o CMakeFiles/QuickStudioEffects.dir/.qt/rcc/qrc_QuickStudioEffects_raw_qml_0.cpp.o
+/bin/ranlib libQuickStudioEffects.a

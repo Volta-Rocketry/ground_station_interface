@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/qt-project.org/imports/FlowView">D:/ground_station_interface/Ground_station-Debug/qml/FlowView</file>
+    <file alias="/qt-project.org/imports/FlowView">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml/FlowView</file>
 
   </qresource>
 </RCC>

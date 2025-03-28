@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 549,
+                        "durationMicroseconds": 211,
                         "errorMessage": "",
                         "functionName": "sourceRotation",
                         "line": 43
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 3735,
+                        "durationMicroseconds": 1668,
                         "errorMessage": "",
                         "functionName": "textureSize",
                         "line": 45
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 986,
+                        "durationMicroseconds": 509,
                         "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: QVariant -> QVector2D stored as QVariant",
                         "functionName": "pixelSize",
                         "line": 47
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 314,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "sigma",
                         "line": 49
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 487,
+                        "durationMicroseconds": 112,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 53
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 213,
+                        "durationMicroseconds": 106,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 54
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 112,
                         "errorMessage": "",
                         "functionName": "onSourceRotationChanged",
                         "line": 58
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 185,
+                        "durationMicroseconds": 106,
                         "errorMessage": "",
                         "functionName": "onSpreadChanged",
                         "line": 59
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 114,
                         "errorMessage": "",
                         "functionName": "onHorizontalOffsetChanged",
                         "line": 60
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 633,
+                        "durationMicroseconds": 102,
                         "errorMessage": "",
                         "functionName": "onVerticalOffsetChanged",
                         "line": 61
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 364,
+                        "durationMicroseconds": 209,
                         "errorMessage": "",
                         "functionName": "__offset",
                         "line": 63
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 3065,
+                        "durationMicroseconds": 1396,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "calculateOffset",
                         "line": 65
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 112,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Instruction \"generate_CmpInstanceOf\" not implemented",
                         "functionName": "copyActive",
                         "line": 72
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 898,
+                        "durationMicroseconds": 412,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 77
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 727,
+                        "durationMicroseconds": 435,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 78
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 202,
+                        "durationMicroseconds": 81,
                         "errorMessage": "Cannot load property radius from (component in DesignInnerShadowPrivate.qml)::source with type QQuickItem.",
                         "functionName": "radius",
                         "line": 79
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 86
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 200,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 87
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 362,
+                        "durationMicroseconds": 233,
                         "errorMessage": "",
                         "functionName": "sourceItem",
                         "line": 88
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 3070,
+                        "durationMicroseconds": 1515,
                         "errorMessage": "",
                         "functionName": "sourceRect",
                         "line": 89
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 248,
+                        "durationMicroseconds": 135,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 98
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "src",
                         "line": 99
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 228,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 103
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 246,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 104
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "blurKernel",
                         "line": 114
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 157,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "sigma",
                         "line": 115
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "src",
                         "line": 116
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 57,
                         "errorMessage": "Multiple matching overrides found. Cannot determine the right one.",
                         "functionName": "pixelSize",
                         "line": 117
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 226,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "offscreenColor",
                         "line": 119
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 123
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 223,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 124
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 171,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "blurKernel",
                         "line": 135
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "sigma",
                         "line": 136
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "src",
                         "line": 137
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 57,
                         "errorMessage": "Multiple matching overrides found. Cannot determine the right one.",
                         "functionName": "pixelSize",
                         "line": 138
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "offscreenColor",
                         "line": 140
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 230,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 144
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 145
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 255,
+                        "durationMicroseconds": 137,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 157
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 256,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 158
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 151,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "sourceItem",
                         "line": 159
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 3723,
+                        "durationMicroseconds": 1533,
                         "errorMessage": "",
                         "functionName": "sourceRect",
                         "line": 160
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 214,
+                        "durationMicroseconds": 95,
                         "errorMessage": "",
                         "functionName": "shadow",
                         "line": 167
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "original",
                         "line": 168
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 995,
+                        "durationMicroseconds": 499,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 172
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 1130,
+                        "durationMicroseconds": 505,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 173
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 289,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 174
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 265,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 175

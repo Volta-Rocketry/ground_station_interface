@@ -1,0 +1,2 @@
+/bin/ar qc libFlowView.a CMakeFiles/FlowView.dir/FlowView_autogen/mocs_compilation.cpp.o CMakeFiles/FlowView.dir/flowview_qmltyperegistrations.cpp.o CMakeFiles/FlowView.dir/.qt/rcc/qrc_FlowView_raw_qml_0.cpp.o
+/bin/ranlib libFlowView.a

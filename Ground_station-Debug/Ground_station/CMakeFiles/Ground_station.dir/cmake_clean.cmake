@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../qml/Ground_station/Ground_station.qmltypes"
+  ".qt/rcc/qrc_Ground_station_raw_qml_0.cpp"
+  ".qt/rcc/qrc_qmake_Ground_station.cpp"
+  ".rcc/qmlcache/Ground_station_Constants_qml.cpp"
+  ".rcc/qmlcache/Ground_station_Constants_qml.cpp.aotstats"
+  ".rcc/qmlcache/Ground_station_EventListModel_qml.cpp"
+  ".rcc/qmlcache/Ground_station_EventListModel_qml.cpp.aotstats"
+  ".rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp"
+  ".rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp.aotstats"
+  ".rcc/qmlcache/Ground_station_qmlcache_loader.cpp"
+  "CMakeFiles/Ground_station_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/Ground_station_autogen.dir/ParseCache.txt"
+  "Ground_station_autogen"
+  "CMakeFiles/Ground_station.dir/.qt/rcc/qrc_Ground_station_raw_qml_0.cpp.o"
+  "CMakeFiles/Ground_station.dir/.qt/rcc/qrc_Ground_station_raw_qml_0.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/.qt/rcc/qrc_qmake_Ground_station.cpp.o"
+  "CMakeFiles/Ground_station.dir/.qt/rcc/qrc_qmake_Ground_station.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_Constants_qml.cpp.o"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_Constants_qml.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_EventListModel_qml.cpp.o"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_EventListModel_qml.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp.o"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_EventListSimulator_qml.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_qmlcache_loader.cpp.o"
+  "CMakeFiles/Ground_station.dir/.rcc/qmlcache/Ground_station_qmlcache_loader.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/Ground_station_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/Ground_station.dir/Ground_station_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/Ground_station.dir/ground_station_qmltyperegistrations.cpp.o"
+  "CMakeFiles/Ground_station.dir/ground_station_qmltyperegistrations.cpp.o.d"
+  "ground_station_qmltyperegistrations.cpp"
+  "libGround_station.a"
+  "libGround_station.pdb"
+  "meta_types/Ground_station_json_file_list.txt"
+  "meta_types/Ground_station_json_file_list.txt.timestamp"
+  "meta_types/qt6ground_station_debug_metatypes.json"
+  "meta_types/qt6ground_station_debug_metatypes.json.gen"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Ground_station.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

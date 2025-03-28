@@ -6,9 +6,9 @@
 #include <QGuiApplication>
 #include "qqmlextensionplugin.h"
 
-Q_IMPORT_QML_PLUGIN(Ground_stationContentPlugin)
-Q_IMPORT_QML_PLUGIN(Generated_QtQuick3D_Missile5Plugin)
 Q_IMPORT_QML_PLUGIN(Generated_QtQuick3D_TestPlugin)
+Q_IMPORT_QML_PLUGIN(Generated_QtQuick3D_Missile5Plugin)
+Q_IMPORT_QML_PLUGIN(Ground_stationContentPlugin)
 Q_IMPORT_QML_PLUGIN(Ground_stationPlugin)
 
 const char mainQmlFile[] = "qrc:/qt/qml/Ground_stationContent/App.qml";

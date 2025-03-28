@@ -1,11 +1,39 @@
+
 // Copyright (C) 2021 The Qt Company Ltd.
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
-
 import QtQuick
 import Ground_station
 import QtQuick.VirtualKeyboard
 
 Window {
+
+    Rectangle {
+        width: parent.width
+        height: parent.height
+        focus: true // Permitir que reciba eventos de teclado
+        Component.onCompleted: forceActiveFocus() // Forzar el foco al cargar
+
+        Keys.onPressed: event => {
+                            //console.log("Tecla presionada:", event.key) // Debug
+                            if (event.key === Qt.Key_Enter
+                                || event.key === Qt.Key_Return) {
+                                console.log("Se presionó Enter")
+                            } else if (event.key === Qt.Key_Q) {
+                                console.log("Se activó manualmente boost")
+                                serialManager.manualBoostDetected()
+                            } else if (event.key === Qt.Key_W) {
+                                console.log("Se activó manualmente apogee")
+                                serialManager.manualApogeeDetected()
+                            } else if (event.key === Qt.Key_E) {
+                                console.log("Se activó manualmente main")
+                                serialManager.manualMainDetected()
+                            } else if (event.key === Qt.Key_R) {
+                                console.log("Se activó manualmente landing")
+                                serialManager.manualLandingDetected()
+                            }
+                        }
+    }
+
     width: Constants.width
     height: Constants.height
 
@@ -18,10 +46,9 @@ Window {
         source: "CameraAndTelemetry.qml"
     }
 
-
     InputPanel {
         id: inputPanel
-        property bool showKeyboard :  active
+        property bool showKeyboard: active
         y: showKeyboard ? parent.height - height : parent.height
         Behavior on y {
             NumberAnimation {
@@ -29,11 +56,12 @@ Window {
                 easing.type: Easing.InOutQuad
             }
         }
-        anchors.leftMargin: Constants.width/10
-        anchors.rightMargin: Constants.width/10
+        anchors.leftMargin: Constants.width / 10
+        anchors.rightMargin: Constants.width / 10
         anchors.left: parent.left
         anchors.right: parent.right
     }
+
 
     /*Timer {
         id: timer
@@ -43,4 +71,3 @@ Window {
         onTriggered: loader.source="MainScreen.qml"
     }*/
 }
-

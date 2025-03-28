@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="qtquickcontrols2.conf">D:/ground_station_interface/Ground_station/qtquickcontrols2.conf</file>
+    <file alias="qtquickcontrols2.conf">/home/andres/Documents/repos/ground_station_interface/Ground_station/qtquickcontrols2.conf</file>
   </qresource>
 </RCC>
 

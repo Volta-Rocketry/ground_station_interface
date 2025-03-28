@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 373,
+                        "durationMicroseconds": 199,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 25
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 26
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 128,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 27
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 28
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
                         "line": 62
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on model.",
                         "functionName": "model",
                         "line": 69
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 246,
+                        "durationMicroseconds": 134,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 109
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 319,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 110
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 45,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 146,
                         "errorMessage": "",
                         "functionName": "horizontalCenterOffset",
                         "line": 112
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 113
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 111
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 31,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Cannot retrieve a non-object type by ID: cbBaudRate",
                         "functionName": "top",
                         "line": 143
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 144
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot retrieve a non-object type by ID: cbBaudRate",
                         "functionName": "horizontalCenter",
                         "line": 146
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 171,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 145
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
                         "line": 152
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on bottomMargin.",
                         "functionName": "bottomMargin",
                         "line": 156
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
                         "line": 157
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
                         "line": 162
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
                         "line": 163
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMinChamberTem",
                         "functionName": "text",
                         "line": 180
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMinChamberTem",
                         "functionName": "bottom",
                         "line": 181
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "bottomMargin",
                         "line": 182
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 184
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 183
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMinChamberTem",
                         "functionName": "top",
                         "line": 208
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 143,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 209
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 45,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 144,
                         "errorMessage": "",
                         "functionName": "horizontalCenterOffset",
                         "line": 211
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 212
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 210
@@ -438,7 +438,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMaxChamberTem",
                         "functionName": "text",
                         "line": 218
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 19,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMaxChamberTem",
                         "functionName": "bottom",
                         "line": 219
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 146,
                         "errorMessage": "",
                         "functionName": "bottomMargin",
                         "line": 220
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 221
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 22,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot retrieve a non-object type by ID: btnSearch",
                         "functionName": "top",
                         "line": 247
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 151,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 248
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 249
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMaxDataMemory",
                         "functionName": "top",
                         "line": 256
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 17,
                         "errorMessage": "Cannot retrieve a non-object type by ID: sliderMaxDataMemory",
                         "functionName": "horizontalCenter",
                         "line": 259
@@ -582,7 +582,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 151,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 258
@@ -590,7 +590,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 130,
+                        "durationMicroseconds": 134,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 266
@@ -606,7 +606,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 143,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "leftMargin",
                         "line": 268
@@ -614,7 +614,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 139,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 269
@@ -622,7 +622,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 176,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 270
@@ -630,7 +630,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot retrieve a non-object type by ID: cbSerialPort",
                         "functionName": "left",
                         "line": 276
@@ -638,7 +638,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 277
@@ -646,7 +646,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 169,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "leftMargin",
                         "line": 278
@@ -654,7 +654,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 279
@@ -662,7 +662,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 181,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 280
@@ -670,7 +670,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 286
@@ -678,7 +678,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 144,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 287
@@ -686,7 +686,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 139,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 289
@@ -694,7 +694,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 288

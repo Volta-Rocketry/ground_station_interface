@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-src"
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-build"
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix"
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/tmp"
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp"
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src"
-  "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/tmp"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src"
+  "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

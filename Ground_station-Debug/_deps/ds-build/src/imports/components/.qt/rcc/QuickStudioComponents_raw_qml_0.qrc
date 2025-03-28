@@ -1,19 +1,19 @@
 <RCC>
   <qresource prefix="/qt-project.org/imports/QtQuick/Studio/Components/">
-    <file alias="ArcArrow.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/ArcArrow.qml</file>
-    <file alias="ArcItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/ArcItem.qml</file>
-    <file alias="BorderItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/BorderItem.qml</file>
-    <file alias="EllipseItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/EllipseItem.qml</file>
-    <file alias="FlipableItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/FlipableItem.qml</file>
-    <file alias="GroupItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/GroupItem.qml</file>
-    <file alias="PieItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/PieItem.qml</file>
-    <file alias="RectangleItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/RectangleItem.qml</file>
-    <file alias="RegularPolygonItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/RegularPolygonItem.qml</file>
-    <file alias="StarItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/StarItem.qml</file>
-    <file alias="StraightArrow.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/StraightArrow.qml</file>
-    <file alias="SvgPathItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/SvgPathItem.qml</file>
-    <file alias="TextItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/TextItem.qml</file>
-    <file alias="TriangleItem.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/TriangleItem.qml</file>
+    <file alias="ArcArrow.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/ArcArrow.qml</file>
+    <file alias="ArcItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/ArcItem.qml</file>
+    <file alias="BorderItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/BorderItem.qml</file>
+    <file alias="EllipseItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/EllipseItem.qml</file>
+    <file alias="FlipableItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/FlipableItem.qml</file>
+    <file alias="GroupItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/GroupItem.qml</file>
+    <file alias="PieItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/PieItem.qml</file>
+    <file alias="RectangleItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/RectangleItem.qml</file>
+    <file alias="RegularPolygonItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/RegularPolygonItem.qml</file>
+    <file alias="StarItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/StarItem.qml</file>
+    <file alias="StraightArrow.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/StraightArrow.qml</file>
+    <file alias="SvgPathItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/SvgPathItem.qml</file>
+    <file alias="TextItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/TextItem.qml</file>
+    <file alias="TriangleItem.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/TriangleItem.qml</file>
   </qresource>
 </RCC>
 

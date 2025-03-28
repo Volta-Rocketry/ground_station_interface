@@ -1,2 +1,0 @@
-D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/designeffects/.qsb/shaders/innerShadow.frag.qsb: \
-  D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/designeffects/shaders/innerShadow.frag
