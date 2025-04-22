@@ -1,12 +1,12 @@
 -I
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml
+D:/ground_station_interface/Ground_station-Debug/qml
 -I
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml
+D:/ground_station_interface/Ground_station-Debug/qml
 -I
-/home/andres/Qt/6.8.1/gcc_64/qml
+C:/Qt/6.8.1/mingw_64/qml
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/qmake_Generated_QtQuick3D_Missile5.qrc
+D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/qmake_Generated_QtQuick3D_Missile5.qrc
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/Generated_QtQuick3D_Missile5_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Missile5/.qt/rcc/Generated_QtQuick3D_Missile5_raw_qml_0.qrc
 --module
 Generated.QtQuick3D.Missile5

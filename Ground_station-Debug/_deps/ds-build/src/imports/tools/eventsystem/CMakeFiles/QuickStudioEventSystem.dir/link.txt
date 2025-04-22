@@ -1,2 +1,0 @@
-/bin/ar qc libQuickStudioEventSystem.a CMakeFiles/QuickStudioEventSystem.dir/QuickStudioEventSystem_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioEventSystem.dir/quickstudioeventsystem_qmltyperegistrations.cpp.o CMakeFiles/QuickStudioEventSystem.dir/.qt/rcc/qrc_qmake_QtQuick_Studio_EventSystem.cpp.o CMakeFiles/QuickStudioEventSystem.dir/.qt/rcc/qrc_QuickStudioEventSystem_raw_qml_0.cpp.o
-/bin/ranlib libQuickStudioEventSystem.a

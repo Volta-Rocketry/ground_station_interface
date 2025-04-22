@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 181,
+                        "durationMicroseconds": 325,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 154
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 160
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 166
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 339,
                         "errorMessage": "",
                         "functionName": "__preferredRendererTypeAvailable",
                         "line": 202
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 544,
                         "errorMessage": "",
                         "functionName": "__curveRendererActive",
                         "line": 203
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 339,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 206
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 371,
                         "errorMessage": "",
                         "functionName": "smooth",
                         "line": 207
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 236,
+                        "durationMicroseconds": 448,
                         "errorMessage": "",
                         "functionName": "samples",
                         "line": 208
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 179,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 214
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 215
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 216
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 501,
+                        "durationMicroseconds": 995,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 226

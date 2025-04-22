@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 922,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 136
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 339,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 142
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 167,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 148
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 205,
                         "errorMessage": "",
                         "functionName": "arcRadius",
                         "line": 188
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 158,
+                        "durationMicroseconds": 576,
                         "errorMessage": "",
                         "functionName": "__preferredRendererTypeAvailable",
                         "line": 226
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 275,
+                        "durationMicroseconds": 893,
                         "errorMessage": "",
                         "functionName": "__curveRendererActive",
                         "line": 227
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 346,
                         "errorMessage": "",
                         "functionName": "onWidthChanged",
                         "line": 303
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 106,
+                        "durationMicroseconds": 218,
                         "errorMessage": "",
                         "functionName": "onHeightChanged",
                         "line": 304
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 111,
+                        "durationMicroseconds": 242,
                         "errorMessage": "",
                         "functionName": "onRadiusChanged",
                         "line": 306
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 197,
                         "errorMessage": "",
                         "functionName": "onArcRadiusChanged",
                         "line": 307
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 214,
                         "errorMessage": "",
                         "functionName": "onTopMarginChanged",
                         "line": 309
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 221,
                         "errorMessage": "",
                         "functionName": "onBottomMarginChanged",
                         "line": 310
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 194,
                         "errorMessage": "",
                         "functionName": "onLeftMarginChanged",
                         "line": 311
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 217,
                         "errorMessage": "",
                         "functionName": "onRightMarginChanged",
                         "line": 312
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 18,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "length",
                         "line": 322
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 7,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "normalize",
                         "line": 326
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 11,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "dotProduct",
                         "line": 335
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 31,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "project",
                         "line": 339
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 10,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "intersect",
                         "line": 350
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "moveLine",
                         "line": 361
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 20743,
+                        "durationMicroseconds": 50066,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "calc",
                         "line": 374
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 204,
+                        "durationMicroseconds": 587,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 230
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 198,
+                        "durationMicroseconds": 1926,
                         "errorMessage": "",
                         "functionName": "smooth",
                         "line": 231
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 550,
                         "errorMessage": "",
                         "functionName": "samples",
                         "line": 232
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 164,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 237
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 224,
                         "errorMessage": "",
                         "functionName": "margins",
                         "line": 238
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 549,
                         "errorMessage": "",
                         "functionName": "__width",
                         "line": 249
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 263,
+                        "durationMicroseconds": 452,
                         "errorMessage": "",
                         "functionName": "__height",
                         "line": 250
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "xOffset",
                         "line": 251
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "yOffset",
                         "line": 252
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 172,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 256
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 273,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 257
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 258
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 230,
+                        "durationMicroseconds": 406,
                         "errorMessage": "",
                         "functionName": "startX",
                         "line": 260
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 219,
+                        "durationMicroseconds": 364,
                         "errorMessage": "",
                         "functionName": "startY",
                         "line": 261
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 433,
                         "errorMessage": "",
                         "functionName": "radiusX",
                         "line": 264
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 212,
+                        "durationMicroseconds": 395,
                         "errorMessage": "",
                         "functionName": "radiusY",
                         "line": 265
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 232,
+                        "durationMicroseconds": 438,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 267
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 496,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 268
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 416,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 272
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 429,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 273
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 232,
+                        "durationMicroseconds": 417,
                         "errorMessage": "",
                         "functionName": "radiusX",
                         "line": 277
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 216,
+                        "durationMicroseconds": 399,
                         "errorMessage": "",
                         "functionName": "radiusY",
                         "line": 278
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 223,
+                        "durationMicroseconds": 435,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 280
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 518,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 281
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 241,
+                        "durationMicroseconds": 443,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 285
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 517,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 286
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 490,
                         "errorMessage": "",
                         "functionName": "radiusX",
                         "line": 290
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 446,
                         "errorMessage": "",
                         "functionName": "radiusY",
                         "line": 291
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 236,
+                        "durationMicroseconds": 1076,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 293
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 223,
+                        "durationMicroseconds": 520,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 294
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 230,
+                        "durationMicroseconds": 493,
                         "errorMessage": "",
                         "functionName": "x",
                         "line": 298
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 229,
+                        "durationMicroseconds": 942,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 299
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 484,
+                        "durationMicroseconds": 1277,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 314

@@ -1,9 +1,9 @@
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qt/rcc/qmake_QtQuick_Studio_DesignEffects.qrc
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qt/rcc/qmake_QtQuick_Studio_DesignEffects.qrc
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qt/rcc/QuickStudioDesignEffects_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qt/rcc/QuickStudioDesignEffects_raw_qml_0.qrc
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qt/rcc/designeffectsshaders.qrc
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qt/rcc/designeffectsshaders.qrc
 /qt-project.org/imports/QtQuick/Studio/DesignEffects/DesignBackgroundBlurPrivate.qml
 /qt-project.org/imports/QtQuick/Studio/DesignEffects/DesignDropShadow.qml
 /qt-project.org/imports/QtQuick/Studio/DesignEffects/DesignDropShadowPrivate.qml

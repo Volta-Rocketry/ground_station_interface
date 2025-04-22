@@ -1,11 +1,11 @@
 -rootPath
-/home/andres/Documents/repos/ground_station_interface/Ground_station
+D:/ground_station_interface/Ground_station
 -cmake-output
 -output-file
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/.qt/qml_imports/Ground_stationApp_build.cmake
+D:/ground_station_interface/Ground_station-Debug/.qt/qml_imports/Ground_stationApp_build.cmake
 -importPath
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/qml
+D:/ground_station_interface/Ground_station-Debug/qml
 -importPath
-/home/andres/Qt/6.8.1/gcc_64/qml
+C:/Qt/6.8.1/mingw_64/qml
 -qrcFiles
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/.qt/rcc/configuration.qrc
+D:/ground_station_interface/Ground_station-Debug/.qt/rcc/configuration.qrc

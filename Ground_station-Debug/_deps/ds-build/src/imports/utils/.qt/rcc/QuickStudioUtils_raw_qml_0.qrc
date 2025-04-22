@@ -1,8 +1,8 @@
 <RCC>
   <qresource prefix="/QtQuick/Studio/Utils/">
-    <file alias="JsonListModel.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/utils/JsonListModel.qml</file>
-    <file alias="JsonBackend.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/utils/JsonBackend.qml</file>
-    <file alias="ChildListModel.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/utils/ChildListModel.qml</file>
+    <file alias="JsonListModel.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/utils/JsonListModel.qml</file>
+    <file alias="JsonBackend.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/utils/JsonBackend.qml</file>
+    <file alias="ChildListModel.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/utils/ChildListModel.qml</file>
   </qresource>
 </RCC>
 

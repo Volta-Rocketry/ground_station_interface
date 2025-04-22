@@ -4,8 +4,8 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/home/andres/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Linux - 6.11.0-19-generic - x86_64
+      The system is: Windows - 10.0.26100 - AMD64
 ...

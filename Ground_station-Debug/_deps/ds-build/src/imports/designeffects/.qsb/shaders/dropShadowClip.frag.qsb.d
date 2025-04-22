@@ -1,2 +1,2 @@
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qsb/shaders/dropShadowClip.frag.qsb: \
-  /home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/shaders/dropShadowClip.frag
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/designeffects/.qsb/shaders/dropShadowClip.frag.qsb: \
+  D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/shaders/dropShadowClip.frag

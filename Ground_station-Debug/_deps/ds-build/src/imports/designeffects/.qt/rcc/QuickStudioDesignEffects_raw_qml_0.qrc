@@ -1,13 +1,13 @@
 <RCC>
   <qresource prefix="/qt-project.org/imports/QtQuick/Studio/DesignEffects/">
-    <file alias="DesignBackgroundBlurPrivate.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignBackgroundBlurPrivate.qml</file>
-    <file alias="DesignDropShadow.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignDropShadow.qml</file>
-    <file alias="DesignDropShadowPrivate.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignDropShadowPrivate.qml</file>
-    <file alias="DesignEffect.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignEffect.qml</file>
-    <file alias="DesignEffectPrivate.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignEffectPrivate.qml</file>
-    <file alias="DesignInnerShadow.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignInnerShadow.qml</file>
-    <file alias="DesignInnerShadowPrivate.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignInnerShadowPrivate.qml</file>
-    <file alias="DesignLayerBlurPrivate.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignLayerBlurPrivate.qml</file>
+    <file alias="DesignBackgroundBlurPrivate.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignBackgroundBlurPrivate.qml</file>
+    <file alias="DesignDropShadow.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignDropShadow.qml</file>
+    <file alias="DesignDropShadowPrivate.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignDropShadowPrivate.qml</file>
+    <file alias="DesignEffect.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignEffect.qml</file>
+    <file alias="DesignEffectPrivate.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignEffectPrivate.qml</file>
+    <file alias="DesignInnerShadow.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignInnerShadow.qml</file>
+    <file alias="DesignInnerShadowPrivate.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignInnerShadowPrivate.qml</file>
+    <file alias="DesignLayerBlurPrivate.qml">D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/designeffects/DesignLayerBlurPrivate.qml</file>
   </qresource>
 </RCC>
 

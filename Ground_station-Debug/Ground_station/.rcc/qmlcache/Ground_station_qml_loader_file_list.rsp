@@ -1,7 +1,7 @@
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qmake_Ground_station.qrc
+D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qmake_Ground_station.qrc
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/Ground_station_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/Ground_station_raw_qml_0.qrc
 /qt/qml/Ground_station/Constants.qml
 /qt/qml/Ground_station/EventListSimulator.qml
 /qt/qml/Ground_station/EventListModel.qml

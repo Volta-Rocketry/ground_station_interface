@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 159,
+                        "durationMicroseconds": 532,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 115
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 164,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 121
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 127
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 392,
+                        "durationMicroseconds": 930,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "alpha",
                         "line": 183
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 314,
                         "errorMessage": "",
                         "functionName": "__preferredRendererTypeAvailable",
                         "line": 185
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 274,
+                        "durationMicroseconds": 579,
                         "errorMessage": "",
                         "functionName": "__curveRendererActive",
                         "line": 186
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 11,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "clamp",
                         "line": 193
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 343,
+                        "durationMicroseconds": 1049,
                         "errorMessage": "",
                         "functionName": "hideLine",
                         "line": 200
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 12,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "toRadians",
                         "line": 208
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 38,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "polarToCartesianX",
                         "line": 212
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "polarToCartesianY",
                         "line": 216
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 202,
+                        "durationMicroseconds": 414,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 189
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 319,
                         "errorMessage": "",
                         "functionName": "smooth",
                         "line": 190
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 470,
                         "errorMessage": "",
                         "functionName": "samples",
                         "line": 191
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 299,
+                        "durationMicroseconds": 637,
                         "errorMessage": "",
                         "functionName": "__xRadius",
                         "line": 223
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 292,
+                        "durationMicroseconds": 1085,
                         "errorMessage": "",
                         "functionName": "__yRadius",
                         "line": 224
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 299,
                         "errorMessage": "",
                         "functionName": "__xCenter",
                         "line": 226
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 240,
                         "errorMessage": "",
                         "functionName": "__yCenter",
                         "line": 227
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 171,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 230
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 231
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 266,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 232
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 866,
+                        "durationMicroseconds": 2185,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "startX",
                         "line": 236
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 864,
+                        "durationMicroseconds": 1903,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "startY",
                         "line": 238
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 590,
+                        "durationMicroseconds": 2923,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "x",
                         "line": 242
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 585,
+                        "durationMicroseconds": 1322,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "y",
                         "line": 243
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 703,
+                        "durationMicroseconds": 3810,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "x",
                         "line": 249
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 685,
+                        "durationMicroseconds": 1476,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "y",
                         "line": 250
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "radiusY",
                         "line": 252
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 82,
+                        "durationMicroseconds": 169,
                         "errorMessage": "",
                         "functionName": "radiusX",
                         "line": 253
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 295,
                         "errorMessage": "",
                         "functionName": "useLargeArc",
                         "line": 255
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 992,
+                        "durationMicroseconds": 4742,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "x",
                         "line": 259
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 1034,
+                        "durationMicroseconds": 3210,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "y",
                         "line": 261
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 483,
+                        "durationMicroseconds": 1004,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 266

@@ -1,1 +1,1 @@
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/application/QuickStudioApplication_autogen/include/../EWIEGA46WW/moc_quickstudioapplication_p.cpp.json
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/application/QuickStudioApplication_autogen/include/../EWIEGA46WW/moc_quickstudioapplication_p.cpp.json

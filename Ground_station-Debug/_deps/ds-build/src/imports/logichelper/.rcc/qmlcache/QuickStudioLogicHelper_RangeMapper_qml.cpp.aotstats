@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 651,
+                        "durationMicroseconds": 1677,
                         "errorMessage": "",
                         "functionName": "output",
                         "line": 90

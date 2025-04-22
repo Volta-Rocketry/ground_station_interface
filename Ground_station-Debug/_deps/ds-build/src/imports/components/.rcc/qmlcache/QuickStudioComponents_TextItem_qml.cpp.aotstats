@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 502,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 148
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 204,
+                        "durationMicroseconds": 461,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 149
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 190,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 160
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 166
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 172
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 172,
+                        "durationMicroseconds": 557,
                         "errorMessage": "",
                         "functionName": "__preferredRendererTypeAvailable",
                         "line": 219
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 270,
+                        "durationMicroseconds": 1159,
                         "errorMessage": "",
                         "functionName": "__curveRendererActive",
                         "line": 220
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 417,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 223
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 404,
                         "errorMessage": "",
                         "functionName": "smooth",
                         "line": 224
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 238,
+                        "durationMicroseconds": 519,
                         "errorMessage": "",
                         "functionName": "samples",
                         "line": 225
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 230
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 207,
                         "errorMessage": "",
                         "functionName": "margins",
                         "line": 231
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 190,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 237
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 167,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 238
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 587,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 239
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 320,
+                        "durationMicroseconds": 754,
                         "errorMessage": "",
                         "functionName": "y",
                         "line": 249
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 15,
-                        "durationMicroseconds": 130,
+                        "durationMicroseconds": 242,
                         "errorMessage": "",
                         "functionName": "font",
                         "line": 256
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 15,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 160,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 257
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 15,
-                        "durationMicroseconds": 137,
+                        "durationMicroseconds": 303,
                         "errorMessage": "",
                         "functionName": "font",
                         "line": 262
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 476,
+                        "durationMicroseconds": 1246,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 265

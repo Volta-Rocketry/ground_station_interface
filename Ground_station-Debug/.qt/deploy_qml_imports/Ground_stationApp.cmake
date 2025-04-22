@@ -9,7 +9,7 @@ endif()
 
 _qt_internal_deploy_qml_imports_for_target(
     ${__qt_opts}
-    IMPORTS_FILE "/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/.qt/qml_imports/Ground_stationApp_build.cmake"
+    IMPORTS_FILE "D:/ground_station_interface/Ground_station-Debug/.qt/qml_imports/Ground_stationApp_build.cmake"
     PLUGINS_FOUND __qt_internal_plugins_found
     QML_DIR     "${arg_QML_DIR}"
     PLUGINS_DIR "${arg_PLUGINS_DIR}"

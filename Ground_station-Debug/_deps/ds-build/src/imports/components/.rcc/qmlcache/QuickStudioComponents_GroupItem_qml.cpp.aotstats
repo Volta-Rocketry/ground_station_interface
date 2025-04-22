@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 426,
+                        "durationMicroseconds": 1209,
                         "errorMessage": "",
                         "functionName": "implicitWidth",
                         "line": 77
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 359,
+                        "durationMicroseconds": 625,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
                         "line": 78

@@ -9,7 +9,7 @@ SerialManagement::SerialManagement(QObject *parent)
     _serialBuffer = "";
 
     // -- TIMERS --
-    setupTimer(timerFLightTime, 500, "timerFLightTime");
+    //setupTimer(timerFLightTime, 500, "timerFLightTime");
 }
 
 QList<QString> SerialManagement::searchPortInfo()
@@ -232,6 +232,10 @@ void SerialManagement::coreDataUpdate()
 
     qDebug() << "Enter -- 7";
 
+    // Status
+    telemetryStatus = _coreDataList[10].toInt();
+    qDebug() << "Enter -- 8";
+
 
     //_coreLastUpdatedTime = getCurrentTimeMSmString(2);
     //_coreLastUpdatedSeconds = getCurrentTimeSFloat();
@@ -241,26 +245,19 @@ void SerialManagement::coreDataUpdate()
 
 }
 
-void SerialManagement::telemetryStatusUpdate()
+int SerialManagement::getTelemetryStatus()
 {
-    switch (telemetryStatus){
-    case 1:
-        emit telemetryConnectionStablishedConfirmed();
-        break;
-    case 2:
-        emit telemetryBoostDetected();
-        break;
-    case 3:
-        emit telemetryApogeeDetected();
-        break;
-    case 4:
-        emit telemetryMainDetected();
-        break;
-    case 5:
-        emit telemetryLandingDetected();
-        break;
-    }
+    return telemetryStatus;
+}
 
+int SerialManagement::getEstApogeeAlt()
+{
+    return expectedApogeeAlt;
+}
+
+int SerialManagement::getEstMainAlt()
+{
+    return expectedMainAlt;
 }
 
 void SerialManagement::endConnection()
@@ -344,7 +341,7 @@ void SerialManagement::serialRead()
 
         }else if(cat == 2){
             telemetryStatus = data.first().toInt();
-            telemetryStatusUpdate();
+            //telemetryStatusUpdate();
 
             //_pyroContDataList = data;
             //pyroContDataUpdate();
@@ -538,7 +535,12 @@ float SerialManagement::getDataConvertedImperial(int dataWanted)
 
 void SerialManagement::flightTimerStart()
 {
-    startTimer(timer1, "Timer1");
+    //startTimer(timer1, "Timer1");
+}
+
+void SerialManagement::flightTimerStop()
+{
+    //startTimer(timer1, "Timer1");
 }
 
 void SerialManagement::testMode()

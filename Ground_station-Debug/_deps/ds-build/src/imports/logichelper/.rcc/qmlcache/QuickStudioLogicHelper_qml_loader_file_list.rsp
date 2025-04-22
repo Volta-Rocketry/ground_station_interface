@@ -1,7 +1,7 @@
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/logichelper/.qt/rcc/qmake_QtQuick_Studio_LogicHelper.qrc
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/logichelper/.qt/rcc/qmake_QtQuick_Studio_LogicHelper.qrc
 --resource
-/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/logichelper/.qt/rcc/QuickStudioLogicHelper_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/logichelper/.qt/rcc/QuickStudioLogicHelper_raw_qml_0.qrc
 /qt-project.org/imports/QtQuick/Studio/LogicHelper/BidirectionalBinding.qml
 /qt-project.org/imports/QtQuick/Studio/LogicHelper/RangeMapper.qml
 /qt-project.org/imports/QtQuick/Studio/LogicHelper/MinMaxMapper.qml

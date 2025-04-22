@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 322,
+                        "durationMicroseconds": 797,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "text",
                         "line": 87

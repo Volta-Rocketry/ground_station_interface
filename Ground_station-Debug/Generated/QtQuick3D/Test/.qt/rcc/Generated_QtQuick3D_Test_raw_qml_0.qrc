@@ -1,8 +1,8 @@
 <RCC>
   <qresource prefix="/qt/qml/Generated/QtQuick3D/Test/">
-    <file alias="Test.qml">/home/andres/Documents/repos/ground_station_interface/Ground_station/Generated/QtQuick3D/Test/Test.qml</file>
-    <file alias="_importdata.json">/home/andres/Documents/repos/ground_station_interface/Ground_station/Generated/QtQuick3D/Test/_importdata.json</file>
-    <file alias="meshes/body1_mesh.mesh">/home/andres/Documents/repos/ground_station_interface/Ground_station/Generated/QtQuick3D/Test/meshes/body1_mesh.mesh</file>
+    <file alias="Test.qml">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Test/Test.qml</file>
+    <file alias="_importdata.json">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Test/_importdata.json</file>
+    <file alias="meshes/body1_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Test/meshes/body1_mesh.mesh</file>
   </qresource>
 </RCC>
 

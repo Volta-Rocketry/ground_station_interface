@@ -1,2 +1,0 @@
-/bin/ar qc ../../../qml/Generated/QtQuick3D/Test/libGenerated_QtQuick3D_Testplugin.a CMakeFiles/Generated_QtQuick3D_Testplugin.dir/Generated_QtQuick3D_Testplugin_autogen/mocs_compilation.cpp.o CMakeFiles/Generated_QtQuick3D_Testplugin.dir/Generated_QtQuick3D_Testplugin_Generated_QtQuick3D_TestPlugin.cpp.o
-/bin/ranlib ../../../qml/Generated/QtQuick3D/Test/libGenerated_QtQuick3D_Testplugin.a

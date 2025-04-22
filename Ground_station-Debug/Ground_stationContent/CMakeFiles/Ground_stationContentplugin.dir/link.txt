@@ -1,2 +1,0 @@
-/bin/ar qc ../qml/Ground_stationContent/libGround_stationContentplugin.a CMakeFiles/Ground_stationContentplugin.dir/Ground_stationContentplugin_autogen/mocs_compilation.cpp.o CMakeFiles/Ground_stationContentplugin.dir/Ground_stationContentplugin_Ground_stationContentPlugin.cpp.o
-/bin/ranlib ../qml/Ground_stationContent/libGround_stationContentplugin.a

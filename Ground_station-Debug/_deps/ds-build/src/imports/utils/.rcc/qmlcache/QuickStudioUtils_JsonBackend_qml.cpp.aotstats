@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 36035,
+                        "durationMicroseconds": 12365,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "updateJSON",
                         "line": 52
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 47,
+                        "durationMicroseconds": 32,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "parseJSONString",
                         "line": 68
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 395,
+                        "durationMicroseconds": 291,
                         "errorMessage": "",
                         "functionName": "filePath",
                         "line": 46
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 408,
+                        "durationMicroseconds": 330,
                         "errorMessage": "",
                         "functionName": "onContentChanged",
                         "line": 47

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 2337,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 170
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 264,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 176
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 237,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 182
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 180,
+                        "durationMicroseconds": 740,
                         "errorMessage": "",
                         "functionName": "__preferredRendererTypeAvailable",
                         "line": 225
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 680,
                         "errorMessage": "",
                         "functionName": "__curveRendererActive",
                         "line": 226
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 258,
                         "errorMessage": "",
                         "functionName": "onWidthChanged",
                         "line": 253
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 117,
+                        "durationMicroseconds": 192,
                         "errorMessage": "",
                         "functionName": "onHeightChanged",
                         "line": 254
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 106,
+                        "durationMicroseconds": 212,
                         "errorMessage": "",
                         "functionName": "onCountChanged",
                         "line": 255
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 105,
+                        "durationMicroseconds": 219,
                         "errorMessage": "",
                         "functionName": "onRadiusChanged",
                         "line": 256
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 214,
                         "errorMessage": "",
                         "functionName": "onRatioChanged",
                         "line": 257
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 162,
+                        "durationMicroseconds": 464,
                         "errorMessage": "",
                         "functionName": "__centerX",
                         "line": 267
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 140,
+                        "durationMicroseconds": 259,
                         "errorMessage": "",
                         "functionName": "__centerY",
                         "line": 268
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 5,
-                        "durationMicroseconds": 367,
+                        "durationMicroseconds": 1924,
                         "errorMessage": "",
                         "functionName": "constructPolygon",
                         "line": 280
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "toRadians",
                         "line": 289
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 13,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "toDegrees",
                         "line": 293
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 2262,
+                        "durationMicroseconds": 4949,
                         "errorMessage": "function without return type annotation returns QVariantList. This may prevent proper compilation to Cpp.",
                         "functionName": "getPoints",
                         "line": 297
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 281,
                         "errorMessage": "Cannot load property sideCount from  stored as QQuickShape.",
                         "functionName": "constructPolygonPath",
                         "line": 328
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "wrapIndex",
                         "line": 351
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 335,
                         "errorMessage": "Cannot load property sideCount from  stored as QQuickShape.",
                         "functionName": "constructRoundedPolygonPath",
                         "line": 355
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 932,
+                        "durationMicroseconds": 1937,
                         "errorMessage": "Cannot generate efficient code for creating a QQmlListProperty not backed by a property",
                         "functionName": "clearPathElements",
                         "line": 404
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 400,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 229
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 315,
                         "errorMessage": "",
                         "functionName": "smooth",
                         "line": 230
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 395,
                         "errorMessage": "",
                         "functionName": "samples",
                         "line": 231
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 236
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 180,
                         "errorMessage": "",
                         "functionName": "margins",
                         "line": 237
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 182,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 243
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 244
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 245
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 520,
+                        "durationMicroseconds": 1020,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 259

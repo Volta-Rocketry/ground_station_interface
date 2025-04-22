@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 81,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
                         "line": 5
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 11,
                         "errorMessage": "Cannot resolve property type  for binding on onActivated.",
                         "functionName": "onActivated",
                         "line": 22
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 8,
                         "errorMessage": "Cannot resolve property type  for binding on onActivated.",
                         "functionName": "onActivated",
                         "line": 24
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 7,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
                         "line": 26

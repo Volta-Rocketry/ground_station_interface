@@ -1,10 +1,10 @@
 QuickStudioComponentsplugin_init_autogen/timestamp: \
-	/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_QtQuick_Studio_ComponentsPlugin_in.cpp \
-	/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_init.cpp \
-	/home/andres/Documents/repos/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/CMakeLists.txt \
-	/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
-	/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp \
-	/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
-	/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in \
-	/home/andres/Qt/6.8.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
-	/home/andres/Qt/Tools/CMake/bin/cmake
+	C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
+	C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp \
+	C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
+	C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in \
+	C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
+	D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_QtQuick_Studio_ComponentsPlugin_in.cpp \
+	D:/ground_station_interface/Ground_station-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_init.cpp \
+	D:/ground_station_interface/Ground_station-Debug/_deps/ds-src/src/imports/components/CMakeLists.txt \
+	C:/Qt/Tools/CMake_64/bin/cmake.exe

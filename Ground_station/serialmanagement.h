@@ -12,6 +12,8 @@ class SerialManagement : public QObject
     Q_OBJECT
 public:
     explicit SerialManagement(QObject *parent = nullptr);
+    int expectedApogeeAlt = 590;
+    int expectedMainAlt = 130;
 
 public slots:
     // MCU Search and connection
@@ -30,12 +32,17 @@ public slots:
     float getMaxMinDataInList(int list, bool maxBool);
     float getAbsMaxMinDataInLists(QList<int> lists, bool maxBool);
     float getDataConvertedImperial(int dataWanted);
+    int getTelemetryStatus();
+    int getEstApogeeAlt();
+    int getEstMainAlt();
 
     // Time management print
     void flightTimerStart();
     void flightTimerStop();
     float getCurrentTimeSFloat();
     QString getCurrentTimeMSmString(int format);
+
+
 
 
 
@@ -96,7 +103,6 @@ private:
 
     // Data updates
     void coreDataUpdate();
-    void telemetryStatusUpdate();
 
     // Times updates management
     QString _coreLastUpdatedTime = "00:00:00";
@@ -169,11 +175,12 @@ signals:
 
     // For Status Updates
         // Telemetry base
-    void telemetryConnectionStablishedConfirmed();
-    void telemetryBoostDetected();
-    void telemetryApogeeDetected();
-    void telemetryMainDetected();
-    void telemetryLandingDetected();
+    void telemetryStatusIdle();
+    void telemetryStatusBoost();
+    void telemetryStatusAscent();
+    void telemetryStatusApogee();
+    void telemetryStatusMainChute();
+    void telemetryStatusTouchDown();
         // Manual base
     void manualBoostDetected();
     void manualApogeeDetected();
