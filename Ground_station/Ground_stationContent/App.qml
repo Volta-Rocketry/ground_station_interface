@@ -18,9 +18,14 @@ Window {
                             if (event.key === Qt.Key_Enter
                                 || event.key === Qt.Key_Return) {
                                 console.log("Se presionó Enter")
+                                serialManager.createFile()
+                            }else if (event.key === Qt.Key_Delete){
+                                console.log("Se presionó Delete")
+                                serialManager.closeFile()
                             } else if (event.key === Qt.Key_Q) {
                                 console.log("Se activó manualmente boost")
-                                serialManager.manualBoostDetected()
+                                //serialManager.manualBoostDetected()
+                                serialManager.closeFile()
                             } else if (event.key === Qt.Key_W) {
                                 console.log("Se activó manualmente apogee")
                                 serialManager.manualApogeeDetected()

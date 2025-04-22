@@ -241,6 +241,7 @@ void SerialManagement::coreDataUpdate()
     //_coreLastUpdatedSeconds = getCurrentTimeSFloat();
 
     qDebug() << "CoreDataUpdated";
+    writeDataFile();
     emit coreDataReady();
 
 }
@@ -592,4 +593,63 @@ QString SerialManagement::getCurrentTimeMSmString(int format = 0)
     else{
         return "00:00:00";
     }
+}
+
+void SerialManagement::createFile()
+{
+    if (!dataFile.isOpen()) {
+        QString route = filePath + "\\" + fileName;
+        dataFile.setFileName(route);
+        if (dataFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            fileOpen2Write = true;
+            QTextStream out(&dataFile);
+            out << "s" << ","
+                << "Ax" << ","
+                << "Ay" << ","
+                << "Az" << ","
+                << "Anz" << ","
+                << "Anz" << ","
+                << "Anz" << ","
+                << "Alt" << ","
+                << "Lat" << ","
+                << "Lon" << ","
+                << "Speed" << ","
+                << "R. Status" << ","
+                << "\n";
+
+            qDebug() << "Archivo abierto para escritura.";
+        } else {
+            qDebug() << "Error al abrir el archivo para escritura: ";
+            fileOpen2Write = false;
+        }
+    }
+}
+
+void SerialManagement::writeDataFile()
+{
+    if (dataFile.isOpen()) {
+        qDebug() << "Escribiendo en archivo";
+        QTextStream out(&dataFile);
+        out << getCurrentTimeSFloat() << ","
+            << getLastDataInList(1,-1) << "," // Ax
+            << getLastDataInList(2,-1) << "," // Ay
+            << getLastDataInList(3,-1) << "," // Az
+            << getLastDataInList(4,-1) << "," // Anx
+            << getLastDataInList(5,-1) << "," // Any
+            << getLastDataInList(6,-1) << "," // Anz
+            << getLastDataInList(7,-1) << "," // Alt
+            << getLastDataInList(8,-1) << "," // Lat
+            << getLastDataInList(9,-1) << "," // Lon
+            << getLastDataInList(12,-1) << "," // Speed
+            << getTelemetryStatus() << "," // Rocket Status
+            << "\n";
+    } else{
+        qDebug() << "No se pudo abrir el archivo";
+    }
+}
+
+void SerialManagement::closeFile()
+{
+    dataFile.close();
+    qDebug() << "Se cerró el archivo";
 }

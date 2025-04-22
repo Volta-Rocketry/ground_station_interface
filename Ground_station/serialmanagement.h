@@ -12,8 +12,14 @@ class SerialManagement : public QObject
     Q_OBJECT
 public:
     explicit SerialManagement(QObject *parent = nullptr);
+    // Progress bar config
     int expectedApogeeAlt = 590;
     int expectedMainAlt = 130;
+
+    // Data save
+    QString filePath = "C:\\Users\\andre\\Downloads";
+    QString fileName = "textfile.csv";
+    QFile dataFile;
 
 public slots:
     // MCU Search and connection
@@ -42,10 +48,10 @@ public slots:
     float getCurrentTimeSFloat();
     QString getCurrentTimeMSmString(int format);
 
-
-
-
-
+    // Data save
+    void createFile();
+    void writeDataFile();
+    void closeFile();
 
 private slots:
     void testMode();
@@ -165,6 +171,9 @@ private:
     int randPackedIndicator;
 
     float generateData(float data, int volatility, float minLimit = -1e4, float maxLimit = 1e4);
+
+    // Data save
+    bool fileOpen2Write = false;
 
 signals:
     // For connection to MCU
