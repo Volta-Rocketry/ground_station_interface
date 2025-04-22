@@ -51,7 +51,7 @@ Rectangle {
     property alias loader: loader
     property alias btnSettings: btnSettings
     property alias btnCloseSettings: btnCloseSettings
-    property alias imgBtnCloseSettings: imgBtnCloseSettings
+    property alias imgBtnCloseSettings: imgBtnCloseSettings    
 
     // Camera -- Start
 
@@ -296,11 +296,13 @@ Rectangle {
             id: txtLatVal
             color: "#000000"
             text: qsTr("000.0000")
-            anchors.left: parent.left
             anchors.top: divider3.bottom
-            anchors.leftMargin: display.width * 0.01
             anchors.topMargin: display.height * 0.006
             font.pixelSize: display.width * 0.021
+            anchors.horizontalCenterOffset: -(txtLatVal.width + txtLonVal.width
+                                              + (2 * display.width * 0.003)) / 2
+                                            + txtLatVal.width / 2
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
@@ -362,7 +364,7 @@ Rectangle {
 
         Text {
             id: txtTimerVal
-            text: qsTr("T: +00:00")
+            text: qsTr("T: +00:00:00")
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: parent.top
@@ -373,7 +375,7 @@ Rectangle {
             anchors.bottomMargin: display.height * 0.009
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            font.pointSize: display.width * 0.023
+            font.pointSize: display.width * 0.017
             font.bold: true
         }
     }
@@ -552,12 +554,37 @@ Rectangle {
         radius: 15
 
         Image {
+            id: imgLowerEyected
+            width: display.width * 0.08
+            height: display.height * 0.161
+            visible: false
+            anchors.verticalCenter: imgLower.verticalCenter
+            anchors.top: imgUpper.bottom
+            anchors.topMargin: 0
+            source: "images/Lower_E.png"
+            anchors.horizontalCenter: parent.horizontalCenter
+            fillMode: Image.PreserveAspectFit
+        }
+
+        Image {
+            id: imgUpperEyected
+            width: display.width * 0.08
+            height: display.height * 0.161
+            visible: false
+            anchors.verticalCenter: imgUpper.verticalCenter
+            source: "images/Upper_E.png"
+            anchors.horizontalCenter: parent.horizontalCenter
+            fillMode: Image.PreserveAspectFit
+        }
+
+        Image {
             id: imgUpper
             width: display.width * 0.08
             height: display.height * 0.161
             anchors.top: parent.top
             anchors.topMargin: display.height * 0.065
-            source: "images/Upper.png"
+            source: "images/Upper_NE.png"
+            anchors.horizontalCenterOffset: -1
             anchors.horizontalCenter: parent.horizontalCenter
             fillMode: Image.PreserveAspectFit
             visible: true
@@ -569,34 +596,10 @@ Rectangle {
             height: display.height * 0.161
             anchors.top: imgUpper.bottom
             anchors.topMargin: 0
-            source: "images/Test2.png"
+            source: "images/Lower_NE.png"
             anchors.horizontalCenter: parent.horizontalCenter
             fillMode: Image.PreserveAspectFit
             visible: true
-        }
-
-        Image {
-            id: imgLowerEyected
-            width: display.width * 0.08
-            height: display.height * 0.161
-            visible: false
-            anchors.verticalCenter: imgLower.verticalCenter
-            anchors.top: imgUpper.bottom
-            anchors.topMargin: 0
-            source: "images/Lower_eyection.png"
-            anchors.horizontalCenter: parent.horizontalCenter
-            fillMode: Image.PreserveAspectFit
-        }
-
-        Image {
-            id: imgUpperEyected
-            width: display.width * 0.08
-            height: display.height * 0.161
-            visible: false
-            anchors.verticalCenter: imgUpper.verticalCenter
-            source: "images/Upper_eyected.png"
-            anchors.horizontalCenter: parent.horizontalCenter
-            fillMode: Image.PreserveAspectFit
         }
 
         Text {
@@ -625,8 +628,8 @@ Rectangle {
 
     Loader {
         id: loader
-        width: display.width * 0.533
-        height: display.height * 0.711
+        width: display.width * 0.469
+        height: display.height * 0.556
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
     }
@@ -642,20 +645,23 @@ Rectangle {
         anchors.topMargin: 0
     }
 
-    Rectangle {
+    Image {
         id: imgBtnCloseSettings
-        x: 978
-        width: 100
-        height: 100
-        visible: false
-        color: "#ff0000"
+        x: 1010
+        width: display.height * 0.069
+        height: display.height * 0.069
         anchors.right: loader.right
         anchors.top: loader.top
         anchors.rightMargin: 0
         anchors.topMargin: 0
+        source: "images/close_img.png"
+        fillMode: Image.PreserveAspectFit
+        visible: false
 
         MouseArea {
             id: btnCloseSettings
+            x: 0
+            y: 0
             visible: true
             anchors.fill: parent
         }

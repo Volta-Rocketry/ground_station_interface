@@ -5,19 +5,99 @@
                 "entries": [
                     {
                         "codegenSuccessfull": false,
-                        "column": 26,
-                        "durationMicroseconds": 81,
+                        "column": 17,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "target",
+                        "line": 10
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 10,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onMicrocontrollerConnectionStatus",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 7,
+                        "errorMessage": "Cannot resolve property type  for binding on text.",
+                        "functionName": "text",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 6,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 5
+                        "line": 50
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 239,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "text",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 214,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "onTextChanged",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 208,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "text",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 30,
+                        "durationMicroseconds": 206,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "text",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "text",
+                        "line": 26
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 33,
+                        "durationMicroseconds": 206,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "text",
+                        "line": 27
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 29
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 11,
+                        "durationMicroseconds": 28,
                         "errorMessage": "Cannot resolve property type  for binding on onActivated.",
                         "functionName": "onActivated",
-                        "line": 22
+                        "line": 46
                     },
                     {
                         "codegenSuccessfull": false,
@@ -25,15 +105,55 @@
                         "durationMicroseconds": 8,
                         "errorMessage": "Cannot resolve property type  for binding on onActivated.",
                         "functionName": "onActivated",
-                        "line": 24
+                        "line": 48
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 27,
-                        "durationMicroseconds": 7,
+                        "column": 31,
+                        "durationMicroseconds": 6,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 26
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 848,
+                        "errorMessage": "",
+                        "functionName": "folder",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 92,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "onAccepted",
+                        "line": 67
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 666,
+                        "errorMessage": "",
+                        "functionName": "onRejected",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 37,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Cannot resolve property type  for binding on onCheckedChanged.",
+                        "functionName": "onCheckedChanged",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot resolve property type  for binding on onCheckedChanged.",
+                        "functionName": "onCheckedChanged",
+                        "line": 87
                     }
                 ],
                 "filepath": "ConfigurationScreen.qml"

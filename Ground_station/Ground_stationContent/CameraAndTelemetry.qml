@@ -18,16 +18,13 @@ CameraAndTelemetryForm {
             console.log(accelX)
             console.log(accelY)
             console.log(accelZ)
-            let accelGeneral = Math.sqrt(Math.pow(accelX,
-                                                  2) + Math.pow(accelY,
-                                                                2) + Math.pow(
-                                             accelZ, 2)).toFixed(0)
+            let accelGeneral = Math.sqrt(Math.pow(accelX,2) + Math.pow(accelY,2) + Math.pow(accelZ, 2)).toFixed(0)
             console.log(accelGeneral)
-            txtAccelVal.text = accelGeneral.toString()
+            txtAccelVal.text = (accelGeneral/9.81).toString()
             txtLatVal.text = serialManager.getLastDataInList(8, -1)
             txtLonVal.text = serialManager.getLastDataInList(9, -1)
 
-            let actualTime = serialManager.getCurrentTimeMSmString(0)
+            let actualTime = serialManager.getActualTime() //serialManager.getCurrentTimeMSmString(0)
             txtTimerVal.text = "T: +" + actualTime
 
 
@@ -141,18 +138,13 @@ CameraAndTelemetryForm {
                 txtTittleTouchDown.font.bold = true
                 txtTittleTouchDown.color = "black"
 
-                timeLineValue.width = 1
+                timeLineValue.width = widthTimeline*1
 
                 imgLower.visible = false
                 imgLowerEyected.visible = true
                 imgUpper.visible = false
                 imgUpperEyected.visible = true
             }
-
-
-
-
-
         }
 
         // Manual updates
@@ -245,6 +237,16 @@ CameraAndTelemetryForm {
             imgUpper.visible = false
             imgUpperEyected.visible = true
         }
+
+        function onMicrocontrollerConnectionStatus(status) {
+            console.log("Señal recibida, status:", status, "tipo:", typeof status)
+
+            if (status) {
+                rectStatus2.color = "green";
+            } else {
+                rectStatus2.color = "red";
+            }
+        }
     }
 
     camera.cameraDevice: mediaDevices.videoInputs.length
@@ -262,4 +264,7 @@ CameraAndTelemetryForm {
         imgBtnCloseSettings.visible = false
         loader.source = ""
     }
+
+    loader.onLoaded: parent.forceActiveFocus() // Forzar foco también en el segundo Loader
+
 }

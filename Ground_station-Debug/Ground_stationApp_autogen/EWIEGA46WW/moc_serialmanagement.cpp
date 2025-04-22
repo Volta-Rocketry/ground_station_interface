@@ -83,14 +83,26 @@ static constexpr auto qt_meta_stringdata_ZN16SerialManagementE = QtMocHelpers::s
     "getTelemetryStatus",
     "getEstApogeeAlt",
     "getEstMainAlt",
+    "getEstTouchDownAlt",
+    "getFilePath",
+    "getFileName",
+    "getMicroConfirmation",
     "flightTimerStart",
     "flightTimerStop",
     "getCurrentTimeSFloat",
     "getCurrentTimeMSmString",
     "format",
+    "setReferenceTime",
+    "getActualTime",
     "createFile",
     "writeDataFile",
     "closeFile",
+    "writeFloatValue",
+    "varIndex",
+    "value",
+    "writeIntValue",
+    "writeStringValue",
+    "text",
     "testMode"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -103,7 +115,7 @@ Q_CONSTINIT static const uint qt_meta_data_ZN16SerialManagementE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      41,   14, // methods
+      50,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -111,49 +123,58 @@ Q_CONSTINIT static const uint qt_meta_data_ZN16SerialManagementE[] = {
       19,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,  260,    2, 0x06,    1 /* Public */,
-       4,    0,  263,    2, 0x06,    3 /* Public */,
-       5,    0,  264,    2, 0x06,    4 /* Public */,
-       6,    0,  265,    2, 0x06,    5 /* Public */,
-       7,    0,  266,    2, 0x06,    6 /* Public */,
-       8,    0,  267,    2, 0x06,    7 /* Public */,
-       9,    0,  268,    2, 0x06,    8 /* Public */,
-      10,    0,  269,    2, 0x06,    9 /* Public */,
-      11,    0,  270,    2, 0x06,   10 /* Public */,
-      12,    0,  271,    2, 0x06,   11 /* Public */,
-      13,    0,  272,    2, 0x06,   12 /* Public */,
-      14,    0,  273,    2, 0x06,   13 /* Public */,
-      15,    0,  274,    2, 0x06,   14 /* Public */,
-      16,    0,  275,    2, 0x06,   15 /* Public */,
-      17,    0,  276,    2, 0x06,   16 /* Public */,
-      18,    0,  277,    2, 0x06,   17 /* Public */,
-      19,    0,  278,    2, 0x06,   18 /* Public */,
-      20,    0,  279,    2, 0x06,   19 /* Public */,
-      21,    0,  280,    2, 0x06,   20 /* Public */,
+       1,    1,  314,    2, 0x06,    1 /* Public */,
+       4,    0,  317,    2, 0x06,    3 /* Public */,
+       5,    0,  318,    2, 0x06,    4 /* Public */,
+       6,    0,  319,    2, 0x06,    5 /* Public */,
+       7,    0,  320,    2, 0x06,    6 /* Public */,
+       8,    0,  321,    2, 0x06,    7 /* Public */,
+       9,    0,  322,    2, 0x06,    8 /* Public */,
+      10,    0,  323,    2, 0x06,    9 /* Public */,
+      11,    0,  324,    2, 0x06,   10 /* Public */,
+      12,    0,  325,    2, 0x06,   11 /* Public */,
+      13,    0,  326,    2, 0x06,   12 /* Public */,
+      14,    0,  327,    2, 0x06,   13 /* Public */,
+      15,    0,  328,    2, 0x06,   14 /* Public */,
+      16,    0,  329,    2, 0x06,   15 /* Public */,
+      17,    0,  330,    2, 0x06,   16 /* Public */,
+      18,    0,  331,    2, 0x06,   17 /* Public */,
+      19,    0,  332,    2, 0x06,   18 /* Public */,
+      20,    0,  333,    2, 0x06,   19 /* Public */,
+      21,    0,  334,    2, 0x06,   20 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      22,    0,  281,    2, 0x0a,   21 /* Public */,
-      23,    1,  282,    2, 0x0a,   22 /* Public */,
-      25,    0,  285,    2, 0x0a,   24 /* Public */,
-      26,    0,  286,    2, 0x0a,   25 /* Public */,
-      27,    1,  287,    2, 0x0a,   26 /* Public */,
-      29,    0,  290,    2, 0x0a,   28 /* Public */,
-      30,    1,  291,    2, 0x0a,   29 /* Public */,
-      32,    2,  294,    2, 0x0a,   31 /* Public */,
-      35,    2,  299,    2, 0x0a,   34 /* Public */,
-      37,    2,  304,    2, 0x0a,   37 /* Public */,
-      40,    1,  309,    2, 0x0a,   40 /* Public */,
-      42,    0,  312,    2, 0x0a,   42 /* Public */,
-      43,    0,  313,    2, 0x0a,   43 /* Public */,
-      44,    0,  314,    2, 0x0a,   44 /* Public */,
-      45,    0,  315,    2, 0x0a,   45 /* Public */,
-      46,    0,  316,    2, 0x0a,   46 /* Public */,
-      47,    0,  317,    2, 0x0a,   47 /* Public */,
-      48,    1,  318,    2, 0x0a,   48 /* Public */,
-      50,    0,  321,    2, 0x0a,   50 /* Public */,
-      51,    0,  322,    2, 0x0a,   51 /* Public */,
-      52,    0,  323,    2, 0x0a,   52 /* Public */,
-      53,    0,  324,    2, 0x08,   53 /* Private */,
+      22,    0,  335,    2, 0x0a,   21 /* Public */,
+      23,    1,  336,    2, 0x0a,   22 /* Public */,
+      25,    0,  339,    2, 0x0a,   24 /* Public */,
+      26,    0,  340,    2, 0x0a,   25 /* Public */,
+      27,    1,  341,    2, 0x0a,   26 /* Public */,
+      29,    0,  344,    2, 0x0a,   28 /* Public */,
+      30,    1,  345,    2, 0x0a,   29 /* Public */,
+      32,    2,  348,    2, 0x0a,   31 /* Public */,
+      35,    2,  353,    2, 0x0a,   34 /* Public */,
+      37,    2,  358,    2, 0x0a,   37 /* Public */,
+      40,    1,  363,    2, 0x0a,   40 /* Public */,
+      42,    0,  366,    2, 0x0a,   42 /* Public */,
+      43,    0,  367,    2, 0x0a,   43 /* Public */,
+      44,    0,  368,    2, 0x0a,   44 /* Public */,
+      45,    0,  369,    2, 0x0a,   45 /* Public */,
+      46,    0,  370,    2, 0x0a,   46 /* Public */,
+      47,    0,  371,    2, 0x0a,   47 /* Public */,
+      48,    0,  372,    2, 0x0a,   48 /* Public */,
+      49,    0,  373,    2, 0x0a,   49 /* Public */,
+      50,    0,  374,    2, 0x0a,   50 /* Public */,
+      51,    0,  375,    2, 0x0a,   51 /* Public */,
+      52,    1,  376,    2, 0x0a,   52 /* Public */,
+      54,    0,  379,    2, 0x0a,   54 /* Public */,
+      55,    0,  380,    2, 0x0a,   55 /* Public */,
+      56,    0,  381,    2, 0x0a,   56 /* Public */,
+      57,    0,  382,    2, 0x0a,   57 /* Public */,
+      58,    0,  383,    2, 0x0a,   58 /* Public */,
+      59,    2,  384,    2, 0x0a,   59 /* Public */,
+      62,    2,  389,    2, 0x0a,   62 /* Public */,
+      63,    2,  394,    2, 0x0a,   65 /* Public */,
+      65,    0,  399,    2, 0x08,   68 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Bool,    3,
@@ -191,13 +212,22 @@ Q_CONSTINIT static const uint qt_meta_data_ZN16SerialManagementE[] = {
     QMetaType::Int,
     QMetaType::Int,
     QMetaType::Int,
+    QMetaType::Int,
+    QMetaType::QString,
+    QMetaType::QString,
+    QMetaType::Bool,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Float,
-    QMetaType::QString, QMetaType::Int,   49,
+    QMetaType::QString, QMetaType::Int,   53,
+    QMetaType::Void,
+    QMetaType::QString,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, QMetaType::Float,   60,   61,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   60,   61,
+    QMetaType::Void, QMetaType::Int, QMetaType::QString,   60,   64,
     QMetaType::Void,
 
        0        // eod
@@ -289,6 +319,14 @@ Q_CONSTINIT const QMetaObject SerialManagement::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'getEstMainAlt'
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'getEstTouchDownAlt'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'getFilePath'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'getFileName'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'getMicroConfirmation'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         // method 'flightTimerStart'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'flightTimerStop'
@@ -298,12 +336,28 @@ Q_CONSTINIT const QMetaObject SerialManagement::staticMetaObject = { {
         // method 'getCurrentTimeMSmString'
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'setReferenceTime'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'getActualTime'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'createFile'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'writeDataFile'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'closeFile'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'writeFloatValue'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<float, std::false_type>,
+        // method 'writeIntValue'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'writeStringValue'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'testMode'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -356,16 +410,30 @@ void SerialManagement::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 32: { int _r = _t->getEstMainAlt();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
-        case 33: _t->flightTimerStart(); break;
-        case 34: _t->flightTimerStop(); break;
-        case 35: { float _r = _t->getCurrentTimeSFloat();
-            if (_a[0]) *reinterpret_cast< float*>(_a[0]) = std::move(_r); }  break;
-        case 36: { QString _r = _t->getCurrentTimeMSmString((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+        case 33: { int _r = _t->getEstTouchDownAlt();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 34: { QString _r = _t->getFilePath();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
-        case 37: _t->createFile(); break;
-        case 38: _t->writeDataFile(); break;
-        case 39: _t->closeFile(); break;
-        case 40: _t->testMode(); break;
+        case 35: { QString _r = _t->getFileName();
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 36: { bool _r = _t->getMicroConfirmation();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 37: _t->flightTimerStart(); break;
+        case 38: _t->flightTimerStop(); break;
+        case 39: { float _r = _t->getCurrentTimeSFloat();
+            if (_a[0]) *reinterpret_cast< float*>(_a[0]) = std::move(_r); }  break;
+        case 40: { QString _r = _t->getCurrentTimeMSmString((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 41: _t->setReferenceTime(); break;
+        case 42: { QString _r = _t->getActualTime();
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 43: _t->createFile(); break;
+        case 44: _t->writeDataFile(); break;
+        case 45: _t->closeFile(); break;
+        case 46: _t->writeFloatValue((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<float>>(_a[2]))); break;
+        case 47: _t->writeIntValue((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 48: _t->writeStringValue((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 49: _t->testMode(); break;
         default: ;
         }
     }
@@ -538,14 +606,14 @@ int SerialManagement::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 41)
+        if (_id < 50)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 41;
+        _id -= 50;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 41)
+        if (_id < 50)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 41;
+        _id -= 50;
     }
     return _id;
 }

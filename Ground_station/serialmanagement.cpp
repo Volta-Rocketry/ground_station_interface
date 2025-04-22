@@ -114,6 +114,7 @@ void SerialManagement::microcontrollerConnection()
                         if(_MCU->isReadable()){
                             if(_MCU->isWritable()){
                                 _microcontrollerConnected = true;
+                                emit microcontrollerConnectionStatus(_microcontrollerConnected);
                                 qDebug() << "CONEXIÓN SUPER EXTIOSA";
                                 connect(_MCU, SIGNAL(readyRead()), this, SLOT(serialRead()));
                             }else{
@@ -129,6 +130,10 @@ void SerialManagement::microcontrollerConnection()
                         emit portIsNotOpen();
                     }
                     break;
+                }else{
+                    _microcontrollerFoundOnConnection = false;
+                    emit portNotFound();
+                    break;
                 }
             }
         }else{
@@ -143,7 +148,7 @@ void SerialManagement::serialClose()
     _MCU->close();
     _microcontrollerConnected = false;
 
-    emit microcontrollerConnectionStatus(_microcontrollerConnected); // Emits a signal with the connection status
+    emit microcontrollerConnectionStatus(false); // Emits a signal with the connection status
     qDebug() << "Conexión terminada";
 }
 
@@ -236,6 +241,19 @@ void SerialManagement::coreDataUpdate()
     telemetryStatus = _coreDataList[10].toInt();
     qDebug() << "Enter -- 8";
 
+    if (!referencedTimeSetted && telemetryStatus==1){
+        setReferenceTime();
+        referencedTimeSetted = true;
+    }
+
+    if(telemetryStatus==1 && autoDataSaveStart && !dataFile.isOpen()){
+        createFile();
+    }
+
+    if(telemetryStatus==6 && autoDataSaveFinish && dataFile.isOpen()){
+        closeFile();
+    }
+
 
     //_coreLastUpdatedTime = getCurrentTimeMSmString(2);
     //_coreLastUpdatedSeconds = getCurrentTimeSFloat();
@@ -261,6 +279,30 @@ int SerialManagement::getEstMainAlt()
     return expectedMainAlt;
 }
 
+int SerialManagement::getEstTouchDownAlt()
+{
+    return expectedTouchDownAlt;
+}
+
+QString SerialManagement::getFilePath()
+{
+    return filePath;
+}
+
+QString SerialManagement::getFileName()
+{
+    return fileName;
+}
+
+bool SerialManagement::getMicroConfirmation()
+{
+    if(_microcontrollerConnected){
+        return true;
+    } else{
+        return false;
+    }
+}
+
 void SerialManagement::endConnection()
 {
     serialClose();
@@ -279,6 +321,7 @@ void SerialManagement::endConnection()
     _olderLatValueList.clear();
     _olderLonValueList.clear();
     _currentSpeedDataListFloat.clear();
+    referencedTimeSetted = false;
 }
 
 void SerialManagement::setBaudRateMode(int mode)
@@ -570,24 +613,29 @@ QString SerialManagement::getCurrentTimeMSmString(int format = 0)
      * 2 = Hours, Minutes, Seconds
 
     */
-    QDateTime dateTime = QDateTime::currentDateTimeUtc();
-    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+    /*
+     * Depreciates
+     * QDateTime dateTime = QDateTime::currentDateTimeUtc();
+     * qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
 
-    int hours = dateTime.time().hour();
-    int minutes = dateTime.time().minute();
-    int seconds = dateTime.time().second();
-    int milliseconds = timestamp % 1000;
+     * int hours = dateTime.time().hour();
+     * int minutes = dateTime.time().minute();
+     * int seconds = dateTime.time().second();
+     * int milliseconds = timestamp % 1000;*/
 
-    if (format == 0){
-        return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
+    QTime currentTime = QTime::currentTime(); // Local time
+
+    if (format == 0){      
+        return currentTime.toString("mm:ss.zzz");
+        //return QString::asprintf("%02d:%02d:%03d", minutes, seconds, milliseconds);
     }
 
     if (format == 1){
-        return QString::asprintf("%02d:%02d:%02d:%03d", hours, minutes, seconds, milliseconds);
+        return currentTime.toString("hh:mm:ss.zzz");
     }
 
     if (format == 2){
-        return QString::asprintf("%02d:%02d:%02d", hours, minutes, seconds);
+        return currentTime.toString("hh:mm:ss");
     }
 
     else{
@@ -595,10 +643,27 @@ QString SerialManagement::getCurrentTimeMSmString(int format = 0)
     }
 }
 
+void SerialManagement::setReferenceTime()
+{
+    referenceTime = QTime::currentTime();
+}
+
+QString SerialManagement::getActualTime()
+{
+    QTime current = QTime::currentTime();
+    int elapsedMSecs = referenceTime.msecsTo(current);
+
+    QTime elapsedTime(0, 0); // 00:00:00.000
+    elapsedTime = elapsedTime.addMSecs(elapsedMSecs);
+    QString formatted = elapsedTime.toString("mm:ss.zzz");
+    return formatted;
+}
+
 void SerialManagement::createFile()
 {
     if (!dataFile.isOpen()) {
-        QString route = filePath + "\\" + fileName;
+        filePath.remove(0, 8);
+        QString route = filePath + "\\" + fileName + ".csv";
         dataFile.setFileName(route);
         if (dataFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
             fileOpen2Write = true;
@@ -630,7 +695,7 @@ void SerialManagement::writeDataFile()
     if (dataFile.isOpen()) {
         qDebug() << "Escribiendo en archivo";
         QTextStream out(&dataFile);
-        out << getCurrentTimeSFloat() << ","
+        out << getActualTime() << ","
             << getLastDataInList(1,-1) << "," // Ax
             << getLastDataInList(2,-1) << "," // Ay
             << getLastDataInList(3,-1) << "," // Az
@@ -652,4 +717,43 @@ void SerialManagement::closeFile()
 {
     dataFile.close();
     qDebug() << "Se cerró el archivo";
+}
+
+void SerialManagement::writeIntValue(int varIndex, int value)
+{
+    switch (varIndex){
+    case 1:
+        autoDataSaveStart = value;
+        qDebug() << autoDataSaveStart;
+        break;
+    case 2:
+        autoDataSaveFinish = value;
+        qDebug() << autoDataSaveFinish;
+    }
+}
+
+void SerialManagement::writeStringValue(int varIndex, QString text)
+{
+    switch (varIndex){
+    case 1:
+        filePath = text;
+        qDebug() << filePath;
+        break;
+    case 2:
+        fileName = text;
+        qDebug() << text;
+    }
+}
+
+void SerialManagement::writeFloatValue(int varIndex, float value)
+{
+    switch (varIndex){
+        case 1:
+            expectedApogeeAlt = value;
+            break;
+        case 2:
+            expectedMainAlt = value;
+        case 3:
+            expectedTouchDownAlt = value;
+        }
 }

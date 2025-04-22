@@ -27,7 +27,7 @@ CameraAndTelemetryForm {
             txtLatVal.text = serialManager.getLastDataInList(8, -1)
             txtLonVal.text = serialManager.getLastDataInList(9, -1)
 
-            let actualTime = serialManager.getCurrentTimeMSmString(0)
+            let actualTime = serialManager.getActualTime() //serialManager.getCurrentTimeMSmString(0)
             txtTimerVal.text = "T: +" + actualTime
 
 
@@ -148,11 +148,6 @@ CameraAndTelemetryForm {
                 imgUpper.visible = false
                 imgUpperEyected.visible = true
             }
-
-
-
-
-
         }
 
         // Manual updates
@@ -245,6 +240,16 @@ CameraAndTelemetryForm {
             imgUpper.visible = false
             imgUpperEyected.visible = true
         }
+
+        function onMicrocontrollerConnectionStatus(status) {
+            console.log("Señal recibida, status:", status, "tipo:", typeof status)
+
+            if (status) {
+                rectStatus2.color = "green";
+            } else {
+                rectStatus2.color = "red";
+            }
+        }
     }
 
     camera.cameraDevice: mediaDevices.videoInputs.length
@@ -262,4 +267,7 @@ CameraAndTelemetryForm {
         imgBtnCloseSettings.visible = false
         loader.source = ""
     }
+
+    loader.onLoaded: parent.forceActiveFocus() // Forzar foco también en el segundo Loader
+
 }

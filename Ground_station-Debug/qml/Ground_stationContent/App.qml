@@ -1,4 +1,3 @@
-
 // Copyright (C) 2021 The Qt Company Ltd.
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
 import QtQuick
@@ -6,12 +5,18 @@ import Ground_station
 import QtQuick.VirtualKeyboard
 
 Window {
+    width: Constants.width
+    height: Constants.height
 
-    Rectangle {
+    visible: true
+    title: "Ground_station"
+
+    FocusScope {
         width: parent.width
         height: parent.height
-        focus: true // Permitir que reciba eventos de teclado
+        focus: true
         Component.onCompleted: forceActiveFocus() // Forzar el foco al cargar
+
 
         Keys.onPressed: event => {
                             //console.log("Tecla presionada:", event.key) // Debug
@@ -19,12 +24,12 @@ Window {
                                 || event.key === Qt.Key_Return) {
                                 console.log("Se presionó Enter")
                                 serialManager.createFile()
-                            }else if (event.key === Qt.Key_Delete){
+                            } else if (event.key === Qt.Key_Delete) {
                                 console.log("Se presionó Delete")
                                 serialManager.closeFile()
                             } else if (event.key === Qt.Key_Q) {
                                 console.log("Se activó manualmente boost")
-                                //serialManager.manualBoostDetected()
+                                serialManager.manualBoostDetected()
                                 serialManager.closeFile()
                             } else if (event.key === Qt.Key_W) {
                                 console.log("Se activó manualmente apogee")
@@ -35,20 +40,22 @@ Window {
                             } else if (event.key === Qt.Key_R) {
                                 console.log("Se activó manualmente landing")
                                 serialManager.manualLandingDetected()
+                            } else if(event.key === Qt.Key_T){
+                                   console.log("Reference time reset manually")
+                                serialManager.setReferenceTime()
                             }
                         }
-    }
 
-    width: Constants.width
-    height: Constants.height
+        Loader {
+            id: loader
+            anchors.fill: parent
+            source: "CameraAndTelemetry.qml"
 
-    visible: true
-    title: "Ground_station"
-
-    Loader {
-        id: loader
-        anchors.fill: parent
-        source: "CameraAndTelemetry.qml"
+            onLoaded: {
+                forceActiveFocus(
+                            ) // Asegurarse de que el foco esté en el scope adecuado
+            }
+        }
     }
 
     InputPanel {

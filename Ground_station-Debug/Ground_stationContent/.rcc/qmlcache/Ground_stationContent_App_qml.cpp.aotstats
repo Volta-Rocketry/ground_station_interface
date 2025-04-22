@@ -6,106 +6,114 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 2543,
+                        "durationMicroseconds": 48738,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 42
+                        "line": 8
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 13,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "height",
-                        "line": 43
+                        "line": 9
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 111,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 11
+                        "line": 15
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "height",
-                        "line": 12
+                        "line": 16
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "onCompleted",
-                        "line": 14
+                        "line": 18
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 336,
+                        "durationMicroseconds": 482,
                         "errorMessage": "Cannot access value for name serialManager",
                         "functionName": "onPressed",
-                        "line": 16
+                        "line": 21
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 60,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "onPressed",
-                        "line": 16
+                        "line": 21
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 67,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "",
+                        "functionName": "onLoaded",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 96,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 50
+                        "line": 51
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 63,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "showKeyboard",
-                        "line": 56
+                        "line": 63
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 313,
+                        "durationMicroseconds": 374,
                         "errorMessage": "",
                         "functionName": "y",
-                        "line": 57
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 30,
-                        "durationMicroseconds": 84,
-                        "errorMessage": "",
-                        "functionName": "type",
-                        "line": 61
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 29,
-                        "durationMicroseconds": 156,
-                        "errorMessage": "",
-                        "functionName": "leftMargin",
                         "line": 64
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 68
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 159,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 154,
                         "errorMessage": "",
                         "functionName": "rightMargin",
-                        "line": 65
+                        "line": 72
                     },
                     {
                         "codegenSuccessfull": true,
@@ -113,15 +121,15 @@
                         "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "left",
-                        "line": 66
+                        "line": 73
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 120,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 67
+                        "line": 74
                     }
                 ],
                 "filepath": "App.qml"

@@ -15,11 +15,17 @@ public:
     // Progress bar config
     int expectedApogeeAlt = 590;
     int expectedMainAlt = 130;
+    int expectedTouchDownAlt = 0;
 
     // Data save
     QString filePath = "C:\\Users\\andre\\Downloads";
     QString fileName = "textfile.csv";
     QFile dataFile;
+    bool  autoDataSaveStart = true;
+    bool  autoDataSaveFinish = true;
+
+    // Time management
+
 
 public slots:
     // MCU Search and connection
@@ -41,6 +47,10 @@ public slots:
     int getTelemetryStatus();
     int getEstApogeeAlt();
     int getEstMainAlt();
+    int getEstTouchDownAlt();
+    QString getFilePath();
+    QString getFileName();
+    bool getMicroConfirmation();
 
     // Time management print
     void flightTimerStart();
@@ -48,10 +58,19 @@ public slots:
     float getCurrentTimeSFloat();
     QString getCurrentTimeMSmString(int format);
 
+    void setReferenceTime();
+    QString getActualTime();
+
     // Data save
     void createFile();
     void writeDataFile();
     void closeFile();
+
+    // Ui - C++ connections
+    void writeFloatValue(int varIndex, float value);
+    void writeIntValue(int varIndex, int value);
+    void writeStringValue(int varIndex, QString text);
+
 
 private slots:
     void testMode();
@@ -174,6 +193,10 @@ private:
 
     // Data save
     bool fileOpen2Write = false;
+
+    // For time display
+    QTime referenceTime;
+    bool referencedTimeSetted = false;
 
 signals:
     // For connection to MCU

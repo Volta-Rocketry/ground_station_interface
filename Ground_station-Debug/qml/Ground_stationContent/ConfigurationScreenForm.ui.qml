@@ -10,60 +10,74 @@ import QtQuick
 import QtQuick.Controls
 
 Rectangle {
-    width: 1024
-    height: 768
+    id: display
+    width: 900
+    height: 600
 
     property alias btnSearch: btnSearch
     property alias cbBaudRate: cbBaudRate
     property alias cbSerialPort: cbSerialPort
     property alias btnConnect: btnConnect
     property alias cbSerialPortModel: cbSerialPortModel
+    property alias btnSelectRoute: btnSelectRoute
+    property alias txtRouteSelected: txtRouteSelected
+    property alias edtFileName: edtFileName
+    property alias swtSaveFinish: swtSaveFinish
+    property alias swtSaveStart: swtSaveStart
+    property alias edtEstimatedApogee: edtEstimatedApogee
+    property alias edtEstimatedMain: edtEstimatedMain
+    property alias edtEstimatedTouchDown: edtEstimatedTouchDown
+
+    color: "#7dffffff"
+
+    Text {
+        id: txtMainTitle
+        x: 352
+        y: 40
+        width: display.width * 0.278
+        height: display.height * 0.158
+        text: "Settings" //qsTr(constants.appName())
+        anchors.top: parent.top
+        anchors.topMargin: parent.height * 0.052
+        font.pixelSize: parent.height * 0.117
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
 
     Rectangle {
-        id: rectangle
-        color: "green" //constants.mainBackgroundColor()
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        anchors.leftMargin: 0
-        anchors.rightMargin: 0
-        anchors.topMargin: 0
-        anchors.bottomMargin: 0
+        id: sectionSerialConnection
+        x: 66
+        width: display.width * 0.284
+        height: display.height * 0.608
+        color: "#00ffffff"
+        anchors.right: sectionDataSave.left
+        anchors.top: txtMainTitle.bottom
+        anchors.rightMargin: display.width * 0.056
+        anchors.topMargin: display.height * 0.067
 
-        Button {
-            id: btnSearch
-            width: parent.height * 0.333
-            height: parent.height * 0.073
-            text: "Search"
-            anchors.top: cbSerialPort.bottom
+        Text {
+            id: txtTittleBaudRate
+            height: display.height * 0.053
+            text: qsTr("Baud Rate")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
             anchors.topMargin: 0
-            autoRepeat: false
-            flat: false
-            anchors.horizontalCenter: cbSerialPort.horizontalCenter
-
-
-            /*onClicked:{
-
-                   cbSerialPortModel.clear();
-
-                   cbSerialPortModel.append({key: "Test Mode"});
-
-                   let ports = serialConfig.searchPortInfo();
-
-                   for (let i = 0; i < ports.length; i++) {
-                       cbSerialPortModel.append({ key: ports[i] });
-                   }
-               }*/
+            font.pixelSize: display.height * 0.033
+            font.bold: true
         }
 
         ComboBox {
             id: cbBaudRate
-            width: parent.height * 0.333
-            height: parent.height * 0.063
+            y: 26
+            height: display.height * 0.075
+            anchors.left: parent.left
+            anchors.right: parent.right
             anchors.top: txtTittleBaudRate.bottom
-            anchors.topMargin: parent.height * 0.01
-            anchors.horizontalCenter: txtTittleBaudRate.horizontalCenter
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
 
             currentIndex: 0
             model: cbBaudRateModel
@@ -103,190 +117,295 @@ Rectangle {
         }
 
         Text {
-            id: txtTittleBaudRate
-            y: 206
-            text: qsTr("Baud Rate")
-            anchors.top: txtAppMainTitle.bottom
-            anchors.topMargin: parent.height * 0.063
-            font.pixelSize: parent.height * 0.038
-            anchors.horizontalCenterOffset: parent.height * -0.139
-            anchors.horizontalCenter: parent.horizontalCenter
+            id: txtTittlePort
+            x: -506
+            y: 90
+            height: display.height * 0.053
+            text: qsTr("Port")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: cbBaudRate.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.025
+            font.pixelSize: display.height * 0.033
+            font.bold: true
         }
 
         ComboBox {
             id: cbSerialPort
-            width: parent.height * 0.333
-            height: parent.height * 0.063
+            x: -608
+            y: 137
+            height: display.height * 0.075
+            anchors.left: parent.left
+            anchors.right: parent.right
             anchors.top: txtTittlePort.bottom
-            anchors.topMargin: parent.height * 0.01
-            anchors.horizontalCenter: txtTittlePort.horizontalCenter
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
 
             currentIndex: 0
             model: cbSerialPortModel
 
+
+            /*onActivated:{
+                   serialConfig.savePortConnection(cbSerialPort.currentText)
+               }*/
             ListModel {
                 id: cbSerialPortModel
                 ListElement {
                     key: "Test Mode"
                 }
             }
-
-
-            /*onActivated:{
-                   serialConfig.savePortConnection(cbSerialPort.currentText)
-               }*/
         }
 
-        Text {
-            id: txtTittlePort
-            text: qsTr("Port")
-            anchors.top: cbBaudRate.bottom
-            anchors.topMargin: parent.height * 0.021
-            font.pixelSize: parent.height * 0.038
-            anchors.horizontalCenter: cbBaudRate.horizontalCenter
+        Button {
+            id: btnSearch
+            y: 185
+            height: display.height * 0.075
+            text: "Search"
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: cbSerialPort.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.008
+            autoRepeat: false
+            flat: false
+
+
+            /*onClicked:{
+
+                   cbSerialPortModel.clear();
+
+                   cbSerialPortModel.append({key: "Test Mode"});
+
+                   let ports = serialConfig.searchPortInfo();
+
+                   for (let i = 0; i < ports.length; i++) {
+                       cbSerialPortModel.append({ key: ports[i] });
+                   }
+               }*/
         }
 
         Button {
             id: btnConnect
-            y: 386
-            width: parent.height * 0.417
-            height: parent.height * 0.167
+            x: -561
+            width: display.width * 0.178
+            height: display.height * 0.075
             text: "Connect"
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: parent.height * 0.021
-            anchors.horizontalCenter: parent.horizontalCenter
-        }
-
-        Slider {
-            id: sliderMaxChamberTem
-            width: parent.height * 0.063
-            height: parent.height * 0.333
-            value: 50
-            anchors.verticalCenter: sliderMinChamberTem.verticalCenter
-            anchors.horizontalCenter: txtTittleMaxTemp.horizontalCenter
-            orientation: Qt.Vertical
-            to: 100
-
-
-            /*onValueChanged: {
-                   txtValueMaxTemp.text=(sliderMaxChamberTem.value.toFixed(0))
-                   serialConfig.setChamberMaxPredictedTemp((sliderMinChamberTem.value.toFixed(0)))
-               }*/
-        }
-
-        Text {
-            id: txtValueMinTemp
-            y: 131
-            text: sliderMinChamberTem.value
-            anchors.bottom: sliderMinChamberTem.top
-            anchors.bottomMargin: parent.height * 0.01
-            font.pixelSize: parent.height * 0.025
-            anchors.horizontalCenter: txtTittleMinTemp.horizontalCenter
-        }
-
-        Slider {
-            id: sliderMinChamberTem
-            width: parent.height * 0.063
-            height: parent.height * 0.333
-            value: 10
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: txtTittleMinTemp.horizontalCenter
-            orientation: Qt.Vertical
-            to: 100
-
-
-            /*onValueChanged: {
-                   txtValueMinTemp.text = (sliderMinChamberTem.value.toFixed(0))
-                   sliderMaxChamberTem.from =(sliderMinChamberTem.value.toFixed(0))
-                   serialConfig.setChamberMinPredictedTemp((sliderMinChamberTem.value.toFixed(0)))
-               }*/
-        }
-
-        Text {
-            id: txtTittleMinTemp
-            text: qsTr("Min")
-            anchors.top: sliderMinChamberTem.bottom
-            anchors.topMargin: parent.height * 0.01
-            font.pixelSize: parent.height * 0.025
-            anchors.horizontalCenterOffset: parent.height * -0.052
-            anchors.horizontalCenter: txtTittleChamberTemperatures.horizontalCenter
-        }
-
-        Text {
-            id: txtValueMaxTemp
-            y: 131
-            text: sliderMaxChamberTem.value
-            anchors.bottom: sliderMaxChamberTem.top
-            anchors.bottomMargin: parent.height * 0.01
-            font.pixelSize: parent.height * 0.025
-            anchors.horizontalCenter: sliderMaxChamberTem.horizontalCenter
-        }
-
-        Slider {
-            id: sliderMaxDataMemory
-            width: parent.height * 0.333
-            height: parent.height * 0.063
-            value: 100
-            anchors.top: txtTittleMaxDataMemory.bottom
-            anchors.topMargin: parent.height * 0.01
-            anchors.horizontalCenter: txtTittleMaxDataMemory.horizontalCenter
-            orientation: Qt.Horizontal
-            from: 10
-            to: 200
-
-
-            /*onValueChanged: {
-                   txtValueMaxDataMemory.text = (sliderMaxDataMemory.value.toFixed(0))
-                   serialConfig.setGraphsMaxMemory(sliderMaxDataMemory.value.toFixed(0))
-               }*/
-        }
-
-        Text {
-            id: txtTittleMaxDataMemory
-            text: qsTr("Max Data Memory")
             anchors.top: btnSearch.bottom
-            anchors.topMargin: parent.height * 0.021
-            font.pixelSize: parent.height * 0.038
-            anchors.horizontalCenter: btnSearch.horizontalCenter
-        }
-
-        Text {
-            id: txtValueMaxDataMemory
-            text: (sliderMaxDataMemory.value.toFixed(0))
-            anchors.top: sliderMaxDataMemory.bottom
-            anchors.topMargin: 0
-            font.pixelSize: parent.height * 0.025
-            anchors.horizontalCenter: sliderMaxDataMemory.horizontalCenter
-        }
-
-        Text {
-            id: txtTittleMaxTemp
-            x: 426
-            text: qsTr("Max")
-            anchors.left: txtTittleMinTemp.right
-            anchors.top: sliderMaxChamberTem.bottom
-            anchors.leftMargin: parent.height * 0.042
-            anchors.topMargin: parent.height * 0.01
-            font.pixelSize: parent.height * 0.025
-        }
-
-        Text {
-            id: txtTittleChamberTemperatures
-            text: qsTr("Chamber Temperatures")
-            anchors.left: cbSerialPort.right
-            anchors.top: txtTittleMinTemp.bottom
-            anchors.leftMargin: parent.height * 0.073
-            anchors.topMargin: parent.height * 0.021
-            font.pixelSize: parent.height * 0.038
-        }
-
-        Text {
-            id: txtAppMainTitle
-            text: "App name" //qsTr(constants.appName())
-            anchors.top: parent.top
-            anchors.topMargin: parent.height * 0.052
-            font.pixelSize: parent.height * 0.117
+            anchors.topMargin: display.height * 0.025
+            anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
+        }
+    }
+
+    Rectangle {
+        id: sectionDataSave
+        x: 388
+        width: sectionSerialConnection.width
+        height: sectionSerialConnection.height
+        color: "#005c5c5c"
+        anchors.top: sectionSerialConnection.top
+        anchors.topMargin: 0
+        anchors.horizontalCenter: parent.horizontalCenter
+
+        Text {
+            id: txtTittleSelectRoute
+            y: -440
+            height: display.height * 0.053
+            text: qsTr("Select Route")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        Button {
+            id: btnSelectRoute
+            height: display.height * 0.075
+            text: qsTr("Select Route")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleSelectRoute.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+        }
+
+        Text {
+            id: txtRouteSelected
+            height: display.height * 0.053
+            text: qsTr("Here goes the rute")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: btnSelectRoute.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+        }
+
+        Text {
+            id: txtTittleFileName
+            height: display.height * 0.053
+            text: qsTr("File name")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtRouteSelected.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.025
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        TextEdit {
+            id: edtFileName
+            height: display.height * 0.053
+            text: qsTr("File_Name_Today")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleFileName.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+        }
+
+        Text {
+            id: txtTittleAutomatic
+            height: display.height * 0.053
+            text: qsTr("Automatic save")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: edtFileName.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.025
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        Switch {
+            id: swtSaveStart
+            width: display.width * 0.242
+            height: display.height * 0.075
+            text: qsTr("Automatic Data Save Start")
+            anchors.top: txtTittleAutomatic.bottom
+            anchors.topMargin: 0
+            font.pointSize: display.width * 0.01
+            anchors.horizontalCenter: parent.horizontalCenter
+            checked: true
+        }
+
+        Switch {
+            id: swtSaveFinish
+            width: display.width * 0.242
+            height: display.height * 0.075
+            text: qsTr("Automatic Data Save Finish")
+            anchors.top: swtSaveStart.bottom
+            anchors.topMargin: 0
+            font.pointSize: display.width * 0.01
+            anchors.horizontalCenter: parent.horizontalCenter
+            checked: true
+        }
+    }
+
+    Rectangle {
+        id: sectionImportVars
+        width: sectionSerialConnection.width
+        height: sectionSerialConnection.height
+        color: "#00ffffff"
+        anchors.left: sectionDataSave.right
+        anchors.top: sectionDataSave.top
+        anchors.leftMargin: display.width * 0.056
+        anchors.topMargin: 0
+
+        Text {
+            id: txtTittleEstimatedApogee
+            height: display.height * 0.053
+            text: qsTr("Estimated Apogee (m)")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        TextEdit {
+            id: edtEstimatedApogee
+            height: display.height * 0.053
+            text: qsTr("3000")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleEstimatedApogee.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+        }
+
+        Text {
+            id: txtTittleEstimatedMainDeploy
+            height: display.height * 0.053
+            text: qsTr("Estimated Main deploy (m)")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: edtEstimatedApogee.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.025
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        TextEdit {
+            id: edtEstimatedMain
+            height: display.height * 0.053
+            text: qsTr("400")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleEstimatedMainDeploy.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+        }
+
+        Text {
+            id: txtTittleEstimatedTouchDown
+            height: display.height * 0.053
+            text: qsTr("Estimated Main deploy (m)")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: edtEstimatedMain.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.025
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        TextEdit {
+            id: edtEstimatedTouchDown
+            height: display.height * 0.053
+            text: qsTr("0")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleEstimatedTouchDown.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
         }
     }
 }
