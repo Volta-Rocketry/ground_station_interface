@@ -303,6 +303,11 @@ bool SerialManagement::getMicroConfirmation()
     }
 }
 
+QString SerialManagement::getLogMessage()
+{
+    return completeMessage;
+}
+
 void SerialManagement::endConnection()
 {
     serialClose();
@@ -350,8 +355,6 @@ void SerialManagement::serialRead()
         return;
     }
 
-    qDebug() << "Ya estoy leyendo";
-
     if (!_MCU->isReadable()) {
         return;
     }
@@ -359,13 +362,13 @@ void SerialManagement::serialRead()
     // Read all available data
     _serialData = _MCU->readAll();
     _serialBuffer += QString::fromStdString(_serialData.toStdString());
-    qDebug() << "This is the serial buffer" << _serialBuffer;
 
     // Process complete messages
     while (_serialBuffer.contains("\r\n")) {
         // Extract the first complete message
         int endIndex = _serialBuffer.indexOf("\r\n");
-        QString completeMessage = _serialBuffer.left(endIndex);
+        completeMessage = _serialBuffer.left(endIndex);
+        emit logUpdate();
         qDebug() << "This is the complete message extracted: " << completeMessage;
         _serialBuffer = _serialBuffer.mid(endIndex + 2); // Remove the processed message from the buffer
 
@@ -422,6 +425,7 @@ void SerialManagement::sendData(QString data) {     // To send data to the ardui
         qDebug() << "Se envio " << data;
     } else {
         emit dataNotSent();
+        qDebug() << "No se envio";
     }
 }
 

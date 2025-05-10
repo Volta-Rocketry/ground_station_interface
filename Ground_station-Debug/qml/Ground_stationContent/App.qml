@@ -17,7 +17,6 @@ Window {
         focus: true
         Component.onCompleted: forceActiveFocus() // Forzar el foco al cargar
 
-
         Keys.onPressed: event => {
                             //console.log("Tecla presionada:", event.key) // Debug
                             if (event.key === Qt.Key_Enter
@@ -40,9 +39,24 @@ Window {
                             } else if (event.key === Qt.Key_R) {
                                 console.log("Se activó manualmente landing")
                                 serialManager.manualLandingDetected()
-                            } else if(event.key === Qt.Key_T){
-                                   console.log("Reference time reset manually")
+                            } else if (event.key === Qt.Key_T) {
+                                console.log("Reference time reset manually")
                                 serialManager.setReferenceTime()
+                            } else if (event.key === Qt.Key_Z) {
+                                console.log("Comando Z")
+                                serialManager.sendData('z')
+                            } else if (event.key === Qt.Key_X) {
+                                console.log("Comando X")
+                                serialManager.sendData('x')
+                            } else if (event.key === Qt.Key_F) {
+                                console.log("Comando f")
+                                serialManager.sendData('f')
+                            } else if (event.key === Qt.Key_O) {
+                                console.log("Comando O")
+                                serialManager.sendData('o')
+                            } else if (event.key === Qt.Key_S) {
+                                console.log("Comando S")
+                                serialManager.sendData('s')
                             }
                         }
 

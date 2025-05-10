@@ -1,0 +1,344 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Generated/QtQuick3D/Missile5/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 896,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3262,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3266,
+				"parent" : 2
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Generated_QtQuick3D_Missile5_tooling::@00f48cabc46fb07068a7",
+	"name" : "Generated_QtQuick3D_Missile5_tooling",
+	"paths" : 
+	{
+		"build" : "Generated/QtQuick3D/Missile5",
+		"source" : "Generated/QtQuick3D/Missile5"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/Missile5.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/_importdata.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_A_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear03_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/support_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear02_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_04_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_1_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/body_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_03_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/support02_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_02_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear01_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_B_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/sphere01_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_D_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_C_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/support01_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/Missile5.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/_importdata.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_A_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear03_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/support_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear02_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_04_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_1_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/body_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_03_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/support02_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_02_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/gear01_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_B_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/sphere01_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_D_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/wing_C_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Missile5/meshes/support01_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "INTERFACE_LIBRARY"
+}

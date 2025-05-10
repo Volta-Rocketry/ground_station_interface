@@ -12,14 +12,14 @@ namespace _qt_qml_Ground_station_Constants_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_Ground_station_EventListSimulator_qml { 
+namespace _qt_qml_Ground_station_EventListModel_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_Ground_station_EventListModel_qml { 
+namespace _qt_qml_Ground_station_EventListSimulator_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -41,8 +41,8 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_station/Constants.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_station_Constants_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_station/EventListSimulator.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_station_EventListSimulator_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_station/EventListModel.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_station_EventListModel_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Ground_station/EventListSimulator.qml"), &QmlCacheGeneratedCode::_qt_qml_Ground_station_EventListSimulator_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

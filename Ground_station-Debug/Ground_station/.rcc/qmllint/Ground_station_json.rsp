@@ -10,7 +10,7 @@ D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qmake_Gr
 --resource
 D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/Ground_station_raw_qml_0.qrc
 D:/ground_station_interface/Ground_station/Ground_station/Constants.qml
-D:/ground_station_interface/Ground_station/Ground_station/EventListSimulator.qml
 D:/ground_station_interface/Ground_station/Ground_station/EventListModel.qml
+D:/ground_station_interface/Ground_station/Ground_station/EventListSimulator.qml
 --json
 D:/ground_station_interface/Ground_station-Debug/Ground_station_qmllint.json

@@ -19,7 +19,6 @@ Rectangle {
     height: 1080 //Constants.height
     color: "#ffffff"
 
-    property alias txtLatLonDivAnchorsleftMargin: txtLatLonDiv.anchors.leftMargin
     property alias rectangle8Height: divider2.height
 
     property real aspectRatio: 1.7778 //1920 / 1080 //display.width / display.height//
@@ -51,7 +50,8 @@ Rectangle {
     property alias loader: loader
     property alias btnSettings: btnSettings
     property alias btnCloseSettings: btnCloseSettings
-    property alias imgBtnCloseSettings: imgBtnCloseSettings    
+    property alias imgBtnCloseSettings: imgBtnCloseSettings
+    property alias txtLog: txtLog
 
     // Camera -- Start
 
@@ -97,6 +97,21 @@ Rectangle {
     }
 
     Image {
+        id: imgtestreport
+        x: 420
+        y: -420
+        width: 1080
+        height: 1920
+        opacity: 0.893
+        source: "images/imgtestreport2.jpg"
+        scale: 1
+        transformOrigin: Item.Center
+        rotation: -90
+        fillMode: Image.Stretch
+        visible: false
+    }
+
+    Image {
         id: sim_img1
         anchors.fill: parent
         anchors.leftMargin: 0
@@ -128,6 +143,7 @@ Rectangle {
             anchors.leftMargin: display.width * 0.013
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
+            font.bold: true
         }
 
         Text {
@@ -192,6 +208,7 @@ Rectangle {
             anchors.top: divider1.bottom
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
+            font.bold: true
             anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: txtAlt.horizontalCenter
         }
@@ -257,6 +274,7 @@ Rectangle {
             anchors.top: divider2.bottom
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
+            font.bold: true
             anchors.horizontalCenter: txtAlt.horizontalCenter
         }
 
@@ -296,12 +314,11 @@ Rectangle {
             id: txtLatVal
             color: "#000000"
             text: qsTr("000.0000")
+            anchors.verticalCenter: txtLat.verticalCenter
             anchors.top: divider3.bottom
-            anchors.topMargin: display.height * 0.006
+            anchors.topMargin: display.height * -0.005
             font.pixelSize: display.width * 0.021
-            anchors.horizontalCenterOffset: -(txtLatVal.width + txtLonVal.width
-                                              + (2 * display.width * 0.003)) / 2
-                                            + txtLatVal.width / 2
+            anchors.horizontalCenterOffset: display.width * 0.016
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
@@ -309,20 +326,23 @@ Rectangle {
             id: txtLonVal
             color: "#000000"
             text: qsTr("0000.000")
-            anchors.verticalCenter: txtLatVal.verticalCenter
-            anchors.left: txtLatLonDiv.right
-            anchors.leftMargin: display.width * 0.003
+            anchors.verticalCenter: txtLon.verticalCenter
+            anchors.top: txtLatVal.bottom
+            anchors.topMargin: display.height * -0.009
             font.pixelSize: display.width * 0.021
+            anchors.horizontalCenterOffset: display.width * 0.016
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
             id: txtLat
             color: "#000000"
             text: qsTr("Lat")
-            anchors.top: txtLatVal.bottom
-            anchors.topMargin: display.height * -0.014
+            anchors.top: divider3.bottom
+            anchors.topMargin: display.height * -0.005
             font.pixelSize: display.width * 0.021
-            anchors.horizontalCenter: txtLatVal.horizontalCenter
+            anchors.horizontalCenterOffset: display.width * -0.06
+            anchors.horizontalCenter: parent.horizontalCenter
             font.bold: true
         }
 
@@ -330,20 +350,10 @@ Rectangle {
             id: txtLon
             color: "#000000"
             text: qsTr("Lon")
-            anchors.verticalCenter: txtLat.verticalCenter
+            anchors.top: txtLat.bottom
+            anchors.topMargin: display.height * -0.009
             font.pixelSize: display.width * 0.021
-            anchors.horizontalCenter: txtLonVal.horizontalCenter
-            font.bold: true
-        }
-
-        Text {
-            id: txtLatLonDiv
-            color: "#000000"
-            text: qsTr("-")
-            anchors.verticalCenter: txtLatVal.verticalCenter
-            anchors.left: txtLatVal.right
-            anchors.leftMargin: display.width * 0.003
-            font.pixelSize: display.width * 0.021
+            anchors.horizontalCenter: txtLat.horizontalCenter
             font.bold: true
         }
     }
@@ -665,5 +675,16 @@ Rectangle {
             visible: true
             anchors.fill: parent
         }
+    }
+
+    Text {
+        id: txtLog
+        y: 1064
+        text: qsTr("0: 23,25,25,265,265,265,")
+        anchors.left: sectionStatusInfo.right
+        anchors.bottom: parent.bottom
+        anchors.leftMargin: display.height * 0.009
+        anchors.bottomMargin: display.width * 0.005
+        font.pixelSize: 12
     }
 }

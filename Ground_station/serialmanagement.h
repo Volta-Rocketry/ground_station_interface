@@ -23,6 +23,7 @@ public:
     QFile dataFile;
     bool  autoDataSaveStart = true;
     bool  autoDataSaveFinish = true;
+    QString completeMessage = "";
 
     // Time management
 
@@ -51,6 +52,7 @@ public slots:
     QString getFilePath();
     QString getFileName();
     bool getMicroConfirmation();
+    QString getLogMessage();
 
     // Time management print
     void flightTimerStart();
@@ -206,6 +208,7 @@ signals:
     void coreDataReady();
 
     // For Status Updates
+    void logUpdate();
         // Telemetry base
     void telemetryStatusIdle();
     void telemetryStatusBoost();

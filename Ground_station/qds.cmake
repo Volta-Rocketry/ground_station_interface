@@ -2,12 +2,12 @@
 ### Do not change
 
 add_subdirectory(Ground_station)
-add_subdirectory(Generated)
 add_subdirectory(Ground_stationContent)
+add_subdirectory(Generated)
 add_subdirectory(App)
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
     Ground_stationplugin
+    Ground_stationContentplugin
     Generated_QtQuick3D_Missile5plugin
-    Generated_QtQuick3D_Testplugin
-    Ground_stationContentplugin)
+    Generated_QtQuick3D_Testplugin)

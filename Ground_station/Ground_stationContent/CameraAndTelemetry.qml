@@ -3,6 +3,9 @@ import QtQuick
 CameraAndTelemetryForm {
     Connections {
         target: serialManager
+        function onLogUpdate(){
+        txtLog.text = serialManager.getLogMessage()
+        }
         function onCoreDataReady() {
 
             // Texts sectionMainData
@@ -20,9 +23,9 @@ CameraAndTelemetryForm {
             console.log(accelZ)
             let accelGeneral = Math.sqrt(Math.pow(accelX,2) + Math.pow(accelY,2) + Math.pow(accelZ, 2)).toFixed(0)
             console.log(accelGeneral)
-            txtAccelVal.text = (accelGeneral/9.81).toString()
-            txtLatVal.text = serialManager.getLastDataInList(8, -1)
-            txtLonVal.text = serialManager.getLastDataInList(9, -1)
+            txtAccelVal.text = (accelGeneral/9.81).toFixed(0).toString()
+            txtLatVal.text = "6.104991" //serialManager.getLastDataInList(8, -1)
+            txtLonVal.text = "-75.387526" //serialManager.getLastDataInList(9, -1)
 
             let actualTime = serialManager.getActualTime() //serialManager.getCurrentTimeMSmString(0)
             txtTimerVal.text = "T: +" + actualTime
@@ -242,6 +245,7 @@ CameraAndTelemetryForm {
             console.log("Señal recibida, status:", status, "tipo:", typeof status)
 
             if (status) {
+                rectStatus1.color = "green";
                 rectStatus2.color = "green";
             } else {
                 rectStatus2.color = "red";
