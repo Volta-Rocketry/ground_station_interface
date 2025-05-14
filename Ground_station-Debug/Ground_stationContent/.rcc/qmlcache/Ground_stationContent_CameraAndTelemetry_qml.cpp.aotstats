@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 195,
                         "errorMessage": "Cannot access value for name serialManager",
                         "functionName": "target",
                         "line": 5
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name txtLog",
                         "functionName": "onLogUpdate",
                         "line": 6
@@ -22,90 +22,90 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 698,
-                        "errorMessage": "Cannot access value for name serialManager",
+                        "durationMicroseconds": 98,
+                        "errorMessage": "Cannot access value for name camera",
                         "functionName": "onCoreDataReady",
                         "line": 9
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name txtTittleAscent",
                         "functionName": "onManualBoostDetected",
-                        "line": 154
+                        "line": 155
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 42,
                         "errorMessage": "Cannot access value for name txtTittleAscent",
                         "functionName": "onManualApogeeDetected",
-                        "line": 176
+                        "line": 177
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 55,
                         "errorMessage": "Cannot access value for name txtTittleAscent",
                         "functionName": "onManualMainDetected",
-                        "line": 198
+                        "line": 199
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 42,
                         "errorMessage": "Cannot access value for name txtTittleAscent",
                         "functionName": "onManualLandingDetected",
-                        "line": 220
+                        "line": 221
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 13,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "onMicrocontrollerConnectionStatus",
-                        "line": 244
+                        "line": 245
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 220,
                         "errorMessage": "Cannot use shadowable base type for further lookups: QMediaDevices::videoInputs with type QCameraDevice (stored as QVariant)",
                         "functionName": "cameraDevice",
-                        "line": 256
+                        "line": 257
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 700,
+                        "durationMicroseconds": 355,
                         "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
                         "functionName": "onCompleted",
-                        "line": 260
+                        "line": 261
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 301,
+                        "durationMicroseconds": 273,
                         "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
                         "functionName": "onClicked",
-                        "line": 263
+                        "line": 264
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 264,
+                        "durationMicroseconds": 256,
                         "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
                         "functionName": "onClicked",
-                        "line": 267
+                        "line": 268
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "onLoaded",
-                        "line": 272
+                        "line": 273
                     }
                 ],
                 "filepath": "CameraAndTelemetry.qml"

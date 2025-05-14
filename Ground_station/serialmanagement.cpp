@@ -155,16 +155,16 @@ void SerialManagement::serialClose()
 void SerialManagement::coreDataUpdate()
 {
     /* _coreDataListAx
-     *  0   1   2   3    4    5    6    7   8   9
-     *  Ax  Ay  Az  Anx  Any  Anz  Alt  Lat Lon Vel
+     *  0               1   2   3    4    5    6    7   8               9   10
+     *  cycleNumber     Ax  Ay  Az  Anx  Any  Anz  Alt  currentStage    Lat Lon
     */
     qDebug() << "LISTA ES: " << _coreDataList;
 
     // Accel
     qDebug() << "Enter -- 1";
-    _accelXDataListFloat.append(_coreDataList[0].toFloat());
-    _accelYDataListFloat.append(_coreDataList[1].toFloat());
-    _accelZDataListFloat.append(_coreDataList[2].toFloat());
+    _accelXDataListFloat.append(_coreDataList[1].toFloat());
+    _accelYDataListFloat.append(_coreDataList[2].toFloat());
+    _accelZDataListFloat.append(_coreDataList[3].toFloat());
 
     if (_accelXDataListFloat.count() > _maxDataMemory){
         _accelXDataListFloat.removeFirst();
@@ -179,9 +179,9 @@ void SerialManagement::coreDataUpdate()
     qDebug() << "Enter -- 2";
 
     // Angles
-    _angleXDataListFloat.append(_coreDataList[3].toFloat());
-    _angleYDataListFloat.append(_coreDataList[4].toFloat());
-    _angleZDataListFloat.append(_coreDataList[5].toFloat());
+    _angleXDataListFloat.append(_coreDataList[4].toFloat());
+    _angleYDataListFloat.append(_coreDataList[5].toFloat());
+    _angleZDataListFloat.append(_coreDataList[6].toFloat());
 
     if (_angleXDataListFloat.count() > _maxDataMemory){
         _angleXDataListFloat.removeFirst();
@@ -196,7 +196,7 @@ void SerialManagement::coreDataUpdate()
     qDebug() << "Enter -- 3";
 
     // Altitude
-    _currentAltDataListFloat.append(_coreDataList[6].toFloat());
+    _currentAltDataListFloat.append(_coreDataList[7].toFloat());
 
     if (_currentAltDataListFloat.count() > _maxDataMemory){
         _currentAltDataListFloat.removeFirst();
@@ -205,7 +205,7 @@ void SerialManagement::coreDataUpdate()
     qDebug() << "Enter -- 4";
 
     // GPS
-    _newerLatValueList.append(_coreDataList[7].toFloat());
+    _newerLatValueList.append(_coreDataList[9].toFloat());
     if (_newerLatValueList.count()>_maxDataMemory/2){
         _olderLatValueList.append(_newerLatValueList[0]);
         _newerLatValueList.removeFirst();
@@ -216,7 +216,7 @@ void SerialManagement::coreDataUpdate()
 
     qDebug() << "Enter -- 5";
 
-    _newerLonValueList.append(_coreDataList[8].toFloat());
+    _newerLonValueList.append(_coreDataList[10].toFloat());
     if (_newerLonValueList.count()>_maxDataMemory/2){
         _olderLonValueList.append(_newerLonValueList[0]);
         _newerLonValueList.removeFirst();
@@ -229,7 +229,7 @@ void SerialManagement::coreDataUpdate()
 
 
     // Speed
-    _currentSpeedDataListFloat.append(_coreDataList[9].toFloat());
+    _currentSpeedDataListFloat.append(_coreDataList[0].toFloat());  // Se debe mirar bien que se hace con esto
 
     if (_currentSpeedDataListFloat.count() > _maxDataMemory){
         _currentSpeedDataListFloat.removeFirst();
@@ -238,7 +238,8 @@ void SerialManagement::coreDataUpdate()
     qDebug() << "Enter -- 7";
 
     // Status
-    telemetryStatus = _coreDataList[10].toInt();
+    telemetryStatus = _coreDataList[8].toFloat();
+    qDebug() << "Status " << telemetryStatus;
     qDebug() << "Enter -- 8";
 
     if (!referencedTimeSetted && telemetryStatus==1){
@@ -347,17 +348,16 @@ void SerialManagement::setBaudRateMode(int mode)
 
 void SerialManagement::serialRead()
 {
-    qDebug() << "EntroSerialRead";
 
-    if (timerBeforeRun < timesBeforeRun){
-        timerBeforeRun++;
-        qDebug() << "No estoy leyendo";
-        return;
-    }
-
+    // if (timerBeforeRun < timesBeforeRun){
+    //     timerBeforeRun++;
+    //     qDebug() << "No estoy leyendo";
+    //     return;
+    // }
     if (!_MCU->isReadable()) {
+
         return;
-    }
+    }    
 
     // Read all available data
     _serialData = _MCU->readAll();
@@ -371,50 +371,61 @@ void SerialManagement::serialRead()
         emit logUpdate();
         qDebug() << "This is the complete message extracted: " << completeMessage;
         _serialBuffer = _serialBuffer.mid(endIndex + 2); // Remove the processed message from the buffer
+        qDebug() << "Seril buffer" << _serialBuffer;
 
-        QList<QString> data = completeMessage.split(",");
-        qDebug() << "Data Splited";
-        int cat = data[1].toInt();
-        if (cat == 1){
-            data.removeFirst();
-            data.removeFirst();
-            data.removeFirst();
-            data.removeLast();
-            data.removeLast();
+        if (completeMessage.size() > 1 && completeMessage[1] == ':') {
+            int cat = QString(completeMessage[0]).toInt();
 
-            _coreDataList = data;
-            qDebug()<<"Data for update Core";
-            coreDataUpdate();
+            QList<QString> data = completeMessage.mid(3).split(",");
 
-        }else if(cat == 2){
-            telemetryStatus = data.first().toInt();
-            //telemetryStatusUpdate();
+            qDebug() << "Data Splited: " << data;
 
-            //_pyroContDataList = data;
-            //pyroContDataUpdate();
-        }else if(cat == 3){
+            if (cat == 0){
+                _coreDataList = data;
+                qDebug()<<"Data for update Core";
+                coreDataUpdate();
 
-            data.removeFirst();
-            data.removeFirst();
-            data.removeLast();
+            }else if (cat == 1){
+                // data.removeFirst();
+                // data.removeFirst();
+                // data.removeFirst();
+                // data.removeLast();
+                // data.removeLast();
 
-            //_chamberTempDataList = data;
-            //chamberTempDataUpdate();
+                // _coreDataList = data;
+                // qDebug()<<"Data for update Core";
+                // coreDataUpdate();
 
-        }else if(cat == 4){
-            data.removeFirst();
-            data.removeFirst();
-            data.removeLast();
+            }else if(cat == 2){
+                //telemetryStatus = data.first().toInt();
+                //telemetryStatusUpdate();
 
-            //_otherDataList = data;
+                //_pyroContDataList = data;
+                //pyroContDataUpdate();
+            }else if(cat == 3){
 
-        }else if(cat == 6){
-            data.removeFirst();
-            data.removeFirst();
-            data.removeLast();
+                // data.removeFirst();
+                // data.removeFirst();
+                // data.removeLast();
 
-            //_gpsDataList = data;
-            //gpsDataUpdate();
+                //_chamberTempDataList = data;
+                //chamberTempDataUpdate();
+
+            }else if(cat == 4){
+                // data.removeFirst();
+                // data.removeFirst();
+                // data.removeLast();
+
+                //_otherDataList = data;
+
+            }else if(cat == 6){
+                // data.removeFirst();
+                // data.removeFirst();
+                // data.removeLast();
+
+                //_gpsDataList = data;
+                //gpsDataUpdate();
+            }
         }
     }
 }
@@ -650,16 +661,18 @@ QString SerialManagement::getCurrentTimeMSmString(int format = 0)
 void SerialManagement::setReferenceTime()
 {
     referenceTime = QTime::currentTime();
+    qDebug() << "Reference time" << referenceTime;
 }
 
 QString SerialManagement::getActualTime()
 {
     QTime current = QTime::currentTime();
     int elapsedMSecs = referenceTime.msecsTo(current);
-
+    qDebug() << "Elapsed MSecs" << elapsedMSecs;
     QTime elapsedTime(0, 0); // 00:00:00.000
     elapsedTime = elapsedTime.addMSecs(elapsedMSecs);
     QString formatted = elapsedTime.toString("mm:ss.zzz");
+    qDebug() << "Formated" << formatted;
     return formatted;
 }
 

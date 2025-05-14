@@ -8,6 +8,10 @@ CameraAndTelemetryForm {
         }
         function onCoreDataReady() {
 
+            console.warn("Camera available:", camera.available)
+            console.warn("Camera available lenght:", mediaDevices.videoInputs.length)
+            console.warn("Camera availables:", mediaDevices.videoInputs)
+
             // Texts sectionMainData
             let currentAlt = serialManager.getLastDataInList(7, -1).toFixed(0)
             txtAltMVal.text = currentAlt
@@ -18,11 +22,8 @@ CameraAndTelemetryForm {
             let accelX = serialManager.getLastDataInList(1, -1)
             let accelY = serialManager.getLastDataInList(2, -1)
             let accelZ = serialManager.getLastDataInList(3, -1)
-            console.log(accelX)
-            console.log(accelY)
-            console.log(accelZ)
+
             let accelGeneral = Math.sqrt(Math.pow(accelX,2) + Math.pow(accelY,2) + Math.pow(accelZ, 2)).toFixed(0)
-            console.log(accelGeneral)
             txtAccelVal.text = (accelGeneral/9.81).toFixed(0).toString()
             txtLatVal.text = "6.104991" //serialManager.getLastDataInList(8, -1)
             txtLonVal.text = "-75.387526" //serialManager.getLastDataInList(9, -1)
@@ -254,7 +255,7 @@ CameraAndTelemetryForm {
     }
 
     camera.cameraDevice: mediaDevices.videoInputs.length
-                         > 1 ? mediaDevices.videoInputs[2] // Cambia el índice según la cámara deseada
+                         > 1 ? mediaDevices.videoInputs[1] // Cambia el índice según la cámara deseada
                              : mediaDevices.defaultVideoInput
 
     Component.onCompleted: camera.start()
@@ -269,6 +270,5 @@ CameraAndTelemetryForm {
         loader.source = ""
     }
 
-    loader.onLoaded: parent.forceActiveFocus() // Forzar foco también en el segundo Loader
-
+    loader.onLoaded: parent.forceActiveFocus() // Forzar foco también en el segundo Loader    
 }
