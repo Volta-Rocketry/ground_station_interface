@@ -4,13 +4,13 @@ optional plugin Ground_stationContentplugin
 classname Ground_stationContentPlugin
 typeinfo Ground_stationContent.qmltypes
 prefer :/qt/qml/Ground_stationContent/
-SplashScreen 1.0 SplashScreen.qml
-ConfigurationScreen 1.0 ConfigurationScreen.qml
-MainScreenForm 1.0 MainScreenForm.ui.qml
-MainScreen 1.0 MainScreen.qml
 CameraAndTelemetry 1.0 CameraAndTelemetry.qml
-SplashScreenForm 1.0 SplashScreenForm.ui.qml
-App 1.0 App.qml
+ConfigurationScreen 1.0 ConfigurationScreen.qml
+SplashScreen 1.0 SplashScreen.qml
+MainScreenForm 1.0 MainScreenForm.ui.qml
 CameraAndTelemetryForm 1.0 CameraAndTelemetryForm.ui.qml
+MainScreen 1.0 MainScreen.qml
+App 1.0 App.qml
+SplashScreenForm 1.0 SplashScreenForm.ui.qml
 ConfigurationScreenForm 1.0 ConfigurationScreenForm.ui.qml
 

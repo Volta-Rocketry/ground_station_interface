@@ -25,6 +25,7 @@ ConfigurationScreenForm {
     edtEstimatedApogee.text: serialManager.getEstApogeeAlt()
     edtEstimatedMain.text: serialManager.getEstMainAlt()
     edtEstimatedTouchDown.text: serialManager.getEstTouchDownAlt()
+    edtTittleFrecuency.text: serialManager.getFrequency();
 
     btnSearch.onClicked: {
 
@@ -94,6 +95,10 @@ ConfigurationScreenForm {
 
     edtFileName.onTextChanged: {
         serialManager.writeStringValue(2,edtFileName.text)
+    }
+
+    edtTittleFrecuency.onTextChanged: {
+        serialManager.changeRocketFrequency(edtTittleFrecuency.text)
     }
 
 }

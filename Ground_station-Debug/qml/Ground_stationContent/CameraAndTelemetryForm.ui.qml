@@ -22,7 +22,7 @@ Rectangle {
     property alias rectangle8Height: divider2.height
 
     property real aspectRatio: 1.7778 //1920 / 1080 //display.width / display.height//
-    property string timerVal: "T: +00:00"
+    property string timerVal: "T: +00:00:00"
     property alias timeLineValue: timeLineValue
     property alias timeLineBackground: timeLineBackground
     property alias txtTittleAscent: txtTittleAscent
@@ -36,7 +36,6 @@ Rectangle {
     property alias imgUpperEyected: imgUpperEyected
     property alias imgLowerEyected: imgLowerEyected
     property alias txtTimerVal: txtTimerVal
-    property alias rectStatus1: rectStatus1
     property alias rectStatus2: rectStatus2
     property alias txtAltMVal: txtAltMVal
     property alias txtAltFtVal: txtAltFtVal
@@ -125,14 +124,15 @@ Rectangle {
 
     Rectangle {
         id: sectionMainData
-        y: 153
         height: display.height * 0.417
         color: "#7affffff"
         radius: 15
         anchors.left: sectionTimer.left
         anchors.right: sectionTimer.right
+        anchors.top: sectionTimer.bottom
         anchors.leftMargin: 0
         anchors.rightMargin: 0
+        anchors.topMargin: display.height * 0.04167
 
         Text {
             id: txtAlt
@@ -140,9 +140,10 @@ Rectangle {
             text: qsTr("Altitude:")
             anchors.left: parent.left
             anchors.top: parent.top
-            anchors.leftMargin: display.width * 0.013
+            anchors.leftMargin: display.width * 0.005
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             font.bold: true
         }
 
@@ -154,17 +155,19 @@ Rectangle {
             anchors.bottom: txtAltFtVal.top
             anchors.bottomMargin: display.width * -0.005
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenter: txtAltFtVal.horizontalCenter
         }
 
         Text {
             id: txtAltFtVal
             color: "#000000"
-            text: qsTr("00000")
+            text: qsTr("0000")
             anchors.verticalCenter: txtAlt.verticalCenter
             anchors.left: txtAlt.right
             anchors.leftMargin: display.width * 0.008
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.verticalCenterOffset: display.height * 0.016
         }
 
@@ -176,6 +179,7 @@ Rectangle {
             anchors.left: txtAltFtVal.right
             anchors.leftMargin: display.width * 0.003
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Text {
@@ -186,6 +190,7 @@ Rectangle {
             anchors.left: txtAltMVal.right
             anchors.leftMargin: display.width * 0.003
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Rectangle {
@@ -208,6 +213,7 @@ Rectangle {
             anchors.top: divider1.bottom
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             font.bold: true
             anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: txtAlt.horizontalCenter
@@ -221,6 +227,7 @@ Rectangle {
             anchors.bottom: txtSpeedFtVal.top
             anchors.bottomMargin: display.height * -0.009
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenter: txtSpeedFtVal.horizontalCenter
         }
 
@@ -232,6 +239,7 @@ Rectangle {
             anchors.left: txtAltFtVal.left
             anchors.leftMargin: 0
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.verticalCenterOffset: display.height * 0.016
         }
 
@@ -243,6 +251,7 @@ Rectangle {
             anchors.left: txtSpeedFtVal.right
             anchors.leftMargin: display.width * 0.003
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Text {
@@ -253,6 +262,7 @@ Rectangle {
             anchors.left: txtSpeedMVal.right
             anchors.leftMargin: display.width * 0.003
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Rectangle {
@@ -274,6 +284,7 @@ Rectangle {
             anchors.top: divider2.bottom
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             font.bold: true
             anchors.horizontalCenter: txtAlt.horizontalCenter
         }
@@ -286,6 +297,7 @@ Rectangle {
             anchors.left: txtAltFtVal.left
             anchors.leftMargin: 0
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Text {
@@ -296,6 +308,7 @@ Rectangle {
             anchors.left: txtAccelVal.right
             anchors.leftMargin: display.width * 0.003
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Rectangle {
@@ -318,6 +331,9 @@ Rectangle {
             anchors.top: divider3.bottom
             anchors.topMargin: display.height * -0.005
             font.pixelSize: display.width * 0.021
+            font.italic: false
+            font.bold: false
+            font.family: "Nasalization"
             anchors.horizontalCenterOffset: display.width * 0.016
             anchors.horizontalCenter: parent.horizontalCenter
         }
@@ -330,6 +346,7 @@ Rectangle {
             anchors.top: txtLatVal.bottom
             anchors.topMargin: display.height * -0.009
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenterOffset: display.width * 0.016
             anchors.horizontalCenter: parent.horizontalCenter
         }
@@ -341,6 +358,7 @@ Rectangle {
             anchors.top: divider3.bottom
             anchors.topMargin: display.height * -0.005
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenterOffset: display.width * -0.06
             anchors.horizontalCenter: parent.horizontalCenter
             font.bold: true
@@ -353,6 +371,7 @@ Rectangle {
             anchors.top: txtLat.bottom
             anchors.topMargin: display.height * -0.009
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenter: txtLat.horizontalCenter
             font.bold: true
         }
@@ -368,7 +387,7 @@ Rectangle {
         anchors.top: sectionTimeLine.top
         anchors.bottom: sectionTimeLine.bottom
         anchors.leftMargin: display.width * 0.076
-        anchors.rightMargin: display.width * -0.005
+        anchors.rightMargin: 0
         anchors.topMargin: 0
         anchors.bottomMargin: 0
 
@@ -385,6 +404,7 @@ Rectangle {
             anchors.bottomMargin: display.height * 0.009
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            font.family: "Nasalization"
             font.pointSize: display.width * 0.017
             font.bold: true
         }
@@ -393,8 +413,8 @@ Rectangle {
     Rectangle {
         id: sectionStatusInfo
         y: 936
-        width: display.width * 0.133
-        height: display.height * 0.134
+        width: display.width * 0.160
+        height: display.width * 0.036
         color: "#afffffff"
         radius: 15
         anchors.left: parent.left
@@ -403,43 +423,27 @@ Rectangle {
         anchors.bottomMargin: 0
 
         Rectangle {
-            id: rectStatus1
-            width: display.width * 0.021
-            height: display.height * 0.037
-            color: "#ff0000"
-            anchors.left: parent.left
-            anchors.top: parent.top
-            anchors.leftMargin: display.width * 0.01
-            anchors.topMargin: display.height * 0.019
-        }
-
-        Rectangle {
             id: rectStatus2
             width: display.width * 0.021
-            height: display.height * 0.037
+            height: rectStatus2.width
             color: "#ff0000"
-            anchors.top: rectStatus1.bottom
+            radius: rectStatus2.width / 2
+            border.width: 0
+            anchors.verticalCenter: txtTittleTelemetry.verticalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: display.width * 0.005
             anchors.topMargin: display.height * 0.019
-            anchors.horizontalCenter: rectStatus1.horizontalCenter
-        }
-
-        Text {
-            id: txtTittleCamera
-            color: "#000000"
-            text: qsTr("CAMERA")
-            anchors.verticalCenter: rectStatus1.verticalCenter
-            font.pixelSize: display.width * 0.018
-            anchors.horizontalCenter: txtTittleTelemetry.horizontalCenter
         }
 
         Text {
             id: txtTittleTelemetry
             color: "#000000"
             text: qsTr("TELEMETRY")
-            anchors.verticalCenter: rectStatus2.verticalCenter
+            anchors.verticalCenter: parent.verticalCenter
             anchors.left: rectStatus2.right
             anchors.leftMargin: display.width * 0.005
             font.pixelSize: display.width * 0.018
+            font.family: "Nasalization"
         }
     }
 
@@ -487,6 +491,7 @@ Rectangle {
             anchors.leftMargin: 0
             anchors.topMargin: display.width * 0.005
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             font.bold: false
         }
 
@@ -500,6 +505,7 @@ Rectangle {
                                  - (txtTittleAscent.width + txtTittleApogee.width
                                     + txtTittleMainChute.width + txtTittleTouchDown.width)) / 3
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             font.bold: false
         }
 
@@ -513,6 +519,7 @@ Rectangle {
                                  - (txtTittleAscent.width + txtTittleApogee.width
                                     + txtTittleMainChute.width + txtTittleTouchDown.width)) / 3
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
 
         Text {
@@ -525,6 +532,7 @@ Rectangle {
                                  - (txtTittleAscent.width + txtTittleApogee.width
                                     + txtTittleMainChute.width + txtTittleTouchDown.width)) / 3
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
         }
     }
 
@@ -532,7 +540,6 @@ Rectangle {
         id: imgVoltaLogo
         x: 1620
         y: 772
-        width: display.width * 0.156
         height: display.height * 0.241
         anchors.right: parent.right
         anchors.bottom: parent.bottom
@@ -557,11 +564,12 @@ Rectangle {
     Rectangle {
         id: rectangle6
         x: 0
-        y: 153
         width: display.width * 0.156
         height: display.height * 0.454
         color: "#7affffff"
         radius: 15
+        anchors.top: sectionTimeLine.bottom
+        anchors.topMargin: display.height * 0.02778
 
         Image {
             id: imgLowerEyected
@@ -589,7 +597,6 @@ Rectangle {
 
         Image {
             id: imgUpper
-            width: display.width * 0.08
             height: display.height * 0.161
             anchors.top: parent.top
             anchors.topMargin: display.height * 0.065
@@ -602,7 +609,6 @@ Rectangle {
 
         Image {
             id: imgLower
-            width: display.width * 0.08
             height: display.height * 0.161
             anchors.top: imgUpper.bottom
             anchors.topMargin: 0
@@ -620,6 +626,7 @@ Rectangle {
             anchors.bottom: imgUpper.top
             anchors.bottomMargin: display.height * 0.014
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenter: parent.horizontalCenter
             font.bold: false
         }
@@ -631,6 +638,7 @@ Rectangle {
             anchors.top: imgLower.bottom
             anchors.topMargin: display.height * 0.014
             font.pixelSize: display.width * 0.021
+            font.family: "Nasalization"
             anchors.horizontalCenter: parent.horizontalCenter
             font.bold: false
         }
@@ -680,7 +688,7 @@ Rectangle {
     Text {
         id: txtLog
         y: 1064
-        text: qsTr("0: 23,25,25,265,265,265,")
+        text: qsTr("LOG: XX,XX,XX,XX,XX,XX, Tsecs: 0000")
         anchors.left: sectionStatusInfo.right
         anchors.bottom: parent.bottom
         anchors.leftMargin: display.height * 0.009
@@ -688,3 +696,9 @@ Rectangle {
         font.pixelSize: 12
     }
 }
+
+/*##^##
+Designer {
+    D{i:0}D{i:5;invisible:true}
+}
+##^##*/

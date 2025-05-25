@@ -1,0 +1,444 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 828,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 408,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 142
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 148
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 563,
+                        "errorMessage": "",
+                        "functionName": "arcRadius",
+                        "line": 188
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 875,
+                        "errorMessage": "",
+                        "functionName": "__preferredRendererTypeAvailable",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 1056,
+                        "errorMessage": "",
+                        "functionName": "__curveRendererActive",
+                        "line": 227
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 600,
+                        "errorMessage": "",
+                        "functionName": "onWidthChanged",
+                        "line": 303
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 357,
+                        "errorMessage": "",
+                        "functionName": "onHeightChanged",
+                        "line": 304
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 301,
+                        "errorMessage": "",
+                        "functionName": "onRadiusChanged",
+                        "line": 306
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "onArcRadiusChanged",
+                        "line": 307
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 278,
+                        "errorMessage": "",
+                        "functionName": "onTopMarginChanged",
+                        "line": 309
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 357,
+                        "errorMessage": "",
+                        "functionName": "onBottomMarginChanged",
+                        "line": 310
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 276,
+                        "errorMessage": "",
+                        "functionName": "onLeftMarginChanged",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 269,
+                        "errorMessage": "",
+                        "functionName": "onRightMarginChanged",
+                        "line": 312
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "length",
+                        "line": 322
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 736,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "normalize",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "dotProduct",
+                        "line": 335
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "project",
+                        "line": 339
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "intersect",
+                        "line": 350
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "moveLine",
+                        "line": 361
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 64576,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "calc",
+                        "line": 374
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 657,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 230
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 1535,
+                        "errorMessage": "",
+                        "functionName": "smooth",
+                        "line": 231
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 675,
+                        "errorMessage": "",
+                        "functionName": "samples",
+                        "line": 232
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 302,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "",
+                        "functionName": "margins",
+                        "line": 238
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 748,
+                        "errorMessage": "",
+                        "functionName": "__width",
+                        "line": 249
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 638,
+                        "errorMessage": "",
+                        "functionName": "__height",
+                        "line": 250
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 350,
+                        "errorMessage": "",
+                        "functionName": "xOffset",
+                        "line": 251
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 208,
+                        "errorMessage": "",
+                        "functionName": "yOffset",
+                        "line": 252
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 256
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 319,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 240,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 258
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 583,
+                        "errorMessage": "",
+                        "functionName": "startX",
+                        "line": 260
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 641,
+                        "errorMessage": "",
+                        "functionName": "startY",
+                        "line": 261
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 591,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 264
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 698,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 265
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 645,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 267
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 605,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 268
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 547,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 272
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 581,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 273
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 555,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 277
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 517,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 278
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 542,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 280
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 552,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 281
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 559,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 285
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 695,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 286
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 622,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 290
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 591,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 291
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 581,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 293
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 533,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 294
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 598,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 298
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 582,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 299
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 1393,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 314
+                    }
+                ],
+                "filepath": "TriangleItem.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Components(QuickStudioComponents)"
+    }
+]

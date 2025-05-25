@@ -10,6 +10,16 @@ SerialManagement::SerialManagement(QObject *parent)
 
     // -- TIMERS --
     //setupTimer(timerFLightTime, 500, "timerFLightTime");
+
+    QDateTime dateTime = QDateTime::currentDateTimeUtc();
+    qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+
+    int minutes = dateTime.time().minute();
+    int seconds = dateTime.time().second();
+    int milliseconds = timestamp % 1000;
+
+    // Convertir a segundos como número real
+    firstTimeSeconds = minutes * 60 + seconds + milliseconds / 1000.0;
 }
 
 QList<QString> SerialManagement::searchPortInfo()
@@ -154,14 +164,19 @@ void SerialManagement::serialClose()
 
 void SerialManagement::coreDataUpdate()
 {
+    if (_coreDataList.length() < 12)
+    {
+        qDebug() << "Lista con elementos faltantes";
+        return;
+    }
     /* _coreDataListAx
-     *  0               1   2   3    4    5    6    7   8               9   10
-     *  cycleNumber     Ax  Ay  Az  Anx  Any  Anz  Alt  currentStage    Lat Lon
+     *  0               1   2   3    4    5    6    7   8               9   10   11
+     *  cycleNumber     Ax  Ay  Az  Anx  Any  Anz  Alt  currentStage    Vel Lat Lon
     */
     qDebug() << "LISTA ES: " << _coreDataList;
 
     // Accel
-    qDebug() << "Enter -- 1";
+    //qDebug() << "Enter -- 1";
     _accelXDataListFloat.append(_coreDataList[1].toFloat());
     _accelYDataListFloat.append(_coreDataList[2].toFloat());
     _accelZDataListFloat.append(_coreDataList[3].toFloat());
@@ -176,7 +191,7 @@ void SerialManagement::coreDataUpdate()
         _accelZDataListFloat.removeFirst();
     }
 
-    qDebug() << "Enter -- 2";
+    //qDebug() << "Enter -- 2";
 
     // Angles
     _angleXDataListFloat.append(_coreDataList[4].toFloat());
@@ -193,19 +208,26 @@ void SerialManagement::coreDataUpdate()
         _angleZDataListFloat.removeFirst();
     }
 
-    qDebug() << "Enter -- 3";
+    //qDebug() << "Enter -- 3";
 
     // Altitude
     _currentAltDataListFloat.append(_coreDataList[7].toFloat());
 
     if (_currentAltDataListFloat.count() > _maxDataMemory){
+
         _currentAltDataListFloat.removeFirst();
     }
 
-    qDebug() << "Enter -- 4";
+    auto min = std::min_element(_currentAltDataListFloat.begin(), _currentAltDataListFloat.end());
+    auto max = std::max_element(_currentAltDataListFloat.begin(), _currentAltDataListFloat.end());
+
+    _currentAltMinListValue = *min;
+    _currentAltMaxListValue = *max;
+
+    //qDebug() << "Enter -- 4";
 
     // GPS
-    _newerLatValueList.append(_coreDataList[9].toFloat());
+    _newerLatValueList.append(_coreDataList[10].toFloat());
     if (_newerLatValueList.count()>_maxDataMemory/2){
         _olderLatValueList.append(_newerLatValueList[0]);
         _newerLatValueList.removeFirst();
@@ -214,9 +236,9 @@ void SerialManagement::coreDataUpdate()
         }
     }
 
-    qDebug() << "Enter -- 5";
+    //qDebug() << "Enter -- 5";
 
-    _newerLonValueList.append(_coreDataList[10].toFloat());
+    _newerLonValueList.append(_coreDataList[11].toFloat());
     if (_newerLonValueList.count()>_maxDataMemory/2){
         _olderLonValueList.append(_newerLonValueList[0]);
         _newerLonValueList.removeFirst();
@@ -225,22 +247,22 @@ void SerialManagement::coreDataUpdate()
         }
     }
 
-    qDebug() << "Enter -- 6";
+    //qDebug() << "Enter -- 6";
 
 
     // Speed
-    _currentSpeedDataListFloat.append(_coreDataList[0].toFloat());  // Se debe mirar bien que se hace con esto
+    _currentSpeedDataListFloat.append(_coreDataList[9].toFloat());
 
     if (_currentSpeedDataListFloat.count() > _maxDataMemory){
         _currentSpeedDataListFloat.removeFirst();
     }
 
-    qDebug() << "Enter -- 7";
+    //qDebug() << "Enter -- 7";
 
     // Status
     telemetryStatus = _coreDataList[8].toFloat();
-    qDebug() << "Status " << telemetryStatus;
-    qDebug() << "Enter -- 8";
+    //qDebug() << "Status " << telemetryStatus;
+    //qDebug() << "Enter -- 8";
 
     if (!referencedTimeSetted && telemetryStatus==1){
         setReferenceTime();
@@ -285,6 +307,16 @@ int SerialManagement::getEstTouchDownAlt()
     return expectedTouchDownAlt;
 }
 
+float SerialManagement::getCurrentAltMinValue()
+{
+    return _currentAltMinListValue;
+}
+
+float SerialManagement::getCurrentAltMaxValue()
+{
+     return _currentAltMaxListValue;
+}
+
 QString SerialManagement::getFilePath()
 {
     return filePath;
@@ -307,6 +339,11 @@ bool SerialManagement::getMicroConfirmation()
 QString SerialManagement::getLogMessage()
 {
     return completeMessage;
+}
+
+QString SerialManagement::getFrequency()
+{
+    return rocketFrequency;
 }
 
 void SerialManagement::endConnection()
@@ -359,7 +396,7 @@ void SerialManagement::serialRead()
         return;
     }    
 
-    // Read all available data
+    // Read all available data    
     _serialData = _MCU->readAll();
     _serialBuffer += QString::fromStdString(_serialData.toStdString());
 
@@ -369,10 +406,10 @@ void SerialManagement::serialRead()
         int endIndex = _serialBuffer.indexOf("\r\n");
         completeMessage = _serialBuffer.left(endIndex);
         emit logUpdate();
-        qDebug() << "This is the complete message extracted: " << completeMessage;
+        qDebug() << "This is the complete message extracted: " << completeMessage;        
         _serialBuffer = _serialBuffer.mid(endIndex + 2); // Remove the processed message from the buffer
         qDebug() << "Seril buffer" << _serialBuffer;
-
+        _serialBuffer.clear();
         if (completeMessage.size() > 1 && completeMessage[1] == ':') {
             int cat = QString(completeMessage[0]).toInt();
 
@@ -438,6 +475,24 @@ void SerialManagement::sendData(QString data) {     // To send data to the ardui
         emit dataNotSent();
         qDebug() << "No se envio";
     }
+}
+
+void SerialManagement::sendFrequencyChange()
+{
+    QString data = QStringLiteral("l ") + rocketFrequency;
+    if(_MCU -> isWritable()){  // Make sure that is possible to write through the serial port
+        _MCU -> write(data.toUtf8());  // Send the data
+        qDebug() << "Se envio el cambio de frequencia" << data;
+    } else {
+        emit dataNotSent();
+        qDebug() << "No se envio el cambio de frequencia";
+    }
+}
+
+void SerialManagement::changeRocketFrequency(QString frequency)
+{
+    rocketFrequency = frequency;
+    qDebug() << "Se actualizó la frequencia a " << rocketFrequency;
 }
 
 float SerialManagement::getLastDataInList(int list, int pos)
@@ -668,11 +723,11 @@ QString SerialManagement::getActualTime()
 {
     QTime current = QTime::currentTime();
     int elapsedMSecs = referenceTime.msecsTo(current);
-    qDebug() << "Elapsed MSecs" << elapsedMSecs;
+    //qDebug() << "Elapsed MSecs" << elapsedMSecs;
     QTime elapsedTime(0, 0); // 00:00:00.000
     elapsedTime = elapsedTime.addMSecs(elapsedMSecs);
     QString formatted = elapsedTime.toString("mm:ss.zzz");
-    qDebug() << "Formated" << formatted;
+    //qDebug() << "Formated" << formatted;
     return formatted;
 }
 
@@ -710,7 +765,7 @@ void SerialManagement::createFile()
 void SerialManagement::writeDataFile()
 {
     if (dataFile.isOpen()) {
-        qDebug() << "Escribiendo en archivo";
+        //qDebug() << "Escribiendo en archivo";
         QTextStream out(&dataFile);
         out << getActualTime() << ","
             << getLastDataInList(1,-1) << "," // Ax

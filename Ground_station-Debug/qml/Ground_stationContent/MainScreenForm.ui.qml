@@ -14,15 +14,50 @@ import Generated.QtQuick3D.Missile5
 import QtGraphs
 import Generated.QtQuick3D.Test
 import QtMultimedia
+import Generated.QtQuick3D.Final
 
 Rectangle {
-    id: mainBackgound
+    id: display
     width: Constants.width
     height: Constants.height
     color: Constants.darkBackgroundColor
 
-    property color txtColor: Constants.darkTextColor
+    property alias accelZDial: accelZDial
+    property alias accelXDial: accelXDial
+    property alias accelYDial: accelYDial
+    property alias txtAccelZVal: txtAccelZVal
+    property alias txtAccelYVal: txtAccelYVal
+    property alias txtAccelXVal: txtAccelXVal
+    property alias altitudeDial: altitudeDial
+    property alias txtAltMVal: txtAltMVal
+    property alias txtAltFtVal: txtAltFtVal
+    property alias timerVal: timerVal
+    property alias txtLatVal: txtLatVal
+    property alias txtLonVal: txtLonVal
+    property alias speedDial: speedDial
+    property alias txtSpeedMVal: txtSpeedMVal
+    property alias txtSpeedFtVal: txtSpeedFtVal
+    property alias timeLineValue: timeLineValue
+    property alias timeLineBackground: timeLineBackground
+    property alias txtTittleAscent: txtTittleAscent
+    property alias txtTittleApogee: txtTittleApogee
+    property alias txtTittleMainChute: txtTittleMainChute
+    property alias txtTittleTouchDown: txtTittleTouchDown
+    property alias testImg: testImg
+    property alias txtLog: txtLog
+    property alias rectTelStat: rectTelStat
+    property alias mediaDevices: mediaDevices
+    property alias camera: camera
+    property alias altitudeSeries: altitudeSeries
+    property alias axisYGraphAltitude: axisYGraphAltitude
+    property alias axisXGraphAltitude: axisXGraphAltitude
+    property alias altitudeGraph: altitudeGraph
+    property alias _final: _final
 
+    property real dpi1: Screen.pixelDensity * 25.4
+    property real dpi2: Screen.pixelDensity
+
+    //property real dpi3: Screen.logicalDotsPerInch
     Item {
         id: __materialLibrary__
 
@@ -34,16 +69,24 @@ Rectangle {
 
     Rectangle {
         id: altitudeGraphSection
-        x: 15
-        y: 60
-        width: 396
-        height: 146
+        width: display.width * 0.677
         color: Constants.darkAreasColor
-        radius: 10
+        radius: display.height * 0.02083
+        anchors.left: timelineSection.left
+        anchors.top: timelineSection.bottom
+        anchors.bottom: altitudeDialSection.top
+        anchors.leftMargin: 0
+        anchors.topMargin: display.height * 0.01574
+        anchors.bottomMargin: display.height * 0.02037
 
         GraphsView {
             id: altitudeGraph
-            anchors.fill: parent
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleGraph.bottom
+            anchors.bottom: parent.bottom
+            anchors.topMargin: 0
+            anchors.bottomMargin: 0
 
             theme: GraphsTheme {
                 backgroundVisible: false
@@ -60,6 +103,9 @@ Rectangle {
                 plotAreaBackgroundVisible: false
 
                 seriesColors: ["red", "blue", "green"]
+
+                // axisX.lineWidth: 2
+                // axisY.lineWidth: 2
             }
 
             axisX: ValueAxis {
@@ -69,8 +115,10 @@ Rectangle {
                 subGridVisible: false
                 lineVisible: true
                 labelsVisible: true
-                titleText: "Time (s)"
+                //titleText: "Time (s)"
                 titleColor: "white"
+
+                //titleFont: Font { pixelSize: 16 }
             }
 
             axisY: ValueAxis {
@@ -79,44 +127,52 @@ Rectangle {
                 titleVisible: true
                 subGridVisible: false
                 lineVisible: true
-                titleText: "Altitude (m)"
+                //titleText: "Altitude (m)"
                 titleColor: "white"
             }
 
             LineSeries {
                 id: altitudeSeries
+                width: display.height * 0.0037
             }
         }
-    }
 
-    Image {
-        id: settings
-        x: 592
-        y: 11
-        width: 40
-        height: 40
-        source: "images/settings_white.png"
-        fillMode: Image.PreserveAspectFit
+        Text {
+            id: txtTittleGraph
+            color: "#ffffff"
+            text: qsTr("Altitude [m] vs Time [s]")
+            anchors.verticalCenter: txtTittleAscent.verticalCenter
+            anchors.left: txtTittleAscent.right
+            anchors.top: parent.top
+            anchors.leftMargin: display.width * 0.1
+            anchors.topMargin: display.height * 0.00463
+            font.pixelSize: display.height * 0.025
+            anchors.horizontalCenter: parent.horizontalCenter
+            font.family: "Nasalization"
+            anchors.verticalCenterOffset: 0
+        }
     }
 
     Rectangle {
         id: accelDialSection
-        x: 523
-        y: 60
-        width: 100
-        height: 100
+        width: display.height * 0.20833
+        height: display.height * 0.20833
         color: Constants.darkAreasColor
         radius: 10
+        anchors.left: altitudeDialSection.right
+        anchors.top: altitudeDialSection.top
+        anchors.leftMargin: (altitudeGraphSection.width - (altitudeDial.width * 4)) / 6
+        anchors.topMargin: 0
 
         Dial {
-            id: dial
+            id: accelZDial
             value: 20
             to: 100
             anchors.fill: parent
-            anchors.leftMargin: 5
-            anchors.rightMargin: 5
-            anchors.topMargin: 5
-            anchors.bottomMargin: 5
+            anchors.leftMargin: display.height * 0.01
+            anchors.rightMargin: display.height * 0.01
+            anchors.topMargin: display.height * 0.01
+            anchors.bottomMargin: display.height * 0.01
             startAngle: -135
             palette.dark: "blue"
             handle: Rectangle {
@@ -127,9 +183,9 @@ Rectangle {
         }
 
         Dial {
-            id: dial1
-            width: 75
-            height: 75
+            id: accelXDial
+            width: display.height * 0.156
+            height: display.height * 0.156
             value: 35
             to: 100
             anchors.verticalCenter: parent.verticalCenter
@@ -143,9 +199,9 @@ Rectangle {
         }
 
         Dial {
-            id: dial2
-            width: 60
-            height: 60
+            id: accelYDial
+            width: display.height * 0.125
+            height: display.height * 0.125
             value: 10
             anchors.verticalCenter: parent.verticalCenter
             to: 100
@@ -160,95 +216,103 @@ Rectangle {
 
         Rectangle {
             id: rectangle43
-            x: 29
-            y: 49
-            width: 20
-            height: 50
+            x: display.height * 0.0625
+            y: display.height * 0.104
+            width: display.height * 0.04167
+            height: display.height * 0.104
             color: parent.color
             rotation: 42
         }
 
         Rectangle {
             id: rectangle44
-            x: 51
-            y: 50
-            width: 20
-            height: 50
+            x: display.height * 0.104
+            y: display.height * 0.104
+            width: display.height * 0.04167
+            height: display.height * 0.104
             color: parent.color
             rotation: -42
         }
 
         Rectangle {
             id: rectangle45
-            x: 30
-            y: 75
-            width: 40
-            height: 25
+            x: display.height * 0.0625
+            y: display.height * 0.156
+            width: display.height * 0.08333
+            height: display.height * 0.052
             color: parent.color
         }
 
         Text {
-            id: _text38
-            color: mainBackgound.txtColor
+            id: txtTittleAccel
+            color: "#ffffff"
             text: qsTr("Accel")
             anchors.verticalCenter: parent.verticalCenter
-            font.pixelSize: 12
-            anchors.verticalCenterOffset: -11
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            font.bold: true
+            anchors.verticalCenterOffset: display.width * -0.017
             anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
-            id: _text39
+            id: txtAccelZVal
             color: "#0000ff"
             text: qsTr("00.00")
-            anchors.verticalCenter: parent.verticalCenter
-            font.pixelSize: 12
-            anchors.verticalCenterOffset: 7
+            anchors.top: txtTittleAccel.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
             anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
-            id: _text40
+            id: txtAccelYVal
             color: "#008000"
             text: qsTr("00.00")
-            anchors.verticalCenter: parent.verticalCenter
-            font.pixelSize: 12
-            anchors.verticalCenterOffset: 38
+            anchors.top: txtAccelXVal.bottom
+            anchors.topMargin: display.height * -0.004
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
             anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
-            id: _text41
+            id: txtAccelXVal
             color: "#ff0000"
             text: qsTr("00.00")
-            anchors.verticalCenter: parent.verticalCenter
-            font.pixelSize: 12
-            anchors.verticalCenterOffset: 24
-            anchors.horizontalCenterOffset: 1
+            anchors.top: txtAccelZVal.bottom
+            anchors.topMargin: display.height * -0.004
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
         }
     }
 
     Rectangle {
         id: altitudeDialSection
-        x: 417
-        y: 60
-        width: 100
-        height: 100
+        y: 800
+        width: display.height * 0.20833
+        height: display.height * 0.20833
         color: Constants.darkAreasColor
-        radius: 10
+        radius: display.height * 0.02083
+        anchors.left: altitudeGraphSection.left
+        anchors.bottom: flag_of_Colombia.top
+        anchors.leftMargin: (altitudeGraphSection.width - (altitudeDial.width * 4)) / 6
+        anchors.bottomMargin: display.height * 0.02037
 
         Dial {
-            id: control1
+            id: altitudeDial
             value: 75
             anchors.fill: parent
-            anchors.leftMargin: 5
-            anchors.rightMargin: 5
-            anchors.topMargin: 5
-            anchors.bottomMargin: 5
+            anchors.leftMargin: display.height * 0.01042
+            anchors.rightMargin: display.height * 0.01042
+            anchors.topMargin: display.height * 0.01042
+            anchors.bottomMargin: display.height * 0.01042
             palette.dark: "white"
             handle: Rectangle {
                 width: 0
@@ -260,163 +324,195 @@ Rectangle {
 
         Rectangle {
             id: rectangle49
-            x: 29
-            y: 49
-            width: 20
-            height: 50
+            x: display.height * 0.0625
+            y: display.height * 0.104
+            width: display.height * 0.04167
+            height: display.height * 0.104
             color: parent.color
             rotation: 42
         }
 
         Rectangle {
             id: rectangle50
-            x: 51
-            y: 50
-            width: 20
-            height: 50
+            x: display.height * 0.104
+            y: display.height * 0.104
+            width: display.height * 0.04167
+            height: display.height * 0.104
             color: parent.color
             rotation: -42
         }
 
         Rectangle {
             id: rectangle51
-            x: 30
-            y: 75
-            width: 40
-            height: 25
+            x: display.height * 0.0625
+            y: display.height * 0.156
+            width: display.height * 0.08333
+            height: display.height * 0.052
             color: parent.color
         }
 
         Text {
-            id: _text44
-            y: 28
-            width: 43
-            height: 16
-            text: qsTr("Altitude")
-            font.pixelSize: 12
+            id: txtAltMVal
+            color: "#ffffff"
+            text: qsTr("0000")
+            anchors.top: txtTittleAlt.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
             anchors.horizontalCenter: parent.horizontalCenter
-            color: mainBackgound.txtColor
+            anchors.horizontalCenterOffset: display.height * -0.015
         }
 
         Text {
-            id: _text45
-            y: 49
-            text: qsTr("0000")
-            font.pixelSize: 12
+            id: txtTittleAlt
+            color: "#ffffff"
+            text: qsTr("Altitude")
+            anchors.verticalCenter: parent.verticalCenter
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.verticalCenterOffset: display.height * -0.02778
             anchors.horizontalCenter: parent.horizontalCenter
-            color: mainBackgound.txtColor
+            font.bold: true
+        }
+
+        Text {
+            id: txtAltMUnit
+            color: "#ffffff"
+            text: qsTr("m")
+            anchors.verticalCenter: txtAltMVal.verticalCenter
+            anchors.left: txtAltMVal.right
+            anchors.leftMargin: display.height * 0.01042
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+        }
+
+        Text {
+            id: txtAltFtVal
+            color: "#ffffff"
+            text: qsTr("0000")
+            anchors.top: txtAltMVal.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenterOffset: 0
+            anchors.horizontalCenter: txtAltMVal.horizontalCenter
+        }
+
+        Text {
+            id: txtAltFtUnit
+            color: "#ffffff"
+            text: qsTr("ft")
+            anchors.verticalCenter: txtAltFtVal.verticalCenter
+            anchors.left: txtAltFtVal.right
+            anchors.leftMargin: display.height * 0.01042
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
         }
     }
 
     Rectangle {
         id: timesInformationSection
-        x: 523
-        y: 169
-        width: 100
-        height: 100
+        width: display.height * 0.20833
+        height: display.height * 0.20833
         color: Constants.darkAreasColor
-        radius: 10
+        radius: display.height * 0.02083
+        anchors.left: speedDialSection.right
+        anchors.top: speedDialSection.top
+        anchors.leftMargin: (altitudeGraphSection.width - (altitudeDial.width * 4)) / 6
+        anchors.topMargin: 0
 
         Text {
-            id: _text2
-            x: 42
-            y: 5
-            text: qsTr("00:00:00")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text3
-            x: 22
-            y: 4
-            text: qsTr("T:+")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text33
-            x: 26
-            y: 46
-            text: qsTr("00:00:00")
-            font.pixelSize: 15
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text34
-            x: 8
-            y: 30
-            text: qsTr("Total Flight Time")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: timerVal
+            color: "#ffffff"
+            text: qsTr("T: +00:00:00")
+            anchors.top: parent.top
+            anchors.topMargin: display.height * 0.01042
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Rectangle {
-            id: rectangle41
-            x: 8
-            y: 23
-            width: 84
-            height: 3
-            color: "#000000"
-        }
-
-        Rectangle {
-            id: rectangle42
-            x: 8
-            y: 69
-            width: 84
-            height: 3
-            color: "#000000"
+            id: divider1
+            height: display.height * 0.004
+            color: "#ffffff"
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: timerVal.bottom
+            anchors.leftMargin: display.height * 0.01042
+            anchors.rightMargin: display.height * 0.01042
+            anchors.topMargin: display.height * 0.004
         }
 
         Text {
-            id: _text35
-            x: 8
-            y: 77
-            text: qsTr("Apogee:")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: txtTittleLat
+            color: "#ffffff"
+            text: qsTr("Latitude")
+            anchors.top: divider1.bottom
+            anchors.topMargin: display.height * 0.00463 * 2.5
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            font.bold: true
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
-            id: _text36
-            x: 53
-            y: 78
-            text: qsTr("3000")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: txtLatVal
+            color: "#ffffff"
+            text: qsTr("000000000")
+            anchors.top: txtTittleLat.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
-            id: _text37
-            x: 82
-            y: 78
-            text: qsTr("m")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: txtTittleLon
+            color: "#ffffff"
+            text: qsTr("Longitude")
+            anchors.top: txtLatVal.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            font.bold: true
+            anchors.horizontalCenterOffset: 0
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+
+        Text {
+            id: txtLonVal
+            color: "#ffffff"
+            text: qsTr("000000000")
+            anchors.top: txtTittleLon.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenterOffset: 0
+            anchors.horizontalCenter: parent.horizontalCenter
         }
     }
 
     Rectangle {
         id: speedDialSection
-        x: 417
-        y: 169
-        width: 100
-        height: 100
+        width: display.height * 0.20833
+        height: display.height * 0.20833
         color: Constants.darkAreasColor
-        radius: 10
+        radius: display.height * 0.02083
         border.width: 1
+        anchors.left: accelDialSection.right
+        anchors.top: accelDialSection.top
+        anchors.leftMargin: (altitudeGraphSection.width - (altitudeDial.width * 4)) / 6
+        anchors.topMargin: 0
 
         Dial {
-            id: control
-            value: 35
+            id: speedDial
+            value: 65
             anchors.fill: parent
-            anchors.leftMargin: 5
-            anchors.rightMargin: 5
-            anchors.topMargin: 5
-            anchors.bottomMargin: 5
+            anchors.leftMargin: display.height * 0.01042
+            anchors.rightMargin: display.height * 0.01042
+            anchors.topMargin: display.height * 0.01042
+            anchors.bottomMargin: display.height * 0.01042
             inputMode: Dial.Circular
             palette.dark: "white"
             to: 100
@@ -429,446 +525,203 @@ Rectangle {
 
         Rectangle {
             id: rectangle46
-            x: 29
-            y: 49
-            width: 20
-            height: 50
+            x: display.height * 0.0625
+            y: display.height * 0.104
+            width: display.height * 0.04167
+            height: display.height * 0.104
             color: parent.color
             rotation: 42
         }
 
         Rectangle {
             id: rectangle47
-            x: 51
-            y: 50
-            width: 20
-            height: 50
+            x: display.height * 0.104
+            y: display.height * 0.104
+            width: display.height * 0.04167
+            height: display.height * 0.104
             color: parent.color
             rotation: -42
         }
 
         Rectangle {
             id: rectangle48
-            x: 30
-            y: 75
-            width: 40
-            height: 25
+            x: display.height * 0.0625
+            y: display.height * 0.156
+            width: display.height * 0.08333
+            height: display.height * 0.052
             color: parent.color
         }
 
         Text {
-            id: _text42
-            x: 33
-            y: 28
-            width: 34
-            height: 16
+            id: txtTittleSpeed
+            color: "#ffffff"
             text: qsTr("Speed")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            anchors.verticalCenter: parent.verticalCenter
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.verticalCenterOffset: display.height * -0.02778
+            font.bold: true
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
-            id: _text43
-            x: 40
-            y: 49
-            text: qsTr("000")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: txtSpeedMVal
+            color: "#ffffff"
+            text: qsTr("0000")
+            anchors.top: txtTittleSpeed.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenterOffset: display.height * -0.021
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+
+        Text {
+            id: txtSpeedMUnit
+            color: "#ffffff"
+            text: qsTr("m/s")
+            anchors.verticalCenter: txtSpeedMVal.verticalCenter
+            anchors.left: txtSpeedMVal.right
+            anchors.leftMargin: display.height * 0.01042
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+        }
+
+        Text {
+            id: txtSpeedFtVal
+            color: "#ffffff"
+            text: qsTr("0000")
+            anchors.top: txtSpeedMVal.bottom
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.horizontalCenterOffset: 0
+            anchors.horizontalCenter: txtSpeedMVal.horizontalCenter
+        }
+
+        Text {
+            id: txtSpeedFtUnit
+            color: "#ffffff"
+            text: qsTr("ft/s")
+            anchors.verticalCenter: txtSpeedFtVal.verticalCenter
+            anchors.left: txtSpeedFtVal.right
+            anchors.leftMargin: display.height * 0.01042
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
         }
     }
 
     Rectangle {
         id: timelineSection
-        x: 15
-        y: 8
-        width: 571
-        height: 46
+        height: display.height * 0.09583
         color: Constants.darkAreasColor
-        radius: 10
+        radius: display.height * 0.02083
+        anchors.left: parent.left
+        anchors.right: altitudeGraphSection.right
+        anchors.top: parent.top
+        anchors.leftMargin: display.width * 0.016
+        anchors.rightMargin: 0
+        anchors.topMargin: display.height * 0.02083
 
         Rectangle {
-            id: rectangle4
-            x: 21
+            id: timeLineBackground
             y: 20
-            width: 533
-            height: 7
+            height: display.height * 0.01852
             color: Constants.secondaryColor
-            radius: 4
+            radius: timelineSection.height / 2
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.leftMargin: display.width * 0.023
+            anchors.rightMargin: display.width * 0.023
+            anchors.bottomMargin: display.height * 0.02083
         }
 
         Rectangle {
-            id: rectangle13
-            x: 21
-            y: 20
+            id: timeLineValue
             width: 200
-            height: 7
             color: Constants.mainColor
-            radius: 4
-        }
-
-        Rectangle {
-            id: rectangle36
-            x: 21
-            y: 9
-            width: 7
-            height: 30
-            color: "#eb5e24"
-            radius: 13
-        }
-
-        Rectangle {
-            id: rectangle37
-            x: 176
-            y: 8
-            width: 7
-            height: 30
-            color: "#eb5e24"
-            radius: 13
-        }
-
-        Rectangle {
-            id: rectangle38
-            x: 547
-            y: 9
-            width: 7
-            height: 30
-            color: "#283747"
-            radius: 13
-        }
-
-        Rectangle {
-            id: rectangle39
-            x: 419
-            y: 8
-            width: 7
-            height: 30
-            color: "#283747"
-            radius: 13
-        }
-
-        Rectangle {
-            id: rectangle40
-            x: 260
-            y: 8
-            width: 7
-            height: 30
-            color: "#283747"
-            radius: 13
+            radius: timelineSection.height / 2
+            anchors.left: timeLineBackground.left
+            anchors.top: timeLineBackground.top
+            anchors.bottom: timeLineBackground.bottom
+            anchors.leftMargin: 0
+            anchors.topMargin: 0
+            anchors.bottomMargin: 0
         }
 
         Text {
-            id: _text24
-            x: 30
+            id: txtTittleAscent
             y: 3
-            text: qsTr("Boost")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            color: "#83ffffff"
+            text: qsTr("Ascent")
+            anchors.left: parent.left
+            anchors.bottom: timeLineBackground.top
+            anchors.leftMargin: display.width * 0.031
+            anchors.bottomMargin: display.height * 0.01
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
         }
 
         Text {
-            id: _text25
-            x: 30
-            y: 25
-            text: qsTr("T:+ 00:00:00")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text26
-            x: 189
-            y: 25
-            text: qsTr("T:+ 00:00:00")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text27
-            x: 432
-            y: 25
-            text: qsTr("T:+ 00:00:00")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text28
-            x: 432
-            y: 25
-            text: qsTr("T:+ 00:00:00")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text29
-            x: 186
-            y: 2
+            id: txtTittleApogee
+            color: "#ffffff"
             text: qsTr("Apogee")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            anchors.verticalCenter: txtTittleAscent.verticalCenter
+            anchors.left: txtTittleAscent.right
+            anchors.leftMargin: display.width * 0.1
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.verticalCenterOffset: 0
         }
 
         Text {
-            id: _text30
-            x: 273
-            y: 2
-            text: qsTr("Drogue")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: txtTittleMainChute
+            color: "#ffffff"
+            text: qsTr("Main Chute")
+            anchors.verticalCenter: txtTittleApogee.verticalCenter
+            anchors.left: txtTittleApogee.right
+            anchors.leftMargin: display.width * 0.1
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.verticalCenterOffset: 0
         }
 
         Text {
-            id: _text31
-            x: 432
-            y: 3
-            text: qsTr("Main")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
+            id: txtTittleTouchDown
+            color: "#ffffff"
+            text: qsTr("Touch Down")
+            anchors.verticalCenter: txtTittleMainChute.verticalCenter
+            anchors.left: txtTittleMainChute.right
+            anchors.leftMargin: display.width * 0.10
+            font.pixelSize: display.height * 0.025
+            font.family: "Nasalization"
+            anchors.verticalCenterOffset: 0
         }
-
-        Text {
-            id: _text32
-            x: 273
-            y: 25
-            text: qsTr("T:+ 00:00:00")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-    }
-
-    Rectangle {
-        id: mainParachutteInformationSection
-        x: 15
-        y: 212
-        width: 195
-        height: 57
-        color: Constants.darkAreasColor
-        radius: 10
-
-        Rectangle {
-            id: rectangle17
-            x: 40
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text4
-            x: 0
-            y: 19
-            text: qsTr("MAIN")
-            font.pixelSize: 14
-            font.bold: true
-            rotation: -90
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text9
-            x: 43
-            y: 23
-            text: qsTr("A1")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle18
-            x: 61
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text10
-            x: 64
-            y: 23
-            text: qsTr("A2")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle26
-            x: 82
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text11
-            x: 85
-            y: 23
-            text: qsTr("A3")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle27
-            x: 103
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text12
-            x: 106
-            y: 23
-            text: qsTr("A4")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle28
-            x: 124
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text13
-            x: 127
-            y: 23
-            text: qsTr("A5")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text6
-            x: 63
-            y: 40
-            text: qsTr("BP")
-            font.pixelSize: 10
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text7
-            x: 111
-            y: 40
-            text: qsTr("CO2")
-            font.pixelSize: 10
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text8
-            x: 151
-            y: 18
-            text: qsTr("Chamber 1")
-            font.pixelSize: 8
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle15
-            x: 149
-            y: 3
-            width: 42
-            height: 15
-            color: "#001eff"
-        }
-
-        Text {
-            id: _text14
-            x: 151
-            y: 43
-            text: qsTr("Chamber 1")
-            font.pixelSize: 8
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle16
-            x: 149
-            y: 28
-            width: 42
-            height: 15
-            color: "#001eff"
-        }
-
-        Rectangle {
-            id: rectangle29
-            x: 38
-            y: 36
-            width: 61
-            height: 3
-            color: "#000000"
-        }
-
-        Rectangle {
-            id: rectangle30
-            x: 101
-            y: 36
-            width: 42
-            height: 3
-            color: "#000000"
-        }
-    }
-
-    MediaDevices {
-        id: mediaDevices
-    }
-
-    CaptureSession {
-        id: captureSession
-        camera: camera
-        videoOutput: videoOutput
-    }
-
-    Camera {
-        id: camera
-        cameraDevice: mediaDevices.defaultVideoInput
-        //"HD User Facing"//mediaDevices.defaultVideoInput
-        //onActiveChanged: console.log("Cámara activa:", active)
-    }
-
-    VideoOutput {
-        id: videoOutput
-        x: 417
-        y: 275
-        width: 206
-        height: 197
     }
 
     Rectangle {
         id: d3ViewSection
-        x: 417
-        y: 275
-        width: 206
-        height: 197
-        color: Constants.darkAreasColor
-        radius: 10
-        visible: false
+        radius: display.height * 0.02083
+        anchors.left: altitudeGraphSection.right
+        anchors.right: parent.right
+        anchors.top: altitudeGraphSection.top
+        anchors.bottom: altitudeGraphSection.bottom
+        anchors.leftMargin: 17
+        anchors.rightMargin: 22
+        anchors.topMargin: 0
+        anchors.bottomMargin: 0
+        visible: true
+        color: "#2e2d2d"
 
         View3D {
             id: euler_angles
-            anchors.left: speedometer.horizontalCenter
+            //anchors.left: speedometer.horizontalCenter
             anchors.fill: parent
-            anchors.leftMargin: 5
-            anchors.rightMargin: 5
-            anchors.topMargin: 5
-            anchors.bottomMargin: 5
+            anchors.leftMargin: display.height * 0.00463
+            anchors.rightMargin: display.height * 0.00463
+            anchors.topMargin: display.height * 0.00463
+            anchors.bottomMargin: display.height * 0.00463
             camera: orthographicCamera
 
             environment: SceneEnvironment {
@@ -921,405 +774,164 @@ Rectangle {
             OrthographicCamera {
                 id: orthographicCamera
                 x: -0
-                y: -0
+                y: 0
                 clipNear: 10
-                horizontalMagnification: 1
-                clipFar: 200
-                scale.z: 0.5
-                scale.y: 0.5
-                scale.x: 0.5
-                z: 98.95863
+                horizontalMagnification: 0.75
+                clipFar: 800
+                scale.z: display.height * 0.00046
+                scale.y: display.height * 0.00046
+                scale.x: display.height * 0.00046
+                z: 372.98022
             }
 
             Test {
-                id: test
+                id: testImg
+                scale.z: display.height * 0.02778
+                scale.y: display.height * 0.01852
+                scale.x: display.height * 0.01852
                 eulerRotation.z: 0
-                eulerRotation.y: 45
-                eulerRotation.x: 45
-                scale.z: 10
-                scale.y: 10
-                scale.x: 10
-            }
-        }
-    }
-
-    Rectangle {
-        id: gpsGraphSection
-        x: 148
-        y: 275
-        width: 263
-        height: 197
-        color: Constants.darkAreasColor
-        radius: 10
-
-        GraphsView {
-            id: gpsGraph
-            x: -49
-            y: 8
-            width: 304
-            height: 226
-            marginRight: 0
-            marginLeft: 0
-            marginBottom: 0
-            marginTop: 0
-            theme: GraphsTheme {
-                backgroundVisible: false
-
-                axisX.mainColor: "transparent"
-                axisY.mainColor: "transparent"
-
-                plotAreaBackgroundColor: "transparent"
-
-                axisX.labelTextColor: "#000000" //constants.graphsTextMainColor()
-                axisY.labelTextColor: "#000000" //constants.graphsTextMainColor()
-
-                plotAreaBackgroundVisible: false
-
-                seriesColors: ["black", "black", "red", "blue"]
-
-                gridVisible: false
-            }
-
-            axisX: ValueAxis {
-                id: axisXGraphGPS2D
-                titleText: "Longitude"
+                eulerRotation.y: 90
+                eulerRotation.x: -90
                 visible: false
-                titleVisible: false
-                max: 10
-                tickInterval: 1
             }
 
-            axisY: ValueAxis {
-                id: axisYGraphGPS2D
-                visible: false
-                titleVisible: false
-                titleText: "Latitude"
-                tickInterval: 5
-            }
-
-            LineSeries {
-                id: graphGPS2DVerticalAxis
-                color: "#00000000"
-                XYPoint {
-                    x: 0
-                    y: -10
-                }
-                XYPoint {
-                    x: 0
-                    y: 10
-                }
-            }
-
-            LineSeries {
-                id: graphGPS2DHorizontalAxis
-                XYPoint {
-                    x: -10
-                    y: 0
-                }
-                XYPoint {
-                    x: 10
-                    y: 0
-                }
-            }
-
-            LineSeries {
-                id: graphGPS2DNewerValues
-            }
-
-            LineSeries {
-                id: graphGPS2DOlderValues
+            Final {
+                id: _final
+                x: -30
+                y: -30.902
+                pivot.x: 1
+                scale.z: display.height * 0.00139
+                scale.y: display.height * 0.00139
+                scale.x: display.height * 0.00139
+                eulerRotation.z: 0
+                eulerRotation.y: 0
+                eulerRotation.x: -90
+                z: 0.00001
             }
         }
     }
 
     Rectangle {
         id: conectionInfoSection
-        x: 15
-        y: 425
-        width: 127
-        height: 47
-        color: Constants.darkAreasColor
-        radius: 10
+        width: display.width * 0.104
+        color: "#2e2d2d"
+        radius: display.height * 0.02083
+        anchors.left: timelineSection.right
+        anchors.top: timelineSection.top
+        anchors.bottom: timelineSection.bottom
+        anchors.leftMargin: 17
+        anchors.topMargin: 0
+        anchors.bottomMargin: 0
 
         Text {
             id: _text
-            x: 44
-            y: 8
-            text: qsTr("Rocket")
-            font.pixelSize: 12
+            color: "#ffffff"
+            text: qsTr("Telemetry")
+            anchors.top: parent.top
+            anchors.topMargin: display.height * 0.01
+            font.pixelSize: display.height * 0.025
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text1
-            x: 86
-            y: 8
-            text: qsTr("Server")
-            font.pixelSize: 12
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle19
-            x: 55
-            y: 24
-            width: 15
-            height: 15
-            color: "#ff0000"
-            radius: 15 / 2
-        }
-
-        Rectangle {
-            id: rectangle20
-            x: 95
-            y: 24
-            width: 15
-            height: 15
-            color: "#ff0000"
-            radius: 15 / 2
-        }
-    }
-
-    DelayButton {
-        id: delayButton
-        x: 15
-        y: 275
-        width: 127
-        height: 44
-        text: qsTr("Emergency Deploy")
-    }
-
-    Button {
-        id: button
-        x: 15
-        y: 375
-        width: 60
-        height: 44
-        text: qsTr("Button")
-    }
-
-    Button {
-        id: button1
-        x: 82
-        y: 375
-        width: 60
-        height: 44
-        text: qsTr("Button")
-    }
-
-    Rectangle {
-        id: drogueParachutteInformationSection
-        x: 216
-        y: 212
-        width: 195
-        height: 57
-        color: Constants.darkAreasColor
-        radius: 10
-        Rectangle {
-            id: rectangle22
-            x: 40
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text5
-            x: -10
-            y: 20
-            text: qsTr("DROGUE")
-            font.pixelSize: 12
-            rotation: -90
+            font.family: "Nasalization"
             font.bold: true
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text15
-            x: 43
-            y: 23
-            text: qsTr("A1")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Rectangle {
-            id: rectangle23
-            x: 61
-            y: 9
-            width: 15
-            height: 15
+            id: rectTelStat
+            width: display.height * 0.031
+            height: display.height * 0.031
             color: "#ff0000"
-        }
-
-        Text {
-            id: _text16
-            x: 64
-            y: 23
-            text: qsTr("A2")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle31
-            x: 82
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text17
-            x: 85
-            y: 23
-            text: qsTr("A3")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle32
-            x: 103
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text18
-            x: 106
-            y: 23
-            text: qsTr("A4")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle33
-            x: 124
-            y: 9
-            width: 15
-            height: 15
-            color: "#ff0000"
-        }
-
-        Text {
-            id: _text19
-            x: 127
-            y: 23
-            text: qsTr("A5")
-            font.pixelSize: 8
-            rotation: 0
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text20
-            x: 63
-            y: 40
-            text: qsTr("BP")
-            font.pixelSize: 10
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text21
-            x: 111
-            y: 40
-            text: qsTr("CO2")
-            font.pixelSize: 10
-            color: mainBackgound.txtColor
-        }
-
-        Text {
-            id: _text22
-            x: 151
-            y: 18
-            text: qsTr("Chamber 1")
-            font.pixelSize: 8
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle24
-            x: 149
-            y: 3
-            width: 42
-            height: 15
-            color: "#001eff"
-        }
-
-        Text {
-            id: _text23
-            x: 151
-            y: 43
-            text: qsTr("Chamber 1")
-            font.pixelSize: 8
-            color: mainBackgound.txtColor
-        }
-
-        Rectangle {
-            id: rectangle25
-            x: 149
-            y: 28
-            width: 42
-            height: 15
-            color: "#001eff"
-        }
-
-        Rectangle {
-            id: rectangle34
-            x: 38
-            y: 36
-            width: 61
-            height: 3
-            color: "#000000"
-        }
-
-        Rectangle {
-            id: rectangle35
-            x: 101
-            y: 36
-            width: 42
-            height: 3
-            color: "#000000"
+            radius: rectTelStat.width / 2
+            anchors.top: _text.bottom
+            anchors.topMargin: 0
+            anchors.horizontalCenter: parent.horizontalCenter
         }
     }
 
     Image {
-        id: volta
-        x: 15
-        y: 429
-        width: 40
-        source: "images/Volta.png"
-        fillMode: Image.PreserveAspectFit
+        id: flag_of_Colombia
+        y: 450
+        height: display.height * 0.02037
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.leftMargin: display.width * 0.016
+        anchors.rightMargin: display.width * 0.016
+        anchors.bottomMargin: display.height * 0.02037
+        source: "images/Flag_of_Colombia.png"
+        fillMode: Image.Stretch
     }
 
-    Button {
-        id: button2
-        x: 15
-        y: 325
-        width: 127
-        height: 44
-        text: qsTr("Button")
+    Image {
+        id: whiteLogo_Safecrop
+        anchors.top: parent.top
+        anchors.right: d3ViewSection.right
+        anchors.topMargin: display.height * 0.01574
+        anchors.rightMargin: 0
+
+        height: display.height * 0.10648
+        fillMode: Image.PreserveAspectFit
+        source: "images/WhiteLogo_Safecrop.PNG"
+    }
+
+    Rectangle {
+        id: cameraSection
+        color: "#2e2d2d"
+        anchors.left: d3ViewSection.left
+        anchors.right: d3ViewSection.right
+        anchors.top: speedDialSection.top
+        anchors.bottom: speedDialSection.bottom
+        anchors.leftMargin: 0
+        anchors.rightMargin: 0
+        anchors.topMargin: 0
+        anchors.bottomMargin: 0
+
+        MediaDevices {
+            id: mediaDevices
+        }
+
+        CaptureSession {
+            id: captureSession
+            camera: camera
+            videoOutput: videoOutput
+        }
+
+        Camera {
+            id: camera
+            //cameraDevice: mediaDevices.defaultVideoInput
+            //"HD User Facing"//
+            //mediaDevices.videoInputs.length > 1
+            //? mediaDevices.videoInputs[1]  // Cambia el índice según la cámara deseada
+            //: mediaDevices.defaultVideoInput
+            // onActiveChanged: console.log("Cámara activa:", active)
+        }
+
+        VideoOutput {
+            id: videoOutput
+            anchors.fill: parent
+            fillMode: VideoOutput.Stretch
+            focus: visible
+        }
+
+        Text {
+            id: txtLog
+            y: 195
+            color: "#ffffff"
+            text: qsTr("LOG: XX,XX,XX,XX,XX,XX, Tsecs: 0000")
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            anchors.leftMargin: 0
+            anchors.bottomMargin: 0
+            font.pixelSize: display.height * 0.01481
+        }
     }
 }
 
 /*##^##
 Designer {
     D{i:0;matPrevEnvDoc:"SkyBox";matPrevEnvValueDoc:"preview_studio";matPrevModelDoc:"#Sphere"}
-D{i:100;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:102;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
-D{i:90;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
+D{i:61;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:65;invisible:true}
 }
 ##^##*/
 

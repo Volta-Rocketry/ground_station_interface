@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Ground_station/cmake_install.cmake")
+  include("D:/ground_station_interface/Ground_station-Debug/Generated/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -49,7 +49,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ground_station_interface/Ground_station-Debug/Generated/cmake_install.cmake")
+  include("D:/ground_station_interface/Ground_station-Debug/Ground_station/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

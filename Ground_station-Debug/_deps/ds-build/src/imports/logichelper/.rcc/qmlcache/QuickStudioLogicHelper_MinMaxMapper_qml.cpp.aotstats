@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 570,
+                        "durationMicroseconds": 725,
                         "errorMessage": "",
                         "functionName": "belowMinimum",
                         "line": 96
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 265,
+                        "durationMicroseconds": 305,
                         "errorMessage": "",
                         "functionName": "aboveMaximum",
                         "line": 101
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 307,
+                        "durationMicroseconds": 324,
                         "errorMessage": "",
                         "functionName": "outOfRange",
                         "line": 107
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 473,
+                        "durationMicroseconds": 555,
                         "errorMessage": "",
                         "functionName": "output",
                         "line": 113

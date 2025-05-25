@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Generated/QtQuick3D/Final_Assembly_OBJ/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Generated_QtQuick3D_Final_Assembly_OBJ_tooling::@3db38216ce4c0e99e10b"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Generated_QtQuick3D_Final_Assembly_OBJ_autogen_timestamp_deps::@3db38216ce4c0e99e10b",
+	"isGeneratorProvided" : true,
+	"name" : "Generated_QtQuick3D_Final_Assembly_OBJ_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Generated/QtQuick3D/Final_Assembly_OBJ",
+		"source" : "Generated/QtQuick3D/Final_Assembly_OBJ"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

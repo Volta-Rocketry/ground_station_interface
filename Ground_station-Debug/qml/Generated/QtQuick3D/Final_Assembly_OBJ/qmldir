@@ -1,0 +1,7 @@
+module Generated.QtQuick3D.Final_Assembly_OBJ
+linktarget Generated_QtQuick3D_Final_Assembly_OBJplugin
+optional plugin Generated_QtQuick3D_Final_Assembly_OBJplugin
+classname Generated_QtQuick3D_Final_Assembly_OBJPlugin
+typeinfo Generated_QtQuick3D_Final_Assembly_OBJ.qmltypes
+prefer :/qt/qml/Generated/QtQuick3D/Final_Assembly_OBJ/
+

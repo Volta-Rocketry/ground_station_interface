@@ -6,10 +6,10 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 607,
+                        "durationMicroseconds": 675,
                         "errorMessage": "",
                         "functionName": "materials",
-                        "line": 23
+                        "line": 17
                     }
                 ],
                 "filepath": "Test.qml"

@@ -27,6 +27,7 @@ Rectangle {
     property alias edtEstimatedApogee: edtEstimatedApogee
     property alias edtEstimatedMain: edtEstimatedMain
     property alias edtEstimatedTouchDown: edtEstimatedTouchDown
+    property alias edtTittleFrecuency: edtTittleFrecuency
 
     color: "#7dffffff"
 
@@ -330,7 +331,7 @@ Rectangle {
         Text {
             id: txtTittleEstimatedApogee
             height: display.height * 0.053
-            text: qsTr("Estimated Apogee (m)")
+            text: qsTr("Estimated Apogee [m]")
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: parent.top
@@ -357,7 +358,7 @@ Rectangle {
         Text {
             id: txtTittleEstimatedMainDeploy
             height: display.height * 0.053
-            text: qsTr("Estimated Main deploy (m)")
+            text: qsTr("Estimated Main deploy [m]")
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: edtEstimatedApogee.bottom
@@ -384,7 +385,7 @@ Rectangle {
         Text {
             id: txtTittleEstimatedTouchDown
             height: display.height * 0.053
-            text: qsTr("Estimated Main deploy (m)")
+            text: qsTr("Estimated Main deploy [m]")
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: edtEstimatedMain.bottom
@@ -402,6 +403,37 @@ Rectangle {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: txtTittleEstimatedTouchDown.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
+            font.pixelSize: display.height * 0.025
+        }
+
+        Text {
+            id: txtTittleFrecuency
+            x: 0
+            y: 189
+            height: display.height * 0.053
+            text: qsTr("Rocket Frequency [MHz]")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: edtEstimatedTouchDown.bottom
+            anchors.leftMargin: 0
+            anchors.rightMargin: 0
+            anchors.topMargin: display.height * 0.025
+            font.pixelSize: display.height * 0.033
+            font.bold: true
+        }
+
+        TextEdit {
+            id: edtTittleFrecuency
+            x: 0
+            y: 189
+            height: display.height * 0.053
+            text: qsTr("0")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: txtTittleFrecuency.bottom
             anchors.leftMargin: 0
             anchors.rightMargin: 0
             anchors.topMargin: 0

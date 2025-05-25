@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick3D
+import Generated.QtQuick3D.Final_Assembly_OBJ
 
 Node {
     id: node

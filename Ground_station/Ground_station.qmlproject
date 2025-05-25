@@ -108,4 +108,6 @@ Project {
         directory: "Generated"
         filter: "*.qad"
     }
+
+    mainUiFile: "Ground_stationContent/fonts/Nasalization Rg.otf"
 }

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 2168,
+                        "durationMicroseconds": 2257,
                         "errorMessage": "Cannot generate efficient code for iterator on non-list type",
                         "functionName": "onJsonObjectChanged",
                         "line": 55
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 1415,
+                        "durationMicroseconds": 1018,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "updateJSON",
                         "line": 65
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "parseJSONString",
                         "line": 74
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 2122,
+                        "durationMicroseconds": 2010,
                         "errorMessage": "Cannot generate efficient code for iterator on non-list type",
                         "functionName": "invalidateChildModels",
                         "line": 80
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 706,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "filePath",
                         "line": 50
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 350,
+                        "durationMicroseconds": 257,
                         "errorMessage": "",
                         "functionName": "onContentChanged",
                         "line": 51
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 352,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 89

@@ -50,13 +50,23 @@ Window {
                                 serialManager.sendData('x')
                             } else if (event.key === Qt.Key_F) {
                                 console.log("Comando f")
-                                serialManager.sendData('f')
+                                serialManager.sendData('f')         // Apagado remoto de camaras
                             } else if (event.key === Qt.Key_O) {
                                 console.log("Comando O")
-                                serialManager.sendData('o')
+                                serialManager.sendData('o')         // Enendido remoto de camaras
                             } else if (event.key === Qt.Key_S) {
                                 console.log("Comando S")
-                                serialManager.sendData('s')
+                                serialManager.sendData('s')         // Confirmación Para estación terrena
+                            }else if (event.key === Qt.Key_L) {
+                                console.log("Comando L")
+                                serialManager.sendFrequencyChange() // Cambio de frequencia
+                            }else if (event.key === Qt.Key_C) {
+                                console.log("Comando C")
+                                if (loader.source == "MainScreen.qml"){
+                                    loader.source = "CameraAndTelemetry.qml"
+                                }else{
+                                    loader.source = "MainScreen.qml"
+                                }
                             }
                         }
 

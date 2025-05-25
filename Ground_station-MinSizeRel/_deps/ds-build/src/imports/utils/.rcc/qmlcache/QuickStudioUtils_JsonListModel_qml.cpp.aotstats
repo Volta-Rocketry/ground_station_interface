@@ -1,0 +1,68 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 2490,
+                        "errorMessage": "Cannot generate efficient code for iterator on non-list type",
+                        "functionName": "onJsonObjectChanged",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 1106,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "updateJSON",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "parseJSONString",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 12918,
+                        "errorMessage": "Cannot generate efficient code for iterator on non-list type",
+                        "functionName": "invalidateChildModels",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 413,
+                        "errorMessage": "",
+                        "functionName": "filePath",
+                        "line": 50
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 269,
+                        "errorMessage": "",
+                        "functionName": "onContentChanged",
+                        "line": 51
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 89
+                    }
+                ],
+                "filepath": "JsonListModel.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Utils(QuickStudioUtils)"
+    }
+]

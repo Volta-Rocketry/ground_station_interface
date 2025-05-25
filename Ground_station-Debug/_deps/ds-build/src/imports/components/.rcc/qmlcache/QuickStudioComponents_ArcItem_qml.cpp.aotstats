@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 558,
+                        "durationMicroseconds": 453,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 155
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 170,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 161
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 167
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 1372,
+                        "durationMicroseconds": 1049,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "alpha",
                         "line": 223
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 617,
+                        "durationMicroseconds": 362,
                         "errorMessage": "",
                         "functionName": "__preferredRendererTypeAvailable",
                         "line": 225
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 592,
+                        "durationMicroseconds": 6551,
                         "errorMessage": "",
                         "functionName": "__curveRendererActive",
                         "line": 226
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 219,
+                        "durationMicroseconds": 191,
                         "errorMessage": "",
                         "functionName": "roundEnd",
                         "line": 253
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 146,
                         "errorMessage": "",
                         "functionName": "roundBegin",
                         "line": 260
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 34,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "clamp",
                         "line": 262
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 13,
+                        "durationMicroseconds": 16,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "toRadians",
                         "line": 266
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 13,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "myCos",
                         "line": 270
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 13,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "mySin",
                         "line": 274
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 34,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "polarToCartesianX",
                         "line": 278
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "polarToCartesianY",
                         "line": 282
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 132,
                         "errorMessage": "function without return type annotation returns double. This may prevent proper compilation to Cpp.",
                         "functionName": "sortedBegin",
                         "line": 286
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 235,
+                        "durationMicroseconds": 191,
                         "errorMessage": "function without return type annotation returns double. This may prevent proper compilation to Cpp.",
                         "functionName": "sortedEnd",
                         "line": 290
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 59,
+                        "durationMicroseconds": 47,
                         "errorMessage": "function without return type annotation returns bool. This may prevent proper compilation to Cpp.",
                         "functionName": "isArcFull",
                         "line": 294
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 1445,
+                        "durationMicroseconds": 1152,
                         "errorMessage": "",
                         "functionName": "onAlphaChanged",
                         "line": 298
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 242,
+                        "durationMicroseconds": 232,
                         "errorMessage": "",
                         "functionName": "onOutlineArcChanged",
                         "line": 304
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 244,
+                        "durationMicroseconds": 169,
                         "errorMessage": "",
                         "functionName": "onRoundBeginChanged",
                         "line": 306
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 170,
                         "errorMessage": "",
                         "functionName": "onRoundEndChanged",
                         "line": 307
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 586,
+                        "durationMicroseconds": 525,
                         "errorMessage": "",
                         "functionName": "maxArcWidth",
                         "line": 311
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 238,
+                        "durationMicroseconds": 221,
                         "errorMessage": "Type QObject does not have a property x for writing",
                         "functionName": "constructArcItem",
                         "line": 334
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 2628,
+                        "durationMicroseconds": 1973,
                         "errorMessage": "Cannot generate efficient code for creating a QQmlListProperty not backed by a property",
                         "functionName": "clearPathElements",
                         "line": 431
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 454,
+                        "durationMicroseconds": 437,
                         "errorMessage": "",
                         "functionName": "enabled",
                         "line": 229
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 358,
+                        "durationMicroseconds": 309,
                         "errorMessage": "",
                         "functionName": "smooth",
                         "line": 230
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 390,
+                        "durationMicroseconds": 401,
                         "errorMessage": "",
                         "functionName": "samples",
                         "line": 231
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 584,
+                        "durationMicroseconds": 577,
                         "errorMessage": "",
                         "functionName": "__xRadius",
                         "line": 316
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 632,
+                        "durationMicroseconds": 488,
                         "errorMessage": "",
                         "functionName": "__yRadius",
                         "line": 317
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 2041,
+                        "durationMicroseconds": 1154,
                         "errorMessage": "",
                         "functionName": "__arcWidth",
                         "line": 319
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 717,
+                        "durationMicroseconds": 280,
                         "errorMessage": "",
                         "functionName": "__xCenter",
                         "line": 321
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 297,
+                        "durationMicroseconds": 248,
                         "errorMessage": "",
                         "functionName": "__yCenter",
                         "line": 322
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 167,
                         "errorMessage": "",
                         "functionName": "capStyle",
                         "line": 326
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "strokeStyle",
                         "line": 327
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 170,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "joinStyle",
                         "line": 328
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 1729,
+                        "durationMicroseconds": 1095,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "startX",
                         "line": 330
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 1388,
+                        "durationMicroseconds": 1077,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "startY",
                         "line": 331
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 1478,
+                        "durationMicroseconds": 2421,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 438

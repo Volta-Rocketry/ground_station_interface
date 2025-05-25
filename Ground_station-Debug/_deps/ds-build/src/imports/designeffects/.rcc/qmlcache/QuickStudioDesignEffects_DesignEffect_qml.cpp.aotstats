@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 5316,
+                        "durationMicroseconds": 4958,
                         "errorMessage": "",
                         "functionName": "onParentChanged",
                         "line": 55
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 2687,
+                        "durationMicroseconds": 2506,
                         "errorMessage": "",
                         "functionName": "onVisibleChanged",
                         "line": 74
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 108,
+                        "durationMicroseconds": 66,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "source",
                         "line": 96
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 38,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "effects",
                         "line": 98
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 34,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "layerBlurVisible",
                         "line": 99
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "layerBlurRadius",
                         "line": 100
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 26,
+                        "durationMicroseconds": 31,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "backgroundBlurVisible",
                         "line": 101
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 48,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "backgroundBlurRadius",
                         "line": 102
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name root",
                         "functionName": "background",
                         "line": 103

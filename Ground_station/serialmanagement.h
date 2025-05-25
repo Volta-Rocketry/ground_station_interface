@@ -17,6 +17,8 @@ public:
     int expectedMainAlt = 130;
     int expectedTouchDownAlt = 0;
 
+    QString rocketFrequency = "915";
+
     // Data save
     QString filePath = "C:\\Users\\andre\\Downloads";
     QString fileName = "textfile.csv";
@@ -39,6 +41,8 @@ public slots:
     // MCU Data recieve and send
     void serialRead();
     void sendData(QString data);
+    void sendFrequencyChange();
+    void changeRocketFrequency(QString frequency);
 
     // Get specific data (Usage in UI)
     float getLastDataInList(int list, int pos);
@@ -49,10 +53,14 @@ public slots:
     int getEstApogeeAlt();
     int getEstMainAlt();
     int getEstTouchDownAlt();
+    float getCurrentAltMinValue();
+    float getCurrentAltMaxValue();
+
     QString getFilePath();
     QString getFileName();
     bool getMicroConfirmation();
     QString getLogMessage();
+    QString getFrequency();
 
     // Time management print
     void flightTimerStart();
@@ -72,7 +80,6 @@ public slots:
     void writeFloatValue(int varIndex, float value);
     void writeIntValue(int varIndex, int value);
     void writeStringValue(int varIndex, QString text);
-
 
 private slots:
     void testMode();
@@ -115,6 +122,8 @@ private:
 
             // Altitude
     QList<float> _currentAltDataListFloat;
+    float _currentAltMinListValue;
+    float _currentAltMaxListValue;
 
             // GPS
     QList<float> _newerLatValueList;

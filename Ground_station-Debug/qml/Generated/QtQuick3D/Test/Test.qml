@@ -5,12 +5,6 @@ Node {
     id: node
 
     // Resources
-    PrincipledMaterial {
-        id: steel___Satin_material
-        objectName: "Steel_-_Satin"
-        baseColor: "#ffa0a0a0"
-        indexOfRefraction: 1
-    }
 
     // Nodes:
     Node {
@@ -23,6 +17,17 @@ Node {
             materials: [
                 steel___Satin_material
             ]
+        }
+    }
+
+    Node {
+        id: __materialLibrary__
+
+        PrincipledMaterial {
+            id: steel___Satin_material
+            objectName: "Steel_-_Satin"
+            baseColor: "#ffa0a0a0"
+            indexOfRefraction: 1
         }
     }
 

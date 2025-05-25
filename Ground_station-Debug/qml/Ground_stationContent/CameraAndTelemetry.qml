@@ -25,8 +25,8 @@ CameraAndTelemetryForm {
 
             let accelGeneral = Math.sqrt(Math.pow(accelX,2) + Math.pow(accelY,2) + Math.pow(accelZ, 2)).toFixed(0)
             txtAccelVal.text = (accelGeneral/9.81).toFixed(0).toString()
-            txtLatVal.text = "6.104991" //serialManager.getLastDataInList(8, -1)
-            txtLonVal.text = "-75.387526" //serialManager.getLastDataInList(9, -1)
+            txtLatVal.text = serialManager.getLastDataInList(8, -1)
+            txtLonVal.text = serialManager.getLastDataInList(9, -1)
 
             let actualTime = serialManager.getActualTime() //serialManager.getCurrentTimeMSmString(0)
             txtTimerVal.text = "T: +" + actualTime
@@ -245,8 +245,7 @@ CameraAndTelemetryForm {
         function onMicrocontrollerConnectionStatus(status) {
             console.log("Señal recibida, status:", status, "tipo:", typeof status)
 
-            if (status) {
-                rectStatus1.color = "green";
+            if (status) {                
                 rectStatus2.color = "green";
             } else {
                 rectStatus2.color = "red";
@@ -255,7 +254,7 @@ CameraAndTelemetryForm {
     }
 
     camera.cameraDevice: mediaDevices.videoInputs.length
-                         > 1 ? mediaDevices.videoInputs[1] // Cambia el índice según la cámara deseada
+                         > 1 ? mediaDevices.videoInputs[0] // Cambia el índice según la cámara deseada
                              : mediaDevices.defaultVideoInput
 
     Component.onCompleted: camera.start()
