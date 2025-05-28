@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 568,
+                        "durationMicroseconds": 514,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 23
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 279,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 31
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 214,
+                        "durationMicroseconds": 239,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 39
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 202,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 47
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 234,
+                        "durationMicroseconds": 242,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 55
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 207,
+                        "durationMicroseconds": 579,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 63
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 234,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 71
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 213,
                         "errorMessage": "",
                         "functionName": "materials",
                         "line": 79

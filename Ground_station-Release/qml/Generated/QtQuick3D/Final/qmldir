@@ -1,0 +1,8 @@
+module Generated.QtQuick3D.Final
+linktarget Generated_QtQuick3D_Finalplugin
+optional plugin Generated_QtQuick3D_Finalplugin
+classname Generated_QtQuick3D_FinalPlugin
+typeinfo Generated_QtQuick3D_Final.qmltypes
+prefer :/qt/qml/Generated/QtQuick3D/Final/
+Final 1.0 Final.qml
+

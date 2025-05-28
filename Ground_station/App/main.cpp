@@ -4,6 +4,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QFontDatabase>
 
 #include "autogen/environment.h"
 #include "serialmanagement.h"
@@ -12,6 +13,16 @@ int main(int argc, char *argv[])
 {
     set_qt_environment();
     QGuiApplication app(argc, argv);
+
+    int fontId = QFontDatabase::addApplicationFont(":/fonts/Nasalization.otf");
+    if (fontId < 0) {
+        qWarning() << "No se pudo cargar la fuente Nasalization.";
+    } else {
+        QString fontFamily = QFontDatabase::applicationFontFamilies(fontId).at(0);
+        qDebug() << "Fuente Nasalization cargada como:" << fontFamily;
+        // Opcionalmente hacerla global:
+        // app.setFont(QFont(fontFamily));
+    }
 
     SerialManagement serialManagement;
 

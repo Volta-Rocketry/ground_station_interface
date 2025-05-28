@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 193,
+                        "durationMicroseconds": 174,
                         "errorMessage": "Cannot access value for name serialManager",
                         "functionName": "target",
                         "line": 5
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 40,
                         "errorMessage": "Cannot access value for name txtLog",
                         "functionName": "onLogUpdate",
                         "line": 6
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 140,
+                        "durationMicroseconds": 142,
                         "errorMessage": "Cannot access value for name dpi1",
                         "functionName": "onCoreDataReady",
                         "line": 9
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 17,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "onMicrocontrollerConnectionStatus",
                         "line": 160
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 602,
+                        "durationMicroseconds": 508,
                         "errorMessage": "Cannot use shadowable base type for further lookups: QMediaDevices::videoInputs with type QCameraDevice (stored as QVariant)",
                         "functionName": "cameraDevice",
                         "line": 171
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 310,
+                        "durationMicroseconds": 366,
                         "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
                         "functionName": "onCompleted",
                         "line": 175
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot resolve property type  for binding on to.",
                         "functionName": "to",
                         "line": 182

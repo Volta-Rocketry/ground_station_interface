@@ -1,0 +1,16 @@
+--bare
+-I
+D:/ground_station_interface/Ground_station-Release/qml
+-I
+D:/ground_station_interface/Ground_station-Release/qml
+-I
+C:/Qt/6.8.1/mingw_64/qml
+--resource
+D:/ground_station_interface/Ground_station-Release/_deps/ds-build/src/imports/utils/.qt/rcc/qmake_QtQuick_Studio_Utils.qrc
+--resource
+D:/ground_station_interface/Ground_station-Release/_deps/ds-build/src/imports/utils/.qt/rcc/QuickStudioUtils_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/utils/JsonListModel.qml
+D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/utils/JsonBackend.qml
+D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/utils/ChildListModel.qml
+--json
+D:/ground_station_interface/Ground_station-Release/QuickStudioUtils_qmllint.json

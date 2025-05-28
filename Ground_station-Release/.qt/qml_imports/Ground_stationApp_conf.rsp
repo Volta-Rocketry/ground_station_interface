@@ -1,0 +1,12 @@
+-rootPath
+D:/ground_station_interface/Ground_station
+-cmake-output
+-output-file
+D:/ground_station_interface/Ground_station-Release/.qt/qml_imports/Ground_stationApp_conf.cmake
+-importPath
+D:/ground_station_interface/Ground_station-Release/qml
+-importPath
+C:/Qt/6.8.1/mingw_64/qml
+-qrcFiles
+D:/ground_station_interface/Ground_station-Release/.qt/rcc/configuration.qrc
+D:/ground_station_interface/Ground_station-Release/.qt/rcc/fonts_resources.qrc

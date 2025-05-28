@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 665,
+                        "durationMicroseconds": 489,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 38
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 181,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 39
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 228,
+                        "durationMicroseconds": 191,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 41
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 224,
+                        "durationMicroseconds": 199,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 42
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 154,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 44
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 215,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 43
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 207,
+                        "durationMicroseconds": 181,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 50
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 218,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 51
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 53
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 180,
+                        "durationMicroseconds": 151,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 54
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 232,
+                        "durationMicroseconds": 215,
                         "errorMessage": "",
                         "functionName": "rightMargin",
                         "line": 55
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 56
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 213,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 60
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 62
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 63
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 248,
+                        "durationMicroseconds": 206,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 64
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 219,
+                        "durationMicroseconds": 183,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 68
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on right.",
                         "functionName": "right",
                         "line": 77
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 78
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 234,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 124
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 199,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 126
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 127
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 39,
+                        "durationMicroseconds": 35,
                         "errorMessage": "Cannot retrieve a non-object type by ID: cbBaudRate",
                         "functionName": "top",
                         "line": 128
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 193,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 131
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 237,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 132
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on model.",
                         "functionName": "model",
                         "line": 149
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on left.",
                         "functionName": "left",
                         "line": 141
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on right.",
                         "functionName": "right",
                         "line": 142
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 143
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
                         "line": 166
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on left.",
                         "functionName": "left",
                         "line": 168
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on right.",
                         "functionName": "right",
                         "line": 169
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 170
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on topMargin.",
                         "functionName": "topMargin",
                         "line": 173
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
                         "line": 195
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
                         "line": 196
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 198
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on topMargin.",
                         "functionName": "topMargin",
                         "line": 199
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
                         "line": 201
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 208
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 209
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 157,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 211
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 347,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 213
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 210,
+                        "durationMicroseconds": 228,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 218
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 181,
+                        "durationMicroseconds": 239,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 220
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 192,
+                        "durationMicroseconds": 182,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 221
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 222
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 237,
+                        "durationMicroseconds": 177,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 226
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 4,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
                         "line": 232
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on left.",
                         "functionName": "left",
                         "line": 234
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 236
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 315,
+                        "durationMicroseconds": 176,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 244
@@ -462,7 +462,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 212,
+                        "durationMicroseconds": 172,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 246
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 137,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 247
@@ -478,7 +478,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 47,
+                        "durationMicroseconds": 32,
                         "errorMessage": "Cannot retrieve a non-object type by ID: btnSelectRoute",
                         "functionName": "top",
                         "line": 248
@@ -486,7 +486,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 248,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 252
@@ -494,7 +494,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 259,
+                        "durationMicroseconds": 172,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 257
@@ -502,7 +502,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 194,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 259
@@ -510,7 +510,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 174,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 260
@@ -518,7 +518,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 261
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 264
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 212,
+                        "durationMicroseconds": 160,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 265
@@ -542,7 +542,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 198,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 271
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 204,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 273
@@ -558,7 +558,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 165,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 274
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 275
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 206,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 279
@@ -582,7 +582,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 251,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 284
@@ -590,7 +590,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 286
@@ -598,7 +598,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 134,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 287
@@ -606,7 +606,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 200,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 288
@@ -614,7 +614,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 271,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 291
@@ -622,7 +622,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 218,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 292
@@ -630,7 +630,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 4,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
                         "line": 298
@@ -638,7 +638,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
                         "line": 299
@@ -646,7 +646,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 301
@@ -654,7 +654,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 2,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
                         "line": 304
@@ -662,7 +662,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 5,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on pointSize.",
                         "functionName": "pointSize",
                         "line": 303
@@ -670,7 +670,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 5,
+                        "durationMicroseconds": 3,
                         "errorMessage": "Cannot resolve property type  for binding on width.",
                         "functionName": "width",
                         "line": 310
@@ -678,7 +678,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on height.",
                         "functionName": "height",
                         "line": 311
@@ -686,7 +686,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
                         "line": 313
@@ -694,7 +694,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
                         "line": 316
@@ -702,7 +702,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 5,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on pointSize.",
                         "functionName": "pointSize",
                         "line": 315
@@ -710,7 +710,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 298,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 323
@@ -718,7 +718,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 17,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 324
@@ -726,7 +726,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 261,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 326
@@ -734,7 +734,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 197,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 327
@@ -742,7 +742,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 290,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "leftMargin",
                         "line": 328
@@ -750,7 +750,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 236,
+                        "durationMicroseconds": 163,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 333
@@ -758,7 +758,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 216,
+                        "durationMicroseconds": 203,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 335
@@ -766,7 +766,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 214,
+                        "durationMicroseconds": 268,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 336
@@ -774,7 +774,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 229,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 337
@@ -782,7 +782,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 258,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 341
@@ -790,7 +790,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 217,
+                        "durationMicroseconds": 142,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 347
@@ -798,7 +798,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 202,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 349
@@ -806,7 +806,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 350
@@ -814,7 +814,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 351
@@ -822,7 +822,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 355
@@ -830,7 +830,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 153,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 360
@@ -838,7 +838,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 264,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 362
@@ -846,7 +846,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 196,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 363
@@ -854,7 +854,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 364
@@ -862,7 +862,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 251,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 367
@@ -870,7 +870,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 488,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 368
@@ -878,7 +878,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 266,
+                        "durationMicroseconds": 150,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 374
@@ -886,7 +886,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 254,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 376
@@ -894,7 +894,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 195,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 377
@@ -902,7 +902,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 378
@@ -910,7 +910,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 324,
+                        "durationMicroseconds": 293,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 382
@@ -918,7 +918,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 146,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 387
@@ -926,7 +926,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 217,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 389
@@ -934,7 +934,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 390
@@ -942,7 +942,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 131,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 391
@@ -950,7 +950,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 257,
+                        "durationMicroseconds": 137,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 394
@@ -958,7 +958,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 261,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 395
@@ -966,7 +966,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 354,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 401
@@ -974,7 +974,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 506,
+                        "durationMicroseconds": 270,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 403
@@ -982,7 +982,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 193,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 404
@@ -990,7 +990,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 119,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 405
@@ -998,7 +998,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 239,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 409
@@ -1006,7 +1006,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 212,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 416
@@ -1014,7 +1014,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 195,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 418
@@ -1022,7 +1022,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 226,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 419
@@ -1030,7 +1030,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 1070,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 420
@@ -1038,7 +1038,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 330,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "topMargin",
                         "line": 423
@@ -1046,7 +1046,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 227,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 424
@@ -1054,7 +1054,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 207,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 432
@@ -1062,7 +1062,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 200,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 434
@@ -1070,7 +1070,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 435
@@ -1078,7 +1078,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 119,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 436
@@ -1086,7 +1086,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 257,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 440

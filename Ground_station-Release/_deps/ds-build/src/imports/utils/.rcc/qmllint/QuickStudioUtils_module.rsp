@@ -1,0 +1,12 @@
+-I
+D:/ground_station_interface/Ground_station-Release/qml
+-I
+D:/ground_station_interface/Ground_station-Release/qml
+-I
+C:/Qt/6.8.1/mingw_64/qml
+--resource
+D:/ground_station_interface/Ground_station-Release/_deps/ds-build/src/imports/utils/.qt/rcc/qmake_QtQuick_Studio_Utils.qrc
+--resource
+D:/ground_station_interface/Ground_station-Release/_deps/ds-build/src/imports/utils/.qt/rcc/QuickStudioUtils_raw_qml_0.qrc
+--module
+QtQuick.Studio.Utils

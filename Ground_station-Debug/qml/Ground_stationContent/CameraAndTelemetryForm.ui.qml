@@ -52,6 +52,12 @@ Rectangle {
     property alias imgBtnCloseSettings: imgBtnCloseSettings
     property alias txtLog: txtLog
 
+
+    FontLoader {
+        id: nasaFont
+        source: " qrc:/fonts/Ground_stationContent/fonts/Nasalization.otf"
+    }
+
     // Camera -- Start
 
     // Camera Configuration
@@ -143,7 +149,7 @@ Rectangle {
             anchors.leftMargin: display.width * 0.005
             anchors.topMargin: display.height * 0.023
             font.pixelSize: display.width * 0.021
-            font.family: "Nasalization"
+            font.family: nasaFont.name
             font.bold: true
         }
 

@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.21.1)
 
 option(LINK_INSIGHT "Link Qt Insight Tracker library" ON)
@@ -19,13 +18,24 @@ set(QML_IMPORT_PATH ${QT_QML_OUTPUT_DIRECTORY}
 find_package(Qt6 6.8 REQUIRED COMPONENTS Core Gui Qml Quick SerialPort)
 qt_standard_project_setup()
 
-
 qt_add_executable(${CMAKE_PROJECT_NAME}
-    serialmanagement.h serialmanagement.cpp)
+    serialmanagement.h
+    serialmanagement.cpp
+)
+
+# Recursos de configuración
 qt_add_resources(${CMAKE_PROJECT_NAME} "configuration"
     PREFIX "/"
     FILES
-        qtquickcontrols2.conf)
+        qtquickcontrols2.conf
+)
+
+# Recursos de fuentes (con prefijo /fonts)
+qt_add_resources(${CMAKE_PROJECT_NAME} "fonts_resources"
+    PREFIX "/fonts"
+    FILES
+       Nasalization.otf
+)
 
 include(qds)
 
@@ -35,7 +45,7 @@ endif()
 
 if (LINK_INSIGHT)
     include(insight OPTIONAL)
-endif ()
+endif()
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE Qt6::SerialPort)
 

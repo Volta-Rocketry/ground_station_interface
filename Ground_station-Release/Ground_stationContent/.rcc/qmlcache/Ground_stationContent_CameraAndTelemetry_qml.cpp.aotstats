@@ -1,0 +1,116 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 17,
+                        "durationMicroseconds": 1395,
+                        "errorMessage": "Cannot access value for name serialManager",
+                        "functionName": "target",
+                        "line": 5
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "Cannot access value for name txtLog",
+                        "functionName": "onLogUpdate",
+                        "line": 6
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 1273,
+                        "errorMessage": "Cannot access value for name camera",
+                        "functionName": "onCoreDataReady",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 387,
+                        "errorMessage": "Cannot access value for name txtTittleAscent",
+                        "functionName": "onManualBoostDetected",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 95,
+                        "errorMessage": "Cannot access value for name txtTittleAscent",
+                        "functionName": "onManualApogeeDetected",
+                        "line": 177
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "Cannot access value for name txtTittleAscent",
+                        "functionName": "onManualMainDetected",
+                        "line": 199
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "Cannot access value for name txtTittleAscent",
+                        "functionName": "onManualLandingDetected",
+                        "line": 221
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onMicrocontrollerConnectionStatus",
+                        "line": 245
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 770,
+                        "errorMessage": "Cannot use shadowable base type for further lookups: QMediaDevices::videoInputs with type QCameraDevice (stored as QVariant)",
+                        "functionName": "cameraDevice",
+                        "line": 256
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 732,
+                        "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
+                        "functionName": "onCompleted",
+                        "line": 260
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 1276,
+                        "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
+                        "functionName": "onClicked",
+                        "line": 263
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 33,
+                        "durationMicroseconds": 537,
+                        "errorMessage": "Cannot generate efficient code for retrieving the metaType of a composite type without an element name.",
+                        "functionName": "onClicked",
+                        "line": 267
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 572,
+                        "errorMessage": "",
+                        "functionName": "onLoaded",
+                        "line": 272
+                    }
+                ],
+                "filepath": "CameraAndTelemetry.qml"
+            }
+        ],
+        "moduleId": "Ground_stationContent(Ground_stationContent)"
+    }
+]

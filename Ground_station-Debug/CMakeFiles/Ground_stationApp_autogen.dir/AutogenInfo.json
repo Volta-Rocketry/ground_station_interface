@@ -1042,6 +1042,7 @@
 		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6SerialPort/Qt6SerialPortVersionlessAliasTargets.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"D:/ground_station_interface/Ground_station/qds.cmake",
 		"D:/ground_station_interface/Ground_station/cmake/qmlcomponents.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FetchContent.cmake",
@@ -1146,7 +1147,8 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"D:/ground_station_interface/Ground_station-Debug/.qt/rcc/qrc_configuration.cpp"
+		"D:/ground_station_interface/Ground_station-Debug/.qt/rcc/qrc_configuration.cpp",
+		"D:/ground_station_interface/Ground_station-Debug/.qt/rcc/qrc_fonts_resources.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
@@ -1169,7 +1171,8 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"D:/ground_station_interface/Ground_station-Debug/.qt/rcc/qrc_configuration.cpp"
+		"D:/ground_station_interface/Ground_station-Debug/.qt/rcc/qrc_configuration.cpp",
+		"D:/ground_station_interface/Ground_station-Debug/.qt/rcc/qrc_fonts_resources.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
