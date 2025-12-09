@@ -1,0 +1,332 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 420,
+                        "errorMessage": "",
+                        "functionName": "topLeftRadius",
+                        "line": 127
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 153,
+                        "errorMessage": "",
+                        "functionName": "bottomLeftRadius",
+                        "line": 134
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 132,
+                        "errorMessage": "",
+                        "functionName": "topRightRadius",
+                        "line": 141
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 163,
+                        "errorMessage": "",
+                        "functionName": "bottomRightRadius",
+                        "line": 148
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 164,
+                        "errorMessage": "",
+                        "functionName": "topLeftBevel",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 151,
+                        "errorMessage": "",
+                        "functionName": "topRightBevel",
+                        "line": 167
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 138,
+                        "errorMessage": "",
+                        "functionName": "bottomRightBevel",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "bottomLeftBevel",
+                        "line": 181
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 169,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 222
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 228
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 291,
+                        "errorMessage": "",
+                        "functionName": "__preferredRendererTypeAvailable",
+                        "line": 282
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 537,
+                        "errorMessage": "",
+                        "functionName": "__curveRendererActive",
+                        "line": 283
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 1030,
+                        "errorMessage": "",
+                        "functionName": "borderOffset",
+                        "line": 295
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 394,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onRadiusChanged",
+                        "line": 321
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 29,
+                        "durationMicroseconds": 343,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onTopLeftRadiusChanged",
+                        "line": 322
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 30,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onTopRightRadiusChanged",
+                        "line": 323
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 315,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onBottomLeftRadiusChanged",
+                        "line": 324
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 33,
+                        "durationMicroseconds": 294,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onBottomRightRadiusChanged",
+                        "line": 325
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 290,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onWidthChanged",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 335,
+                        "errorMessage": "Cannot generate efficient code for lookup of function property.",
+                        "functionName": "onHeightChanged",
+                        "line": 327
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 5,
+                        "durationMicroseconds": 26605,
+                        "errorMessage": "",
+                        "functionName": "calculateIndependentRadii",
+                        "line": 329
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 276,
+                        "errorMessage": "",
+                        "functionName": "onDrawTopChanged",
+                        "line": 432
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 189,
+                        "errorMessage": "",
+                        "functionName": "onDrawRightChanged",
+                        "line": 433
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 182,
+                        "errorMessage": "",
+                        "functionName": "onDrawBottomChanged",
+                        "line": 434
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 324,
+                        "errorMessage": "",
+                        "functionName": "onDrawLeftChanged",
+                        "line": 435
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 323,
+                        "errorMessage": "Type QObject does not have a property x for writing",
+                        "functionName": "constructBorderItem",
+                        "line": 437
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 1669,
+                        "errorMessage": "Cannot generate efficient code for creating a QQmlListProperty not backed by a property",
+                        "functionName": "clearPathElements",
+                        "line": 529
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 296,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 286
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 278,
+                        "errorMessage": "",
+                        "functionName": "smooth",
+                        "line": 287
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 330,
+                        "errorMessage": "",
+                        "functionName": "samples",
+                        "line": 288
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 310
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 1042,
+                        "errorMessage": "",
+                        "functionName": "margins",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 58,
+                        "durationMicroseconds": 1095,
+                        "errorMessage": "",
+                        "functionName": "__borderRadiusAdjustment",
+                        "line": 410
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 160,
+                        "errorMessage": "",
+                        "functionName": "capStyle",
+                        "line": 420
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 241,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 421
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 422
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 454,
+                        "errorMessage": "",
+                        "functionName": "startX",
+                        "line": 428
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "",
+                        "functionName": "startY",
+                        "line": 429
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 1116,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 536
+                    }
+                ],
+                "filepath": "BorderItem.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Components(QuickStudioComponents)"
+    }
+]

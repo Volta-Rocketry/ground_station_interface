@@ -1,0 +1,8 @@
+Generated.QtQuick3D.Final_Assembly_OBJ(Generated_QtQuick3D_Final_Assembly_OBJ)
+Generated.QtQuick3D.Final_Assembly_OBJ(Generated_QtQuick3D_Final_Assembly_OBJ)
+QtQuick.Studio.Effects(QuickStudioEffects)
+FlowView(FlowView)
+QtQuick.Studio.MultiText(QuickStudioMultiText)
+QtQuick.Studio.EventSimulator(QuickStudioEventSimulator)
+QtQuick.Studio.EventSystem(QuickStudioEventSystem)
+QtQuick.Studio.Application(QuickStudioApplication)

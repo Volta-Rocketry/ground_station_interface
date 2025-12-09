@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/Generated/QtQuick3D/Final">D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final</file>
+
+  </qresource>
+</RCC>

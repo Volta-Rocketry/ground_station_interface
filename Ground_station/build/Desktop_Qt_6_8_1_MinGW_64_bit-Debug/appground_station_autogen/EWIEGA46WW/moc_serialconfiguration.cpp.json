@@ -1,0 +1,596 @@
+{
+    "classes": [
+        {
+            "className": "SerialConfiguration",
+            "lineNumber": 15,
+            "object": true,
+            "qualifiedClassName": "SerialConfiguration",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "microcontrollerConnectionStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "categoty_identifier",
+                            "type": "QChar"
+                        },
+                        {
+                            "name": "data",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "sendDataMainWindow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "coreDataReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "pyroContDataReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "chamberTempDataReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "otherDataReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "gpsDataReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "updateInfo2Screen",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "portIsNotWritable",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "name": "portIsNotReadable",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "name": "portIsNotOpen",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "portNotFound",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "dataNotSent",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 13,
+                    "name": "searchPortInfo",
+                    "returnType": "QList<QString>"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "portName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "savePortConnection",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "name": "microcontrollerConnection",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "name": "endConnection",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 17,
+                    "name": "serialRead",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "data",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "sendData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "name": "getCoreDataFull",
+                    "returnType": "QList<QString>"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pos",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 20,
+                    "name": "getCoreDataItem",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 21,
+                    "name": "getGPSDataFull",
+                    "returnType": "QList<QString>"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pos",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "getGPSDataItem",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 23,
+                    "name": "getLastAccelXValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 24,
+                    "name": "getLastAccelYValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 25,
+                    "name": "getLastAccelZValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 26,
+                    "name": "getAbsAccelMinValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 27,
+                    "name": "getAbsAccelMaxValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 28,
+                    "name": "getAngleXLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 29,
+                    "name": "getAngleYLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 30,
+                    "name": "getAngleZLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 31,
+                    "name": "getLastCurrentAltValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 32,
+                    "name": "getCurrentAltMinValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 33,
+                    "name": "getCurrentAltMaxValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 34,
+                    "name": "getApogeeAltLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 35,
+                    "name": "getPressureAltLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 36,
+                    "name": "getVelLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 37,
+                    "name": "getNewerLatLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 38,
+                    "name": "getOlderLatLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 39,
+                    "name": "getNewerLonLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 40,
+                    "name": "getOlderLonLastValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 41,
+                    "name": "getLatMinValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 42,
+                    "name": "getLatMaxValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 43,
+                    "name": "getLonMinValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 44,
+                    "name": "getLonMaxValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 45,
+                    "name": "getPyroA1Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 46,
+                    "name": "getPyroA2Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 47,
+                    "name": "getPyroA3Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 48,
+                    "name": "getPyroA4Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 49,
+                    "name": "getPyroA5Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 50,
+                    "name": "getPyroB1Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 51,
+                    "name": "getPyroB2Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 52,
+                    "name": "getPyroB3Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 53,
+                    "name": "getPyroB4Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 54,
+                    "name": "getPyroB5Color",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 55,
+                    "name": "getChamber1TempValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 56,
+                    "name": "getChamber2TempValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 57,
+                    "name": "getChamber3TempValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 58,
+                    "name": "getChamber4TempValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 59,
+                    "name": "getChamber1TempColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 60,
+                    "name": "getChamber2TempColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 61,
+                    "name": "getChamber3TempColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 62,
+                    "name": "getChamber4TempColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 63,
+                    "name": "getCoreLastUpdatedTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 64,
+                    "name": "getGpsLastUpdatedTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 65,
+                    "name": "getPyroLastUpdatedTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 66,
+                    "name": "getChamberLastUpdatedTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 67,
+                    "name": "getOtherLastUpdatedTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 68,
+                    "name": "getCoreLastUpdatedSeconds",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 69,
+                    "name": "getGpsLastUpdatedSeconds",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 70,
+                    "name": "getPyroLastUpdatedSeconds",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 71,
+                    "name": "getChamberLastUpdatedSeconds",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 72,
+                    "name": "getOtherLastUpdatedSeconds",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 73,
+                    "name": "getHumidityValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 74,
+                    "name": "getRefPreassureValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 75,
+                    "name": "getCurrentTimeSFloat",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "format",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 76,
+                    "name": "getCurrentTimeMSmString",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 77,
+                    "name": "setBaudRateMode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 78,
+                    "name": "getGraphsMaxMemory",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "memory",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 79,
+                    "name": "setGraphsMaxMemory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "temperature",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 80,
+                    "name": "setChamberMinPredictedTemp",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "temperature",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 81,
+                    "name": "setChamberMaxPredictedTemp",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 82,
+                    "name": "emitUpdateInfo2Screen",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 83,
+                    "name": "testMode",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "serialconfiguration.h",
+    "outputRevision": 68
+}

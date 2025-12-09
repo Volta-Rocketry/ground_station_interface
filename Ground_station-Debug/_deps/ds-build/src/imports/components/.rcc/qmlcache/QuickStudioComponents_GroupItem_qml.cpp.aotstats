@@ -1,0 +1,28 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 919,
+                        "errorMessage": "",
+                        "functionName": "implicitWidth",
+                        "line": 77
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 661,
+                        "errorMessage": "",
+                        "functionName": "implicitHeight",
+                        "line": 78
+                    }
+                ],
+                "filepath": "GroupItem.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Components(QuickStudioComponents)"
+    }
+]

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/fonts">
+    <file alias="Nasalization.otf">D:/ground_station_interface/Ground_station/Nasalization.otf</file>
+  </qresource>
+</RCC>
+

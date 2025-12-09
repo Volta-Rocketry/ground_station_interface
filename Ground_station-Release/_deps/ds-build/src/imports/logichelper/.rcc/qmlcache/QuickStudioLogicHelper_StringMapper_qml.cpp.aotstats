@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 1379,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "text",
+                        "line": 87
+                    }
+                ],
+                "filepath": "StringMapper.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.LogicHelper(QuickStudioLogicHelper)"
+    }
+]

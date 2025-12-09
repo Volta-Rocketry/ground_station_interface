@@ -1,0 +1,984 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/ds-build/src/imports/components/libQuickStudioComponents.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/CMakeLists.txt",
+			"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:792:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2767,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2655,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2742,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 896,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 3263,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 591,
+				"parent" : 5
+			},
+			{
+				"command" : 9,
+				"file" : 2,
+				"line" : 785,
+				"parent" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 3668,
+				"parent" : 9
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 3468,
+				"parent" : 9
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1500,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3634,
+				"parent" : 9
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 839,
+				"parent" : 5
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 406,
+				"parent" : 14
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 2491,
+				"parent" : 15
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 2089,
+				"parent" : 16
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 15,
+				"file" : 2,
+				"line" : 3135,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 1698,
+				"parent" : 19
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2998,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3191,
+				"parent" : 6
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 3283,
+				"parent" : 6
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 406,
+				"parent" : 48
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 2491,
+				"parent" : 49
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 2089,
+				"parent" : 50
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 3,
+				"line" : 1,
+				"parent" : 52
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 817,
+				"parent" : 53
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 2212,
+				"parent" : 54
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-a53+crc -mbranch-protection=standard -fstack-protector-strong   -Wformat -Wformat-security -Werror=format-security --sysroot=C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux -Os -DNDEBUG -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components"
+				},
+				{
+					"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/QuickStudioComponents_autogen/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQml/6.8.1"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQml/6.8.1/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtCore/6.8.1"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtCore/6.8.1/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				33
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "QuickStudioComponents_tooling::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"id" : "QuickStudioComponents_autogen_timestamp_deps::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioComponents_autogen::@b8ea75ca72e9d0096cda"
+		}
+	],
+	"id" : "QuickStudioComponents::@b8ea75ca72e9d0096cda",
+	"name" : "QuickStudioComponents",
+	"nameOnDisk" : "libQuickStudioComponents.a",
+	"paths" : 
+	{
+		"build" : "_deps/ds-build/src/imports/components",
+		"source" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				37
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				34,
+				35,
+				36,
+				59,
+				60,
+				61
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				33
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/QuickStudioComponents_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/meta_types/qt6quickstudiocomponents_minsizerel_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/quickstudiocomponents_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 17,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.qt/rcc/qrc_qmake_QtQuick_Studio_Components.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 18,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/ArcArrow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 21,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcArrow_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 22,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/ArcItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 23,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 24,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/BorderItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_BorderItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 26,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/EllipseItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 27,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_EllipseItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 28,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/FlipableItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_FlipableItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 30,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/GroupItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 31,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_GroupItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 32,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/PieItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_PieItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 34,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/RectangleItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 35,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_RectangleItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 36,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/RegularPolygonItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 37,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_RegularPolygonItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 38,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/StarItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 39,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_StarItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 40,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/StraightArrow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_StraightArrow_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 42,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/SvgPathItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 43,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_SvgPathItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/TextItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_TextItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 46,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/components/TriangleItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_TriangleItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 51,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.qt/rcc/qrc_QuickStudioComponents_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 55,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.qt/rcc/qmake_QtQuick_Studio_Components.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 55,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/qml/QtQuick/Studio/Components/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 55,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.qt/rcc/QuickStudioComponents_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/QuickStudioComponents_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/meta_types/qt6quickstudiocomponents_minsizerel_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/quickstudiocomponents_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.qt/rcc/qrc_qmake_QtQuick_Studio_Components.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcArrow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_ArcItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_BorderItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_EllipseItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_FlipableItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_GroupItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_PieItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_RectangleItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_RegularPolygonItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_StarItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_StraightArrow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_SvgPathItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_TextItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.rcc/qmlcache/QuickStudioComponents_TriangleItem_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/.qt/rcc/qrc_QuickStudioComponents_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/QuickStudioComponents_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/components/meta_types/QuickStudioComponents_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/metatypes/qt6qml_release_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/metatypes/qt6core_release_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/metatypes/qt6network_release_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

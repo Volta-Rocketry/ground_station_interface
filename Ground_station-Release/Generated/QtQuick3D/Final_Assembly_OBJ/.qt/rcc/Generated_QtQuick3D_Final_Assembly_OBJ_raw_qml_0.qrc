@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/qt/qml/Generated/QtQuick3D/Final_Assembly_OBJ/">
+    <file alias="_importdata.json">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/_importdata.json</file>
+    <file alias="meshes/body1_1_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/body1_1_mesh.mesh</file>
+    <file alias="meshes/body2_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/body2_mesh.mesh</file>
+    <file alias="meshes/aleta_3_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/aleta_3_mesh.mesh</file>
+    <file alias="meshes/body1_2_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/body1_2_mesh.mesh</file>
+    <file alias="meshes/aleta_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/aleta_mesh.mesh</file>
+    <file alias="meshes/aleta_1_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/aleta_1_mesh.mesh</file>
+    <file alias="meshes/aleta_2_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/aleta_2_mesh.mesh</file>
+    <file alias="meshes/body1_mesh.mesh">D:/ground_station_interface/Ground_station/Generated/QtQuick3D/Final_Assembly_OBJ/meshes/body1_mesh.mesh</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,2980 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 12,
+                        "durationMicroseconds": 558,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 4
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 13,
+                        "durationMicroseconds": 226,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 5
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 17,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "target",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "onCoreDataReady",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "onPyroContDataReady",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "onGpsDataReady",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 9,
+                        "durationMicroseconds": 125,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "onOtherDataReady",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 160,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 340,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 396,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 293,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 256,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 73
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 289,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 69
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 335,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 70
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 299,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 364,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 303,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 346,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 332,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenterOffset",
+                        "line": 84
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 342,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 351,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 83
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 1692,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 92
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 360,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 93
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 466,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 94
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 441,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 357,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 96
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 283,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 104
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 244,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 105
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 299,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 106
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 288,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 113
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 334,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 114
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 280,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 117
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 383,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 115
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 694,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 122
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 324,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 123
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 280,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 124
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 389,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 125
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 390,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 126
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 133
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 322,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 134
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 258,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 315,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 359,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 143
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 408,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 144
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 305,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 466,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 145
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 679,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 308,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 153
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 297,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 347,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 365,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 156
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 290,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 163
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 164
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 506,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 165
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 345,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 166
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 298,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 173
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 343,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenterOffset",
+                        "line": 175
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 299,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 176
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 246,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 440,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 182
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 206,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 183
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 191,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 184
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 224,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 185
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 226,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 186
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 200,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 194
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 208,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 313,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 313,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 197
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 274,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 204
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 311,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 205
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 207
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 370,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 206
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 262,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 214
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 245,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 215
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 190,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 217
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 228,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 216
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 425,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 223
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 202,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 224
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 225
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 221,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 229,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 227
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 411,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 233
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 203,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 199,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 235
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 224,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 236
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 230,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 199,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 244
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 253,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 245
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 305,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 246
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 306,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 247
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 262,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 254
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 255
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 297,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 256
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 854,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 257,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 264
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 289,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 265
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 220,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenterOffset",
+                        "line": 268
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 269
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 236,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 266
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 405,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 274
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 202,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 275
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 276
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 277
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 278
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 212,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 287
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 185,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 288
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 421,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 289
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 312,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 290
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 293,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 297
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 317,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 298
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 271,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 301
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 319,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 299
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 421,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 308
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 218,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 309
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 258,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 310
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 217,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 220,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 312
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 190,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 320
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 204,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 321
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 217,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 322
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 221,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 323
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 191,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 330
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 215,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 331
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 183,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 333
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 332
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 434,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 339
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 320,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 340
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 245,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 341
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 315,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 342
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 306,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 343
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 350
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 287,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 351
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 299,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 352
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 294,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 353
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 212,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 360
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 248,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 361
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 363
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 227,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 362
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 425,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 369
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 370
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 271,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 371
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 302,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 372
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 241,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 373
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 227,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 380
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 383,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 381
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 363,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 382
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 381,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 383
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 271,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 396
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 259,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 397
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 440,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 393
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 348,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 394
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 320,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 400
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 375,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 395
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 290,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 407
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 408
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 332,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 409
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 346,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 410
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 361,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 417
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 202,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 418
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 488,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 419
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 420
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 358,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 421
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 310,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenterOffset",
+                        "line": 422
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 423
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 274,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 430
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 322,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 431
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 321,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 432
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 329,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 433
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 324,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 440
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 211,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 441
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 404,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 442
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 292,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 443
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 323,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 444
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 301,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 445
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 344,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 452
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 453
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 422,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 454
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 375,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 455
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 360,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 462
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 204,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 463
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 423,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 464
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 348,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 465
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 365,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 466
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 315,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 467
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 339,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 474
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 269,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 475
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 355,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 476
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 405,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 477
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 902,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 484
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 209,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 485
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 406,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 486
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 313,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 487
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 426,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 488
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 291,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 489
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 496
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 272,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 497
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 337,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 498
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 380,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 499
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 348,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 506
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 507
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 430,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 508
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 327,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 509
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 310,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 510
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 223,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 511
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 236,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 518
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 257,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 519
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 423,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 520
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 353,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 521
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 268,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 528
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 529
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 276,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 530
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 235,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 531
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 255,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 532
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 318,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 533
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 227,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 540
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 196,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 541
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 242,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 542
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 543
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 550
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 211,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 551
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 455,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 552
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 285,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 553
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 554
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 389,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 561
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 260,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 562
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 261,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 563
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 324,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 564
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 235,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 571
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 144,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 572
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 292,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 573
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 208,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 574
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 575
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 199,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 582
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 190,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 583
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 229,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 584
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 245,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 585
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 592
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 150,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 593
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 323,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 594
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 337,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 595
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 221,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 596
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 603
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 369,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 604
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 248,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 605
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 291,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 606
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 240,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 613
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 614
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 303,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 615
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 226,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 616
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 196,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 617
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 320,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 623
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 359,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 624
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 415,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 626
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 375,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 625
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 358,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 633
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 210,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 634
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 471,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 635
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 447,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 636
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 294,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 637
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 638
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 414,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 642
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 645
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 646
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 643
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 244,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 644
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 255,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 653
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 251,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 654
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 201,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 656
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 266,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 655
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 1403,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 662
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 193,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 663
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 296,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 664
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 240,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 665
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 235,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 666
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 204,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 667
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 387,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 670
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 673
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 125,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 674
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 101,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 671
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 672
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 206,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 681
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 341,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 682
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 684
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 352,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 683
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 242,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 691
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 141,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 692
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 312,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 693
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 234,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 694
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 209,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 695
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 304,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 696
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 419,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 699
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 141,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 702
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 703
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 700
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 244,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 701
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 710
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 226,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 711
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 713
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 240,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 712
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 230,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 719
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 137,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 720
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 271,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "color",
+                        "line": 721
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 211,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 722
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 226,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 723
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 215,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 724
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 398,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 727
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 730
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 225,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 731
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 108,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 728
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 256,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 729
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 743
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 744
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 210,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 740
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 271,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 741
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 206,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 747
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 742
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 203,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 753
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 234,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 754
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenterOffset",
+                        "line": 756
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 757
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 755
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 435,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 762
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 308,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 763
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 204,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 764
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 227,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 765
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 241,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 766
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 212,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 772
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 773
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 774
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 248,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 775
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 204,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 781
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 225,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 782
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 193,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 784
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 783
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 393,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 789
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 216,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 790
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 791
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 244,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 792
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 267,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 793
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 229,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 799
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 195,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 800
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 227,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 801
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 238,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 802
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 141,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 814
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 815
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 231,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 811
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 232,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 812
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 818
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 468,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 813
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 440,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 823
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 225,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 824
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 272,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 825
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 310,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenterOffset",
+                        "line": 827
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 828
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 358,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 826
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 530,
+                        "errorMessage": "Cannot access value for name serialConfig",
+                        "functionName": "text",
+                        "line": 833
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 37,
+                        "durationMicroseconds": 227,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 834
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 836
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 307,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 835
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 205,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 843
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 257,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 844
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 846
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 256,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 845
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 852
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 853
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 230,
+                        "errorMessage": "",
+                        "functionName": "leftMargin",
+                        "line": 854
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 253,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 855
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 242,
+                        "errorMessage": "",
+                        "functionName": "pixelSize",
+                        "line": 856
+                    }
+                ],
+                "filepath": "Info1Screen.qml"
+            }
+        ],
+        "moduleId": "ground_station(appground_station)"
+    }
+]

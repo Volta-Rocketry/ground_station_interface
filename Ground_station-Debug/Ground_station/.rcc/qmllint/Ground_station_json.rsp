@@ -1,0 +1,16 @@
+--bare
+-I
+D:/ground_station_interface/Ground_station-Debug/qml
+-I
+D:/ground_station_interface/Ground_station-Debug/qml
+-I
+C:/Qt/6.8.1/mingw_64/qml
+--resource
+D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/qmake_Ground_station.qrc
+--resource
+D:/ground_station_interface/Ground_station-Debug/Ground_station/.qt/rcc/Ground_station_raw_qml_0.qrc
+D:/ground_station_interface/Ground_station/Ground_station/EventListSimulator.qml
+D:/ground_station_interface/Ground_station/Ground_station/Constants.qml
+D:/ground_station_interface/Ground_station/Ground_station/EventListModel.qml
+--json
+D:/ground_station_interface/Ground_station-Debug/Ground_station_qmllint.json

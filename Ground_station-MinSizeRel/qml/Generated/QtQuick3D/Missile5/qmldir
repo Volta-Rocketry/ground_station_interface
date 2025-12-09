@@ -1,0 +1,8 @@
+module Generated.QtQuick3D.Missile5
+linktarget Generated_QtQuick3D_Missile5plugin
+optional plugin Generated_QtQuick3D_Missile5plugin
+classname Generated_QtQuick3D_Missile5Plugin
+typeinfo Generated_QtQuick3D_Missile5.qmltypes
+prefer :/qt/qml/Generated/QtQuick3D/Missile5/
+Missile5 1.0 Missile5.qml
+

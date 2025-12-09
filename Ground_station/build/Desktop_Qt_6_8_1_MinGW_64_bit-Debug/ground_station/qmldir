@@ -1,0 +1,15 @@
+module ground_station
+typeinfo appground_station.qmltypes
+prefer :/qt/qml/ground_station/
+Main 1.0 Main.qml
+TestScreen 1.0 TestScreen.qml
+MotionInformationScreen 1.0 MotionInformationScreen.qml
+GpsInformationScreen 1.0 GpsInformationScreen.qml
+EyectionInformationScreen 1.0 EyectionInformationScreen.qml
+GeneralInformationScreen 1.0 GeneralInformationScreen.qml
+ComunicationInformationScreen 1.0 ComunicationInformationScreen.qml
+StartScreen 1.0 StartScreen.qml
+PrincipalScreen 1.0 PrincipalScreen.qml
+Info1Screen 1.0 Info1Screen.qml
+Info2Screen 1.0 Info2Screen.qml
+

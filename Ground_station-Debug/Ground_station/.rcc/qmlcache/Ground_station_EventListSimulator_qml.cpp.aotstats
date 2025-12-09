@@ -1,0 +1,28 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 8911,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 2668,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 20
+                    }
+                ],
+                "filepath": "EventListSimulator.qml"
+            }
+        ],
+        "moduleId": "Ground_station(Ground_station)"
+    }
+]

@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Ground_station/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Ground_station_tooling::@6e42e86fc63f6af39810"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Ground_station_autogen_timestamp_deps::@6e42e86fc63f6af39810",
+	"isGeneratorProvided" : true,
+	"name" : "Ground_station_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Ground_station",
+		"source" : "Ground_station"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

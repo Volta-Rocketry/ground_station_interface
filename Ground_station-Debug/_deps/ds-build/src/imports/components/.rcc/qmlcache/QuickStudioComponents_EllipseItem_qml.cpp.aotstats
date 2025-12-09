@@ -1,0 +1,188 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 393,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 129
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 359,
+                        "errorMessage": "",
+                        "functionName": "__preferredRendererTypeAvailable",
+                        "line": 156
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 42,
+                        "durationMicroseconds": 483,
+                        "errorMessage": "",
+                        "functionName": "__curveRendererActive",
+                        "line": 157
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 1051,
+                        "errorMessage": "",
+                        "functionName": "borderOffset",
+                        "line": 169
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 805,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 304,
+                        "errorMessage": "",
+                        "functionName": "smooth",
+                        "line": 161
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 356,
+                        "errorMessage": "",
+                        "functionName": "samples",
+                        "line": 162
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 179
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 775,
+                        "errorMessage": "",
+                        "functionName": "margins",
+                        "line": 180
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 230,
+                        "errorMessage": "",
+                        "functionName": "joinStyle",
+                        "line": 193
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "",
+                        "functionName": "startX",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 242,
+                        "errorMessage": "",
+                        "functionName": "startY",
+                        "line": 197
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 1537,
+                        "errorMessage": "",
+                        "functionName": "strokeStyle",
+                        "line": 199
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 180,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 202
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 203
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 367,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 204
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 377,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 205
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 210
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 211
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 387,
+                        "errorMessage": "",
+                        "functionName": "radiusX",
+                        "line": 212
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 372,
+                        "errorMessage": "",
+                        "functionName": "radiusY",
+                        "line": 213
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 897,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 218
+                    }
+                ],
+                "filepath": "EllipseItem.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.Components(QuickStudioComponents)"
+    }
+]

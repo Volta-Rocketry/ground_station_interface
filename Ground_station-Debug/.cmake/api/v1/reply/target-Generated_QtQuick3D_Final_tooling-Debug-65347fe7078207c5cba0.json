@@ -1,0 +1,218 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Generated/QtQuick3D/Final/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 896,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3262,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3266,
+				"parent" : 2
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Generated_QtQuick3D_Final_tooling::@d0429cf12f616c1dda59",
+	"name" : "Generated_QtQuick3D_Final_tooling",
+	"paths" : 
+	{
+		"build" : "Generated/QtQuick3D/Final",
+		"source" : "Generated/QtQuick3D/Final"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/Final.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/_importdata.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/body1_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node2__1__mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/aleta_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node1_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node1__1__mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node3_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node2_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/body2_mesh.mesh",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/Final.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/_importdata.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/body1_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node2__1__mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/aleta_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node1_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node1__1__mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node3_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/node2_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/ground_station_interface/Ground_station-Debug/qml/Generated/QtQuick3D/Final/meshes/body2_mesh.mesh.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "INTERFACE_LIBRARY"
+}

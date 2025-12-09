@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Ground_stationContent">
+    <file alias="qmldir">D:/ground_station_interface/Ground_station-MinSizeRel/qml/Ground_stationContent/qmldir</file>
+  </qresource>
+</RCC>
+

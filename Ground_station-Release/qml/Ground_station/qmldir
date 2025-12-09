@@ -1,0 +1,10 @@
+module Ground_station
+linktarget Ground_stationplugin
+optional plugin Ground_stationplugin
+classname Ground_stationPlugin
+typeinfo Ground_station.qmltypes
+prefer :/qt/qml/Ground_station/
+EventListSimulator 1.0 EventListSimulator.qml
+singleton Constants 1.0 Constants.qml
+EventListModel 1.0 EventListModel.qml
+

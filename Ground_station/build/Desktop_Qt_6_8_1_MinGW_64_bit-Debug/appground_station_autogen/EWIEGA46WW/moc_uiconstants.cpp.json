@@ -1,0 +1,74 @@
+{
+    "classes": [
+        {
+            "className": "UiConstants",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "UiConstants",
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "appName",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "mainBackgroundColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "graphsGridMainColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "graphsTextMainColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "mainColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "alternativeColor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "appPredWidth",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "appPredHeight",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "buttonLateralSpacing",
+                    "returnType": "int"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "uiconstants.h",
+    "outputRevision": 68
+}

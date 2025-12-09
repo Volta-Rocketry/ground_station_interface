@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="/qt-project.org/imports/QtQuick/Studio/Components/">
+    <file alias="ArcArrow.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/ArcArrow.qml</file>
+    <file alias="ArcItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/ArcItem.qml</file>
+    <file alias="BorderItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/BorderItem.qml</file>
+    <file alias="EllipseItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/EllipseItem.qml</file>
+    <file alias="FlipableItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/FlipableItem.qml</file>
+    <file alias="GroupItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/GroupItem.qml</file>
+    <file alias="PieItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/PieItem.qml</file>
+    <file alias="RectangleItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/RectangleItem.qml</file>
+    <file alias="RegularPolygonItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/RegularPolygonItem.qml</file>
+    <file alias="StarItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/StarItem.qml</file>
+    <file alias="StraightArrow.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/StraightArrow.qml</file>
+    <file alias="SvgPathItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/SvgPathItem.qml</file>
+    <file alias="TextItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/TextItem.qml</file>
+    <file alias="TriangleItem.qml">D:/ground_station_interface/Ground_station-Release/_deps/ds-src/src/imports/components/TriangleItem.qml</file>
+  </qresource>
+</RCC>
+

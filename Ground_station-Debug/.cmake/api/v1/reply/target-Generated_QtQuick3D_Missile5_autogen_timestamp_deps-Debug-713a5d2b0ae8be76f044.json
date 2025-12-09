@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Generated/QtQuick3D/Missile5/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Generated_QtQuick3D_Missile5_tooling::@00f48cabc46fb07068a7"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Generated_QtQuick3D_Missile5_autogen_timestamp_deps::@00f48cabc46fb07068a7",
+	"isGeneratorProvided" : true,
+	"name" : "Generated_QtQuick3D_Missile5_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Generated/QtQuick3D/Missile5",
+		"source" : "Generated/QtQuick3D/Missile5"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

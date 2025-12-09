@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 753,
+                        "errorMessage": "",
+                        "functionName": "output",
+                        "line": 95
+                    }
+                ],
+                "filepath": "AndOperator.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.LogicHelper(QuickStudioLogicHelper)"
+    }
+]

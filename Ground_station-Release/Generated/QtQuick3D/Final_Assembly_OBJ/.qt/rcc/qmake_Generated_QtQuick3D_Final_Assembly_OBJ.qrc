@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Generated/QtQuick3D/Final_Assembly_OBJ">
+    <file alias="qmldir">D:/ground_station_interface/Ground_station-Release/qml/Generated/QtQuick3D/Final_Assembly_OBJ/qmldir</file>
+  </qresource>
+</RCC>
+

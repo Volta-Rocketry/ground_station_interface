@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/fonts">
+        <file>Ground_stationContent/fonts/Nasalization.otf</file>
+    </qresource>
+</RCC>

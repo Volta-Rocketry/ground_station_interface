@@ -1,0 +1,76 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 514,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 31
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 239,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 306,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 47
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 242,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 579,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 234,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 213,
+                        "errorMessage": "",
+                        "functionName": "materials",
+                        "line": 79
+                    }
+                ],
+                "filepath": "Final.qml"
+            }
+        ],
+        "moduleId": "Generated.QtQuick3D.Final(Generated_QtQuick3D_Final)"
+    }
+]

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt-project.org/imports/QtQuick/Studio/DesignEffects">D:/ground_station_interface/Ground_station-Release/qml/QtQuick/Studio/DesignEffects</file>
+
+  </qresource>
+</RCC>

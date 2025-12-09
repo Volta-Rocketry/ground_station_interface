@@ -1,0 +1,8 @@
+module Generated.QtQuick3D.Test
+linktarget Generated_QtQuick3D_Testplugin
+optional plugin Generated_QtQuick3D_Testplugin
+classname Generated_QtQuick3D_TestPlugin
+typeinfo Generated_QtQuick3D_Test.qmltypes
+prefer :/qt/qml/Generated/QtQuick3D/Test/
+Test 1.0 Test.qml
+

@@ -1,0 +1,112 @@
+{
+	"BUILD_DIR" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen",
+	"CMAKE_BINARY_DIR" : "D:/ground_station_interface/Ground_station-MinSizeRel",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/multitext",
+	"CMAKE_EXECUTABLE" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/multitext/CMakeLists.txt",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_QtQuick_Studio_MultiTextPlugin_in.cpp"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/ground_station_interface/Ground_station",
+	"DEP_FILE" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "QuickStudioMultiText_autogen/timestamp",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-src/src/imports/multitext",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQml/6.8.1",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQml/6.8.1/QtQml",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtCore/6.8.1",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtCore/6.8.1/QtCore",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtCore",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/mkspecs/linux-g++",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQml",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtQmlIntegration",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/QtNetwork",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/include",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/include-fixed",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/c++/13.3.0",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/c++/13.3.0/aarch64-poky-linux",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/include/c++/13.3.0/backward",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/cortexa53-poky-linux/usr/lib/aarch64-poky-linux/13.3.0/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [ "--output-json" ],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++.exe",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/QuickStudioMultiText_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0_init.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText_init.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/quickstudiomultitext_qmltyperegistrations.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/6.8.1/Boot2Qt/raspberrypi-armv8/toolchain/sysroots/x86_64-w64-mingw32/usr/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 8,
+	"SETTINGS_FILE" : "D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/CMakeFiles/QuickStudioMultiText_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : [],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_QuickStudioMultiText_raw_qml_0_init.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/.qt/rcc/qrc_qmake_QtQuick_Studio_MultiText_init.cpp",
+		"D:/ground_station_interface/Ground_station-MinSizeRel/_deps/ds-build/src/imports/multitext/quickstudiomultitext_qmltyperegistrations.cpp"
+	],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

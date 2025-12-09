@@ -1,0 +1,12 @@
+-I
+D:/ground_station_interface/Ground_station-Debug/qml
+-I
+D:/ground_station_interface/Ground_station-Debug/qml
+-I
+C:/Qt/6.8.1/mingw_64/qml
+--resource
+D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Final/.qt/rcc/qmake_Generated_QtQuick3D_Final.qrc
+--resource
+D:/ground_station_interface/Ground_station-Debug/Generated/QtQuick3D/Final/.qt/rcc/Generated_QtQuick3D_Final_raw_qml_0.qrc
+--module
+Generated.QtQuick3D.Final

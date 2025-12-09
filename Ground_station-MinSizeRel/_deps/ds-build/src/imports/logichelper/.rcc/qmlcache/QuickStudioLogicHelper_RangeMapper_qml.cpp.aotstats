@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 1657,
+                        "errorMessage": "",
+                        "functionName": "output",
+                        "line": 90
+                    }
+                ],
+                "filepath": "RangeMapper.qml"
+            }
+        ],
+        "moduleId": "QtQuick.Studio.LogicHelper(QuickStudioLogicHelper)"
+    }
+]
